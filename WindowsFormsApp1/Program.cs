@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Sushi_Time_PTC_2024.Controlador;
 using Sushi_Time_PTC_2024.Vista;
 
 namespace WindowsFormsApp1
@@ -17,7 +18,7 @@ namespace WindowsFormsApp1
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Logincs());
+            ControladorInicial.DeterminarVistaInicial();
         }
     }
 }
