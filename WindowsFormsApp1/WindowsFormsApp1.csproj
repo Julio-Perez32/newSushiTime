@@ -1,0 +1,370 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{AB44B6D5-0C4D-43EC-B6CC-F69F10A366D4}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>WindowsFormsApp1</RootNamespace>
+    <AssemblyName>WindowsFormsApp1</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Bunifu.Licensing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=f89b4760ba7dcb6b, processorArchitecture=MSIL">
+      <HintPath>..\packages\Bunifu.Licensing.6.0.4\lib\net48\Bunifu.Licensing.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms, Version=0.0.0.0, Culture=neutral, PublicKeyToken=e8e24ccd28363fe9, processorArchitecture=MSIL">
+      <HintPath>..\packages\Bunifu.UI.WinForms.7.2.0\lib\net48\Bunifu.UI.WinForms.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Bcl.AsyncInterfaces, Version=7.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Bcl.AsyncInterfaces.7.0.0\lib\net462\Microsoft.Bcl.AsyncInterfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.13.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="RestSharp, Version=110.2.0.0, Culture=neutral, PublicKeyToken=598062e77f915f75, processorArchitecture=MSIL">
+      <HintPath>..\packages\RestSharp.110.2.0\lib\net471\RestSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Buffers, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Buffers.4.5.1\lib\net461\System.Buffers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.CodeDom, Version=8.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.CodeDom.8.0.0\lib\net462\System.CodeDom.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Core" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Memory, Version=4.0.1.2, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Memory.4.5.5\lib\net461\System.Memory.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Numerics.Vectors, Version=4.1.4.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Numerics.Vectors.4.5.0\lib\net46\System.Numerics.Vectors.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.CompilerServices.Unsafe, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Runtime.CompilerServices.Unsafe.6.0.0\lib\net461\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Text.Encodings.Web, Version=7.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Text.Encodings.Web.7.0.0\lib\net462\System.Text.Encodings.Web.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Text.Json, Version=7.0.0.2, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Text.Json.7.0.2\lib\net462\System.Text.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading.Tasks.Extensions, Version=4.2.0.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Threading.Tasks.Extensions.4.5.4\lib\net461\System.Threading.Tasks.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ValueTuple, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.ValueTuple.4.5.0\lib\net47\System.ValueTuple.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Controlador\AdministracionUsuarios\AdministracionUsuario.cs" />
+    <Compile Include="Controlador\AdministracionUsuarios\CañandirUsuario.cs" />
+    <Compile Include="Controlador\ControladorAsignacionFunciones\ControladorTarea.cs" />
+    <Compile Include="Controlador\ControladorAsignacionFunciones\ControladorTareaEmpleado.cs" />
+    <Compile Include="Controlador\controladorcalendario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Controlador\controladorcalendario.Designer.cs">
+      <DependentUpon>controladorcalendario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controlador\ControladorInicial.cs" />
+    <Compile Include="Controlador\ControladorLogin\ControladorLogin.cs" />
+    <Compile Include="Controlador\ControladorPrimerUso\ControladorPrimerUso.cs" />
+    <Compile Include="Controlador\ControladorSanciones\EmailController.cs" />
+    <Compile Include="Controlador\controllercalendario\ControllerAgregarTarea.cs" />
+    <Compile Include="Controlador\controllercalendario\ControllerCalendario.cs" />
+    <Compile Include="Controlador\controllercalendario\ControllerTareasTabla.cs" />
+    <Compile Include="Controlador\Dashcarpet\ControlD.cs" />
+    <Compile Include="Controlador\Helpers\CorreoElectronico.cs" />
+    <Compile Include="Controlador\Helpers\Encriptado.cs" />
+    <Compile Include="Controlador\Helpers\SessionVar.cs" />
+    <Compile Include="Controlador\Helpers\TemplateSushiTime.cs" />
+    <Compile Include="Controlador\OlvidarContraseñas\ControladorPindeAdmincs.cs" />
+    <Compile Include="Controlador\OlvidarContraseñas\controladorPreguntaSeguridad.cs" />
+    <Compile Include="Controlador\OlvidarContraseñas\OlvidarContraseñas.cs" />
+    <Compile Include="Controlador\RecuperacionAdmin\RecuperacionAdministrador.cs" />
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modelo\DAO\DAOadminU.cs" />
+    <Compile Include="Modelo\DAO\DAOAgregarTarea.cs" />
+    <Compile Include="Modelo\DAO\DAOLogin.cs" />
+    <Compile Include="Modelo\DAO\DAOPrimerUso.cs" />
+    <Compile Include="Modelo\DAO\DAORecuperacionContra.cs" />
+    <Compile Include="Modelo\DAO\DAOTablaTareas.cs" />
+    <Compile Include="Modelo\DAO\DAOTarea.cs" />
+    <Compile Include="Modelo\DAO\EmailDAO.cs" />
+    <Compile Include="Modelo\DAO\Planilla\DAOAgregarEmpleado.cs" />
+    <Compile Include="Modelo\DAO\Planilla\DAOplanilla.cs" />
+    <Compile Include="Modelo\dbContext.cs" />
+    <Compile Include="Modelo\DTO\DTOadminU.cs" />
+    <Compile Include="Modelo\DTO\DTOAgregarTarea.cs" />
+    <Compile Include="Modelo\DTO\DTOlogin.cs" />
+    <Compile Include="Modelo\DTO\DTOPrimerUso.cs" />
+    <Compile Include="Modelo\DTO\DTORecuperacionContra.cs" />
+    <Compile Include="Modelo\DTO\DTOTablaTareas.cs" />
+    <Compile Include="Modelo\DTO\DTOTarea.cs" />
+    <Compile Include="Modelo\DTO\EmailDTO.cs" />
+    <Compile Include="Modelo\DTO\Planilla\DTOAgregarEmpleado.cs" />
+    <Compile Include="Modelo\DTO\Planilla\DTOPlanilla.cs" />
+    <Compile Include="Modelo\ModeloInicial.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Vista\Asignacion de Funciones\AsignacionFunciones.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vista\Asignacion de Funciones\AsignacionFunciones.Designer.cs">
+      <DependentUpon>AsignacionFunciones.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vista\Asignacion de Funciones\Tarea.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vista\Asignacion de Funciones\Tarea.Designer.cs">
+      <DependentUpon>Tarea.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vista\Calendario\AgregarTarea.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vista\Calendario\AgregarTarea.Designer.cs">
+      <DependentUpon>AgregarTarea.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vista\Calendario\calendario1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vista\Calendario\calendario1.Designer.cs">
+      <DependentUpon>calendario1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vista\Calendario\cuadrito.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vista\Calendario\cuadrito.Designer.cs">
+      <DependentUpon>cuadrito.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vista\Calendario\TablaTareas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vista\Calendario\TablaTareas.Designer.cs">
+      <DependentUpon>TablaTareas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vista\Calendario\UserControlBlank.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Vista\Calendario\UserControlBlank.Designer.cs">
+      <DependentUpon>UserControlBlank.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vista\Calendario\UserControlDias.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Vista\Calendario\UserControlDias.Designer.cs">
+      <DependentUpon>UserControlDias.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vista\Dashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vista\Dashboard.Designer.cs">
+      <DependentUpon>Dashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vista\Inicio de Sesión\Logincs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vista\Inicio de Sesión\Logincs.Designer.cs">
+      <DependentUpon>Logincs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vista\Olvidar contraseña\Formaccesoporadministrador.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vista\Olvidar contraseña\Formaccesoporadministrador.Designer.cs">
+      <DependentUpon>Formaccesoporadministrador.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vista\Olvidar contraseña\FormPregunta de seguridad.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vista\Olvidar contraseña\FormPregunta de seguridad.Designer.cs">
+      <DependentUpon>FormPregunta de seguridad.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vista\Olvidar contraseña\olvidarcontraseña.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vista\Olvidar contraseña\olvidarcontraseña.Designer.cs">
+      <DependentUpon>olvidarcontraseña.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vista\Olvidar contraseña\olvidarcontraseñapregunta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vista\Olvidar contraseña\olvidarcontraseñapregunta.Designer.cs">
+      <DependentUpon>olvidarcontraseñapregunta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vista\Olvidar contraseña\olvidarcontraseñaprincipal1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vista\Olvidar contraseña\olvidarcontraseñaprincipal1.Designer.cs">
+      <DependentUpon>olvidarcontraseñaprincipal1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vista\Planillas\AgregarUsuario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vista\Planillas\AgregarUsuario.Designer.cs">
+      <DependentUpon>AgregarUsuario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vista\Planillas\VerPlanilla.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vista\Planillas\VerPlanilla.Designer.cs">
+      <DependentUpon>VerPlanilla.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vista\Primer Uso\PrimerUso.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vista\Primer Uso\PrimerUso.Designer.cs">
+      <DependentUpon>PrimerUso.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vista\Sanciones y Observaciones\Sanciones.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vista\Sanciones y Observaciones\Sanciones.Designer.cs">
+      <DependentUpon>Sanciones.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vista\Ver Empleados\AgrergarEmpleado.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vista\Ver Empleados\AgrergarEmpleado.Designer.cs">
+      <DependentUpon>AgrergarEmpleado.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vista\Ver Empleados\Planilla1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vista\Ver Empleados\Planilla1.Designer.cs">
+      <DependentUpon>Planilla1.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Vista\Asignacion de Funciones\AsignacionFunciones.resx">
+      <DependentUpon>AsignacionFunciones.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vista\Asignacion de Funciones\Tarea.resx">
+      <DependentUpon>Tarea.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vista\Calendario\AgregarTarea.resx">
+      <DependentUpon>AgregarTarea.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vista\Calendario\calendario1.resx">
+      <DependentUpon>calendario1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vista\Calendario\cuadrito.resx">
+      <DependentUpon>cuadrito.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vista\Calendario\TablaTareas.resx">
+      <DependentUpon>TablaTareas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vista\Calendario\UserControlBlank.resx">
+      <DependentUpon>UserControlBlank.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vista\Calendario\UserControlDias.resx">
+      <DependentUpon>UserControlDias.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vista\Dashboard.resx">
+      <DependentUpon>Dashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vista\Inicio de Sesión\Logincs.resx">
+      <DependentUpon>Logincs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vista\Olvidar contraseña\Formaccesoporadministrador.resx">
+      <DependentUpon>Formaccesoporadministrador.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vista\Olvidar contraseña\FormPregunta de seguridad.resx">
+      <DependentUpon>FormPregunta de seguridad.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vista\Olvidar contraseña\olvidarcontraseña.resx">
+      <DependentUpon>olvidarcontraseña.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vista\Olvidar contraseña\olvidarcontraseñapregunta.resx">
+      <DependentUpon>olvidarcontraseñapregunta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vista\Olvidar contraseña\olvidarcontraseñaprincipal1.resx">
+      <DependentUpon>olvidarcontraseñaprincipal1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vista\Planillas\AgregarUsuario.resx">
+      <DependentUpon>AgregarUsuario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vista\Planillas\VerPlanilla.resx">
+      <DependentUpon>VerPlanilla.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vista\Primer Uso\PrimerUso.resx">
+      <DependentUpon>PrimerUso.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vista\Sanciones y Observaciones\Sanciones.resx">
+      <DependentUpon>Sanciones.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vista\Ver Empleados\AgrergarEmpleado.resx">
+      <DependentUpon>AgrergarEmpleado.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vista\Ver Empleados\Planilla1.resx">
+      <DependentUpon>Planilla1.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="bin\Debug\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
