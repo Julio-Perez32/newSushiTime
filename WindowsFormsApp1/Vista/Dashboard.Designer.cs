@@ -87,11 +87,11 @@
             // 
             this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Top;
             this.pictureBox1.ErrorImage = null;
-            //this.pictureBox1.Image = global::Sushi_Time_PTC_2024.Properties.Resources.logo_de_sushi_time_fondo_rojo;
+            this.pictureBox1.Image = global::WindowsFormsApp1.Properties.Resources.logo_de_sushi_time_fondo_rojo;
             this.pictureBox1.InitialImage = null;
             this.pictureBox1.Location = new System.Drawing.Point(0, 0);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(145, 130);
+            this.pictureBox1.Size = new System.Drawing.Size(145, 166);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 1;
             this.pictureBox1.TabStop = false;
@@ -100,7 +100,7 @@
             // pictureBox2
             // 
             this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            //this.pictureBox2.Image = global::Sushi_Time_PTC_2024.Properties.Resources.personas;
+            this.pictureBox2.Image = global::WindowsFormsApp1.Properties.Resources.personas;
             this.pictureBox2.Location = new System.Drawing.Point(3, 176);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(49, 53);
