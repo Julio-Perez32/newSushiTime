@@ -270,6 +270,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <EmbeddedResource Include="Vista\Asignacion de Funciones\AsignacionFunciones.resx">
       <DependentUpon>AsignacionFunciones.cs</DependentUpon>
@@ -350,6 +351,30 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="bin\Debug\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo de sushi time fondo rojo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Logo Sushi Time No Fondo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Logo Sushi Time No Fondo1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lupadebuscar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\personas.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Premium_Vector___Sushi_avocado_japanese_asian_food-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sushi_salmon-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SushiROJO.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

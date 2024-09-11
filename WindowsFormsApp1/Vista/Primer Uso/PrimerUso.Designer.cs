@@ -472,11 +472,12 @@
             // 
             // pictureBox1
             // 
-           // this.pictureBox1.Image = global::Sushi_Time_PTC_2024.Properties.Resources.logo_de_sushi_time_fondo_rojo;
-            this.pictureBox1.Location = new System.Drawing.Point(-12, -10);
+            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Left;
+            this.pictureBox1.Image = global::WindowsFormsApp1.Properties.Resources.logo_de_sushi_time_fondo_rojo;
+            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(403, 436);
+            this.pictureBox1.Size = new System.Drawing.Size(391, 410);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
@@ -487,7 +488,7 @@
             this.bunifuPictureBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.bunifuPictureBox1.AutoSizeHeight = true;
             this.bunifuPictureBox1.BorderRadius = 31;
-            //this.bunifuPictureBox1.Image = global::Sushi_Time_PTC_2024.Properties.Resources.sushi_salmon_removebg_preview;
+            this.bunifuPictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("bunifuPictureBox1.Image")));
             this.bunifuPictureBox1.IsCircle = true;
             this.bunifuPictureBox1.Location = new System.Drawing.Point(510, -162);
             this.bunifuPictureBox1.Margin = new System.Windows.Forms.Padding(2);

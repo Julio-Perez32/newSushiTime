@@ -29,11 +29,11 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Formaccesoporadministrador));
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties13 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties14 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties15 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties16 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges borderEdges4 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties1 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties2 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties3 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties4 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges borderEdges1 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges();
             this.labelpregunta = new System.Windows.Forms.Label();
             this.txtPinA = new Bunifu.UI.WinForms.BunifuTextBox();
             this.btningresar = new Bunifu.UI.WinForms.BunifuButton.BunifuButton2();
@@ -46,10 +46,9 @@
             this.labelpregunta.AutoSize = true;
             this.labelpregunta.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelpregunta.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.labelpregunta.Location = new System.Drawing.Point(102, 24);
-            this.labelpregunta.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.labelpregunta.Location = new System.Drawing.Point(76, 20);
             this.labelpregunta.Name = "labelpregunta";
-            this.labelpregunta.Size = new System.Drawing.Size(294, 36);
+            this.labelpregunta.Size = new System.Drawing.Size(240, 29);
             this.labelpregunta.TabIndex = 0;
             this.labelpregunta.Text = "PIN de administrador";
             // 
@@ -82,34 +81,33 @@
             this.txtPinA.IconRight = null;
             this.txtPinA.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.txtPinA.Lines = new string[0];
-            this.txtPinA.Location = new System.Drawing.Point(24, 86);
-            this.txtPinA.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtPinA.Location = new System.Drawing.Point(18, 70);
             this.txtPinA.MaxLength = 32767;
             this.txtPinA.MinimumSize = new System.Drawing.Size(1, 1);
             this.txtPinA.Modified = false;
             this.txtPinA.Multiline = false;
             this.txtPinA.Name = "txtPinA";
-            stateProperties13.BorderColor = System.Drawing.Color.DodgerBlue;
-            stateProperties13.FillColor = System.Drawing.Color.Empty;
-            stateProperties13.ForeColor = System.Drawing.Color.Empty;
-            stateProperties13.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.txtPinA.OnActiveState = stateProperties13;
-            stateProperties14.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
-            stateProperties14.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
-            stateProperties14.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
-            stateProperties14.PlaceholderForeColor = System.Drawing.Color.DarkGray;
-            this.txtPinA.OnDisabledState = stateProperties14;
-            stateProperties15.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
-            stateProperties15.FillColor = System.Drawing.Color.Empty;
-            stateProperties15.ForeColor = System.Drawing.Color.Empty;
-            stateProperties15.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.txtPinA.OnHoverState = stateProperties15;
-            stateProperties16.BorderColor = System.Drawing.Color.Silver;
-            stateProperties16.FillColor = System.Drawing.Color.White;
-            stateProperties16.ForeColor = System.Drawing.Color.Empty;
-            stateProperties16.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.txtPinA.OnIdleState = stateProperties16;
-            this.txtPinA.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            stateProperties1.BorderColor = System.Drawing.Color.DodgerBlue;
+            stateProperties1.FillColor = System.Drawing.Color.Empty;
+            stateProperties1.ForeColor = System.Drawing.Color.Empty;
+            stateProperties1.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.txtPinA.OnActiveState = stateProperties1;
+            stateProperties2.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            stateProperties2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
+            stateProperties2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            stateProperties2.PlaceholderForeColor = System.Drawing.Color.DarkGray;
+            this.txtPinA.OnDisabledState = stateProperties2;
+            stateProperties3.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
+            stateProperties3.FillColor = System.Drawing.Color.Empty;
+            stateProperties3.ForeColor = System.Drawing.Color.Empty;
+            stateProperties3.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.txtPinA.OnHoverState = stateProperties3;
+            stateProperties4.BorderColor = System.Drawing.Color.Silver;
+            stateProperties4.FillColor = System.Drawing.Color.White;
+            stateProperties4.ForeColor = System.Drawing.Color.Empty;
+            stateProperties4.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.txtPinA.OnIdleState = stateProperties4;
+            this.txtPinA.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
             this.txtPinA.PasswordChar = '\0';
             this.txtPinA.PlaceholderForeColor = System.Drawing.Color.Silver;
             this.txtPinA.PlaceholderText = "Ingresa el pin";
@@ -119,7 +117,7 @@
             this.txtPinA.SelectionLength = 0;
             this.txtPinA.SelectionStart = 0;
             this.txtPinA.ShortcutsEnabled = true;
-            this.txtPinA.Size = new System.Drawing.Size(459, 48);
+            this.txtPinA.Size = new System.Drawing.Size(344, 39);
             this.txtPinA.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu;
             this.txtPinA.TabIndex = 1;
             this.txtPinA.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -150,11 +148,11 @@
             this.btningresar.ColorContrastOnClick = 45;
             this.btningresar.ColorContrastOnHover = 45;
             this.btningresar.Cursor = System.Windows.Forms.Cursors.Default;
-            borderEdges4.BottomLeft = true;
-            borderEdges4.BottomRight = true;
-            borderEdges4.TopLeft = true;
-            borderEdges4.TopRight = true;
-            this.btningresar.CustomizableEdges = borderEdges4;
+            borderEdges1.BottomLeft = true;
+            borderEdges1.BottomRight = true;
+            borderEdges1.TopLeft = true;
+            borderEdges1.TopRight = true;
+            this.btningresar.CustomizableEdges = borderEdges1;
             this.btningresar.DialogResult = System.Windows.Forms.DialogResult.None;
             this.btningresar.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btningresar.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
@@ -178,8 +176,8 @@
             this.btningresar.IdleIconLeftImage = null;
             this.btningresar.IdleIconRightImage = null;
             this.btningresar.IndicateFocus = false;
-            this.btningresar.Location = new System.Drawing.Point(416, 150);
-            this.btningresar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btningresar.Location = new System.Drawing.Point(312, 122);
+            this.btningresar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btningresar.Name = "btningresar";
             this.btningresar.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btningresar.OnDisabledState.BorderRadius = 20;
@@ -213,7 +211,7 @@
             this.btningresar.OnPressedState.ForeColor = System.Drawing.Color.White;
             this.btningresar.OnPressedState.IconLeftImage = null;
             this.btningresar.OnPressedState.IconRightImage = null;
-            this.btningresar.Size = new System.Drawing.Size(91, 43);
+            this.btningresar.Size = new System.Drawing.Size(72, 34);
             this.btningresar.TabIndex = 18;
             this.btningresar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btningresar.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
@@ -223,25 +221,26 @@
             // 
             // pbSalir
             // 
-           // this.pbSalir.Image = global::Sushi_Time_PTC_2024.Properties.Resources.sushi_salmon_removebg_preview;
-            this.pbSalir.Location = new System.Drawing.Point(453, 4);
+            this.pbSalir.Image = global::WindowsFormsApp1.Properties.Resources.sushi_salmon_removebg_preview;
+            this.pbSalir.Location = new System.Drawing.Point(340, 3);
+            this.pbSalir.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pbSalir.Name = "pbSalir";
-            this.pbSalir.Size = new System.Drawing.Size(66, 56);
+            this.pbSalir.Size = new System.Drawing.Size(50, 46);
             this.pbSalir.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pbSalir.TabIndex = 20;
             this.pbSalir.TabStop = false;
             // 
             // Formaccesoporadministrador
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(41)))), ((int)(((byte)(41)))));
-            this.ClientSize = new System.Drawing.Size(519, 204);
+            this.ClientSize = new System.Drawing.Size(389, 166);
             this.Controls.Add(this.pbSalir);
             this.Controls.Add(this.btningresar);
             this.Controls.Add(this.txtPinA);
             this.Controls.Add(this.labelpregunta);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Formaccesoporadministrador";
             this.Text = "Formaccesoporadministrador";
             this.Load += new System.EventHandler(this.Formaccesoporadministrador_Load);
