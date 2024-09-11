@@ -11,7 +11,7 @@ using Sushi_Time_PTC_2024.Controlador.Helpers;
 using Sushi_Time_PTC_2024.Vista.Administración_de_Empleados;
 using Sushi_Time_PTC_2024.Vista.Asignacion_de_Funciones;
 using Sushi_Time_PTC_2024.Vista.Calendario;
-using Sushi_Time_PTC_2024.Vista.Sanciones_y_Observaciones;
+using WindowsFormsApp1.Vista.Sanciones_y_Observaciones;
 
 namespace Sushi_Time_PTC_2024.Controlador.Dashcarpet
 {

@@ -70,7 +70,6 @@ namespace Sushi_Time_PTC_2024.Controlador.ControladorSanciones
                 Subject = subject,
                 Body = body
             };
-
             try
             {
                 _emailDao.SendEmail(emailDto);
