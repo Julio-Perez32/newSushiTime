@@ -111,7 +111,6 @@ C:\Users\USER\Documents\GitHub\2.0\newSushiTime\WindowsFormsApp1\obj\Debug\Sushi
 C:\Users\USER\Documents\GitHub\2.0\newSushiTime\WindowsFormsApp1\obj\Debug\Sushi_Time_PTC_2024.Vista.Administración_de_Empleados.AgregarUsuario.resources
 C:\Users\USER\Documents\GitHub\2.0\newSushiTime\WindowsFormsApp1\obj\Debug\Sushi_Time_PTC_2024.Vista.Planillas.VerPlanilla.resources
 C:\Users\USER\Documents\GitHub\2.0\newSushiTime\WindowsFormsApp1\obj\Debug\Sushi_Time_PTC_2024.Vista.PrimerUso_.resources
-C:\Users\USER\Documents\GitHub\2.0\newSushiTime\WindowsFormsApp1\obj\Debug\Sushi_Time_PTC_2024.Vista.Sanciones_y_Observaciones.Sanciones.resources
 C:\Users\USER\Documents\GitHub\2.0\newSushiTime\WindowsFormsApp1\obj\Debug\Sushi_Time_PTC_2024.Vista.Ver_Empleados.AgrergarEmpleado.resources
 C:\Users\USER\Documents\GitHub\2.0\newSushiTime\WindowsFormsApp1\obj\Debug\Sushi_Time_PTC_2024.Vista.Ver_Empleados.Planilla1.resources
 C:\Users\USER\Documents\GitHub\2.0\newSushiTime\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.GenerateResource.cache
@@ -119,3 +118,4 @@ C:\Users\USER\Documents\GitHub\2.0\newSushiTime\WindowsFormsApp1\obj\Debug\Windo
 C:\Users\USER\Documents\GitHub\2.0\newSushiTime\WindowsFormsApp1\obj\Debug\WindowsF.A1EEDF9B.Up2Date
 C:\Users\USER\Documents\GitHub\2.0\newSushiTime\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.exe
 C:\Users\USER\Documents\GitHub\2.0\newSushiTime\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.pdb
+C:\Users\USER\Documents\GitHub\2.0\newSushiTime\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Vista.Sanciones_y_Observaciones.Sanciones.resources

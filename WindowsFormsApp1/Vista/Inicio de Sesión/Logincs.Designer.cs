@@ -432,6 +432,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Logincs";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Logincs";
             ((System.ComponentModel.ISupportInitialize)(this.pbSalida)).EndInit();
             this.bunifuPanel1.ResumeLayout(false);
