@@ -35,6 +35,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
+            this.txtCorreo = new System.Windows.Forms.TextBox();
             this.tableLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -111,13 +112,22 @@
             this.label3.Size = new System.Drawing.Size(99, 16);
             this.label3.TabIndex = 32;
             this.label3.Text = "Observación:";
-            this.label3.Click += new System.EventHandler(this.label3_Click);
+            // 
+            // txtCorreo
+            // 
+            this.txtCorreo.Location = new System.Drawing.Point(181, 152);
+            this.txtCorreo.Margin = new System.Windows.Forms.Padding(2);
+            this.txtCorreo.Multiline = true;
+            this.txtCorreo.Name = "txtCorreo";
+            this.txtCorreo.Size = new System.Drawing.Size(398, 33);
+            this.txtCorreo.TabIndex = 33;
             // 
             // Sanciones
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(784, 411);
+            this.Controls.Add(this.txtCorreo);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -145,5 +155,6 @@
         private System.Windows.Forms.Label label3;
         public Bunifu.UI.WinForms.BunifuButton.BunifuButton2 btnEnviar;
         public Bunifu.UI.WinForms.BunifuTextBox txtPara;
+        private System.Windows.Forms.TextBox txtCorreo;
     }
 }

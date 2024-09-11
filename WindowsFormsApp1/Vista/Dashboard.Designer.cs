@@ -72,7 +72,6 @@
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
             this.flowLayoutPanel1.Size = new System.Drawing.Size(152, 512);
             this.flowLayoutPanel1.TabIndex = 0;
-            this.flowLayoutPanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.flowLayoutPanel1_Paint);
             // 
             // panel1
             // 
@@ -95,7 +94,6 @@
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 1;
             this.pictureBox1.TabStop = false;
-            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // pictureBox2
             // 
@@ -130,7 +128,6 @@
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox3.TabIndex = 6;
             this.pictureBox3.TabStop = false;
-            this.pictureBox3.Click += new System.EventHandler(this.pictureBox3_Click);
             // 
             // btnAsignacionFunciones
             // 
@@ -170,7 +167,6 @@
             this.btnCalendario.TabIndex = 7;
             this.btnCalendario.Text = "Calendario";
             this.btnCalendario.UseVisualStyleBackColor = false;
-            this.btnCalendario.Click += new System.EventHandler(this.button3_Click);
             // 
             // pictureBox5
             // 
@@ -207,7 +203,6 @@
             this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox6.TabIndex = 11;
             this.pictureBox6.TabStop = false;
-            this.pictureBox6.Click += new System.EventHandler(this.pictureBox6_Click);
             // 
             // btnCerrarSesion
             // 
@@ -238,7 +233,6 @@
             this.pnlVistas.ShowBorders = true;
             this.pnlVistas.Size = new System.Drawing.Size(809, 512);
             this.pnlVistas.TabIndex = 1;
-            this.pnlVistas.Click += new System.EventHandler(this.bunifuPanel1_Click);
             // 
             // Dashboard
             // 
@@ -251,7 +245,6 @@
             this.Name = "Dashboard";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Dashboard";
-            this.Load += new System.EventHandler(this.Dashboard_Load);
             this.flowLayoutPanel1.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
