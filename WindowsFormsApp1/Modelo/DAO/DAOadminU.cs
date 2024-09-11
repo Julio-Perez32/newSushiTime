@@ -27,7 +27,7 @@ namespace Sushi_Time_PTC_2024.Modelo.DAO
                 string query = "INSERT INTO Empleados (idEmpleado, idCargo, Nombre, Apellido, NumTelefono, NumCuenta, DUI, FechaNacimiento, Direccion, Hijos, FechaInicio, Salario, FechaFin, Correo) VALUES (@param1, @param2, @param3, @param4, @param5, @param6, @param7, @param8, @param9, @param10, @param11, @param12, @param13, @param14)";
                 SqlCommand cmd = new SqlCommand(query, Command.Connection);
                 cmd.Parameters.AddWithValue("param1", IDempleado);
-                cmd.Parameters.AddWithValue("param2", IDcargo);
+                cmd.Parameters.AddWithValue("param2", idCargo);
                 cmd.Parameters.AddWithValue("param3", nombre);
                 cmd.Parameters.AddWithValue("param4", apellido);
                 cmd.Parameters.AddWithValue("param5", numtelefono);
@@ -79,27 +79,27 @@ namespace Sushi_Time_PTC_2024.Modelo.DAO
         {
             try
             {
-                //Se crea una conexión para garantizar que efectivamente haya conexión a la base.
+                // Se crea una conexión para garantizar que efectivamente haya conexión a la base.
                 Command.Connection = getConnection();
                 string query = "UPDATE Empleados SET " +
                                 "idCargo = @param1, " +
                                 "Nombre = @param2, " +
                                 "Apellido = @param3, " +
-                                "NumTelefono = @param4," +
-                                "NumCuenta = @param5," +
+                                "NumTelefono = @param4, " +
+                                "NumCuenta = @param5, " +
                                 "DUI = @param6, " +
                                 "FechaNacimiento = @param7, " +
                                 "Direccion = @param8, " +
                                 "Hijos = @param9, " +
                                 "FechaInicio = @param10, " +
-                                "Salario = @param11," +
-                                "FechaFin = @param12," +
-                                "Correo = @param13, " +
-                                "WHERE personId = @param14";
-                //Se crea un comando de tipo sql al cual se le pasa el query y la conexión, esto para que el sistema sepa que hacer y donde hacerlo.
+                                "Salario = @param11, " +
+                                "FechaFin = @param12, " +
+                                "Correo = @param13 " +
+                                "WHERE idEmpleado = @param14";
+
+                // Crear comando y asignar valores a los parámetros
                 SqlCommand cmd = new SqlCommand(query, Command.Connection);
-                //Se le da un valor a los parametros contenidos en el query, es importante mencionar que lo que esta entre comillas es el nombre del parametro y lo que esta después de la coma es el valor que se le asignará al parametro, estos valores vienen del DTO respectivo.
-                cmd.Parameters.AddWithValue("param1", IDcargo);
+                cmd.Parameters.AddWithValue("param1", idCargo);
                 cmd.Parameters.AddWithValue("param2", nombre);
                 cmd.Parameters.AddWithValue("param3", apellido);
                 cmd.Parameters.AddWithValue("param4", numtelefono);
@@ -113,42 +113,25 @@ namespace Sushi_Time_PTC_2024.Modelo.DAO
                 cmd.Parameters.AddWithValue("param12", fechafin);
                 cmd.Parameters.AddWithValue("param13", correo);
                 cmd.Parameters.AddWithValue("param14", IDempleado);
-                //Se ejecuta el comando ya con todos los valores de sus parametros.
-                //ExecuteNonQuery indicará cuantos filas fueron afectadas, es decir, cuantas filas de datos se ingresaron, por lo general devolvera 1 porque se hace una actualización a la vez.
+
+                // Ejecutar la consulta
                 int respuesta = cmd.ExecuteNonQuery();
-                //Se evalúa el valor de la variable respuesta que contiene el numero de filas afectadas
-                if (respuesta == 1)
-                {
-                    //Si el valor de respuesta es 1 se procede a realizar la actualización del usuario
-                    //**
-                    //Se crea el query que indica la acción que el sistema desea realizar con la base de datos
-                    //el query posee parametros para evitar algún tipo de ataque como SQL Injection
-                    string query2 = "UPDATE Empleados SET " +
-                                    "idCargo = @param2 " +
-                                    "WHERE Nombre = @param3";
-                    //Se crea un comando de tipo sql al cual se le pasa el query y la conexión, esto para que el sistema sepa que hacer y donde hacerlo.
-                    SqlCommand cmd2 = new SqlCommand(query2, getConnection());
-                    //Se le da un valor a los parametros contenidos en el query, es importante mencionar que lo que esta entre comillas es el nombre del parametro y lo que esta después de la coma es el valor que se le asignará al parametro, estos valores vienen del DTO respectivo.
-                    cmd2.Parameters.AddWithValue("param2", IDcargo);
-                    cmd2.Parameters.AddWithValue("param3", nombre);
-                    //Se ejecuta el comando ya con todos los valores de sus parametros.
-                    //ExecuteNonQuery indicará cuantos filas fueron afectadas, es decir, cuantas filas de datos se ingresaron, por lo general devolvera 1 porque se hace una inserción a la vez.
-                    respuesta = cmd2.ExecuteNonQuery();
-                    respuesta = 2;
-                }
-                return respuesta;
+
+                // Retorna 2 si la actualización fue exitosa
+                return respuesta == 1 ? 2 : 1;
             }
             catch (Exception)
             {
-                //Se retorna -1 en caso que en el segmento del try haya ocurrido algún error.
+                // Retorna -1 en caso de error
                 return -1;
             }
             finally
             {
-                //Independientemente se haga o no el proceso cerramos la conexión
+                // Cerrar la conexión
                 getConnection().Close();
             }
         }
+
         public int EliminarUsuario()
         {
             try
@@ -196,90 +179,89 @@ namespace Sushi_Time_PTC_2024.Modelo.DAO
             {
                 //Accedemos a la conexión que ya se tiene
                 Command.Connection = getConnection();
+
                 //Instrucción que se hará hacia la base de datos
-                string query = $"SELECT * FROM VistaEmpleados WHERE Nombre LIKE '%{valor}%' OR DUI LIKE '%{valor}%' OR Correo LIKE '%{valor}%'";
-                //Comando sql en el cual se pasa la instrucción y la conexión
+                string query = $"SELECT * FROM VistaEmpleados WHERE Nombres LIKE '{valor}' OR DUI LIKE '{valor}' ";
+
+                // Imprime la consulta para verificar que esté bien formada (usar solo en modo depuración)
+                Console.WriteLine($"Consulta ejecutada: {query}");
+
+                // Comando sql en el cual se pasa la instrucción y la conexión
                 SqlCommand cmd = new SqlCommand(query, Command.Connection);
-                //Se ejecuta el comando y con ExecuteNonQuery se verifica su retorno
-                //ExecuteNonQuery devuelve un valor entero.
-                cmd.ExecuteNonQuery();
-                //Se utiliza un adaptador sql para rellenar el dataset
+
+                // Se ejecuta el comando
                 SqlDataAdapter adp = new SqlDataAdapter(cmd);
-                //Se crea un objeto Dataset que es donde se devolverán los resultados
                 DataSet ds = new DataSet();
-                //Rellenamos con el Adaptador el DataSet diciendole de que tabla provienen los datos
                 adp.Fill(ds, "VistaEmpleados");
-                //Devolvemos el Dataset
+
+                // Verifica si se devolvieron filas
+                if (ds.Tables["VistaEmpleados"].Rows.Count > 0)
+                {
+                    Console.WriteLine("Búsqueda exitosa, se encontraron resultados.");
+                }
+                else
+                {
+                    Console.WriteLine("No se encontraron resultados.");
+                }
+
                 return ds;
             }
-            catch (Exception)
+            catch (Exception ex)
             {
-                //Retornamos null si existiera algún error durante la ejecución
+                Console.WriteLine($"Error en la búsqueda: {ex.Message}");
                 return null;
             }
             finally
             {
-                //Independientemente se haga o no el proceso cerramos la conexión
                 getConnection().Close();
             }
         }
+
+
 
         public DataSet Obtenerempleados()
         {
             try
             {
-                //Accedemos a la conexión que ya se tiene
                 Command.Connection = getConnection();
-                //Instrucción que se hará hacia la base de datos
-                string query = "SELECT * FROM VistaEmpleados";
-                //Comando sql en el cual se pasa la instrucción y la conexión
+                string query = "SELECT * FROM VistaEmpleados"; // Vista o tabla que contiene los empleados
                 SqlCommand cmd = new SqlCommand(query, Command.Connection);
-                //Asignando valor al parametro
-                cmd.Parameters.AddWithValue("valor", true);
-                //Se ejecuta el comando y con ExecuteNonQuery se verifica su retorno
-                //ExecuteNonQuery devuelve un valor entero.
                 cmd.ExecuteNonQuery();
-                //Se utiliza un adaptador sql para rellenar el dataset
                 SqlDataAdapter adp = new SqlDataAdapter(cmd);
-                //Se crea un objeto Dataset que es donde se devolverán los resultados
                 DataSet ds = new DataSet();
-                //Rellenamos con el Adaptador el DataSet diciendole de que tabla provienen los datos
                 adp.Fill(ds, "VistaEmpleados");
-                //Devolvemos el Dataset
                 return ds;
-
             }
             catch (Exception)
             {
-                //Retornamos null si existiera algún error durante la ejecución
                 return null;
             }
             finally
             {
-                //Independientemente se haga o no el proceso cerramos la conexión
                 getConnection().Close();
             }
-
-
-
-
-            /* public bool RestablecerContrasena()
-             {
-                 try
-                 {
-                     Command.Connection = getConnection();
-                     string queryupdate = "UPDATE tbUser SET password = @valor1, pinRestartPassword = @valor2 WHERE username = @username";
-                     SqlCommand cmdupdate = new SqlCommand(queryupdate, Command.Connection);
-                     cmdupdate.Parameters.AddWithValue("valor1", Password);
-                     cmdupdate.Parameters.AddWithValue("valor2", string.Empty);
-                     cmdupdate.Parameters.AddWithValue("username", User);
-                     return cmdupdate.ExecuteNonQuery() > 0 ? true : false;
-                 }
-                 catch (SqlException)
-                 {
-                     return false;
-                 }
-             }*/
         }
+
+
+
+
+
+        /* public bool RestablecerContrasena()
+         {
+             try
+             {
+                 Command.Connection = getConnection();
+                 string queryupdate = "UPDATE tbUser SET password = @valor1, pinRestartPassword = @valor2 WHERE username = @username";
+                 SqlCommand cmdupdate = new SqlCommand(queryupdate, Command.Connection);
+                 cmdupdate.Parameters.AddWithValue("valor1", Password);
+                 cmdupdate.Parameters.AddWithValue("valor2", string.Empty);
+                 cmdupdate.Parameters.AddWithValue("username", User);
+                 return cmdupdate.ExecuteNonQuery() > 0 ? true : false;
+             }
+             catch (SqlException)
+             {
+                 return false;
+             }
+         }*/
     }
 }
