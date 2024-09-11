@@ -34,15 +34,15 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.bunifuPanel1 = new Bunifu.UI.WinForms.BunifuPanel();
+            this.pbsalir = new System.Windows.Forms.PictureBox();
             this.dgvTareas = new Bunifu.UI.WinForms.BunifuDataGridView();
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.csmEliminar = new System.Windows.Forms.ToolStripMenuItem();
             this.csmActualizar = new System.Windows.Forms.ToolStripMenuItem();
-            this.pbsalir = new System.Windows.Forms.PictureBox();
             this.bunifuPanel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbsalir)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvTareas)).BeginInit();
             this.contextMenuStrip1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pbsalir)).BeginInit();
             this.SuspendLayout();
             // 
             // bunifuPanel1
@@ -56,11 +56,21 @@
             this.bunifuPanel1.Controls.Add(this.pbsalir);
             this.bunifuPanel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.bunifuPanel1.Location = new System.Drawing.Point(0, 0);
-            this.bunifuPanel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.bunifuPanel1.Margin = new System.Windows.Forms.Padding(2);
             this.bunifuPanel1.Name = "bunifuPanel1";
             this.bunifuPanel1.ShowBorders = true;
             this.bunifuPanel1.Size = new System.Drawing.Size(729, 35);
             this.bunifuPanel1.TabIndex = 13;
+            // 
+            // pbsalir
+            // 
+            this.pbsalir.Image = global::WindowsFormsApp1.Properties.Resources.SushiROJO;
+            this.pbsalir.Location = new System.Drawing.Point(692, 0);
+            this.pbsalir.Name = "pbsalir";
+            this.pbsalir.Size = new System.Drawing.Size(37, 34);
+            this.pbsalir.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pbsalir.TabIndex = 1;
+            this.pbsalir.TabStop = false;
             // 
             // dgvTareas
             // 
@@ -115,7 +125,7 @@
             this.dgvTareas.HeaderBgColor = System.Drawing.Color.Empty;
             this.dgvTareas.HeaderForeColor = System.Drawing.Color.White;
             this.dgvTareas.Location = new System.Drawing.Point(2, 34);
-            this.dgvTareas.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dgvTareas.Margin = new System.Windows.Forms.Padding(2);
             this.dgvTareas.Name = "dgvTareas";
             this.dgvTareas.RowHeadersVisible = false;
             this.dgvTareas.RowHeadersWidth = 51;
@@ -146,16 +156,6 @@
             this.csmActualizar.Size = new System.Drawing.Size(126, 22);
             this.csmActualizar.Text = "Actualizar";
             // 
-            // pbsalir
-            // 
-            //this.pbsalir.Image = global::Sushi_Time_PTC_2024.Properties.Resources.sushi_salmon_removebg_preview;
-            this.pbsalir.Location = new System.Drawing.Point(692, 0);
-            this.pbsalir.Name = "pbsalir";
-            this.pbsalir.Size = new System.Drawing.Size(37, 34);
-            this.pbsalir.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pbsalir.TabIndex = 1;
-            this.pbsalir.TabStop = false;
-            // 
             // TablaTareas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -165,15 +165,15 @@
             this.Controls.Add(this.dgvTareas);
             this.Controls.Add(this.bunifuPanel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "TablaTareas";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "TablaTareas";
             this.Load += new System.EventHandler(this.TablaTareas_Load);
             this.bunifuPanel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pbsalir)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvTareas)).EndInit();
             this.contextMenuStrip1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pbsalir)).EndInit();
             this.ResumeLayout(false);
 
         }

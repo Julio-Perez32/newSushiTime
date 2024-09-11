@@ -47,11 +47,10 @@
             this.bunifuLabel1.CursorType = System.Windows.Forms.Cursors.Default;
             this.bunifuLabel1.Font = new System.Drawing.Font("Yu Gothic UI Semibold", 15.75F, System.Drawing.FontStyle.Bold);
             this.bunifuLabel1.ForeColor = System.Drawing.Color.White;
-            this.bunifuLabel1.Location = new System.Drawing.Point(44, 79);
-            this.bunifuLabel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.bunifuLabel1.Location = new System.Drawing.Point(33, 64);
             this.bunifuLabel1.Name = "bunifuLabel1";
             this.bunifuLabel1.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.bunifuLabel1.Size = new System.Drawing.Size(335, 36);
+            this.bunifuLabel1.Size = new System.Drawing.Size(270, 30);
             this.bunifuLabel1.TabIndex = 3;
             this.bunifuLabel1.Text = "Recuperacion de contraseña";
             this.bunifuLabel1.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
@@ -65,11 +64,10 @@
             this.bunifuLabel2.CursorType = System.Windows.Forms.Cursors.Default;
             this.bunifuLabel2.Font = new System.Drawing.Font("Yu Gothic UI", 12F);
             this.bunifuLabel2.ForeColor = System.Drawing.Color.White;
-            this.bunifuLabel2.Location = new System.Drawing.Point(44, 153);
-            this.bunifuLabel2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.bunifuLabel2.Location = new System.Drawing.Point(33, 124);
             this.bunifuLabel2.Name = "bunifuLabel2";
             this.bunifuLabel2.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.bunifuLabel2.Size = new System.Drawing.Size(453, 28);
+            this.bunifuLabel2.Size = new System.Drawing.Size(359, 21);
             this.bunifuLabel2.TabIndex = 4;
             this.bunifuLabel2.Text = "Eliga el metodo que desea utilizar para restablecerla";
             this.bunifuLabel2.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
@@ -122,8 +120,7 @@
             this.btnadmin.IdleIconLeftImage = null;
             this.btnadmin.IdleIconRightImage = null;
             this.btnadmin.IndicateFocus = false;
-            this.btnadmin.Location = new System.Drawing.Point(44, 212);
-            this.btnadmin.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnadmin.Location = new System.Drawing.Point(33, 172);
             this.btnadmin.Name = "btnadmin";
             this.btnadmin.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnadmin.OnDisabledState.BorderRadius = 20;
@@ -157,7 +154,7 @@
             this.btnadmin.OnPressedState.ForeColor = System.Drawing.Color.White;
             this.btnadmin.OnPressedState.IconLeftImage = null;
             this.btnadmin.OnPressedState.IconRightImage = null;
-            this.btnadmin.Size = new System.Drawing.Size(635, 48);
+            this.btnadmin.Size = new System.Drawing.Size(476, 39);
             this.btnadmin.TabIndex = 5;
             this.btnadmin.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btnadmin.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
@@ -212,8 +209,7 @@
             this.btnPseguridad.IdleIconLeftImage = null;
             this.btnPseguridad.IdleIconRightImage = null;
             this.btnPseguridad.IndicateFocus = false;
-            this.btnPseguridad.Location = new System.Drawing.Point(44, 292);
-            this.btnPseguridad.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnPseguridad.Location = new System.Drawing.Point(33, 237);
             this.btnPseguridad.Name = "btnPseguridad";
             this.btnPseguridad.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnPseguridad.OnDisabledState.BorderRadius = 20;
@@ -247,7 +243,7 @@
             this.btnPseguridad.OnPressedState.ForeColor = System.Drawing.Color.White;
             this.btnPseguridad.OnPressedState.IconLeftImage = null;
             this.btnPseguridad.OnPressedState.IconRightImage = null;
-            this.btnPseguridad.Size = new System.Drawing.Size(635, 50);
+            this.btnPseguridad.Size = new System.Drawing.Size(476, 41);
             this.btnPseguridad.TabIndex = 6;
             this.btnPseguridad.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btnPseguridad.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
@@ -257,28 +253,26 @@
             // 
             // pbsalir
             // 
-           // this.pbsalir.Image = global::Sushi_Time_PTC_2024.Properties.Resources.sushi_salmon_removebg_preview;
-            this.pbsalir.Location = new System.Drawing.Point(657, 15);
-            this.pbsalir.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pbsalir.Image = global::WindowsFormsApp1.Properties.Resources.sushi_salmon_removebg_preview;
+            this.pbsalir.Location = new System.Drawing.Point(493, 12);
             this.pbsalir.Name = "pbsalir";
-            this.pbsalir.Size = new System.Drawing.Size(91, 68);
+            this.pbsalir.Size = new System.Drawing.Size(68, 55);
             this.pbsalir.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pbsalir.TabIndex = 7;
             this.pbsalir.TabStop = false;
             // 
             // olvidarcontraseña
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(41)))), ((int)(((byte)(41)))));
-            this.ClientSize = new System.Drawing.Size(764, 421);
+            this.ClientSize = new System.Drawing.Size(573, 342);
             this.Controls.Add(this.pbsalir);
             this.Controls.Add(this.btnPseguridad);
             this.Controls.Add(this.btnadmin);
             this.Controls.Add(this.bunifuLabel2);
             this.Controls.Add(this.bunifuLabel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "olvidarcontraseña";
             this.Text = "olvidarcontraseña";
             ((System.ComponentModel.ISupportInitialize)(this.pbsalir)).EndInit();

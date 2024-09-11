@@ -62,7 +62,7 @@
             this.lblContraseña.Font = new System.Drawing.Font("Yu Gothic", 14F, System.Drawing.FontStyle.Bold);
             this.lblContraseña.ForeColor = System.Drawing.Color.White;
             this.lblContraseña.Location = new System.Drawing.Point(450, 230);
-            this.lblContraseña.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.lblContraseña.Margin = new System.Windows.Forms.Padding(2);
             this.lblContraseña.Name = "lblContraseña";
             this.lblContraseña.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.lblContraseña.Size = new System.Drawing.Size(106, 25);
@@ -80,7 +80,7 @@
             this.lblUsuario.Font = new System.Drawing.Font("Yu Gothic", 14F, System.Drawing.FontStyle.Bold);
             this.lblUsuario.ForeColor = System.Drawing.Color.White;
             this.lblUsuario.Location = new System.Drawing.Point(450, 127);
-            this.lblUsuario.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.lblUsuario.Margin = new System.Windows.Forms.Padding(2);
             this.lblUsuario.Name = "lblUsuario";
             this.lblUsuario.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.lblUsuario.Size = new System.Drawing.Size(71, 25);
@@ -98,7 +98,7 @@
             this.lblLogin.Font = new System.Drawing.Font("Yu Gothic", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblLogin.ForeColor = System.Drawing.Color.White;
             this.lblLogin.Location = new System.Drawing.Point(589, 76);
-            this.lblLogin.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.lblLogin.Margin = new System.Windows.Forms.Padding(2);
             this.lblLogin.Name = "lblLogin";
             this.lblLogin.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.lblLogin.Size = new System.Drawing.Size(56, 27);
@@ -113,10 +113,10 @@
             this.pbSalida.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pbSalida.AutoSizeHeight = true;
             this.pbSalida.BorderRadius = 31;
-            //this.pbSalida.Image = global::Sushi_Time_PTC_2024.Properties.Resources.sushi_salmon_removebg_preview;
+            this.pbSalida.Image = global::WindowsFormsApp1.Properties.Resources.sushi_salmon_removebg_preview;
             this.pbSalida.IsCircle = true;
             this.pbSalida.Location = new System.Drawing.Point(772, 1);
-            this.pbSalida.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pbSalida.Margin = new System.Windows.Forms.Padding(2);
             this.pbSalida.Name = "pbSalida";
             this.pbSalida.Size = new System.Drawing.Size(62, 62);
             this.pbSalida.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -172,7 +172,7 @@
             this.btnIngresar.IdleIconRightImage = null;
             this.btnIngresar.IndicateFocus = false;
             this.btnIngresar.Location = new System.Drawing.Point(450, 353);
-            this.btnIngresar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnIngresar.Margin = new System.Windows.Forms.Padding(2);
             this.btnIngresar.Name = "btnIngresar";
             this.btnIngresar.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnIngresar.OnDisabledState.BorderRadius = 20;
@@ -224,7 +224,7 @@
             this.bunifuPanel1.BorderThickness = 1;
             this.bunifuPanel1.Controls.Add(this.pictureBox1);
             this.bunifuPanel1.Location = new System.Drawing.Point(1, 1);
-            this.bunifuPanel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.bunifuPanel1.Margin = new System.Windows.Forms.Padding(2);
             this.bunifuPanel1.Name = "bunifuPanel1";
             this.bunifuPanel1.ShowBorders = true;
             this.bunifuPanel1.Size = new System.Drawing.Size(393, 410);
@@ -232,9 +232,9 @@
             // 
             // pictureBox1
             // 
-            //this.pictureBox1.Image = global::Sushi_Time_PTC_2024.Properties.Resources.logo_de_sushi_time_fondo_rojo;
+            this.pictureBox1.Image = global::WindowsFormsApp1.Properties.Resources.logo_de_sushi_time_fondo_rojo;
             this.pictureBox1.Location = new System.Drawing.Point(-14, 0);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(407, 410);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -289,7 +289,7 @@
             this.txtIngresarContraseña.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.txtIngresarContraseña.Lines = new string[0];
             this.txtIngresarContraseña.Location = new System.Drawing.Point(450, 259);
-            this.txtIngresarContraseña.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtIngresarContraseña.Margin = new System.Windows.Forms.Padding(2);
             this.txtIngresarContraseña.MaxLength = 32767;
             this.txtIngresarContraseña.MinimumSize = new System.Drawing.Size(1, 1);
             this.txtIngresarContraseña.Modified = false;
@@ -315,7 +315,7 @@
             stateProperties4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(161)))), ((int)(((byte)(161)))), ((int)(((byte)(161)))));
             stateProperties4.PlaceholderForeColor = System.Drawing.Color.Empty;
             this.txtIngresarContraseña.OnIdleState = stateProperties4;
-            this.txtIngresarContraseña.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtIngresarContraseña.Padding = new System.Windows.Forms.Padding(2);
             this.txtIngresarContraseña.PasswordChar = '*';
             this.txtIngresarContraseña.PlaceholderForeColor = System.Drawing.Color.Silver;
             this.txtIngresarContraseña.PlaceholderText = "Contraseña";
@@ -367,7 +367,7 @@
             this.txtUsuario.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.txtUsuario.Lines = new string[0];
             this.txtUsuario.Location = new System.Drawing.Point(450, 156);
-            this.txtUsuario.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtUsuario.Margin = new System.Windows.Forms.Padding(2);
             this.txtUsuario.MaxLength = 32767;
             this.txtUsuario.MinimumSize = new System.Drawing.Size(1, 1);
             this.txtUsuario.Modified = false;
@@ -393,7 +393,7 @@
             stateProperties8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(161)))), ((int)(((byte)(161)))), ((int)(((byte)(161)))));
             stateProperties8.PlaceholderForeColor = System.Drawing.Color.Empty;
             this.txtUsuario.OnIdleState = stateProperties8;
-            this.txtUsuario.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtUsuario.Padding = new System.Windows.Forms.Padding(2);
             this.txtUsuario.PasswordChar = '\0';
             this.txtUsuario.PlaceholderForeColor = System.Drawing.Color.Silver;
             this.txtUsuario.PlaceholderText = "Ingrese su nombre de usuario";
@@ -430,8 +430,9 @@
             this.Controls.Add(this.lblLogin);
             this.Controls.Add(this.bunifuPanel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Logincs";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Logincs";
             ((System.ComponentModel.ISupportInitialize)(this.pbSalida)).EndInit();
             this.bunifuPanel1.ResumeLayout(false);
