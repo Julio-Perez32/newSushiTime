@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using Sushi_Time_PTC_2024.Modelo.DAO;
 using Sushi_Time_PTC_2024.Vista;
 using System.Windows.Forms;
+using System.Text.RegularExpressions;
 
 namespace Sushi_Time_PTC_2024.Controlador.ControladorPrimerUso
 {
@@ -37,34 +38,75 @@ namespace Sushi_Time_PTC_2024.Controlador.ControladorPrimerUso
                 return;
             }
 
-            if (!(string.IsNullOrEmpty(ObjVista.txtRegistrarUsuario.Text.Trim()) ||
-                  string.IsNullOrEmpty(ObjVista.txtRegistrarContraseña.Text.Trim()) ||
-                  string.IsNullOrEmpty(ObjVista.txtIngresarCorreo.Text.Trim())))
+            // Validaciones para el campo "Usuario"
+            string usuario = ObjVista.txtRegistrarUsuario.Text.Trim();
+            if (string.IsNullOrWhiteSpace(usuario))
             {
-                daoPrimerUso.Usuario = ObjVista.txtRegistrarUsuario.Text.Trim();
-                daoPrimerUso.Contraseña = ObjVista.txtRegistrarContraseña.Text.Trim();
-                daoPrimerUso.Correo = ObjVista.txtIngresarCorreo.Text.Trim();
+                MessageBox.Show("Ingrese un Usuario.", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+            if (usuario.Length > 200)
+            {
+                MessageBox.Show("El Usuario no puede exceder los 200 caracteres.", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+            if (!Regex.IsMatch(usuario, @"^[a-zA-Z0-9\s]+$"))
+            {
+                MessageBox.Show("El Usuario solo puede contener letras y números.", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
 
-                bool registroExitoso = daoPrimerUso.RegistrarUsuario();
+            // Validaciones para el campo "Correo"
+            string correo = ObjVista.txtIngresarCorreo.Text.Trim();
+            if (string.IsNullOrWhiteSpace(correo))
+            {
+                MessageBox.Show("Ingrese un Correo Electronico.", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+            if (correo.Length > 100)
+            {
+                MessageBox.Show("El Correo no puede exceder los 100 caracteres.", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+            if (!correo.Contains("@"))
+            {
+                MessageBox.Show("El Correo deber contener '@'.", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
 
-                if (registroExitoso)
-                {
-                    MessageBox.Show("Usuario registrado con éxito.", "Éxito", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            // Validaciones para el campo "Contraseña"
+            string contraseña = ObjVista.txtRegistrarContraseña.Text.Trim();
+            if (string.IsNullOrWhiteSpace(contraseña))
+            {
+                MessageBox.Show("Ingrese una contraseña.", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+            if (contraseña.Length > 100)
+            {
+                MessageBox.Show("La Contraseña no puede exceder el maximo de 100 caracteres.", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
 
-                    // Aquí abrimos la nueva vista de Login
-                    Logincs vistaLogin = new Logincs();
-                    vistaLogin.Show();
+            // Si todas las validaciones son correctas, se registra el usuario.
+            daoPrimerUso.Usuario = usuario;
+            daoPrimerUso.Contraseña = contraseña;
+            daoPrimerUso.Correo = correo;
 
-                    ObjVista.Hide();
-                }
-                else
-                {
-                    MessageBox.Show("Error al registrar el usuario. Intenta de nuevo.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                }
+            bool registroExitoso = daoPrimerUso.RegistrarUsuario();
+
+            if (registroExitoso)
+            {
+                MessageBox.Show("Usuario registrado con éxito.", "Éxito", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                // Aquí abrimos la nueva vista de Login
+                Logincs vistaLogin = new Logincs();
+                vistaLogin.Show();
+
+                ObjVista.Hide();
             }
             else
             {
-                MessageBox.Show("Por favor, completa todos los campos.", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MessageBox.Show("Error al registrar el usuario. Intenta de nuevo.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
     }

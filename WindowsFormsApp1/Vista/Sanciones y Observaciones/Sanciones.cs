@@ -18,22 +18,24 @@ namespace Sushi_Time_PTC_2024.Vista.Sanciones_y_Observaciones
         public Sanciones()
         {
             InitializeComponent();
-            // Inicializa el controlador con el DAO
             var emailDao = new EmailDAO("observacionsushitime@gmail.com", "esbgovtsyuptagdc", "SushiTime");
             _emailController = new EmailController(emailDao);
         }
+
+        private void ConfigurarTabIndex()
+        {
+            txtCorreo.TabIndex = 0;
+            txtTipoSancion.TabIndex = 1;
+            txtObservacionS.TabIndex = 2;   
+            btnEnviar.TabIndex = 3;  
+        }
         private void btnEnviar_Click(object sender, EventArgs e)
         {
-            var to = txtPara.Text.Trim();
+            var to = txtCorreo.Text.Trim();
             var subject = txtTipoSancion.Text.Trim();
             var body = txtObservacionS.Text.Trim();
 
             _emailController.SendEmail(to, subject, body);
-        }
-
-        private void label3_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }

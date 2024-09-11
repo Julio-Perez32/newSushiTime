@@ -3,12 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\USER\\Documents\\GitHub\\2.0\\newSushiTime\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{AB44B6D5-0C4D-43EC-B6CC-F69F10A366D4}|WindowsFormsApp1\\WindowsFormsApp1.csproj|c:\\users\\user\\documents\\github\\2.0\\newsushitime\\windowsformsapp1\\vista\\asignacion de funciones\\asignacionfunciones.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{AB44B6D5-0C4D-43EC-B6CC-F69F10A366D4}|WindowsFormsApp1\\WindowsFormsApp1.csproj|solutionrelative:windowsformsapp1\\vista\\asignacion de funciones\\asignacionfunciones.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{AB44B6D5-0C4D-43EC-B6CC-F69F10A366D4}|WindowsFormsApp1\\WindowsFormsApp1.csproj|c:\\users\\user\\documents\\github\\2.0\\newsushitime\\windowsformsapp1\\vista\\dashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{AB44B6D5-0C4D-43EC-B6CC-F69F10A366D4}|WindowsFormsApp1\\WindowsFormsApp1.csproj|solutionrelative:windowsformsapp1\\vista\\dashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AB44B6D5-0C4D-43EC-B6CC-F69F10A366D4}|WindowsFormsApp1\\WindowsFormsApp1.csproj|c:\\users\\user\\documents\\github\\2.0\\newsushitime\\windowsformsapp1\\vista\\asignacion de funciones\\tarea.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{AB44B6D5-0C4D-43EC-B6CC-F69F10A366D4}|WindowsFormsApp1\\WindowsFormsApp1.csproj|solutionrelative:windowsformsapp1\\vista\\asignacion de funciones\\tarea.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{AB44B6D5-0C4D-43EC-B6CC-F69F10A366D4}|WindowsFormsApp1\\WindowsFormsApp1.csproj|c:\\users\\user\\documents\\github\\2.0\\newsushitime\\windowsformsapp1\\vista\\dashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AB44B6D5-0C4D-43EC-B6CC-F69F10A366D4}|WindowsFormsApp1\\WindowsFormsApp1.csproj|solutionrelative:windowsformsapp1\\vista\\dashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -23,25 +23,26 @@
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "Tarea.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\USER\\Documents\\GitHub\\2.0\\newSushiTime\\WindowsFormsApp1\\Vista\\Asignacion de Funciones\\Tarea.cs",
-              "RelativeDocumentMoniker": "WindowsFormsApp1\\Vista\\Asignacion de Funciones\\Tarea.cs",
-              "ToolTip": "C:\\Users\\USER\\Documents\\GitHub\\2.0\\newSushiTime\\WindowsFormsApp1\\Vista\\Asignacion de Funciones\\Tarea.cs [Dise\u00F1o]",
-              "RelativeToolTip": "WindowsFormsApp1\\Vista\\Asignacion de Funciones\\Tarea.cs [Dise\u00F1o]",
+              "Title": "Dashboard.cs",
+              "DocumentMoniker": "C:\\Users\\USER\\Documents\\GitHub\\2.0\\newSushiTime\\WindowsFormsApp1\\Vista\\Dashboard.cs",
+              "RelativeDocumentMoniker": "WindowsFormsApp1\\Vista\\Dashboard.cs",
+              "ToolTip": "C:\\Users\\USER\\Documents\\GitHub\\2.0\\newSushiTime\\WindowsFormsApp1\\Vista\\Dashboard.cs*",
+              "RelativeToolTip": "WindowsFormsApp1\\Vista\\Dashboard.cs*",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAAABcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-11T02:28:18.887Z",
-              "EditorCaption": " [Dise\u00F1o]"
+              "WhenOpened": "2024-09-11T03:16:16.2Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "AsignacionFunciones.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\USER\\Documents\\GitHub\\2.0\\newSushiTime\\WindowsFormsApp1\\Vista\\Asignacion de Funciones\\AsignacionFunciones.cs",
-              "RelativeDocumentMoniker": "WindowsFormsApp1\\Vista\\Asignacion de Funciones\\AsignacionFunciones.cs",
-              "ToolTip": "C:\\Users\\USER\\Documents\\GitHub\\2.0\\newSushiTime\\WindowsFormsApp1\\Vista\\Asignacion de Funciones\\AsignacionFunciones.cs [Dise\u00F1o]*",
-              "RelativeToolTip": "WindowsFormsApp1\\Vista\\Asignacion de Funciones\\AsignacionFunciones.cs [Dise\u00F1o]*",
+              "Title": "Dashboard.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\USER\\Documents\\GitHub\\2.0\\newSushiTime\\WindowsFormsApp1\\Vista\\Dashboard.cs",
+              "RelativeDocumentMoniker": "WindowsFormsApp1\\Vista\\Dashboard.cs",
+              "ToolTip": "C:\\Users\\USER\\Documents\\GitHub\\2.0\\newSushiTime\\WindowsFormsApp1\\Vista\\Dashboard.cs [Dise\u00F1o]*",
+              "RelativeToolTip": "WindowsFormsApp1\\Vista\\Dashboard.cs [Dise\u00F1o]*",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-11T02:27:46.096Z",
+              "WhenOpened": "2024-09-11T03:16:14.838Z",
               "EditorCaption": " [Dise\u00F1o]"
             }
           ]
