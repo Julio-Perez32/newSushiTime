@@ -17,7 +17,8 @@ namespace Sushi_Time_PTC_2024.Controlador.AdministracionUsuarios
     internal class CañandirUsuario
     {
         AgregarUsuario ObjAddUser;
-        private int accion, idCargo;
+        private int accion;
+        private string idCargo;
         private string role;
 
         public CañandirUsuario(AgregarUsuario Vista, int accion)
@@ -26,6 +27,7 @@ namespace Sushi_Time_PTC_2024.Controlador.AdministracionUsuarios
             ObjAddUser = Vista;
             this.accion = accion;
             ObjAddUser.Load += new EventHandler(InitialCharge);
+            VerificarAccion();
             ObjAddUser.txtnombreA.KeyPress += new KeyPressEventHandler(TxtDescripcionTarea_KeyPress);
             ObjAddUser.txtApellidoA.KeyPress += new KeyPressEventHandler(TxtDescripcionTarea_KeyPress);
             ObjAddUser.txtTelefonoA.KeyPress += new KeyPressEventHandler(TxtSoloNumeros_KeyPress);
@@ -40,12 +42,14 @@ namespace Sushi_Time_PTC_2024.Controlador.AdministracionUsuarios
         }
 
 
-        public CañandirUsuario(AgregarUsuario Vista, int p_accion, int idEmpleado, int idCargo, string Nombre, string Apellido, string NumTelefono, string NumCuenta, string DUI, DateTime FechaNacimiento, string Direccion, string Hijos, DateTime FechaInicio, decimal Salario, DateTime FechaFin, string Correo)
+        public CañandirUsuario(AgregarUsuario Vista, int p_accion, int idEmpleado, string idCargo, string Nombre, string Apellido, string NumTelefono, string NumCuenta, string DUI, DateTime FechaNacimiento, string Direccion, string Hijos, DateTime FechaInicio, decimal Salario, DateTime FechaFin, string Correo)
         {
             ObjAddUser = Vista;
             this.accion = p_accion;
             this.idCargo = idCargo;
-            ChargeValues(idEmpleado, idCargo, Nombre, Apellido, NumTelefono, NumCuenta, DUI, FechaNacimiento, Direccion, Hijos, FechaInicio, Salario, FechaFin, Correo);
+            VerificarAccion();
+            ObjAddUser.Load += new EventHandler(InitialCharge);
+            ChargeValues(idEmpleado, Nombre, Apellido, NumTelefono, NumCuenta, DUI, FechaNacimiento, Direccion, Hijos, FechaInicio, Salario, FechaFin, Correo);
             ObjAddUser.btnActualizar.Click += new EventHandler(UpdateRegister);
 
         }
@@ -88,7 +92,7 @@ namespace Sushi_Time_PTC_2024.Controlador.AdministracionUsuarios
             //La condición sirve para que al actualizar un registro, el valor del registro aparezca seleccionado.
             if (accion == 2)
             {
-                ObjAddUser.cmbCargo.Text = role;
+                ObjAddUser.cmbCargo.Text = idCargo;
             }
         }
 
@@ -201,12 +205,11 @@ namespace Sushi_Time_PTC_2024.Controlador.AdministracionUsuarios
                                 MessageBoxIcon.Error);
             }
         }
-        public void ChargeValues(int idEmpleado, int idCargo, string Nombre, string Apellido, string NumTelefono, string NumCuenta, string DUI, DateTime FechaNacimiento, string Direccion, string Hijos, DateTime FechaInicio, decimal salario, DateTime FechaFin, string Correo)
+        public void ChargeValues(int idEmpleado, string Nombre, string Apellido, string NumTelefono, string NumCuenta, string DUI, DateTime FechaNacimiento, string Direccion, string Hijos, DateTime FechaInicio, decimal salario, DateTime FechaFin, string Correo)
         {
             try
             {
                 ObjAddUser.txtCodigoeA.Text = idEmpleado.ToString();
-                ObjAddUser.cmbCargo.SelectedValue = idCargo;
                 ObjAddUser.txtnombreA.Text = Nombre;
                 ObjAddUser.txtApellidoA.Text = Apellido;
                 ObjAddUser.txtTelefonoA.Text = NumTelefono;
@@ -227,18 +230,17 @@ namespace Sushi_Time_PTC_2024.Controlador.AdministracionUsuarios
 
         }
         // En el método Load o similar del formulario AgregarUsuario
-        public void CargarDatosFormulario()
+        public void VerificarAccion()
         {
-            DAOadminU objAdmin = new DAOadminU();
-            DataSet ds = objAdmin.LlenarCombo();
-            ObjAddUser.cmbCargo.DataSource = ds.Tables["CargoEmpleado"];
-            ObjAddUser.cmbCargo.ValueMember = "idCargo";
-            ObjAddUser.cmbCargo.DisplayMember = "NombreCargo";
-
-            // Preseleccionar el cargo si es una actualización
-            if (accion == 2)
+            if (accion == 1)
             {
-                ObjAddUser.cmbCargo.SelectedValue = idCargo; // idCargo debe ser el ID que quieres preseleccionar
+                ObjAddUser.btnActualizar.Enabled = false;
+                ObjAddUser.Agregar.Enabled = true;
+            }
+            else if (accion == 2)
+            {
+                ObjAddUser.btnActualizar.Enabled = true;
+                ObjAddUser.Agregar.Enabled = false;
             }
         }
 
