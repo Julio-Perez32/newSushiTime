@@ -120,7 +120,7 @@ namespace Sushi_Time_PTC_2024.Controlador.AdministracionUsuarios
 
                 // Obtén los valores de la fila
                 int idEmpleado;
-                int idCargo;
+                string idCargo;
                 decimal Salario;
                 string Nombre, Apellido, Numtelefono, NumCuenta, DUI, Direccion, Hijos, Correo;
                 DateTime FechaNacimiento, FechaInicio, FechaFin;
@@ -128,11 +128,7 @@ namespace Sushi_Time_PTC_2024.Controlador.AdministracionUsuarios
                 string cargoNombre = ObjAdminUser.dgvpersonas[3, pos].Value?.ToString();
 
 
-                if (string.IsNullOrEmpty(cargoNombre) || !cargosDic.TryGetValue(cargoNombre, out idCargo))
-                {
-                    MessageBox.Show("No se encontró el ID del Cargo.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                    return;
-                }
+             
 
                 // Continuar con el resto del código para obtener otros datos y actualizar el usuario
                 // ...
@@ -143,7 +139,7 @@ namespace Sushi_Time_PTC_2024.Controlador.AdministracionUsuarios
                 idEmpleado = int.Parse(ObjAdminUser.dgvpersonas[0, pos].Value.ToString());
                 Nombre = ObjAdminUser.dgvpersonas[1, pos].Value.ToString();
                 Apellido = ObjAdminUser.dgvpersonas[2, pos].Value.ToString();
-                //idCargo = int.Parse(ObjAdminUser.dgvpersonas[3, pos].Value.ToString());
+                idCargo = ObjAdminUser.dgvpersonas[3, pos].Value.ToString();
                 Numtelefono = ObjAdminUser.dgvpersonas[4, pos].Value.ToString();
                 NumCuenta = ObjAdminUser.dgvpersonas[5, pos].Value.ToString();
                 DUI = ObjAdminUser.dgvpersonas[6, pos].Value.ToString();

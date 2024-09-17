@@ -106,6 +106,7 @@
             this.dgvpersonas.HeaderForeColor = System.Drawing.Color.White;
             this.dgvpersonas.Location = new System.Drawing.Point(-1, 209);
             this.dgvpersonas.Name = "dgvpersonas";
+            this.dgvpersonas.ReadOnly = true;
             this.dgvpersonas.RowHeadersVisible = false;
             this.dgvpersonas.RowHeadersWidth = 51;
             this.dgvpersonas.RowTemplate.Height = 40;
