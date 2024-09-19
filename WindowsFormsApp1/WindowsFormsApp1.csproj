@@ -94,6 +94,8 @@
   <ItemGroup>
     <Compile Include="Controlador\AdministracionUsuarios\AdministracionUsuario.cs" />
     <Compile Include="Controlador\AdministracionUsuarios\CañandirUsuario.cs" />
+    <Compile Include="Controlador\AdministracionUsuarios\ControladorAU.cs" />
+    <Compile Include="Controlador\AdministracionUsuarios\dgvusuarios.cs" />
     <Compile Include="Controlador\ControladorAsignacionFunciones\ControladorTarea.cs" />
     <Compile Include="Controlador\ControladorAsignacionFunciones\ControladorTareaEmpleado.cs" />
     <Compile Include="Controlador\ControladorInicial.cs" />
@@ -119,6 +121,7 @@
     <Compile Include="Modelo\DAO\DAORecuperacionContra.cs" />
     <Compile Include="Modelo\DAO\DAOTablaTareas.cs" />
     <Compile Include="Modelo\DAO\DAOTarea.cs" />
+    <Compile Include="Modelo\DAO\DAOUsuarios.cs" />
     <Compile Include="Modelo\DAO\EmailDAO.cs" />
     <Compile Include="Modelo\DAO\Planilla\DAOAgregarEmpleado.cs" />
     <Compile Include="Modelo\DAO\Planilla\DAOplanilla.cs" />
@@ -136,17 +139,17 @@
     <Compile Include="Modelo\ModeloInicial.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Vista\Asignacion de Funciones\AsignacionFunciones.cs">
+    <Compile Include="Vista\Asignacion de Funciones\EdicionU.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Vista\Asignacion de Funciones\AsignacionFunciones.Designer.cs">
-      <DependentUpon>AsignacionFunciones.cs</DependentUpon>
+    <Compile Include="Vista\Asignacion de Funciones\EdicionU.Designer.cs">
+      <DependentUpon>EdicionU.cs</DependentUpon>
     </Compile>
-    <Compile Include="Vista\Asignacion de Funciones\Tarea.cs">
+    <Compile Include="Vista\Asignacion de Funciones\Usuarios.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Vista\Asignacion de Funciones\Tarea.Designer.cs">
-      <DependentUpon>Tarea.cs</DependentUpon>
+    <Compile Include="Vista\Asignacion de Funciones\Usuarios.Designer.cs">
+      <DependentUpon>Usuarios.cs</DependentUpon>
     </Compile>
     <Compile Include="Vista\Calendario\AgregarTarea.cs">
       <SubType>Form</SubType>
@@ -272,11 +275,11 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <EmbeddedResource Include="Vista\Asignacion de Funciones\AsignacionFunciones.resx">
-      <DependentUpon>AsignacionFunciones.cs</DependentUpon>
+    <EmbeddedResource Include="Vista\Asignacion de Funciones\EdicionU.resx">
+      <DependentUpon>EdicionU.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Vista\Asignacion de Funciones\Tarea.resx">
-      <DependentUpon>Tarea.cs</DependentUpon>
+    <EmbeddedResource Include="Vista\Asignacion de Funciones\Usuarios.resx">
+      <DependentUpon>Usuarios.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Vista\Calendario\AgregarTarea.resx">
       <DependentUpon>AgregarTarea.cs</DependentUpon>

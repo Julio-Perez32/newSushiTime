@@ -106,6 +106,7 @@
             this.dgvpersonas.HeaderForeColor = System.Drawing.Color.White;
             this.dgvpersonas.Location = new System.Drawing.Point(-1, 209);
             this.dgvpersonas.Name = "dgvpersonas";
+            this.dgvpersonas.ReadOnly = true;
             this.dgvpersonas.RowHeadersVisible = false;
             this.dgvpersonas.RowHeadersWidth = 51;
             this.dgvpersonas.RowTemplate.Height = 40;
@@ -173,7 +174,7 @@
             this.txtbuscarT.Padding = new System.Windows.Forms.Padding(2);
             this.txtbuscarT.PasswordChar = '\0';
             this.txtbuscarT.PlaceholderForeColor = System.Drawing.Color.Silver;
-            this.txtbuscarT.PlaceholderText = "Enter text";
+            this.txtbuscarT.PlaceholderText = "Buscar Usuario por nombre o DUI";
             this.txtbuscarT.ReadOnly = false;
             this.txtbuscarT.ScrollBars = System.Windows.Forms.ScrollBars.None;
             this.txtbuscarT.SelectedText = "";
@@ -187,7 +188,7 @@
             this.txtbuscarT.TextMarginBottom = 0;
             this.txtbuscarT.TextMarginLeft = 3;
             this.txtbuscarT.TextMarginTop = 1;
-            this.txtbuscarT.TextPlaceholder = "Enter text";
+            this.txtbuscarT.TextPlaceholder = "Buscar Usuario por nombre o DUI";
             this.txtbuscarT.UseSystemPasswordChar = false;
             this.txtbuscarT.WordWrap = true;
             this.txtbuscarT.TextChanged += new System.EventHandler(this.txtbuscarT_TextChanged);
