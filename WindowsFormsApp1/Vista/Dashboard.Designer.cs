@@ -140,7 +140,7 @@
             this.btnAsignacionFunciones.Name = "btnAsignacionFunciones";
             this.btnAsignacionFunciones.Size = new System.Drawing.Size(88, 46);
             this.btnAsignacionFunciones.TabIndex = 5;
-            this.btnAsignacionFunciones.Text = "Asignacion de funciones";
+            this.btnAsignacionFunciones.Text = "Usuarios";
             this.btnAsignacionFunciones.UseVisualStyleBackColor = false;
             // 
             // pictureBox4

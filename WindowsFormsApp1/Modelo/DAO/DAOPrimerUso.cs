@@ -23,8 +23,8 @@ namespace Sushi_Time_PTC_2024.Modelo.DAO
                     connection.Open();  // Abre la conexión a la base de datos
 
                     // Consulta SQL ajustada para incluir los campos adicionales requeridos
-                    string query = "INSERT INTO Usuarios (Usuario, Correo, Contraseña, UserStatus, Intentos, Fecha, Hora) " +
-                                   "VALUES (@Usuario, @Correo, @Contraseña, @UserStatus, @Intentos, @Fecha, @Hora)";
+                    string query = "INSERT INTO Usuarios (Usuario, Correo, Contraseña, UserStatus, Intentos) " +
+                                   "VALUES (@Usuario, @Correo, @Contraseña, @UserStatus, @Intentos)";
 
                     using (SqlCommand cmd = new SqlCommand(query, connection))
                     {
@@ -34,8 +34,7 @@ namespace Sushi_Time_PTC_2024.Modelo.DAO
                         cmd.Parameters.AddWithValue("@Contraseña", Contraseña);
                         cmd.Parameters.AddWithValue("@UserStatus", UserStatus);  // Campo UserStatus
                         cmd.Parameters.AddWithValue("@Intentos", 0);  // Valor predeterminado para Intentos
-                        cmd.Parameters.AddWithValue("@Fecha", Fecha);  // Campo Fecha
-                        cmd.Parameters.AddWithValue("@Hora", Hora);    // Campo Hora
+
 
                         // Ejecuta la consulta y verifica si se insertó algún registro
                         int retorno = cmd.ExecuteNonQuery();

@@ -32,11 +32,11 @@ namespace Sushi_Time_PTC_2024.Controlador.ControladorPrimerUso
                 return;
             }
 
-            if (totalUsuarios > 0)
-            {
-                MessageBox.Show("Ya existe un usuario registrado. No se puede registrar otro.", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                return;
-            }
+            //if (totalUsuarios > 0)
+            //{
+              //  MessageBox.Show("Ya existe un usuario registrado. No se puede registrar otro.", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                //return;
+            //}
 
             // Validaciones para el campo "Usuario"
             string usuario = ObjVista.txtRegistrarUsuario.Text.Trim();

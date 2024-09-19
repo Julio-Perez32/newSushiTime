@@ -26,5 +26,7 @@ namespace Sushi_Time_PTC_2024.Vista
             txtRegistrarContraseña.TabIndex = 2;
             btnCrear.TabIndex = 3;
         }
+
+
     }
 }

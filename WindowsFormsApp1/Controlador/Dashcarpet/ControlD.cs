@@ -41,7 +41,7 @@ namespace Sushi_Time_PTC_2024.Controlador.Dashcarpet
 
         private void AbrirAsignacionFunciones(object sender, EventArgs e)
         {
-            AbrirFormulario<AsignacionFunciones>();
+            AbrirFormulario<Usuarios>();
         }
 
         private void AbrirFormularioCalendario(object sender, EventArgs e)
