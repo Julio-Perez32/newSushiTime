@@ -153,8 +153,6 @@ C:\Users\Usuario\Documents\GitHub\newSushiTime\WindowsFormsApp1\obj\Debug\Window
 C:\Users\Usuario\Documents\GitHub\newSushiTime\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.SuggestedBindingRedirects.cache
 C:\Users\Usuario\Documents\GitHub\newSushiTime\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.exe.config
 C:\Users\Usuario\Documents\GitHub\newSushiTime\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Properties.Resources.resources
-C:\Users\Usuario\Documents\GitHub\newSushiTime\WindowsFormsApp1\obj\Debug\Sushi_Time_PTC_2024.Vista.Asignacion_de_Funciones.AsignacionFunciones.resources
-C:\Users\Usuario\Documents\GitHub\newSushiTime\WindowsFormsApp1\obj\Debug\Sushi_Time_PTC_2024.Vista.Asignacion_de_Funciones.Tarea.resources
 C:\Users\Usuario\Documents\GitHub\newSushiTime\WindowsFormsApp1\obj\Debug\Sushi_Time_PTC_2024.Vista.Calendario.AgregarTarea.resources
 C:\Users\Usuario\Documents\GitHub\newSushiTime\WindowsFormsApp1\obj\Debug\Sushi_Time_PTC_2024.Vista.Calendario.calendario1.resources
 C:\Users\Usuario\Documents\GitHub\newSushiTime\WindowsFormsApp1\obj\Debug\Sushi_Time_PTC_2024.Vista.Calendario.cuadrito.resources
@@ -179,3 +177,5 @@ C:\Users\Usuario\Documents\GitHub\newSushiTime\WindowsFormsApp1\obj\Debug\Window
 C:\Users\Usuario\Documents\GitHub\newSushiTime\WindowsFormsApp1\obj\Debug\WindowsF.A1EEDF9B.Up2Date
 C:\Users\Usuario\Documents\GitHub\newSushiTime\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.exe
 C:\Users\Usuario\Documents\GitHub\newSushiTime\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.pdb
+C:\Users\Usuario\Documents\GitHub\newSushiTime\WindowsFormsApp1\obj\Debug\Sushi_Time_PTC_2024.Vista.Asignacion_de_Funciones.Usuarios.resources
+C:\Users\Usuario\Documents\GitHub\newSushiTime\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Vista.Asignacion_de_Funciones.EdicionU.resources

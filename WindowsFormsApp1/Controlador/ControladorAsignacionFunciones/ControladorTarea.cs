@@ -12,7 +12,7 @@ namespace Sushi_Time_PTC_2024.Controlador.ControladorAsignacionFunciones
 {
     internal class ControladorTarea
     {
-        Tarea ObjTarea;
+        Usuarios ObjTarea;
         //public ControladorTarea(Tarea Vista)
         //{
         //    ObjTarea = Vista;
