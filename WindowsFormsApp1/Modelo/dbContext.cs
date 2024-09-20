@@ -15,9 +15,9 @@ namespace Sushi_Time_PTC_2024.Modelo
         {
             try
             {
-                string server = "SQL8020.site4now.net";
-                string database = "db_aad0d7_sushitimedb";
-                string userId = "db_aad0d7_sushitimedb_admin";
+                string server = "SQL8005.site4now.net";
+                string database = "db_aad0d7_sushitime24";
+                string userId = "db_aad0d7_sushitime24_admin";
                 string Password = "fabio123";
                 SqlConnection conexion = new SqlConnection($"Server = {server}; DataBase = {database}; User Id = {userId}; Password = {Password}");
                 conexion.Open();

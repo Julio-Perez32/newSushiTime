@@ -7,107 +7,116 @@ using Sushi_Time_PTC_2024.Modelo.DAO;
 using Sushi_Time_PTC_2024.Vista;
 using System.Windows.Forms;
 using System.Text.RegularExpressions;
+using Sushi_Time_PTC_2024.Modelo.DTO;
+using System.Drawing.Imaging;
+using System.IO;
+using System.Drawing;
+using WindowsFormsApp1.Vista.Primer_Uso;
 
 namespace Sushi_Time_PTC_2024.Controlador.ControladorPrimerUso
 {
     internal class ControladorPrimerUso
     {
         PrimerUso_ ObjVista;
+        bool realizarAccion;
+         public ControladorPrimerUso(PrimerUso_ Vista)
+         {
+            ObjVista = Vista;
+            Vista.btnGuardar.Click += new EventHandler(GuardarInformacion);
+            Vista.btnAttach.Click += new EventHandler(ColocarImagen);
+         }
 
-        public ControladorPrimerUso(PrimerUso_ vista)
+        void GuardarInformacion(object sender, EventArgs e)
         {
-            ObjVista = vista;
-            vista.btnCrear.Click += new EventHandler(RegistroPrimerUsuario);
+            try
+            {
+                //Validación para verificar que todos los campos esten llenos
+                if (!(string.IsNullOrEmpty(ObjVista.txtEmpresa.Text.Trim()) ||
+                    string.IsNullOrEmpty(ObjVista.txtDireccionEmpresa.Text.Trim()) ||
+                    string.IsNullOrEmpty(ObjVista.txtCorreoEmpresa.Text.Trim()) ||
+                    string.IsNullOrEmpty(ObjVista.txtTelefonoEmpresa.Text.Trim()) ||
+                    string.IsNullOrEmpty(ObjVista.txtPBX.Text.Trim()) ||
+                    ObjVista.picEmpresa.Image == null))
+                {
+                    DAOPrimerUso DAOGuardar = new DAOPrimerUso();
+                    DAOGuardar.Nombre = ObjVista.txtEmpresa.Text.Trim();
+                    DAOGuardar.Direccion = ObjVista.txtDireccionEmpresa.Text.Trim();
+                    DAOGuardar.CorreoElectronico = ObjVista.txtCorreoEmpresa.Text.Trim();
+                    DAOGuardar.FechaCreacion = ObjVista.dtCreacion.Value.Date;
+                    DAOGuardar.Telefono = ObjVista.txtTelefonoEmpresa.Text.Trim();
+                    DAOGuardar.Pbx = ObjVista.txtPBX.Text.Trim();
+
+                    //Guardar imagen
+                    Image imagen = ObjVista.picEmpresa.Image;
+                    byte[] imageBytes;
+                    if (imagen == null)
+                    {
+                        imageBytes = null;
+                    }
+                    else
+                    {
+                        MemoryStream ms = new MemoryStream();
+                        imagen.Save(ms, ImageFormat.Jpeg);
+                        imageBytes = ms.ToArray();
+                    }
+                    realizarAccion = ValidarCorreo();
+                    if (realizarAccion == true)
+                    {
+                        DAOGuardar.Logo = imageBytes;
+                        bool respuesta = DAOGuardar.RegistrarNegocio();
+                        if (respuesta != false)
+                        {
+                            MessageBox.Show($"Tu neogicio ha sido registrado exitosamente.", "Paso 1 completado", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                            CrearPrimerUsuario nextForm = new CrearPrimerUsuario();
+                            nextForm.Show();
+                            ObjVista.Hide();
+                        }
+                        else
+                        {
+                            MessageBox.Show($"Oops, algo salio mal, revisemos los datos e intentemos nuevamente.", "Paso 1 interrumpido", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        }
+                    }
+                }
+                else
+                {
+                    MessageBox.Show($"Todos los campos son requeridos.", "Datos faltantes", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"{ex.Message}", "Error al procesar información", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
 
-        void RegistroPrimerUsuario(object sender, EventArgs e)
+        void ColocarImagen(object sender, EventArgs e)
         {
-            DAOPrimerUso daoPrimerUso = new DAOPrimerUso();
+            OpenFileDialog ofd = new OpenFileDialog();
+            ofd.Filter = "Archivos de imagen (*.jpg;*.jpeg;*.png)|*.jpg;*.jpeg;*.png| Todos los archivos(*.*)| *.* ";
+            ofd.Title = "Seleccionar imagen";
 
-            int totalUsuarios = daoPrimerUso.VerificarRegistroUsuario();
+            if (ofd.ShowDialog() == DialogResult.OK)
+            {
+                string rutaImagen = ofd.FileName;
+                ObjVista.picEmpresa.Image = Image.FromFile(rutaImagen);
+            }
+        }
 
-            if (totalUsuarios == -1)
+        bool ValidarCorreo()
+        {
+            string email = ObjVista.txtCorreoEmpresa.Text.Trim();
+            if (!(email.Contains("@")))
             {
-                MessageBox.Show("Error al verificar los registros de usuarios.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                return;
+                MessageBox.Show("Formato de correo invalido, verifica que contiene @.", "Formato incorrecto", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return false;
             }
-
-            //if (totalUsuarios > 0)
-            //{
-              //  MessageBox.Show("Ya existe un usuario registrado. No se puede registrar otro.", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                //return;
-            //}
-
-            // Validaciones para el campo "Usuario"
-            string usuario = ObjVista.txtRegistrarUsuario.Text.Trim();
-            if (string.IsNullOrWhiteSpace(usuario))
+            string[] dominiosPermitidos = { "gmail.com", "ricaldone.edu.sv" };
+            string extension = email.Substring(email.LastIndexOf('@') + 1);
+            if (!dominiosPermitidos.Contains(extension))
             {
-                MessageBox.Show("Ingrese un Usuario.", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                return;
+                MessageBox.Show("Dominio del correo es invalido, el sistema unicamente admite dominios 'gmail.com' y 'correo institucional'.", "Formato incorrecto", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return false;
             }
-            if (usuario.Length > 200)
-            {
-                MessageBox.Show("El Usuario no puede exceder los 200 caracteres.", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                return;
-            }
-            if (!Regex.IsMatch(usuario, @"^[a-zA-Z0-9\s]+$"))
-            {
-                MessageBox.Show("El Usuario solo puede contener letras y números.", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                return;
-            }
-
-            // Validaciones para el campo "Correo"
-            string correo = ObjVista.txtIngresarCorreo.Text.Trim();
-            if (string.IsNullOrWhiteSpace(correo))
-            {
-                MessageBox.Show("Ingrese un Correo Electronico.", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                return;
-            }
-            if (correo.Length > 100)
-            {
-                MessageBox.Show("El Correo no puede exceder los 100 caracteres.", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                return;
-            }
-            if (!correo.Contains("@"))
-            {
-                MessageBox.Show("El Correo deber contener '@'.", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                return;
-            }
-
-            // Validaciones para el campo "Contraseña"
-            string contraseña = ObjVista.txtRegistrarContraseña.Text.Trim();
-            if (string.IsNullOrWhiteSpace(contraseña))
-            {
-                MessageBox.Show("Ingrese una contraseña.", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                return;
-            }
-            if (contraseña.Length > 100)
-            {
-                MessageBox.Show("La Contraseña no puede exceder el maximo de 100 caracteres.", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                return;
-            }
-
-            // Si todas las validaciones son correctas, se registra el usuario.
-            daoPrimerUso.Usuario = usuario;
-            daoPrimerUso.Contraseña = contraseña;
-            daoPrimerUso.Correo = correo;
-
-            bool registroExitoso = daoPrimerUso.RegistrarUsuario();
-
-            if (registroExitoso)
-            {
-                MessageBox.Show("Usuario registrado con éxito.", "Éxito", MessageBoxButtons.OK, MessageBoxIcon.Information);
-
-                // Aquí abrimos la nueva vista de Login
-                Logincs vistaLogin = new Logincs();
-                vistaLogin.Show();
-
-                ObjVista.Hide();
-            }
-            else
-            {
-                MessageBox.Show("Error al registrar el usuario. Intenta de nuevo.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
+            return true;
         }
     }
 }

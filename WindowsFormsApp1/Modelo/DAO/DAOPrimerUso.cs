@@ -6,83 +6,68 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Data.SqlClient;
 using System.Windows.Forms;
-
-
 namespace Sushi_Time_PTC_2024.Modelo.DAO
 {
     internal class DAOPrimerUso : DTOPrimerUso
     {
-        // Método para registrar un nuevo usuario
-        public bool RegistrarUsuario()
+       readonly SqlCommand command = new SqlCommand();
+
+        public bool RegistrarNegocio()
         {
             try
             {
-                // Utilizando el patrón using para manejar la conexión y asegurar que se cierre automáticamente
-                using (SqlConnection connection = getConnection("SQL8020.site4now.net", "db_aad0d7_sushitimedb", "db_aad0d7_sushitimedb_admin", "fabio123"))
-                {
-                    connection.Open();  // Abre la conexión a la base de datos
-
-                    // Consulta SQL ajustada para incluir los campos adicionales requeridos
-                    string query = "INSERT INTO Usuarios (Usuario, Correo, Contraseña, UserStatus, Intentos) " +
-                                   "VALUES (@Usuario, @Correo, @Contraseña, @UserStatus, @Intentos)";
-
-                    using (SqlCommand cmd = new SqlCommand(query, connection))
-                    {
-                        // Asignación de parámetros usando las propiedades de la clase DTOPrimerUso
-                        cmd.Parameters.AddWithValue("@Usuario", Usuario);
-                        cmd.Parameters.AddWithValue("@Correo", Correo);
-                        cmd.Parameters.AddWithValue("@Contraseña", Contraseña);
-                        cmd.Parameters.AddWithValue("@UserStatus", UserStatus);  // Campo UserStatus
-                        cmd.Parameters.AddWithValue("@Intentos", 0);  // Valor predeterminado para Intentos
-
-
-                        // Ejecuta la consulta y verifica si se insertó algún registro
-                        int retorno = cmd.ExecuteNonQuery();
-                        return retorno > 0;
-                    }
-                }
+                command.Connection = getConnection();
+                string query = "INSERT INTO Negocio VALUES (@param1, @param2, @param3, @param4, @param5, @param6, @param7)";
+                SqlCommand cmd = new SqlCommand(query, command.Connection);
+                cmd.Parameters.AddWithValue("param1", Nombre);
+                cmd.Parameters.AddWithValue("param2", Direccion);
+                cmd.Parameters.AddWithValue("param3", CorreoElectronico);
+                cmd.Parameters.AddWithValue("param4", FechaCreacion);
+                cmd.Parameters.AddWithValue("param5", Telefono);
+                cmd.Parameters.AddWithValue("param6", Pbx);
+                cmd.Parameters.AddWithValue("param7", Logo);
+                int retorno = cmd.ExecuteNonQuery();
+                return retorno > 0;
             }
             catch (SqlException ex)
             {
-                MessageBox.Show($"Excepción SQL: {ex.Message}", "Error al procesar información", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show($"Excepcion SQL: {ex.Message}", "Error al procesar información", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return false;
             }
             catch (Exception ex)
             {
-                MessageBox.Show($"Excepción: {ex.Message}", "Error al procesar información", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show($"Excepcion SQL: {ex.Message}", "Error al procesar información", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return false;
+            }
+            finally
+            {
+                command.Connection.Close();
             }
         }
 
-        // Método para verificar el número de usuarios registrados
-        public int VerificarRegistroUsuario()
+        public int VerificarRegistroEmpresa()
         {
             try
             {
-                // Utilizando el patrón using para asegurar que la conexión se cierre automáticamente
-                using (SqlConnection connection = getConnection("SQL8020.site4now.net", "db_aad0d7_sushitimedb", "db_aad0d7_sushitimedb_admin", "fabio123"))
-                {
-                    connection.Open();
-
-                    string query = "SELECT COUNT(*) FROM Usuarios";
-
-                    using (SqlCommand cmd = new SqlCommand(query, connection))
-                    {
-                        // Ejecuta la consulta y devuelve el número de registros
-                        int totalUsuario = (int)cmd.ExecuteScalar();
-                        return totalUsuario;
-                    }
-                }
+                command.Connection = getConnection();
+                string query = "SELECT COUNT(*) FROM Negocio";
+                SqlCommand cmd = new SqlCommand(query, command.Connection);
+                int totalEmpresa = (int)cmd.ExecuteScalar();
+                return totalEmpresa;
             }
             catch (SqlException sqlex)
             {
-                MessageBox.Show($"Excepción SQL: {sqlex.Message}", "Error al procesar información", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show(sqlex.Message);
                 return -1;
             }
             catch (Exception ex)
             {
-                MessageBox.Show($"Excepción: {ex.Message}", "Error al procesar información", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show(ex.Message);
                 return -1;
+            }
+            finally
+            {
+                command.Connection.Close();
             }
         }
     }
