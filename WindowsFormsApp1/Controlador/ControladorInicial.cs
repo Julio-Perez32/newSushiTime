@@ -4,9 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Sushi_Time_PTC_2024.Modelo.DAO;
+using WindowsFormsApp1.Modelo.DAO;
 using Sushi_Time_PTC_2024.Vista;
+using WindowsFormsApp1.Vista.Primer_Uso;
 using System.Windows.Forms;
-using Sushi_Time_PTC_2024.Vista.Olvidar_contraseña;
 
 
 namespace Sushi_Time_PTC_2024.Controlador
@@ -17,10 +18,15 @@ namespace Sushi_Time_PTC_2024.Controlador
         {
             DAOLogin Objlogin = new DAOLogin();
             DAOPrimerUso Objfirst = new DAOPrimerUso();
+            int primerEmpresa = Objfirst.VerificarRegistroEmpresa();
             int primerUsuario = Objlogin.ValidarPrimerUsoSistema();
-            if (primerUsuario == 0)
+            if (primerEmpresa == 0)
             {
                 Application.Run(new PrimerUso_());
+            }
+            else if(primerUsuario == 0)
+            {
+                Application.Run(new CrearPrimerUsuario());
             }
             else
             {

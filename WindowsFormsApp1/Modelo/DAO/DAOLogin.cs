@@ -22,14 +22,15 @@ namespace Sushi_Time_PTC_2024.Modelo.DAO
 
             try
             {
-                connection = getConnection();
+                connection = dbContext.getConnection();
+                string hashedPassword = new Encriptado().ComputeSha256Hash(Password); // Encripta la contraseña directamente
+
                 cmd = new SqlCommand("Login", connection);
                 cmd.CommandType = CommandType.StoredProcedure;
 
                 cmd.Parameters.Add(new SqlParameter("@Username", SqlDbType.NVarChar, 50) { Value = Username });
-                cmd.Parameters.Add(new SqlParameter("@Password", SqlDbType.NVarChar, 65) { Value = Password });
+                cmd.Parameters.Add(new SqlParameter("@Password", SqlDbType.NVarChar, 65) { Value = hashedPassword }); // Usa la contraseña encriptada
 
-                //connection.Open();
                 rd = cmd.ExecuteReader();
 
                 if (rd.Read())
@@ -72,14 +73,9 @@ namespace Sushi_Time_PTC_2024.Modelo.DAO
             SqlConnection connection = null;
             try
             {
-                // Obtener la conexión
-                connection = getConnection();
+                connection = dbContext.getConnection();
                 string query = "SELECT COUNT(*) FROM Usuarios";
                 SqlCommand cmd = new SqlCommand(query, connection);
-
-                //connection.Open();
-
-                // Ejecutar el comando y obtener el resultado
                 int totalUsuarios = (int)cmd.ExecuteScalar();
                 return totalUsuarios;
             }
@@ -95,7 +91,6 @@ namespace Sushi_Time_PTC_2024.Modelo.DAO
             }
             finally
             {
-                // Cerrar la conexión
                 if (connection != null && connection.State == ConnectionState.Open)
                 {
                     connection.Close();
