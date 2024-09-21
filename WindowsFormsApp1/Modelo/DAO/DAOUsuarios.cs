@@ -11,7 +11,7 @@ using static TheArtOfDev.HtmlRenderer.Adapters.RGraphicsPath;
 
 namespace WindowsFormsApp1.Modelo.DAO
 {
-    internal class DAOUsuarios : DTOPrimerUso
+   /* internal class DAOUsuarios : DTOPrimerUso
     {
         readonly SqlCommand Command = new SqlCommand();
 
@@ -132,5 +132,5 @@ namespace WindowsFormsApp1.Modelo.DAO
                 getConnection().Close();
             }
         }
-    }
+    }*/
 }

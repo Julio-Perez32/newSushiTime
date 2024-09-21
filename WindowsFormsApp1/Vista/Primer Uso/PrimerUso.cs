@@ -18,15 +18,5 @@ namespace Sushi_Time_PTC_2024.Vista
             InitializeComponent();
             ControladorPrimerUso control = new ControladorPrimerUso(this);
         }
-
-        private void ConfigurarTabIndex()
-        {
-            txtRegistrarUsuario.TabIndex = 0;
-            txtIngresarCorreo.TabIndex = 1;
-            txtRegistrarContraseña.TabIndex = 2;
-            btnCrear.TabIndex = 3;
-        }
-
-
     }
 }

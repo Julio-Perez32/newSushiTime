@@ -94,13 +94,10 @@
   <ItemGroup>
     <Compile Include="Controlador\AdministracionUsuarios\AdministracionUsuario.cs" />
     <Compile Include="Controlador\AdministracionUsuarios\CañandirUsuario.cs" />
-    <Compile Include="Controlador\AdministracionUsuarios\ControladorAU.cs" />
-    <Compile Include="Controlador\AdministracionUsuarios\dgvusuarios.cs" />
-    <Compile Include="Controlador\ControladorAsignacionFunciones\ControladorTarea.cs" />
-    <Compile Include="Controlador\ControladorAsignacionFunciones\ControladorTareaEmpleado.cs" />
     <Compile Include="Controlador\ControladorInicial.cs" />
     <Compile Include="Controlador\ControladorLogin\ControladorLogin.cs" />
     <Compile Include="Controlador\ControladorPrimerUso\ControladorPrimerUso.cs" />
+    <Compile Include="Controlador\ControladorPrimerUso\ControladorPrimerUsuario.cs" />
     <Compile Include="Controlador\ControladorSanciones\EmailController.cs" />
     <Compile Include="Controlador\controllercalendario\ControllerAgregarTarea.cs" />
     <Compile Include="Controlador\controllercalendario\ControllerCalendario.cs" />
@@ -118,39 +115,25 @@
     <Compile Include="Modelo\DAO\DAOAgregarTarea.cs" />
     <Compile Include="Modelo\DAO\DAOLogin.cs" />
     <Compile Include="Modelo\DAO\DAOPrimerUso.cs" />
+    <Compile Include="Modelo\DAO\DAOPrimerUsuario.cs" />
     <Compile Include="Modelo\DAO\DAORecuperacionContra.cs" />
     <Compile Include="Modelo\DAO\DAOTablaTareas.cs" />
     <Compile Include="Modelo\DAO\DAOTarea.cs" />
     <Compile Include="Modelo\DAO\DAOUsuarios.cs" />
     <Compile Include="Modelo\DAO\EmailDAO.cs" />
-    <Compile Include="Modelo\DAO\Planilla\DAOAgregarEmpleado.cs" />
-    <Compile Include="Modelo\DAO\Planilla\DAOplanilla.cs" />
     <Compile Include="Modelo\dbContext.cs" />
     <Compile Include="Modelo\DTO\DTOadminU.cs" />
     <Compile Include="Modelo\DTO\DTOAgregarTarea.cs" />
     <Compile Include="Modelo\DTO\DTOlogin.cs" />
     <Compile Include="Modelo\DTO\DTOPrimerUso.cs" />
+    <Compile Include="Modelo\DTO\DTOPrimerUsuario.cs" />
     <Compile Include="Modelo\DTO\DTORecuperacionContra.cs" />
     <Compile Include="Modelo\DTO\DTOTablaTareas.cs" />
     <Compile Include="Modelo\DTO\DTOTarea.cs" />
     <Compile Include="Modelo\DTO\EmailDTO.cs" />
-    <Compile Include="Modelo\DTO\Planilla\DTOAgregarEmpleado.cs" />
-    <Compile Include="Modelo\DTO\Planilla\DTOPlanilla.cs" />
     <Compile Include="Modelo\ModeloInicial.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Vista\Asignacion de Funciones\EdicionU.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Vista\Asignacion de Funciones\EdicionU.Designer.cs">
-      <DependentUpon>EdicionU.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Vista\Asignacion de Funciones\Usuarios.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Vista\Asignacion de Funciones\Usuarios.Designer.cs">
-      <DependentUpon>Usuarios.cs</DependentUpon>
-    </Compile>
     <Compile Include="Vista\Calendario\AgregarTarea.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -241,6 +224,12 @@
     <Compile Include="Vista\Planillas\VerPlanilla.Designer.cs">
       <DependentUpon>VerPlanilla.cs</DependentUpon>
     </Compile>
+    <Compile Include="Vista\Primer Uso\CrearPrimerUsuario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vista\Primer Uso\CrearPrimerUsuario.Designer.cs">
+      <DependentUpon>CrearPrimerUsuario.cs</DependentUpon>
+    </Compile>
     <Compile Include="Vista\Primer Uso\PrimerUso.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -253,18 +242,6 @@
     <Compile Include="Vista\Sanciones y Observaciones\Sanciones.Designer.cs">
       <DependentUpon>Sanciones.cs</DependentUpon>
     </Compile>
-    <Compile Include="Vista\Ver Empleados\AgrergarEmpleado.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Vista\Ver Empleados\AgrergarEmpleado.Designer.cs">
-      <DependentUpon>AgrergarEmpleado.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Vista\Ver Empleados\Planilla1.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Vista\Ver Empleados\Planilla1.Designer.cs">
-      <DependentUpon>Planilla1.cs</DependentUpon>
-    </Compile>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -275,12 +252,6 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <EmbeddedResource Include="Vista\Asignacion de Funciones\EdicionU.resx">
-      <DependentUpon>EdicionU.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Vista\Asignacion de Funciones\Usuarios.resx">
-      <DependentUpon>Usuarios.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Vista\Calendario\AgregarTarea.resx">
       <DependentUpon>AgregarTarea.cs</DependentUpon>
     </EmbeddedResource>
@@ -326,17 +297,14 @@
     <EmbeddedResource Include="Vista\Planillas\VerPlanilla.resx">
       <DependentUpon>VerPlanilla.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Vista\Primer Uso\CrearPrimerUsuario.resx">
+      <DependentUpon>CrearPrimerUsuario.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Vista\Primer Uso\PrimerUso.resx">
       <DependentUpon>PrimerUso.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Vista\Sanciones y Observaciones\Sanciones.resx">
       <DependentUpon>Sanciones.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Vista\Ver Empleados\AgrergarEmpleado.resx">
-      <DependentUpon>AgrergarEmpleado.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Vista\Ver Empleados\Planilla1.resx">
-      <DependentUpon>Planilla1.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">

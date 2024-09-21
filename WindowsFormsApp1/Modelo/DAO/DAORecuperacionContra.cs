@@ -23,7 +23,7 @@ namespace Sushi_Time_PTC_2024.Modelo.DAO
             try
             {
                 connection = getConnection();
-                cmd = new SqlCommand("LoginPPPP", connection);
+                cmd = new SqlCommand("Login", connection);
                 cmd.CommandType = CommandType.StoredProcedure;
 
                 cmd.Parameters.AddWithValue("@Passsword", PasssWord);
