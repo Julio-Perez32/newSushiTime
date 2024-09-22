@@ -11,6 +11,7 @@ using Sushi_Time_PTC_2024.Controlador.Helpers;
 using Sushi_Time_PTC_2024.Vista.Administración_de_Empleados;
 using Sushi_Time_PTC_2024.Vista.Calendario;
 using WindowsFormsApp1.Vista.Sanciones_y_Observaciones;
+using WindowsFormsApp1.Vista.Usuarios;
 
 namespace Sushi_Time_PTC_2024.Controlador.Dashcarpet
 {
@@ -27,7 +28,7 @@ namespace Sushi_Time_PTC_2024.Controlador.Dashcarpet
 
             // Asignar eventos a los botones del dashboard
             ObjDashboard.btnadminempleados.Click += new EventHandler(AbrirFormularioAdminUsuarios);
-            /*ObjDashboard.btnAsignacionFunciones.Click += new EventHandler(AbrirAsignacionFunciones);*/
+            ObjDashboard.btnAsignacionFunciones.Click += new EventHandler(AbrirAsignacionFunciones);
             ObjDashboard.btnCalendario.Click += new EventHandler(AbrirFormularioCalendario);
             ObjDashboard.btnSanciones.Click += new EventHandler(AbrirFormularioSanciones);
             ObjDashboard.btnCerrarSesion.Click += new EventHandler(CerrarSesion);
@@ -38,10 +39,10 @@ namespace Sushi_Time_PTC_2024.Controlador.Dashcarpet
             AbrirFormulario<VerPlanilla>();
         }
 
-        /*private void AbrirAsignacionFunciones(object sender, EventArgs e)
+        private void AbrirAsignacionFunciones(object sender, EventArgs e)
         {
-            AbrirFormulario<Usuarios>();
-        }*/
+            AbrirFormulario<dgvususarios>();
+        }
 
         private void AbrirFormularioCalendario(object sender, EventArgs e)
         {

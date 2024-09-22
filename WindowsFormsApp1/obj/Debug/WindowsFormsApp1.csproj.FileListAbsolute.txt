@@ -166,13 +166,12 @@ C:\Users\Usuario\Documents\GitHub\newSushiTime\WindowsFormsApp1\obj\Debug\Sushi_
 C:\Users\Usuario\Documents\GitHub\newSushiTime\WindowsFormsApp1\obj\Debug\Sushi_Time_PTC_2024.Vista.Planillas.VerPlanilla.resources
 C:\Users\Usuario\Documents\GitHub\newSushiTime\WindowsFormsApp1\obj\Debug\Sushi_Time_PTC_2024.Vista.PrimerUso_.resources
 C:\Users\Usuario\Documents\GitHub\newSushiTime\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Vista.Sanciones_y_Observaciones.Sanciones.resources
-C:\Users\Usuario\Documents\GitHub\newSushiTime\WindowsFormsApp1\obj\Debug\Sushi_Time_PTC_2024.Vista.Ver_Empleados.AgrergarEmpleado.resources
-C:\Users\Usuario\Documents\GitHub\newSushiTime\WindowsFormsApp1\obj\Debug\Sushi_Time_PTC_2024.Vista.Ver_Empleados.Planilla1.resources
 C:\Users\Usuario\Documents\GitHub\newSushiTime\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.GenerateResource.cache
 C:\Users\Usuario\Documents\GitHub\newSushiTime\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.CoreCompileInputs.cache
 C:\Users\Usuario\Documents\GitHub\newSushiTime\WindowsFormsApp1\obj\Debug\WindowsF.A1EEDF9B.Up2Date
 C:\Users\Usuario\Documents\GitHub\newSushiTime\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.exe
 C:\Users\Usuario\Documents\GitHub\newSushiTime\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.pdb
-C:\Users\Usuario\Documents\GitHub\newSushiTime\WindowsFormsApp1\obj\Debug\Sushi_Time_PTC_2024.Vista.Asignacion_de_Funciones.Usuarios.resources
-C:\Users\Usuario\Documents\GitHub\newSushiTime\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Vista.Asignacion_de_Funciones.EdicionU.resources
 C:\Users\USER\Documents\GitHub\2.0\newSushiTime\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Vista.Primer_Uso.CrearPrimerUsuario.resources
+C:\Users\Usuario\Documents\GitHub\newSushiTime\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Vista.Primer_Uso.CrearPrimerUsuario.resources
+C:\Users\Usuario\Documents\GitHub\newSushiTime\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Vista.Usuarios.dgvususarios.resources
+C:\Users\Usuario\Documents\GitHub\newSushiTime\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Vista.Usuarios.editarUsuarios.resources

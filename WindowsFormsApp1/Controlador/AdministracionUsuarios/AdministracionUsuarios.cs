@@ -101,6 +101,11 @@ namespace Sushi_Time_PTC_2024.Controlador.AdministracionUsuarios
             {
                 column.ReadOnly = true;
             }
+            ObjAdminUser.dgvpersonas.DataSource = ds.Tables["VistaEmpleados"];
+            ObjAdminUser.dgvpersonas.Columns[5].Visible = false;
+            ObjAdminUser.dgvpersonas.Columns[9].Visible = false;
+            ObjAdminUser.dgvpersonas.Columns[10].Visible = false;
+            ObjAdminUser.dgvpersonas.Columns[12].Visible = false;
         }
 
         private void NewUser(object sender, EventArgs e)
@@ -128,7 +133,7 @@ namespace Sushi_Time_PTC_2024.Controlador.AdministracionUsuarios
                 string cargoNombre = ObjAdminUser.dgvpersonas[3, pos].Value?.ToString();
 
 
-             
+
 
                 // Continuar con el resto del código para obtener otros datos y actualizar el usuario
                 // ...
@@ -194,4 +199,3 @@ namespace Sushi_Time_PTC_2024.Controlador.AdministracionUsuarios
         }
     }
 }
-    
