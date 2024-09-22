@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CrearPrimerUsuario));
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges borderEdges2 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges borderEdges1 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges();
             this.GrpUser = new System.Windows.Forms.GroupBox();
             this.comboRol = new System.Windows.Forms.ComboBox();
             this.txtUsuario = new System.Windows.Forms.TextBox();
@@ -117,7 +117,7 @@
             this.txtApellido.Margin = new System.Windows.Forms.Padding(5);
             this.txtApellido.Name = "txtApellido";
             this.txtApellido.Size = new System.Drawing.Size(250, 20);
-            this.txtApellido.TabIndex = 38;
+            this.txtApellido.TabIndex = 1;
             // 
             // txtDireccion
             // 
@@ -126,7 +126,7 @@
             this.txtDireccion.Multiline = true;
             this.txtDireccion.Name = "txtDireccion";
             this.txtDireccion.Size = new System.Drawing.Size(506, 47);
-            this.txtDireccion.TabIndex = 41;
+            this.txtDireccion.TabIndex = 4;
             // 
             // mskDocumento
             // 
@@ -135,7 +135,7 @@
             this.mskDocumento.Mask = "00000000-0";
             this.mskDocumento.Name = "mskDocumento";
             this.mskDocumento.Size = new System.Drawing.Size(250, 20);
-            this.mskDocumento.TabIndex = 40;
+            this.mskDocumento.TabIndex = 3;
             // 
             // dtFecha
             // 
@@ -146,7 +146,7 @@
             this.dtFecha.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.dtFecha.Name = "dtFecha";
             this.dtFecha.Size = new System.Drawing.Size(250, 22);
-            this.dtFecha.TabIndex = 39;
+            this.dtFecha.TabIndex = 2;
             // 
             // txtTelefono
             // 
@@ -154,7 +154,7 @@
             this.txtTelefono.Margin = new System.Windows.Forms.Padding(5);
             this.txtTelefono.Name = "txtTelefono";
             this.txtTelefono.Size = new System.Drawing.Size(248, 20);
-            this.txtTelefono.TabIndex = 43;
+            this.txtTelefono.TabIndex = 6;
             // 
             // txtEmail
             // 
@@ -162,7 +162,8 @@
             this.txtEmail.Margin = new System.Windows.Forms.Padding(5);
             this.txtEmail.Name = "txtEmail";
             this.txtEmail.Size = new System.Drawing.Size(250, 20);
-            this.txtEmail.TabIndex = 42;
+            this.txtEmail.TabIndex = 5;
+            this.txtEmail.TextChanged += new System.EventHandler(this.txtEmail_TextChanged);
             // 
             // label4
             // 
@@ -237,7 +238,7 @@
             this.txtNombre.Margin = new System.Windows.Forms.Padding(5);
             this.txtNombre.Name = "txtNombre";
             this.txtNombre.Size = new System.Drawing.Size(250, 20);
-            this.txtNombre.TabIndex = 35;
+            this.txtNombre.TabIndex = 0;
             // 
             // label1
             // 
@@ -269,11 +270,11 @@
             this.btnGuardar.ColorContrastOnClick = 45;
             this.btnGuardar.ColorContrastOnHover = 45;
             this.btnGuardar.Cursor = System.Windows.Forms.Cursors.Default;
-            borderEdges2.BottomLeft = true;
-            borderEdges2.BottomRight = true;
-            borderEdges2.TopLeft = true;
-            borderEdges2.TopRight = true;
-            this.btnGuardar.CustomizableEdges = borderEdges2;
+            borderEdges1.BottomLeft = true;
+            borderEdges1.BottomRight = true;
+            borderEdges1.TopLeft = true;
+            borderEdges1.TopRight = true;
+            this.btnGuardar.CustomizableEdges = borderEdges1;
             this.btnGuardar.DialogResult = System.Windows.Forms.DialogResult.None;
             this.btnGuardar.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnGuardar.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));

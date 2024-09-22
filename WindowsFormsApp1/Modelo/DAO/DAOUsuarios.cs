@@ -7,11 +7,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using WindowsFormsApp1.Modelo.DTO;
 using static TheArtOfDev.HtmlRenderer.Adapters.RGraphicsPath;
+using Sushi_Time_PTC_2024.Modelo;
 
 namespace WindowsFormsApp1.Modelo.DAO
 {
-   /* internal class DAOUsuarios : DTOPrimerUso
+    internal class DAOUsuarios : DTOPrimerUsuario
     {
         readonly SqlCommand Command = new SqlCommand();
 
@@ -20,24 +22,45 @@ namespace WindowsFormsApp1.Modelo.DAO
         {
             try
             {
-                Command.Connection = getConnection();
-                int respuesta;
-                string query = "INSERT INTO Empleados (idUsuario, Correo, Contraseña, Usuario) VALUES (@param1, @param2, @param3, @param4)";
+                Command.Connection = dbContext.getConnection();
+                string query = "INSERT INTO Usuarios (Usuario, Contraseña, UserStatus, Intentos, idRol, Nombre, Apellido, Dui, Direccion, Correo, Telefono, FechaCreacion) " +
+                               "VALUES (@username, @password, @userStatus, @userAttempts, @idRol, @nombre, @apellido, @dui, @direccion, @correo, @telefono, @fechaCreacion)";
+
                 SqlCommand cmd = new SqlCommand(query, Command.Connection);
-                cmd.Parameters.AddWithValue("param1", IdUsuario);
-                cmd.Parameters.AddWithValue("param2", Correo);
-                cmd.Parameters.AddWithValue("param3", Contraseña);
-                cmd.Parameters.AddWithValue("param4", Usuario);
-                respuesta = cmd.ExecuteNonQuery();
-                return respuesta;
+                cmd.Parameters.AddWithValue("@username", Usuario);
+                cmd.Parameters.AddWithValue("@password", Contraseña);
+                cmd.Parameters.AddWithValue("@userStatus", UserStatus);
+                cmd.Parameters.AddWithValue("@userAttempts", Intentos);
+                cmd.Parameters.AddWithValue("@idRol", Rol); // Asegúrate de que este valor sea el id del rol
+                cmd.Parameters.AddWithValue("@nombre", Nombre);
+                cmd.Parameters.AddWithValue("@apellido", Apellido);
+                cmd.Parameters.AddWithValue("@dui", Dui);
+                cmd.Parameters.AddWithValue("@direccion", Direccion);
+                cmd.Parameters.AddWithValue("@correo", Correo);
+                cmd.Parameters.AddWithValue("@telefono", Telefono);
+                cmd.Parameters.AddWithValue("@fechaCreacion", FechaCreacion);
+
+                int respuesta = cmd.ExecuteNonQuery();
+                return respuesta > 0 ? 1 : 0; // Retorna 1 si se insertó correctamente
+            }
+            catch (SqlException ex)
+            {
+                MessageBox.Show($"Error SQL: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return -1; // Indica un error
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Error: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return -1; // Indica un error
             }
             finally
             {
-                Command.Connection.Close();
+                if (Command.Connection != null && Command.Connection.State == ConnectionState.Open)
+                {
+                    Command.Connection.Close(); // Cerrar conexión
+                }
             }
-
-            
-            }
+        }
         public int ActualizarUsuario()
         {
             try
@@ -48,14 +71,32 @@ namespace WindowsFormsApp1.Modelo.DAO
                                 "Correo = @param1, " +
                                 "Contraseña = @param2, " +
                                 "Usuario = @param3, " +
-                                "WHERE idEmpleado = @param4";
+                                "UserStatus = @param4, " +
+                                "Intentos = @param5, " +
+                                "idRol = @param6, " +
+                                "Nombre = @param7, " +
+                                "Apellido = @param8, " +
+                                "Dui = @param9, " +
+                                "Direccion = @param10, " +
+                                "Correo = @param11, " +
+                                "Telefono = @param12, " +
+                                "WHERE idUsuario = @param13";
 
                 // Crear comando y asignar valores a los parámetros
                 SqlCommand cmd = new SqlCommand(query, Command.Connection);
                 cmd.Parameters.AddWithValue("param1", Correo);
                 cmd.Parameters.AddWithValue("param2", Contraseña);
                 cmd.Parameters.AddWithValue("param3", Usuario);
-                cmd.Parameters.AddWithValue("param4", IdUsuario);
+                cmd.Parameters.AddWithValue("param4", UserStatus);
+                cmd.Parameters.AddWithValue("param5", Intentos);
+                cmd.Parameters.AddWithValue("param6", Rol);
+                cmd.Parameters.AddWithValue("param7", Nombre);
+                cmd.Parameters.AddWithValue("param8", Apellido);
+                cmd.Parameters.AddWithValue("param9", Dui);
+                cmd.Parameters.AddWithValue("param10", Direccion);
+                cmd.Parameters.AddWithValue("param11", Correo);
+                cmd.Parameters.AddWithValue("param12", Telefono);
+                cmd.Parameters.AddWithValue("param13", IdUsuario);
 
                 // Ejecutar la consulta
                 int respuesta = cmd.ExecuteNonQuery();
@@ -132,5 +173,5 @@ namespace WindowsFormsApp1.Modelo.DAO
                 getConnection().Close();
             }
         }
-    }*/
+    }
 }
