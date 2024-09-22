@@ -9,15 +9,21 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using WindowsFormsApp1.Controlador.AdministracionUsuarios;
 
 namespace WindowsFormsApp1.Vista.Primer_Uso
 {
     public partial class CrearPrimerUsuario : Form
     {
-        public CrearPrimerUsuario()
+        public CrearPrimerUsuario(int accion)
         {
             InitializeComponent();
             ControladorPrimerUsuario control = new ControladorPrimerUsuario(this);
+        }
+
+        private void txtEmail_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

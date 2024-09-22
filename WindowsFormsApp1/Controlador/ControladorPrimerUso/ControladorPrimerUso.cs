@@ -67,7 +67,7 @@ namespace Sushi_Time_PTC_2024.Controlador.ControladorPrimerUso
                         if (respuesta != false)
                         {
                             MessageBox.Show($"Tu neogicio ha sido registrado exitosamente.", "Paso 1 completado", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                            CrearPrimerUsuario nextForm = new CrearPrimerUsuario();
+                            CrearPrimerUsuario nextForm = new CrearPrimerUsuario(1);
                             nextForm.Show();
                             ObjVista.Hide();
                         }
