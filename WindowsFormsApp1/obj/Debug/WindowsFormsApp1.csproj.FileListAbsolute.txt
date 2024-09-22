@@ -175,3 +175,5 @@ C:\Users\USER\Documents\GitHub\2.0\newSushiTime\WindowsFormsApp1\obj\Debug\Windo
 C:\Users\Usuario\Documents\GitHub\newSushiTime\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Vista.Primer_Uso.CrearPrimerUsuario.resources
 C:\Users\Usuario\Documents\GitHub\newSushiTime\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Vista.Usuarios.dgvususarios.resources
 C:\Users\Usuario\Documents\GitHub\newSushiTime\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Vista.Usuarios.editarUsuarios.resources
+C:\Users\USER\Documents\GitHub\2.0\newSushiTime\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Vista.Usuarios.dgvususarios.resources
+C:\Users\USER\Documents\GitHub\2.0\newSushiTime\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Vista.Usuarios.editarUsuarios.resources
