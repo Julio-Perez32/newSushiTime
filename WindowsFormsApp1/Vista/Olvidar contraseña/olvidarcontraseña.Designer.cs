@@ -274,6 +274,7 @@
             this.Controls.Add(this.bunifuLabel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "olvidarcontraseña";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "olvidarcontraseña";
             ((System.ComponentModel.ISupportInitialize)(this.pbsalir)).EndInit();
             this.ResumeLayout(false);
