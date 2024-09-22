@@ -26,7 +26,7 @@ namespace Sushi_Time_PTC_2024.Controlador
             }
             else if(primerUsuario == 0)
             {
-                Application.Run(new CrearPrimerUsuario());
+                Application.Run(new CrearPrimerUsuario(1));
             }
             else
             {

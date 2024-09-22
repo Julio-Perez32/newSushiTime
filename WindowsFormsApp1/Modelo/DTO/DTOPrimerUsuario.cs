@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Sushi_Time_PTC_2024.Modelo;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -6,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace WindowsFormsApp1.Modelo.DTO
 {
-    internal class DTOPrimerUsuario
+    internal class DTOPrimerUsuario : dbContext
     {
         private int idUsuario;
         private int intentos = 0;
@@ -14,7 +15,7 @@ namespace WindowsFormsApp1.Modelo.DTO
         private string contraseña;
         private string usuario;
         private string userStatus = "Activo";
-        private int rol;
+        private string rol;
         private DateTime fechaCreacion;
         private string nombre;
         private string apellido;
@@ -28,7 +29,7 @@ namespace WindowsFormsApp1.Modelo.DTO
         public string Contraseña { get => contraseña; set => contraseña = value; }
         public string Usuario { get => usuario; set => usuario = value; }
         public string UserStatus { get => userStatus; set => userStatus = value; }
-        public int Rol { get => rol; set => rol = value; }
+        public string Rol { get => rol; set => rol = value; }
         public DateTime FechaCreacion { get => fechaCreacion; set => fechaCreacion = value; }
         public string Nombre { get => nombre; set => nombre = value; }
         public string Apellido { get => apellido; set => apellido = value; }
