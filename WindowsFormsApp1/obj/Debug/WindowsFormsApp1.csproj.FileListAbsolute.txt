@@ -238,4 +238,3 @@ C:\Users\Usuario\OneDrive\Documentos\PTCSushiTime\newSushiTime\WindowsFormsApp1\
 C:\Users\Usuario\OneDrive\Documentos\PTCSushiTime\newSushiTime\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.pdb
 C:\Users\Usuario\OneDrive\Documentos\PTCSushiTime\newSushiTime\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Vista.Olvidar_contraseña.RecuperacionContraseña.resources
 C:\Users\Usuario\Documents\GitHub\newSushiTime\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Vista.Olvidar_contraseña.RecuperacionContraseña.resources
-C:\Users\Usuario\Documents\GitHub\newSushiTime\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Vista.Calendario.Arreglandovista.resources

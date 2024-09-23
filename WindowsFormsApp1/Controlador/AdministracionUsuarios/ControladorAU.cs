@@ -28,15 +28,24 @@ namespace WindowsFormsApp1.Controlador.AdministracionUsuarios
             objed.Load += new EventHandler(InitialCharge);
             objed.btnCrear.Click += new EventHandler(NewRegister);
             objed.btnCancelar.Click += new EventHandler(minimizar);
+            objed.txtNombre.KeyPress += new KeyPressEventHandler(TxtDescripcionTarea_KeyPress);
+            objed.txtApellido.KeyPress += new KeyPressEventHandler(TxtDescripcionTarea_KeyPress);
+            objed.txtUserStatus.KeyPress += new KeyPressEventHandler(TxtDescripcionTarea_KeyPress);
+            objed.txtTelefono.KeyPress += new KeyPressEventHandler(TxtSoloNumeros_KeyPress);
         }
-        public ControladorAU(editarUsuarios vista, int accion, int idUsuario, string Rol, string correo, string userStatus, string usuario, DateTime fechaCreacion, string nombre, string apellido, string dui, string direccion, string telefono)
+        public ControladorAU(editarUsuarios vista, int p_accion, int idUsuario, string Rol, string correo, string userStatus, string usuario, DateTime fechaCreacion, string nombre, string apellido, string dui, string direccion, string telefono)
         {
             objed = vista;
             this.Rol = Rol;
+            this.accion = p_accion;
             objed.Load += new EventHandler(InitialCharge);
             ChargeValues(idUsuario, correo, userStatus, usuario, fechaCreacion, nombre, apellido, dui, direccion, telefono);
             objed.btnEdicionC.Click += new EventHandler(UpdateRegister);
             objed.btnCancelar.Click += new EventHandler(minimizar);
+            objed.txtNombre.KeyPress += new KeyPressEventHandler(TxtDescripcionTarea_KeyPress);
+            objed.txtApellido.KeyPress += new KeyPressEventHandler(TxtDescripcionTarea_KeyPress);
+            objed.txtUserStatus.KeyPress += new KeyPressEventHandler(TxtDescripcionTarea_KeyPress);
+            objed.txtTelefono.KeyPress += new KeyPressEventHandler(TxtSoloNumeros_KeyPress);
 
             VerificarAccion();
         }
@@ -207,6 +216,31 @@ namespace WindowsFormsApp1.Controlador.AdministracionUsuarios
         public void minimizar(object sender, EventArgs e)
         {
             objed.Hide();
+        }
+        private void TxtDescripcionTarea_KeyPress(object sender, KeyPressEventArgs e)
+        {
+
+            if (char.IsDigit(e.KeyChar))
+            {
+
+                e.Handled = true;
+                MessageBox.Show("No se permiten números en este campo.",
+                                "Entrada no válida",
+                                MessageBoxButtons.OK,
+                                MessageBoxIcon.Warning);
+            }
+        }
+        private void TxtSoloNumeros_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            // Si el carácter ingresado es una letra o un carácter de control (como la tecla de retroceso)
+            if (!char.IsDigit(e.KeyChar) && !char.IsControl(e.KeyChar))
+            {
+                e.Handled = true; // No permitir la entrada de caracteres que no sean dígitos
+                MessageBox.Show("Solo se permiten números en este campo.",
+                                "Entrada no válida",
+                                MessageBoxButtons.OK,
+                                MessageBoxIcon.Warning);
+            }
         }
     }
 }

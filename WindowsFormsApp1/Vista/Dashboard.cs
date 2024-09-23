@@ -71,5 +71,10 @@ namespace Sushi_Time_PTC_2024.Vista
                 MessageBox.Show("Error: " + ex.Message);
             }
         }
+
+        private void btnManualT_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
