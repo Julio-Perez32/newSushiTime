@@ -1346,6 +1346,7 @@
             this.Controls.Add(this.bunifuLabel14);
             this.Controls.Add(this.Agregar);
             this.Controls.Add(this.label1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "AgregarUsuario";
             this.Text = "AgregarUsuario";
             this.Load += new System.EventHandler(this.AgregarUsuario_Load);
