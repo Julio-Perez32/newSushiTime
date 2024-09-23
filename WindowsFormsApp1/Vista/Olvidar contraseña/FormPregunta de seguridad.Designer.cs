@@ -29,16 +29,16 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormPregunta_de_seguridad));
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges borderEdges1 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges();
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties1 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties2 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties3 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties4 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges borderEdges1 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges();
             this.label1 = new System.Windows.Forms.Label();
-            this.txtRespuesta = new Bunifu.UI.WinForms.BunifuTextBox();
-            this.btnEnviar = new Bunifu.UI.WinForms.BunifuButton.BunifuButton2();
             this.bunifuLabel1 = new Bunifu.UI.WinForms.BunifuLabel();
             this.pbSalir = new System.Windows.Forms.PictureBox();
+            this.btnEnviar = new Bunifu.UI.WinForms.BunifuButton.BunifuButton2();
+            this.txtRespuesta = new Bunifu.UI.WinForms.BunifuTextBox();
             ((System.ComponentModel.ISupportInitialize)(this.pbSalir)).BeginInit();
             this.SuspendLayout();
             // 
@@ -47,89 +47,40 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Yu Gothic UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(146, 115);
+            this.label1.Location = new System.Drawing.Point(112, 93);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(225, 20);
+            this.label1.Size = new System.Drawing.Size(285, 25);
             this.label1.TabIndex = 0;
             this.label1.Text = "Año de fundacion de la empresa";
             // 
-            // txtRespuesta
+            // bunifuLabel1
             // 
-            this.txtRespuesta.AcceptsReturn = false;
-            this.txtRespuesta.AcceptsTab = false;
-            this.txtRespuesta.AnimationSpeed = 200;
-            this.txtRespuesta.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
-            this.txtRespuesta.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
-            this.txtRespuesta.AutoSizeHeight = true;
-            this.txtRespuesta.BackColor = System.Drawing.Color.Transparent;
-            this.txtRespuesta.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("txtRespuesta.BackgroundImage")));
-            this.txtRespuesta.BorderColorActive = System.Drawing.Color.DodgerBlue;
-            this.txtRespuesta.BorderColorDisabled = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
-            this.txtRespuesta.BorderColorHover = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
-            this.txtRespuesta.BorderColorIdle = System.Drawing.Color.Silver;
-            this.txtRespuesta.BorderRadius = 20;
-            this.txtRespuesta.BorderThickness = 1;
-            this.txtRespuesta.CharacterCase = Bunifu.UI.WinForms.BunifuTextBox.CharacterCases.Normal;
-            this.txtRespuesta.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
-            this.txtRespuesta.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtRespuesta.DefaultFont = new System.Drawing.Font("Segoe UI", 9.25F);
-            this.txtRespuesta.DefaultText = "";
-            this.txtRespuesta.FillColor = System.Drawing.Color.White;
-            this.txtRespuesta.HideSelection = true;
-            this.txtRespuesta.IconLeft = null;
-            this.txtRespuesta.IconLeftCursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtRespuesta.IconPadding = 10;
-            this.txtRespuesta.IconRight = null;
-            this.txtRespuesta.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtRespuesta.Lines = new string[0];
-            this.txtRespuesta.Location = new System.Drawing.Point(61, 154);
-            this.txtRespuesta.Margin = new System.Windows.Forms.Padding(4);
-            this.txtRespuesta.MaxLength = 32767;
-            this.txtRespuesta.MinimumSize = new System.Drawing.Size(2, 1);
-            this.txtRespuesta.Modified = false;
-            this.txtRespuesta.Multiline = false;
-            this.txtRespuesta.Name = "txtRespuesta";
-            stateProperties1.BorderColor = System.Drawing.Color.DodgerBlue;
-            stateProperties1.FillColor = System.Drawing.Color.Empty;
-            stateProperties1.ForeColor = System.Drawing.Color.Empty;
-            stateProperties1.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.txtRespuesta.OnActiveState = stateProperties1;
-            stateProperties2.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
-            stateProperties2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
-            stateProperties2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
-            stateProperties2.PlaceholderForeColor = System.Drawing.Color.DarkGray;
-            this.txtRespuesta.OnDisabledState = stateProperties2;
-            stateProperties3.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
-            stateProperties3.FillColor = System.Drawing.Color.Empty;
-            stateProperties3.ForeColor = System.Drawing.Color.Empty;
-            stateProperties3.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.txtRespuesta.OnHoverState = stateProperties3;
-            stateProperties4.BorderColor = System.Drawing.Color.Silver;
-            stateProperties4.FillColor = System.Drawing.Color.White;
-            stateProperties4.ForeColor = System.Drawing.Color.Empty;
-            stateProperties4.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.txtRespuesta.OnIdleState = stateProperties4;
-            this.txtRespuesta.Padding = new System.Windows.Forms.Padding(4);
-            this.txtRespuesta.PasswordChar = '\0';
-            this.txtRespuesta.PlaceholderForeColor = System.Drawing.Color.Silver;
-            this.txtRespuesta.PlaceholderText = "Enter text";
-            this.txtRespuesta.ReadOnly = false;
-            this.txtRespuesta.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.txtRespuesta.SelectedText = "";
-            this.txtRespuesta.SelectionLength = 0;
-            this.txtRespuesta.SelectionStart = 0;
-            this.txtRespuesta.ShortcutsEnabled = true;
-            this.txtRespuesta.Size = new System.Drawing.Size(406, 42);
-            this.txtRespuesta.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu;
-            this.txtRespuesta.TabIndex = 1;
-            this.txtRespuesta.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.txtRespuesta.TextMarginBottom = 0;
-            this.txtRespuesta.TextMarginLeft = 3;
-            this.txtRespuesta.TextMarginTop = 1;
-            this.txtRespuesta.TextPlaceholder = "Enter text";
-            this.txtRespuesta.UseSystemPasswordChar = false;
-            this.txtRespuesta.WordWrap = true;
+            this.bunifuLabel1.AllowParentOverrides = false;
+            this.bunifuLabel1.AutoEllipsis = false;
+            this.bunifuLabel1.Cursor = System.Windows.Forms.Cursors.Default;
+            this.bunifuLabel1.CursorType = System.Windows.Forms.Cursors.Default;
+            this.bunifuLabel1.Font = new System.Drawing.Font("Yu Gothic UI", 15.75F, System.Drawing.FontStyle.Bold);
+            this.bunifuLabel1.ForeColor = System.Drawing.Color.White;
+            this.bunifuLabel1.Location = new System.Drawing.Point(117, 32);
+            this.bunifuLabel1.Name = "bunifuLabel1";
+            this.bunifuLabel1.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.bunifuLabel1.Size = new System.Drawing.Size(271, 36);
+            this.bunifuLabel1.TabIndex = 18;
+            this.bunifuLabel1.Text = "Pregunta de seguridad";
+            this.bunifuLabel1.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
+            this.bunifuLabel1.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
+            // 
+            // pbSalir
+            // 
+            this.pbSalir.Image = global::WindowsFormsApp1.Properties.Resources.sushi_salmon_removebg_preview;
+            this.pbSalir.Location = new System.Drawing.Point(460, 12);
+            this.pbSalir.Name = "pbSalir";
+            this.pbSalir.Size = new System.Drawing.Size(66, 56);
+            this.pbSalir.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pbSalir.TabIndex = 19;
+            this.pbSalir.TabStop = false;
+            this.pbSalir.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // btnEnviar
             // 
@@ -221,37 +172,86 @@
             this.btnEnviar.TextPadding = new System.Windows.Forms.Padding(0);
             this.btnEnviar.UseDefaultRadiusAndThickness = true;
             // 
-            // bunifuLabel1
+            // txtRespuesta
             // 
-            this.bunifuLabel1.AllowParentOverrides = false;
-            this.bunifuLabel1.AutoEllipsis = false;
-            this.bunifuLabel1.Cursor = System.Windows.Forms.Cursors.Default;
-            this.bunifuLabel1.CursorType = System.Windows.Forms.Cursors.Default;
-            this.bunifuLabel1.Font = new System.Drawing.Font("Yu Gothic UI", 15.75F, System.Drawing.FontStyle.Bold);
-            this.bunifuLabel1.ForeColor = System.Drawing.Color.White;
-            this.bunifuLabel1.Location = new System.Drawing.Point(150, 61);
-            this.bunifuLabel1.Name = "bunifuLabel1";
-            this.bunifuLabel1.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.bunifuLabel1.Size = new System.Drawing.Size(218, 30);
-            this.bunifuLabel1.TabIndex = 18;
-            this.bunifuLabel1.Text = "Pregunta de seguridad";
-            this.bunifuLabel1.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
-            this.bunifuLabel1.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
-            // 
-            // pbSalir
-            // 
-            this.pbSalir.Image = global::WindowsFormsApp1.Properties.Resources.sushi_salmon_removebg_preview;
-            this.pbSalir.Location = new System.Drawing.Point(460, 12);
-            this.pbSalir.Name = "pbSalir";
-            this.pbSalir.Size = new System.Drawing.Size(66, 56);
-            this.pbSalir.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pbSalir.TabIndex = 19;
-            this.pbSalir.TabStop = false;
-            this.pbSalir.Click += new System.EventHandler(this.pictureBox1_Click);
+            this.txtRespuesta.AcceptsReturn = false;
+            this.txtRespuesta.AcceptsTab = false;
+            this.txtRespuesta.AnimationSpeed = 200;
+            this.txtRespuesta.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
+            this.txtRespuesta.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
+            this.txtRespuesta.AutoSizeHeight = true;
+            this.txtRespuesta.BackColor = System.Drawing.Color.Transparent;
+            this.txtRespuesta.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("txtRespuesta.BackgroundImage")));
+            this.txtRespuesta.BorderColorActive = System.Drawing.Color.DodgerBlue;
+            this.txtRespuesta.BorderColorDisabled = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            this.txtRespuesta.BorderColorHover = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
+            this.txtRespuesta.BorderColorIdle = System.Drawing.Color.Silver;
+            this.txtRespuesta.BorderRadius = 20;
+            this.txtRespuesta.BorderThickness = 1;
+            this.txtRespuesta.CharacterCase = Bunifu.UI.WinForms.BunifuTextBox.CharacterCases.Normal;
+            this.txtRespuesta.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
+            this.txtRespuesta.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtRespuesta.DefaultFont = new System.Drawing.Font("Segoe UI", 9.25F);
+            this.txtRespuesta.DefaultText = "";
+            this.txtRespuesta.FillColor = System.Drawing.Color.White;
+            this.txtRespuesta.HideSelection = true;
+            this.txtRespuesta.IconLeft = null;
+            this.txtRespuesta.IconLeftCursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtRespuesta.IconPadding = 10;
+            this.txtRespuesta.IconRight = null;
+            this.txtRespuesta.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtRespuesta.Lines = new string[0];
+            this.txtRespuesta.Location = new System.Drawing.Point(61, 154);
+            this.txtRespuesta.Margin = new System.Windows.Forms.Padding(4);
+            this.txtRespuesta.MaxLength = 32767;
+            this.txtRespuesta.MinimumSize = new System.Drawing.Size(2, 1);
+            this.txtRespuesta.Modified = false;
+            this.txtRespuesta.Multiline = false;
+            this.txtRespuesta.Name = "txtRespuesta";
+            stateProperties1.BorderColor = System.Drawing.Color.DodgerBlue;
+            stateProperties1.FillColor = System.Drawing.Color.Empty;
+            stateProperties1.ForeColor = System.Drawing.Color.Empty;
+            stateProperties1.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.txtRespuesta.OnActiveState = stateProperties1;
+            stateProperties2.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            stateProperties2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
+            stateProperties2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            stateProperties2.PlaceholderForeColor = System.Drawing.Color.DarkGray;
+            this.txtRespuesta.OnDisabledState = stateProperties2;
+            stateProperties3.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
+            stateProperties3.FillColor = System.Drawing.Color.Empty;
+            stateProperties3.ForeColor = System.Drawing.Color.Empty;
+            stateProperties3.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.txtRespuesta.OnHoverState = stateProperties3;
+            stateProperties4.BorderColor = System.Drawing.Color.Silver;
+            stateProperties4.FillColor = System.Drawing.Color.White;
+            stateProperties4.ForeColor = System.Drawing.Color.Empty;
+            stateProperties4.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.txtRespuesta.OnIdleState = stateProperties4;
+            this.txtRespuesta.Padding = new System.Windows.Forms.Padding(4);
+            this.txtRespuesta.PasswordChar = '\0';
+            this.txtRespuesta.PlaceholderForeColor = System.Drawing.Color.Silver;
+            this.txtRespuesta.PlaceholderText = "Enter text";
+            this.txtRespuesta.ReadOnly = false;
+            this.txtRespuesta.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.txtRespuesta.SelectedText = "";
+            this.txtRespuesta.SelectionLength = 0;
+            this.txtRespuesta.SelectionStart = 0;
+            this.txtRespuesta.ShortcutsEnabled = true;
+            this.txtRespuesta.Size = new System.Drawing.Size(406, 46);
+            this.txtRespuesta.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu;
+            this.txtRespuesta.TabIndex = 1;
+            this.txtRespuesta.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.txtRespuesta.TextMarginBottom = 0;
+            this.txtRespuesta.TextMarginLeft = 3;
+            this.txtRespuesta.TextMarginTop = 1;
+            this.txtRespuesta.TextPlaceholder = "Enter text";
+            this.txtRespuesta.UseSystemPasswordChar = false;
+            this.txtRespuesta.WordWrap = true;
             // 
             // FormPregunta_de_seguridad
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 24F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(41)))), ((int)(((byte)(41)))));
             this.ClientSize = new System.Drawing.Size(538, 267);

@@ -112,8 +112,12 @@
     <Compile Include="Controlador\Helpers\TemplateSushiTime.cs" />
     <Compile Include="Controlador\OlvidarContraseñas\ControladorPindeAdmincs.cs" />
     <Compile Include="Controlador\OlvidarContraseñas\controladorPreguntaSeguridad.cs" />
+    <Compile Include="Controlador\OlvidarContraseñas\ControllerRecuperarContraseña.cs" />
     <Compile Include="Controlador\OlvidarContraseñas\OlvidarContraseñas.cs" />
     <Compile Include="Controlador\RecuperacionAdmin\RecuperacionAdministrador.cs" />
+    <Compile Include="Modelo\DAO\UsuarioDAO.cs" />
+    <Compile Include="Modelo\DTO\UsuarioDTO.cs" />
+    <Compile Include="RecuperarContraseñaService.cs" />
     <Compile Include="Modelo\DAO\DAOadminU.cs" />
     <Compile Include="Modelo\DAO\DAOAgregarTarea.cs" />
     <Compile Include="Modelo\DAO\DAOLogin.cs" />
@@ -215,6 +219,12 @@
     <Compile Include="Vista\Olvidar contraseña\olvidarcontraseñaprincipal1.Designer.cs">
       <DependentUpon>olvidarcontraseñaprincipal1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Vista\Olvidar contraseña\RecuperacionContraseña.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vista\Olvidar contraseña\RecuperacionContraseña.Designer.cs">
+      <DependentUpon>RecuperacionContraseña.cs</DependentUpon>
+    </Compile>
     <Compile Include="Vista\Planillas\AgregarUsuario.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -305,6 +315,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Vista\Olvidar contraseña\olvidarcontraseñaprincipal1.resx">
       <DependentUpon>olvidarcontraseñaprincipal1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vista\Olvidar contraseña\RecuperacionContraseña.resx">
+      <DependentUpon>RecuperacionContraseña.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Vista\Planillas\AgregarUsuario.resx">
       <DependentUpon>AgregarUsuario.cs</DependentUpon>
