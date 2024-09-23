@@ -70,11 +70,13 @@
             this.picEmpresa = new Bunifu.UI.WinForms.BunifuPictureBox();
             this.btnAttach = new Bunifu.UI.WinForms.BunifuButton.BunifuButton2();
             this.bunifuPictureBox1 = new Bunifu.UI.WinForms.BunifuPictureBox();
+            this.pbSalir = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picEmpresa)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuPictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbSalir)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -93,6 +95,7 @@
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(41)))), ((int)(((byte)(41)))));
+            this.panel3.Controls.Add(this.pbSalir);
             this.panel3.Controls.Add(this.dtCreacion);
             this.panel3.Controls.Add(this.txtPBX);
             this.panel3.Controls.Add(this.txtTelefonoEmpresa);
@@ -813,6 +816,16 @@
             this.bunifuPictureBox1.TabStop = false;
             this.bunifuPictureBox1.Type = Bunifu.UI.WinForms.BunifuPictureBox.Types.Circle;
             // 
+            // pbSalir
+            // 
+            this.pbSalir.Image = global::WindowsFormsApp1.Properties.Resources.sushi_salmon_removebg_preview;
+            this.pbSalir.Location = new System.Drawing.Point(3, 3);
+            this.pbSalir.Name = "pbSalir";
+            this.pbSalir.Size = new System.Drawing.Size(40, 37);
+            this.pbSalir.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pbSalir.TabIndex = 47;
+            this.pbSalir.TabStop = false;
+            // 
             // PrimerUso_
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -834,6 +847,7 @@
             this.panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.picEmpresa)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuPictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbSalir)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -858,5 +872,6 @@
         public Bunifu.UI.WinForms.BunifuDatePicker dtCreacion;
         public Bunifu.UI.WinForms.BunifuTextBox txtPBX;
         public Bunifu.UI.WinForms.BunifuPictureBox picEmpresa;
+        public System.Windows.Forms.PictureBox pbSalir;
     }
 }

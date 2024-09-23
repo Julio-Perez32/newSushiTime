@@ -39,10 +39,11 @@
             this.lblDays.CursorType = null;
             this.lblDays.Font = new System.Drawing.Font("Yu Gothic UI", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblDays.ForeColor = System.Drawing.Color.White;
-            this.lblDays.Location = new System.Drawing.Point(13, 13);
+            this.lblDays.Location = new System.Drawing.Point(10, 11);
+            this.lblDays.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.lblDays.Name = "lblDays";
             this.lblDays.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.lblDays.Size = new System.Drawing.Size(30, 37);
+            this.lblDays.Size = new System.Drawing.Size(24, 30);
             this.lblDays.TabIndex = 0;
             this.lblDays.Text = "00";
             this.lblDays.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
@@ -50,12 +51,13 @@
             // 
             // UserControlDias
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(69)))), ((int)(((byte)(69)))));
             this.Controls.Add(this.lblDays);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "UserControlDias";
-            this.Size = new System.Drawing.Size(115, 94);
+            this.Size = new System.Drawing.Size(77, 68);
             this.Load += new System.EventHandler(this.UserControlDias_Load);
             this.Click += new System.EventHandler(this.UserControlDias_Click);
             this.ResumeLayout(false);

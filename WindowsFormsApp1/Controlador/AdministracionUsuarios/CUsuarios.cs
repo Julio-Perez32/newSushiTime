@@ -40,11 +40,16 @@ namespace WindowsFormsApp1.Controlador.AdministracionUsuario
             {
                 column.ReadOnly = true;
             }
+            objAdminU.dgvusuario.DataSource = ds.Tables["VistaUsuario"];
+            objAdminU.dgvusuario.Columns[1].Visible = false;
+            objAdminU.dgvusuario.Columns[3].Visible = false;
+            objAdminU.dgvusuario.Columns[5].Visible = false;
+            objAdminU.dgvusuario.Columns[9].Visible = false;
         }
         private void NewUser(object sender, EventArgs e)
         {
 
-            CrearPrimerUsuario openForm = new CrearPrimerUsuario(2);
+           editarUsuarios openForm = new editarUsuarios(1);
             openForm.ShowDialog();
             RefrescarData();
         }
@@ -56,8 +61,8 @@ namespace WindowsFormsApp1.Controlador.AdministracionUsuario
             try
             {
                 int pos = objAdminU.dgvusuario.CurrentRow.Index;
-                string usuario, Contraseña, Correo, userStatus, nombre, apellido, dui, direccion, telefono, rol;
-                int idUsuario, intentos;
+                string usuario, Correo, userStatus, nombre, apellido, dui, direccion, telefono, rol;
+                int idUsuario;
                 DateTime fechaCreacion;
                 idUsuario = int.Parse(objAdminU.dgvusuario[0, pos].Value.ToString());
                // intentos = int.Parse(objAdminU.dgvusuario[1, pos].Value.ToString());
@@ -74,7 +79,7 @@ namespace WindowsFormsApp1.Controlador.AdministracionUsuario
                 rol = objAdminU.dgvusuario[12, pos].Value.ToString();
 
 
-                editarUsuarios objnuevo = new editarUsuarios(idUsuario, rol, Correo, usuario, userStatus, fechaCreacion, nombre, apellido, dui, direccion, telefono);
+                editarUsuarios objnuevo = new editarUsuarios(2, idUsuario, rol, Correo, usuario, userStatus, fechaCreacion, nombre, apellido, dui, direccion, telefono);
                 objnuevo.ShowDialog();
                 RefrescarData();
             }

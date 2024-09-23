@@ -29,8 +29,9 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(editarUsuarios));
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges borderEdges1 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges borderEdges2 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges borderEdges7 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges borderEdges8 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges borderEdges9 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges();
             this.btnEdicionC = new Bunifu.UI.WinForms.BunifuButton.BunifuButton2();
             this.btnCancelar = new Bunifu.UI.WinForms.BunifuButton.BunifuButton2();
             this.GrpUser = new System.Windows.Forms.GroupBox();
@@ -56,6 +57,7 @@
             this.label10 = new System.Windows.Forms.Label();
             this.txtid = new System.Windows.Forms.TextBox();
             this.label11 = new System.Windows.Forms.Label();
+            this.btnCrear = new Bunifu.UI.WinForms.BunifuButton.BunifuButton2();
             this.GrpUser.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -78,11 +80,11 @@
             this.btnEdicionC.ColorContrastOnClick = 45;
             this.btnEdicionC.ColorContrastOnHover = 45;
             this.btnEdicionC.Cursor = System.Windows.Forms.Cursors.Default;
-            borderEdges1.BottomLeft = true;
-            borderEdges1.BottomRight = true;
-            borderEdges1.TopLeft = true;
-            borderEdges1.TopRight = true;
-            this.btnEdicionC.CustomizableEdges = borderEdges1;
+            borderEdges7.BottomLeft = true;
+            borderEdges7.BottomRight = true;
+            borderEdges7.TopLeft = true;
+            borderEdges7.TopRight = true;
+            this.btnEdicionC.CustomizableEdges = borderEdges7;
             this.btnEdicionC.DialogResult = System.Windows.Forms.DialogResult.None;
             this.btnEdicionC.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnEdicionC.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
@@ -168,11 +170,11 @@
             this.btnCancelar.ColorContrastOnClick = 45;
             this.btnCancelar.ColorContrastOnHover = 45;
             this.btnCancelar.Cursor = System.Windows.Forms.Cursors.Default;
-            borderEdges2.BottomLeft = true;
-            borderEdges2.BottomRight = true;
-            borderEdges2.TopLeft = true;
-            borderEdges2.TopRight = true;
-            this.btnCancelar.CustomizableEdges = borderEdges2;
+            borderEdges8.BottomLeft = true;
+            borderEdges8.BottomRight = true;
+            borderEdges8.TopLeft = true;
+            borderEdges8.TopRight = true;
+            this.btnCancelar.CustomizableEdges = borderEdges8;
             this.btnCancelar.DialogResult = System.Windows.Forms.DialogResult.None;
             this.btnCancelar.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnCancelar.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
@@ -443,6 +445,7 @@
             this.txtUserStatus.Name = "txtUserStatus";
             this.txtUserStatus.Size = new System.Drawing.Size(250, 20);
             this.txtUserStatus.TabIndex = 64;
+            this.txtUserStatus.Text = "Activo";
             // 
             // label10
             // 
@@ -474,12 +477,103 @@
             this.label11.TabIndex = 67;
             this.label11.Text = "ID:";
             // 
+            // btnCrear
+            // 
+            this.btnCrear.AllowAnimations = true;
+            this.btnCrear.AllowMouseEffects = true;
+            this.btnCrear.AllowToggling = false;
+            this.btnCrear.AnimationSpeed = 200;
+            this.btnCrear.AutoGenerateColors = false;
+            this.btnCrear.AutoRoundBorders = false;
+            this.btnCrear.AutoSizeLeftIcon = true;
+            this.btnCrear.AutoSizeRightIcon = true;
+            this.btnCrear.BackColor = System.Drawing.Color.Transparent;
+            this.btnCrear.BackColor1 = System.Drawing.Color.FromArgb(((int)(((byte)(197)))), ((int)(((byte)(18)))), ((int)(((byte)(48)))));
+            this.btnCrear.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnCrear.BackgroundImage")));
+            this.btnCrear.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderStyles.Solid;
+            this.btnCrear.ButtonText = "Crear Usuario";
+            this.btnCrear.ButtonTextMarginLeft = 0;
+            this.btnCrear.ColorContrastOnClick = 45;
+            this.btnCrear.ColorContrastOnHover = 45;
+            this.btnCrear.Cursor = System.Windows.Forms.Cursors.Default;
+            borderEdges9.BottomLeft = true;
+            borderEdges9.BottomRight = true;
+            borderEdges9.TopLeft = true;
+            borderEdges9.TopRight = true;
+            this.btnCrear.CustomizableEdges = borderEdges9;
+            this.btnCrear.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.btnCrear.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
+            this.btnCrear.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            this.btnCrear.DisabledForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(160)))), ((int)(((byte)(168)))));
+            this.btnCrear.FocusState = Bunifu.UI.WinForms.BunifuButton.BunifuButton2.ButtonStates.Pressed;
+            this.btnCrear.Font = new System.Drawing.Font("Yu Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCrear.ForeColor = System.Drawing.Color.White;
+            this.btnCrear.IconLeftAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnCrear.IconLeftCursor = System.Windows.Forms.Cursors.Default;
+            this.btnCrear.IconLeftPadding = new System.Windows.Forms.Padding(11, 3, 3, 3);
+            this.btnCrear.IconMarginLeft = 11;
+            this.btnCrear.IconPadding = 10;
+            this.btnCrear.IconRightAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnCrear.IconRightCursor = System.Windows.Forms.Cursors.Default;
+            this.btnCrear.IconRightPadding = new System.Windows.Forms.Padding(3, 3, 7, 3);
+            this.btnCrear.IconSize = 25;
+            this.btnCrear.IdleBorderColor = System.Drawing.Color.Transparent;
+            this.btnCrear.IdleBorderRadius = 20;
+            this.btnCrear.IdleBorderThickness = 1;
+            this.btnCrear.IdleFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(197)))), ((int)(((byte)(18)))), ((int)(((byte)(48)))));
+            this.btnCrear.IdleIconLeftImage = null;
+            this.btnCrear.IdleIconRightImage = null;
+            this.btnCrear.IndicateFocus = false;
+            this.btnCrear.Location = new System.Drawing.Point(231, 405);
+            this.btnCrear.Margin = new System.Windows.Forms.Padding(2);
+            this.btnCrear.Name = "btnCrear";
+            this.btnCrear.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
+            this.btnCrear.OnDisabledState.BorderRadius = 20;
+            this.btnCrear.OnDisabledState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderStyles.Solid;
+            this.btnCrear.OnDisabledState.BorderThickness = 1;
+            this.btnCrear.OnDisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            this.btnCrear.OnDisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(160)))), ((int)(((byte)(168)))));
+            this.btnCrear.OnDisabledState.IconLeftImage = null;
+            this.btnCrear.OnDisabledState.IconRightImage = null;
+            this.btnCrear.onHoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
+            this.btnCrear.onHoverState.BorderRadius = 20;
+            this.btnCrear.onHoverState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderStyles.Solid;
+            this.btnCrear.onHoverState.BorderThickness = 1;
+            this.btnCrear.onHoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
+            this.btnCrear.onHoverState.ForeColor = System.Drawing.Color.White;
+            this.btnCrear.onHoverState.IconLeftImage = null;
+            this.btnCrear.onHoverState.IconRightImage = null;
+            this.btnCrear.OnIdleState.BorderColor = System.Drawing.Color.Transparent;
+            this.btnCrear.OnIdleState.BorderRadius = 20;
+            this.btnCrear.OnIdleState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderStyles.Solid;
+            this.btnCrear.OnIdleState.BorderThickness = 1;
+            this.btnCrear.OnIdleState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(197)))), ((int)(((byte)(18)))), ((int)(((byte)(48)))));
+            this.btnCrear.OnIdleState.ForeColor = System.Drawing.Color.White;
+            this.btnCrear.OnIdleState.IconLeftImage = null;
+            this.btnCrear.OnIdleState.IconRightImage = null;
+            this.btnCrear.OnPressedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
+            this.btnCrear.OnPressedState.BorderRadius = 20;
+            this.btnCrear.OnPressedState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderStyles.Solid;
+            this.btnCrear.OnPressedState.BorderThickness = 1;
+            this.btnCrear.OnPressedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
+            this.btnCrear.OnPressedState.ForeColor = System.Drawing.Color.White;
+            this.btnCrear.OnPressedState.IconLeftImage = null;
+            this.btnCrear.OnPressedState.IconRightImage = null;
+            this.btnCrear.Size = new System.Drawing.Size(143, 34);
+            this.btnCrear.TabIndex = 68;
+            this.btnCrear.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnCrear.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
+            this.btnCrear.TextMarginLeft = 0;
+            this.btnCrear.TextPadding = new System.Windows.Forms.Padding(0);
+            this.btnCrear.UseDefaultRadiusAndThickness = true;
+            // 
             // editarUsuarios
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(41)))), ((int)(((byte)(41)))));
             this.ClientSize = new System.Drawing.Size(539, 450);
+            this.Controls.Add(this.btnCrear);
             this.Controls.Add(this.txtid);
             this.Controls.Add(this.label11);
             this.Controls.Add(this.txtUserStatus);
@@ -501,6 +595,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.txtNombre);
             this.Controls.Add(this.label1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "editarUsuarios";
             this.Text = "editarUsuarios";
             this.Load += new System.EventHandler(this.editarUsuarios_Load);
@@ -538,5 +633,6 @@
         private System.Windows.Forms.Label label10;
         public System.Windows.Forms.TextBox txtid;
         private System.Windows.Forms.Label label11;
+        public Bunifu.UI.WinForms.BunifuButton.BunifuButton2 btnCrear;
     }
 }
