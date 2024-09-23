@@ -37,5 +37,10 @@ namespace WindowsFormsApp1.Vista.Sanciones_y_Observaciones
             var body = txtObservacionS.Text.Trim();
             _emailController.SendEmail(to, subject, body);
         }
+
+        private void tableLayoutPanel3_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

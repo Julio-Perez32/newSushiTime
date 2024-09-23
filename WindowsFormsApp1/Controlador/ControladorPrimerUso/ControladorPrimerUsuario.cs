@@ -26,6 +26,7 @@ namespace WindowsFormsApp1.Controlador.ControladorPrimerUso
             Vista.Load += new EventHandler(CargarCombo);
             Vista.btnGuardar.Click += new EventHandler(RegistrarPrimerUsuario);
             Vista.comboRol.Enabled = true;
+            ObjVista.pbsalir.Click += new EventHandler(QuitApplication);
         }
 
         void CargarCombo(object sender, EventArgs e)
@@ -60,7 +61,7 @@ namespace WindowsFormsApp1.Controlador.ControladorPrimerUso
                 DAOInsert.Contraseña = encriptado.ComputeSha256Hash(ObjVista.txtUsuario.Text.Trim() + "SushiTime24");
                 DAOInsert.UserStatus = "Activo";
                 DAOInsert.Intentos = 0;
-                DAOInsert.Rol = ObjVista.comboRol.SelectedValue.ToString();
+                DAOInsert.Rol = int.Parse(ObjVista.comboRol.SelectedValue.ToString());
                 int valorRetornado = DAOInsert.RegistrarUsuario();
                 if (valorRetornado == 1)
                 {
@@ -91,6 +92,10 @@ namespace WindowsFormsApp1.Controlador.ControladorPrimerUso
                                     MessageBoxButtons.OK,
                                     MessageBoxIcon.Warning);
             }
+        }
+        private void QuitApplication(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

@@ -50,7 +50,9 @@
             this.txtNombre = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.btnGuardar = new Bunifu.UI.WinForms.BunifuButton.BunifuButton2();
+            this.pbsalir = new System.Windows.Forms.PictureBox();
             this.GrpUser.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbsalir)).BeginInit();
             this.SuspendLayout();
             // 
             // GrpUser
@@ -341,12 +343,23 @@
             this.btnGuardar.TextPadding = new System.Windows.Forms.Padding(0);
             this.btnGuardar.UseDefaultRadiusAndThickness = true;
             // 
+            // pbsalir
+            // 
+            this.pbsalir.Image = global::WindowsFormsApp1.Properties.Resources.sushi_salmon_removebg_preview;
+            this.pbsalir.Location = new System.Drawing.Point(523, -2);
+            this.pbsalir.Name = "pbsalir";
+            this.pbsalir.Size = new System.Drawing.Size(49, 44);
+            this.pbsalir.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pbsalir.TabIndex = 46;
+            this.pbsalir.TabStop = false;
+            // 
             // CrearPrimerUsuario
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(41)))), ((int)(((byte)(41)))));
             this.ClientSize = new System.Drawing.Size(572, 500);
+            this.Controls.Add(this.pbsalir);
             this.Controls.Add(this.btnGuardar);
             this.Controls.Add(this.GrpUser);
             this.Controls.Add(this.txtApellido);
@@ -369,6 +382,7 @@
             this.Text = "CrearPrimerUsuario";
             this.GrpUser.ResumeLayout(false);
             this.GrpUser.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbsalir)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -396,5 +410,6 @@
         public System.Windows.Forms.TextBox txtNombre;
         private System.Windows.Forms.Label label1;
         public Bunifu.UI.WinForms.BunifuButton.BunifuButton2 btnGuardar;
+        public System.Windows.Forms.PictureBox pbsalir;
     }
 }

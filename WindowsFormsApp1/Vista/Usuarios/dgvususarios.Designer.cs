@@ -28,28 +28,147 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(dgvususarios));
             Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges borderEdges1 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges();
             Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges borderEdges2 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges();
             Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges borderEdges3 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            this.dgvusuario = new Bunifu.UI.WinForms.BunifuDataGridView();
+            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            this.bunifuPanel2 = new Bunifu.UI.WinForms.BunifuPanel();
+            this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.btnEliminar = new Bunifu.UI.WinForms.BunifuButton.BunifuButton2();
+            this.btnEditar = new Bunifu.UI.WinForms.BunifuButton.BunifuButton2();
             this.btnCrearUsuario = new Bunifu.UI.WinForms.BunifuButton.BunifuButton2();
             this.bunifuPanel1 = new Bunifu.UI.WinForms.BunifuPanel();
-            this.label10 = new System.Windows.Forms.Label();
-            this.btnEditar = new Bunifu.UI.WinForms.BunifuButton.BunifuButton2();
-            this.dgvusuario = new Bunifu.UI.WinForms.BunifuDataGridView();
-            this.bunifuPanel1.SuspendLayout();
+            this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dgvusuario)).BeginInit();
+            this.tableLayoutPanel1.SuspendLayout();
+            this.bunifuPanel2.SuspendLayout();
+            this.tableLayoutPanel2.SuspendLayout();
+            this.bunifuPanel1.SuspendLayout();
             this.SuspendLayout();
+            // 
+            // dgvusuario
+            // 
+            this.dgvusuario.AllowCustomTheming = false;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(251)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.Black;
+            this.dgvusuario.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            this.dgvusuario.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dgvusuario.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.dgvusuario.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
+            this.dgvusuario.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.DodgerBlue;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI Semibold", 11.75F, System.Drawing.FontStyle.Bold);
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(115)))), ((int)(((byte)(204)))));
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvusuario.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            this.dgvusuario.ColumnHeadersHeight = 40;
+            this.dgvusuario.CurrentTheme.AlternatingRowsStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(251)))), ((int)(((byte)(255)))));
+            this.dgvusuario.CurrentTheme.AlternatingRowsStyle.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold);
+            this.dgvusuario.CurrentTheme.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Black;
+            this.dgvusuario.CurrentTheme.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(210)))), ((int)(((byte)(232)))), ((int)(((byte)(255)))));
+            this.dgvusuario.CurrentTheme.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Black;
+            this.dgvusuario.CurrentTheme.BackColor = System.Drawing.Color.White;
+            this.dgvusuario.CurrentTheme.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(238)))), ((int)(((byte)(255)))));
+            this.dgvusuario.CurrentTheme.HeaderStyle.BackColor = System.Drawing.Color.DodgerBlue;
+            this.dgvusuario.CurrentTheme.HeaderStyle.Font = new System.Drawing.Font("Segoe UI Semibold", 11.75F, System.Drawing.FontStyle.Bold);
+            this.dgvusuario.CurrentTheme.HeaderStyle.ForeColor = System.Drawing.Color.White;
+            this.dgvusuario.CurrentTheme.HeaderStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(115)))), ((int)(((byte)(204)))));
+            this.dgvusuario.CurrentTheme.HeaderStyle.SelectionForeColor = System.Drawing.Color.White;
+            this.dgvusuario.CurrentTheme.Name = null;
+            this.dgvusuario.CurrentTheme.RowsStyle.BackColor = System.Drawing.Color.White;
+            this.dgvusuario.CurrentTheme.RowsStyle.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold);
+            this.dgvusuario.CurrentTheme.RowsStyle.ForeColor = System.Drawing.Color.Black;
+            this.dgvusuario.CurrentTheme.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(210)))), ((int)(((byte)(232)))), ((int)(((byte)(255)))));
+            this.dgvusuario.CurrentTheme.RowsStyle.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold);
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(210)))), ((int)(((byte)(232)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvusuario.DefaultCellStyle = dataGridViewCellStyle3;
+            this.dgvusuario.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dgvusuario.EnableHeadersVisualStyles = false;
+            this.dgvusuario.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(238)))), ((int)(((byte)(255)))));
+            this.dgvusuario.HeaderBackColor = System.Drawing.Color.DodgerBlue;
+            this.dgvusuario.HeaderBgColor = System.Drawing.Color.Empty;
+            this.dgvusuario.HeaderForeColor = System.Drawing.Color.White;
+            this.dgvusuario.Location = new System.Drawing.Point(3, 267);
+            this.dgvusuario.Name = "dgvusuario";
+            this.dgvusuario.ReadOnly = true;
+            this.dgvusuario.RowHeadersVisible = false;
+            this.dgvusuario.RowTemplate.Height = 40;
+            this.dgvusuario.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dgvusuario.Size = new System.Drawing.Size(1380, 518);
+            this.dgvusuario.TabIndex = 43;
+            this.dgvusuario.Theme = Bunifu.UI.WinForms.BunifuDataGridView.PresetThemes.Light;
+            // 
+            // tableLayoutPanel1
+            // 
+            this.tableLayoutPanel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(41)))), ((int)(((byte)(41)))));
+            this.tableLayoutPanel1.ColumnCount = 1;
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel1.Controls.Add(this.dgvusuario, 0, 2);
+            this.tableLayoutPanel1.Controls.Add(this.bunifuPanel2, 0, 1);
+            this.tableLayoutPanel1.Controls.Add(this.bunifuPanel1, 0, 0);
+            this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
+            this.tableLayoutPanel1.Name = "tableLayoutPanel1";
+            this.tableLayoutPanel1.RowCount = 3;
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 17.34694F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.32653F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 66.32653F));
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(1386, 788);
+            this.tableLayoutPanel1.TabIndex = 23;
+            this.tableLayoutPanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.tableLayoutPanel1_Paint);
+            // 
+            // bunifuPanel2
+            // 
+            this.bunifuPanel2.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(41)))), ((int)(((byte)(41)))));
+            this.bunifuPanel2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuPanel2.BackgroundImage")));
+            this.bunifuPanel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.bunifuPanel2.BorderColor = System.Drawing.Color.Transparent;
+            this.bunifuPanel2.BorderRadius = 3;
+            this.bunifuPanel2.BorderThickness = 1;
+            this.bunifuPanel2.Controls.Add(this.tableLayoutPanel2);
+            this.bunifuPanel2.Location = new System.Drawing.Point(3, 139);
+            this.bunifuPanel2.Name = "bunifuPanel2";
+            this.bunifuPanel2.ShowBorders = true;
+            this.bunifuPanel2.Size = new System.Drawing.Size(1371, 118);
+            this.bunifuPanel2.TabIndex = 42;
+            // 
+            // tableLayoutPanel2
+            // 
+            this.tableLayoutPanel2.ColumnCount = 3;
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
+            this.tableLayoutPanel2.Controls.Add(this.btnEliminar, 1, 0);
+            this.tableLayoutPanel2.Controls.Add(this.btnEditar, 0, 0);
+            this.tableLayoutPanel2.Controls.Add(this.btnCrearUsuario, 2, 0);
+            this.tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel2.Location = new System.Drawing.Point(0, 0);
+            this.tableLayoutPanel2.Name = "tableLayoutPanel2";
+            this.tableLayoutPanel2.RowCount = 1;
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(1371, 118);
+            this.tableLayoutPanel2.TabIndex = 27;
             // 
             // btnEliminar
             // 
             this.btnEliminar.AllowAnimations = true;
             this.btnEliminar.AllowMouseEffects = true;
             this.btnEliminar.AllowToggling = false;
+            this.btnEliminar.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.btnEliminar.AnimationSpeed = 200;
             this.btnEliminar.AutoGenerateColors = false;
             this.btnEliminar.AutoRoundBorders = false;
@@ -92,7 +211,7 @@
             this.btnEliminar.IdleIconLeftImage = null;
             this.btnEliminar.IdleIconRightImage = null;
             this.btnEliminar.IndicateFocus = false;
-            this.btnEliminar.Location = new System.Drawing.Point(355, 89);
+            this.btnEliminar.Location = new System.Drawing.Point(607, 41);
             this.btnEliminar.Margin = new System.Windows.Forms.Padding(2);
             this.btnEliminar.Name = "btnEliminar";
             this.btnEliminar.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
@@ -127,138 +246,20 @@
             this.btnEliminar.OnPressedState.ForeColor = System.Drawing.Color.White;
             this.btnEliminar.OnPressedState.IconLeftImage = null;
             this.btnEliminar.OnPressedState.IconRightImage = null;
-            this.btnEliminar.Size = new System.Drawing.Size(66, 34);
-            this.btnEliminar.TabIndex = 21;
+            this.btnEliminar.Size = new System.Drawing.Size(157, 35);
+            this.btnEliminar.TabIndex = 46;
             this.btnEliminar.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btnEliminar.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
             this.btnEliminar.TextMarginLeft = 0;
             this.btnEliminar.TextPadding = new System.Windows.Forms.Padding(0);
             this.btnEliminar.UseDefaultRadiusAndThickness = true;
             // 
-            // btnCrearUsuario
-            // 
-            this.btnCrearUsuario.AllowAnimations = true;
-            this.btnCrearUsuario.AllowMouseEffects = true;
-            this.btnCrearUsuario.AllowToggling = false;
-            this.btnCrearUsuario.AnimationSpeed = 200;
-            this.btnCrearUsuario.AutoGenerateColors = false;
-            this.btnCrearUsuario.AutoRoundBorders = false;
-            this.btnCrearUsuario.AutoSizeLeftIcon = true;
-            this.btnCrearUsuario.AutoSizeRightIcon = true;
-            this.btnCrearUsuario.BackColor = System.Drawing.Color.Transparent;
-            this.btnCrearUsuario.BackColor1 = System.Drawing.Color.FromArgb(((int)(((byte)(197)))), ((int)(((byte)(18)))), ((int)(((byte)(48)))));
-            this.btnCrearUsuario.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnCrearUsuario.BackgroundImage")));
-            this.btnCrearUsuario.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderStyles.Solid;
-            this.btnCrearUsuario.ButtonText = "Agregar nuevo Usuario";
-            this.btnCrearUsuario.ButtonTextMarginLeft = 0;
-            this.btnCrearUsuario.ColorContrastOnClick = 45;
-            this.btnCrearUsuario.ColorContrastOnHover = 45;
-            this.btnCrearUsuario.Cursor = System.Windows.Forms.Cursors.Default;
-            borderEdges2.BottomLeft = true;
-            borderEdges2.BottomRight = true;
-            borderEdges2.TopLeft = true;
-            borderEdges2.TopRight = true;
-            this.btnCrearUsuario.CustomizableEdges = borderEdges2;
-            this.btnCrearUsuario.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.btnCrearUsuario.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
-            this.btnCrearUsuario.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
-            this.btnCrearUsuario.DisabledForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(160)))), ((int)(((byte)(168)))));
-            this.btnCrearUsuario.FocusState = Bunifu.UI.WinForms.BunifuButton.BunifuButton2.ButtonStates.Pressed;
-            this.btnCrearUsuario.Font = new System.Drawing.Font("Yu Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCrearUsuario.ForeColor = System.Drawing.Color.White;
-            this.btnCrearUsuario.IconLeftAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnCrearUsuario.IconLeftCursor = System.Windows.Forms.Cursors.Default;
-            this.btnCrearUsuario.IconLeftPadding = new System.Windows.Forms.Padding(11, 3, 3, 3);
-            this.btnCrearUsuario.IconMarginLeft = 11;
-            this.btnCrearUsuario.IconPadding = 10;
-            this.btnCrearUsuario.IconRightAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnCrearUsuario.IconRightCursor = System.Windows.Forms.Cursors.Default;
-            this.btnCrearUsuario.IconRightPadding = new System.Windows.Forms.Padding(3, 3, 7, 3);
-            this.btnCrearUsuario.IconSize = 25;
-            this.btnCrearUsuario.IdleBorderColor = System.Drawing.Color.Transparent;
-            this.btnCrearUsuario.IdleBorderRadius = 20;
-            this.btnCrearUsuario.IdleBorderThickness = 1;
-            this.btnCrearUsuario.IdleFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(197)))), ((int)(((byte)(18)))), ((int)(((byte)(48)))));
-            this.btnCrearUsuario.IdleIconLeftImage = null;
-            this.btnCrearUsuario.IdleIconRightImage = null;
-            this.btnCrearUsuario.IndicateFocus = false;
-            this.btnCrearUsuario.Location = new System.Drawing.Point(599, 89);
-            this.btnCrearUsuario.Margin = new System.Windows.Forms.Padding(2);
-            this.btnCrearUsuario.Name = "btnCrearUsuario";
-            this.btnCrearUsuario.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
-            this.btnCrearUsuario.OnDisabledState.BorderRadius = 20;
-            this.btnCrearUsuario.OnDisabledState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderStyles.Solid;
-            this.btnCrearUsuario.OnDisabledState.BorderThickness = 1;
-            this.btnCrearUsuario.OnDisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
-            this.btnCrearUsuario.OnDisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(160)))), ((int)(((byte)(168)))));
-            this.btnCrearUsuario.OnDisabledState.IconLeftImage = null;
-            this.btnCrearUsuario.OnDisabledState.IconRightImage = null;
-            this.btnCrearUsuario.onHoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
-            this.btnCrearUsuario.onHoverState.BorderRadius = 20;
-            this.btnCrearUsuario.onHoverState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderStyles.Solid;
-            this.btnCrearUsuario.onHoverState.BorderThickness = 1;
-            this.btnCrearUsuario.onHoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
-            this.btnCrearUsuario.onHoverState.ForeColor = System.Drawing.Color.White;
-            this.btnCrearUsuario.onHoverState.IconLeftImage = null;
-            this.btnCrearUsuario.onHoverState.IconRightImage = null;
-            this.btnCrearUsuario.OnIdleState.BorderColor = System.Drawing.Color.Transparent;
-            this.btnCrearUsuario.OnIdleState.BorderRadius = 20;
-            this.btnCrearUsuario.OnIdleState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderStyles.Solid;
-            this.btnCrearUsuario.OnIdleState.BorderThickness = 1;
-            this.btnCrearUsuario.OnIdleState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(197)))), ((int)(((byte)(18)))), ((int)(((byte)(48)))));
-            this.btnCrearUsuario.OnIdleState.ForeColor = System.Drawing.Color.White;
-            this.btnCrearUsuario.OnIdleState.IconLeftImage = null;
-            this.btnCrearUsuario.OnIdleState.IconRightImage = null;
-            this.btnCrearUsuario.OnPressedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
-            this.btnCrearUsuario.OnPressedState.BorderRadius = 20;
-            this.btnCrearUsuario.OnPressedState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderStyles.Solid;
-            this.btnCrearUsuario.OnPressedState.BorderThickness = 1;
-            this.btnCrearUsuario.OnPressedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
-            this.btnCrearUsuario.OnPressedState.ForeColor = System.Drawing.Color.White;
-            this.btnCrearUsuario.OnPressedState.IconLeftImage = null;
-            this.btnCrearUsuario.OnPressedState.IconRightImage = null;
-            this.btnCrearUsuario.Size = new System.Drawing.Size(150, 34);
-            this.btnCrearUsuario.TabIndex = 20;
-            this.btnCrearUsuario.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.btnCrearUsuario.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
-            this.btnCrearUsuario.TextMarginLeft = 0;
-            this.btnCrearUsuario.TextPadding = new System.Windows.Forms.Padding(0);
-            this.btnCrearUsuario.UseDefaultRadiusAndThickness = true;
-            // 
-            // bunifuPanel1
-            // 
-            this.bunifuPanel1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(41)))), ((int)(((byte)(41)))));
-            this.bunifuPanel1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuPanel1.BackgroundImage")));
-            this.bunifuPanel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.bunifuPanel1.BorderColor = System.Drawing.Color.Transparent;
-            this.bunifuPanel1.BorderRadius = 3;
-            this.bunifuPanel1.BorderThickness = 1;
-            this.bunifuPanel1.Controls.Add(this.label10);
-            this.bunifuPanel1.Location = new System.Drawing.Point(-186, 0);
-            this.bunifuPanel1.Name = "bunifuPanel1";
-            this.bunifuPanel1.ShowBorders = true;
-            this.bunifuPanel1.Size = new System.Drawing.Size(1157, 84);
-            this.bunifuPanel1.TabIndex = 22;
-            // 
-            // label10
-            // 
-            this.label10.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label10.AutoSize = true;
-            this.label10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(41)))), ((int)(((byte)(41)))));
-            this.label10.Font = new System.Drawing.Font("MS Reference Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label10.Location = new System.Drawing.Point(442, 3);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(285, 68);
-            this.label10.TabIndex = 38;
-            this.label10.Text = "Administración de \r\nUsuarios\r\n";
-            this.label10.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            // 
             // btnEditar
             // 
             this.btnEditar.AllowAnimations = true;
             this.btnEditar.AllowMouseEffects = true;
             this.btnEditar.AllowToggling = false;
+            this.btnEditar.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.btnEditar.AnimationSpeed = 200;
             this.btnEditar.AutoGenerateColors = false;
             this.btnEditar.AutoRoundBorders = false;
@@ -273,11 +274,11 @@
             this.btnEditar.ColorContrastOnClick = 45;
             this.btnEditar.ColorContrastOnHover = 45;
             this.btnEditar.Cursor = System.Windows.Forms.Cursors.Default;
-            borderEdges3.BottomLeft = true;
-            borderEdges3.BottomRight = true;
-            borderEdges3.TopLeft = true;
-            borderEdges3.TopRight = true;
-            this.btnEditar.CustomizableEdges = borderEdges3;
+            borderEdges2.BottomLeft = true;
+            borderEdges2.BottomRight = true;
+            borderEdges2.TopLeft = true;
+            borderEdges2.TopRight = true;
+            this.btnEditar.CustomizableEdges = borderEdges2;
             this.btnEditar.DialogResult = System.Windows.Forms.DialogResult.None;
             this.btnEditar.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnEditar.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
@@ -301,7 +302,7 @@
             this.btnEditar.IdleIconLeftImage = null;
             this.btnEditar.IdleIconRightImage = null;
             this.btnEditar.IndicateFocus = false;
-            this.btnEditar.Location = new System.Drawing.Point(40, 89);
+            this.btnEditar.Location = new System.Drawing.Point(142, 42);
             this.btnEditar.Margin = new System.Windows.Forms.Padding(2);
             this.btnEditar.Name = "btnEditar";
             this.btnEditar.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
@@ -336,101 +337,164 @@
             this.btnEditar.OnPressedState.ForeColor = System.Drawing.Color.White;
             this.btnEditar.OnPressedState.IconLeftImage = null;
             this.btnEditar.OnPressedState.IconRightImage = null;
-            this.btnEditar.Size = new System.Drawing.Size(150, 34);
-            this.btnEditar.TabIndex = 23;
+            this.btnEditar.Size = new System.Drawing.Size(172, 34);
+            this.btnEditar.TabIndex = 45;
             this.btnEditar.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btnEditar.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
             this.btnEditar.TextMarginLeft = 0;
             this.btnEditar.TextPadding = new System.Windows.Forms.Padding(0);
             this.btnEditar.UseDefaultRadiusAndThickness = true;
             // 
-            // dgvusuario
+            // btnCrearUsuario
             // 
-            this.dgvusuario.AllowCustomTheming = false;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(251)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.Black;
-            this.dgvusuario.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
-            this.dgvusuario.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dgvusuario.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.dgvusuario.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
-            this.dgvusuario.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.DodgerBlue;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI Semibold", 11.75F, System.Drawing.FontStyle.Bold);
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(115)))), ((int)(((byte)(204)))));
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvusuario.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
-            this.dgvusuario.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvusuario.CurrentTheme.AlternatingRowsStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(251)))), ((int)(((byte)(255)))));
-            this.dgvusuario.CurrentTheme.AlternatingRowsStyle.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold);
-            this.dgvusuario.CurrentTheme.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Black;
-            this.dgvusuario.CurrentTheme.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(210)))), ((int)(((byte)(232)))), ((int)(((byte)(255)))));
-            this.dgvusuario.CurrentTheme.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Black;
-            this.dgvusuario.CurrentTheme.BackColor = System.Drawing.Color.White;
-            this.dgvusuario.CurrentTheme.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(238)))), ((int)(((byte)(255)))));
-            this.dgvusuario.CurrentTheme.HeaderStyle.BackColor = System.Drawing.Color.DodgerBlue;
-            this.dgvusuario.CurrentTheme.HeaderStyle.Font = new System.Drawing.Font("Segoe UI Semibold", 11.75F, System.Drawing.FontStyle.Bold);
-            this.dgvusuario.CurrentTheme.HeaderStyle.ForeColor = System.Drawing.Color.White;
-            this.dgvusuario.CurrentTheme.HeaderStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(115)))), ((int)(((byte)(204)))));
-            this.dgvusuario.CurrentTheme.HeaderStyle.SelectionForeColor = System.Drawing.Color.White;
-            this.dgvusuario.CurrentTheme.Name = null;
-            this.dgvusuario.CurrentTheme.RowsStyle.BackColor = System.Drawing.Color.White;
-            this.dgvusuario.CurrentTheme.RowsStyle.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold);
-            this.dgvusuario.CurrentTheme.RowsStyle.ForeColor = System.Drawing.Color.Black;
-            this.dgvusuario.CurrentTheme.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(210)))), ((int)(((byte)(232)))), ((int)(((byte)(255)))));
-            this.dgvusuario.CurrentTheme.RowsStyle.SelectionForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold);
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(210)))), ((int)(((byte)(232)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgvusuario.DefaultCellStyle = dataGridViewCellStyle3;
-            this.dgvusuario.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.dgvusuario.EnableHeadersVisualStyles = false;
-            this.dgvusuario.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(238)))), ((int)(((byte)(255)))));
-            this.dgvusuario.HeaderBackColor = System.Drawing.Color.DodgerBlue;
-            this.dgvusuario.HeaderBgColor = System.Drawing.Color.Empty;
-            this.dgvusuario.HeaderForeColor = System.Drawing.Color.White;
-            this.dgvusuario.Location = new System.Drawing.Point(0, 184);
-            this.dgvusuario.Name = "dgvusuario";
-            this.dgvusuario.ReadOnly = true;
-            this.dgvusuario.RowHeadersVisible = false;
-            this.dgvusuario.RowTemplate.Height = 40;
-            this.dgvusuario.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvusuario.Size = new System.Drawing.Size(784, 227);
-            this.dgvusuario.TabIndex = 24;
-            this.dgvusuario.Theme = Bunifu.UI.WinForms.BunifuDataGridView.PresetThemes.Light;
+            this.btnCrearUsuario.AllowAnimations = true;
+            this.btnCrearUsuario.AllowMouseEffects = true;
+            this.btnCrearUsuario.AllowToggling = false;
+            this.btnCrearUsuario.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnCrearUsuario.AnimationSpeed = 200;
+            this.btnCrearUsuario.AutoGenerateColors = false;
+            this.btnCrearUsuario.AutoRoundBorders = false;
+            this.btnCrearUsuario.AutoSizeLeftIcon = true;
+            this.btnCrearUsuario.AutoSizeRightIcon = true;
+            this.btnCrearUsuario.BackColor = System.Drawing.Color.Transparent;
+            this.btnCrearUsuario.BackColor1 = System.Drawing.Color.FromArgb(((int)(((byte)(197)))), ((int)(((byte)(18)))), ((int)(((byte)(48)))));
+            this.btnCrearUsuario.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnCrearUsuario.BackgroundImage")));
+            this.btnCrearUsuario.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderStyles.Solid;
+            this.btnCrearUsuario.ButtonText = "Agregar nuevo Usuario";
+            this.btnCrearUsuario.ButtonTextMarginLeft = 0;
+            this.btnCrearUsuario.ColorContrastOnClick = 45;
+            this.btnCrearUsuario.ColorContrastOnHover = 45;
+            this.btnCrearUsuario.Cursor = System.Windows.Forms.Cursors.Default;
+            borderEdges3.BottomLeft = true;
+            borderEdges3.BottomRight = true;
+            borderEdges3.TopLeft = true;
+            borderEdges3.TopRight = true;
+            this.btnCrearUsuario.CustomizableEdges = borderEdges3;
+            this.btnCrearUsuario.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.btnCrearUsuario.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
+            this.btnCrearUsuario.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            this.btnCrearUsuario.DisabledForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(160)))), ((int)(((byte)(168)))));
+            this.btnCrearUsuario.FocusState = Bunifu.UI.WinForms.BunifuButton.BunifuButton2.ButtonStates.Pressed;
+            this.btnCrearUsuario.Font = new System.Drawing.Font("Yu Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCrearUsuario.ForeColor = System.Drawing.Color.White;
+            this.btnCrearUsuario.IconLeftAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnCrearUsuario.IconLeftCursor = System.Windows.Forms.Cursors.Default;
+            this.btnCrearUsuario.IconLeftPadding = new System.Windows.Forms.Padding(11, 3, 3, 3);
+            this.btnCrearUsuario.IconMarginLeft = 11;
+            this.btnCrearUsuario.IconPadding = 10;
+            this.btnCrearUsuario.IconRightAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnCrearUsuario.IconRightCursor = System.Windows.Forms.Cursors.Default;
+            this.btnCrearUsuario.IconRightPadding = new System.Windows.Forms.Padding(3, 3, 7, 3);
+            this.btnCrearUsuario.IconSize = 25;
+            this.btnCrearUsuario.IdleBorderColor = System.Drawing.Color.Transparent;
+            this.btnCrearUsuario.IdleBorderRadius = 20;
+            this.btnCrearUsuario.IdleBorderThickness = 1;
+            this.btnCrearUsuario.IdleFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(197)))), ((int)(((byte)(18)))), ((int)(((byte)(48)))));
+            this.btnCrearUsuario.IdleIconLeftImage = null;
+            this.btnCrearUsuario.IdleIconRightImage = null;
+            this.btnCrearUsuario.IndicateFocus = false;
+            this.btnCrearUsuario.Location = new System.Drawing.Point(1049, 43);
+            this.btnCrearUsuario.Margin = new System.Windows.Forms.Padding(2);
+            this.btnCrearUsuario.Name = "btnCrearUsuario";
+            this.btnCrearUsuario.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
+            this.btnCrearUsuario.OnDisabledState.BorderRadius = 20;
+            this.btnCrearUsuario.OnDisabledState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderStyles.Solid;
+            this.btnCrearUsuario.OnDisabledState.BorderThickness = 1;
+            this.btnCrearUsuario.OnDisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            this.btnCrearUsuario.OnDisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(160)))), ((int)(((byte)(168)))));
+            this.btnCrearUsuario.OnDisabledState.IconLeftImage = null;
+            this.btnCrearUsuario.OnDisabledState.IconRightImage = null;
+            this.btnCrearUsuario.onHoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
+            this.btnCrearUsuario.onHoverState.BorderRadius = 20;
+            this.btnCrearUsuario.onHoverState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderStyles.Solid;
+            this.btnCrearUsuario.onHoverState.BorderThickness = 1;
+            this.btnCrearUsuario.onHoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
+            this.btnCrearUsuario.onHoverState.ForeColor = System.Drawing.Color.White;
+            this.btnCrearUsuario.onHoverState.IconLeftImage = null;
+            this.btnCrearUsuario.onHoverState.IconRightImage = null;
+            this.btnCrearUsuario.OnIdleState.BorderColor = System.Drawing.Color.Transparent;
+            this.btnCrearUsuario.OnIdleState.BorderRadius = 20;
+            this.btnCrearUsuario.OnIdleState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderStyles.Solid;
+            this.btnCrearUsuario.OnIdleState.BorderThickness = 1;
+            this.btnCrearUsuario.OnIdleState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(197)))), ((int)(((byte)(18)))), ((int)(((byte)(48)))));
+            this.btnCrearUsuario.OnIdleState.ForeColor = System.Drawing.Color.White;
+            this.btnCrearUsuario.OnIdleState.IconLeftImage = null;
+            this.btnCrearUsuario.OnIdleState.IconRightImage = null;
+            this.btnCrearUsuario.OnPressedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
+            this.btnCrearUsuario.OnPressedState.BorderRadius = 20;
+            this.btnCrearUsuario.OnPressedState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderStyles.Solid;
+            this.btnCrearUsuario.OnPressedState.BorderThickness = 1;
+            this.btnCrearUsuario.OnPressedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
+            this.btnCrearUsuario.OnPressedState.ForeColor = System.Drawing.Color.White;
+            this.btnCrearUsuario.OnPressedState.IconLeftImage = null;
+            this.btnCrearUsuario.OnPressedState.IconRightImage = null;
+            this.btnCrearUsuario.Size = new System.Drawing.Size(187, 31);
+            this.btnCrearUsuario.TabIndex = 47;
+            this.btnCrearUsuario.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnCrearUsuario.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
+            this.btnCrearUsuario.TextMarginLeft = 0;
+            this.btnCrearUsuario.TextPadding = new System.Windows.Forms.Padding(0);
+            this.btnCrearUsuario.UseDefaultRadiusAndThickness = true;
+            // 
+            // bunifuPanel1
+            // 
+            this.bunifuPanel1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(41)))), ((int)(((byte)(41)))));
+            this.bunifuPanel1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuPanel1.BackgroundImage")));
+            this.bunifuPanel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.bunifuPanel1.BorderColor = System.Drawing.Color.Transparent;
+            this.bunifuPanel1.BorderRadius = 3;
+            this.bunifuPanel1.BorderThickness = 1;
+            this.bunifuPanel1.Controls.Add(this.label1);
+            this.bunifuPanel1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.bunifuPanel1.Location = new System.Drawing.Point(3, 3);
+            this.bunifuPanel1.Name = "bunifuPanel1";
+            this.bunifuPanel1.ShowBorders = true;
+            this.bunifuPanel1.Size = new System.Drawing.Size(1380, 59);
+            this.bunifuPanel1.TabIndex = 41;
+            // 
+            // label1
+            // 
+            this.label1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(41)))), ((int)(((byte)(41)))));
+            this.label1.Font = new System.Drawing.Font("MS Reference Sans Serif", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label1.Location = new System.Drawing.Point(553, -7);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(305, 70);
+            this.label1.TabIndex = 38;
+            this.label1.Text = "Administración de \r\nUsuarios\r\n";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // dgvususarios
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(784, 411);
-            this.Controls.Add(this.dgvusuario);
-            this.Controls.Add(this.btnEditar);
-            this.Controls.Add(this.bunifuPanel1);
-            this.Controls.Add(this.btnEliminar);
-            this.Controls.Add(this.btnCrearUsuario);
+            this.ClientSize = new System.Drawing.Size(1386, 788);
+            this.Controls.Add(this.tableLayoutPanel1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "dgvususarios";
             this.Text = "dgvususarios";
+            ((System.ComponentModel.ISupportInitialize)(this.dgvusuario)).EndInit();
+            this.tableLayoutPanel1.ResumeLayout(false);
+            this.bunifuPanel2.ResumeLayout(false);
+            this.tableLayoutPanel2.ResumeLayout(false);
             this.bunifuPanel1.ResumeLayout(false);
             this.bunifuPanel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvusuario)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        public Bunifu.UI.WinForms.BunifuButton.BunifuButton2 btnEliminar;
-        public Bunifu.UI.WinForms.BunifuButton.BunifuButton2 btnCrearUsuario;
         private Bunifu.UI.WinForms.BunifuPanel bunifuPanel1;
-        public System.Windows.Forms.Label label10;
+        public System.Windows.Forms.Label label1;
+        private Bunifu.UI.WinForms.BunifuPanel bunifuPanel2;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
+        public Bunifu.UI.WinForms.BunifuButton.BunifuButton2 btnEliminar;
         public Bunifu.UI.WinForms.BunifuButton.BunifuButton2 btnEditar;
+        public Bunifu.UI.WinForms.BunifuButton.BunifuButton2 btnCrearUsuario;
         public Bunifu.UI.WinForms.BunifuDataGridView dgvusuario;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
     }
 }

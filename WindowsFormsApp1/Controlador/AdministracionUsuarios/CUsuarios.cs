@@ -7,13 +7,13 @@ using WindowsFormsApp1.Modelo.DAO;
 using WindowsFormsApp1.Vista.Usuarios;
 using WindowsFormsApp1.Vista.Primer_Uso;
 using Sushi_Time_PTC_2024.Modelo.DAO;
+using System.Collections.Generic;
 
 namespace WindowsFormsApp1.Controlador.AdministracionUsuario
 {
     internal class CUsuarios
     {
         dgvususarios objAdminU;
-        CrearPrimerUsuario objagg;
         public CUsuarios(dgvususarios Vista)
         {
             objAdminU = Vista;
@@ -29,22 +29,29 @@ namespace WindowsFormsApp1.Controlador.AdministracionUsuario
         {
             RefrescarData();
         }
-
+       
         public void RefrescarData()
         {
-            DAOUsuarios dAOadminU = new DAOUsuarios();
-            DataSet ds = dAOadminU.Obtenerempleados();
-            objAdminU.dgvusuario.DataSource = ds.Tables["VistaUsuario"];
-
-            foreach (DataGridViewColumn column in objAdminU.dgvusuario.Columns)
             {
-                column.ReadOnly = true;
+                DAOUsuarios dAOadminU = new DAOUsuarios();
+                DataSet ds = dAOadminU.Obtenerempleados();
+                objAdminU.dgvusuario.DataSource = ds.Tables["VistaUsuario"];
+
+                foreach (DataGridViewColumn column in objAdminU.dgvusuario.Columns)
+                {
+                    column.ReadOnly = true;
+                }
+                objAdminU.dgvusuario.DataSource = ds.Tables["VistaUsuario"];
+                objAdminU.dgvusuario.Columns[1].Visible = false;
+                objAdminU.dgvusuario.Columns[3].Visible = false;
+                objAdminU.dgvusuario.Columns[5].Visible = false;
+                objAdminU.dgvusuario.Columns[9].Visible = false;
             }
         }
         private void NewUser(object sender, EventArgs e)
         {
 
-            CrearPrimerUsuario openForm = new CrearPrimerUsuario(2);
+            editarUsuarios openForm = new editarUsuarios(1);
             openForm.ShowDialog();
             RefrescarData();
         }
@@ -56,8 +63,8 @@ namespace WindowsFormsApp1.Controlador.AdministracionUsuario
             try
             {
                 int pos = objAdminU.dgvusuario.CurrentRow.Index;
-                string usuario, Contraseña, Correo, userStatus, nombre, apellido, dui, direccion, telefono, rol;
-                int idUsuario, intentos;
+                string usuario, Correo, userStatus, nombre, apellido, dui, direccion, telefono, rol;
+                int idUsuario;
                 DateTime fechaCreacion;
                 idUsuario = int.Parse(objAdminU.dgvusuario[0, pos].Value.ToString());
                // intentos = int.Parse(objAdminU.dgvusuario[1, pos].Value.ToString());
@@ -74,8 +81,8 @@ namespace WindowsFormsApp1.Controlador.AdministracionUsuario
                 rol = objAdminU.dgvusuario[12, pos].Value.ToString();
 
 
-                editarUsuarios objnuevo = new editarUsuarios(idUsuario, rol, Correo, usuario, userStatus, fechaCreacion, nombre, apellido, dui, direccion, telefono);
-                objnuevo.ShowDialog();
+                editarUsuarios objnuevoo = new editarUsuarios(2, idUsuario, rol, Correo, usuario, userStatus, fechaCreacion, nombre, apellido, dui, direccion, telefono);
+                objnuevoo.ShowDialog();
                 RefrescarData();
             }
             catch (Exception ex)
@@ -89,10 +96,10 @@ namespace WindowsFormsApp1.Controlador.AdministracionUsuario
         private void DeleteUser(object sender, EventArgs e)
         {
             int pos = objAdminU.dgvusuario.CurrentRow.Index;
-            string userSelected = objAdminU.dgvusuario[1, pos].Value.ToString();
+            string userSelected = objAdminU.dgvusuario[6, pos].Value.ToString();
             if (!(userSelected.Equals(SessionVar.Username)))
             {
-                if (MessageBox.Show($"• Se eliminará la información de la persona.\n\n• ¿Esta seguro que desea elimar a: {objAdminU.dgvusuario[1, pos].Value.ToString()}, considere que dicha acción no se podrá revertir.", "Confirmar acción", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+                if (MessageBox.Show($"• Se eliminará la información de la persona.\n\n• ¿Esta seguro que desea elimar a: {objAdminU.dgvusuario[6, pos].Value.ToString()}, considere que dicha acción no se podrá revertir.", "Confirmar acción", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
                 {
                     DAOUsuarios daoDel = new DAOUsuarios();
                     daoDel.IdUsuario = int.Parse(objAdminU.dgvusuario[0, pos].Value.ToString());

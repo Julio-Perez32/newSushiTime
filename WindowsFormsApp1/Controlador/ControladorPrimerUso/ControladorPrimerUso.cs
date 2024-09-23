@@ -24,6 +24,7 @@ namespace Sushi_Time_PTC_2024.Controlador.ControladorPrimerUso
             ObjVista = Vista;
             Vista.btnGuardar.Click += new EventHandler(GuardarInformacion);
             Vista.btnAttach.Click += new EventHandler(ColocarImagen);
+            ObjVista.pbsalir.Click += new EventHandler(QuitApplication);
          }
 
         void GuardarInformacion(object sender, EventArgs e)
@@ -117,6 +118,10 @@ namespace Sushi_Time_PTC_2024.Controlador.ControladorPrimerUso
                 return false;
             }
             return true;
+        }
+        private void QuitApplication(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

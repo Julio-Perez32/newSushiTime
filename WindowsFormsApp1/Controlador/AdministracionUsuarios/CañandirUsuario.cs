@@ -51,6 +51,13 @@ namespace Sushi_Time_PTC_2024.Controlador.AdministracionUsuarios
             ObjAddUser.Load += new EventHandler(InitialCharge);
             ChargeValues(idEmpleado, Nombre, Apellido, NumTelefono, NumCuenta, DUI, FechaNacimiento, Direccion, Hijos, FechaInicio, Salario, FechaFin, Correo);
             ObjAddUser.btnActualizar.Click += new EventHandler(UpdateRegister);
+            ObjAddUser.txtnombreA.KeyPress += new KeyPressEventHandler(TxtDescripcionTarea_KeyPress);
+            ObjAddUser.txtApellidoA.KeyPress += new KeyPressEventHandler(TxtDescripcionTarea_KeyPress);
+            ObjAddUser.txtTelefonoA.KeyPress += new KeyPressEventHandler(TxtSoloNumeros_KeyPress);
+            ObjAddUser.txtCuentabA.KeyPress += new KeyPressEventHandler(TxtSoloNumeros_KeyPress);
+            ObjAddUser.txtHijos.KeyPress += new KeyPressEventHandler(TxtSoloNumeros_KeyPress);
+            ObjAddUser.txtsalario.KeyPress += new KeyPressEventHandler(TxtSoloNumeros_KeyPress);
+            ObjAddUser.txtCodigoeA.KeyPress += new KeyPressEventHandler(TxtSoloNumeros_KeyPress);
 
         }
         private void TxtDescripcionTarea_KeyPress(object sender, KeyPressEventArgs e)

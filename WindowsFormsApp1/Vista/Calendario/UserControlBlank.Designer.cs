@@ -32,11 +32,12 @@
             // 
             // UserControlBlank
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(41)))), ((int)(((byte)(41)))));
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "UserControlBlank";
-            this.Size = new System.Drawing.Size(115, 94);
+            this.Size = new System.Drawing.Size(86, 76);
             this.Load += new System.EventHandler(this.UserControlBlank_Load);
             this.ResumeLayout(false);
 

@@ -25,7 +25,7 @@ namespace Sushi_Time_PTC_2024.Controlador.AdministracionUsuarios
             ObjAdminUser.btnIngresar.Click += new EventHandler(NewUser);
             ObjAdminUser.btnEditar.Click += new EventHandler(UpdateUser);
             ObjAdminUser.btneliminar.Click += new EventHandler(DeleteUser);
-            ObjAdminUser.txtbuscarT.KeyUp += new KeyEventHandler(Search);
+            //ObjAdminUser.txtbuscarT.KeyUp += new KeyEventHandler(Search);
             ObjAdminUser.btnBuscar.Click += new EventHandler(BuscarPeronasControllerEvent);
         }
 
@@ -106,6 +106,7 @@ namespace Sushi_Time_PTC_2024.Controlador.AdministracionUsuarios
             ObjAdminUser.dgvpersonas.Columns[9].Visible = false;
             ObjAdminUser.dgvpersonas.Columns[10].Visible = false;
             ObjAdminUser.dgvpersonas.Columns[12].Visible = false;
+            ObjAdminUser.dgvpersonas.Columns[8].Visible = false;
         }
 
         private void NewUser(object sender, EventArgs e)
@@ -131,12 +132,6 @@ namespace Sushi_Time_PTC_2024.Controlador.AdministracionUsuarios
                 DateTime FechaNacimiento, FechaInicio, FechaFin;
 
                 string cargoNombre = ObjAdminUser.dgvpersonas[3, pos].Value?.ToString();
-
-
-
-
-                // Continuar con el resto del código para obtener otros datos y actualizar el usuario
-                // ...
 
 
 

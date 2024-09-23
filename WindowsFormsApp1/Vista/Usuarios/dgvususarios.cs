@@ -20,5 +20,10 @@ namespace WindowsFormsApp1.Vista.Usuarios
             InitializeComponent();
             CUsuarios objusuari = new CUsuarios(this);
         }
+
+        private void tableLayoutPanel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

@@ -95,7 +95,6 @@
     <Compile Include="Controlador\AdministracionUsuarios\AdministracionUsuarios.cs" />
     <Compile Include="Controlador\AdministracionUsuarios\CañandirUsuario.cs" />
     <Compile Include="Controlador\AdministracionUsuarios\ControladorAU.cs" />
-    <Compile Include="Controlador\AdministracionUsuarios\ControladorEU.cs" />
     <Compile Include="Controlador\AdministracionUsuarios\CUsuarios.cs" />
     <Compile Include="Controlador\ControladorInicial.cs" />
     <Compile Include="Controlador\ControladorLogin\ControladorLogin.cs" />
@@ -142,6 +141,12 @@
     </Compile>
     <Compile Include="Vista\Calendario\AgregarTarea.Designer.cs">
       <DependentUpon>AgregarTarea.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vista\Calendario\Arreglando_vista.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vista\Calendario\Arreglando_vista.Designer.cs">
+      <DependentUpon>Arreglando_vista.cs</DependentUpon>
     </Compile>
     <Compile Include="Vista\Calendario\calendario1.cs">
       <SubType>Form</SubType>
@@ -269,6 +274,9 @@
     </Compile>
     <EmbeddedResource Include="Vista\Calendario\AgregarTarea.resx">
       <DependentUpon>AgregarTarea.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vista\Calendario\Arreglando_vista.resx">
+      <DependentUpon>Arreglando_vista.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Vista\Calendario\calendario1.resx">
       <DependentUpon>calendario1.cs</DependentUpon>

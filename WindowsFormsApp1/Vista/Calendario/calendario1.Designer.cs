@@ -28,126 +28,118 @@
         /// </summary>
         private void InitializeComponent()
         {
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges borderEdges9 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges borderEdges8 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(calendario1));
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges borderEdges1 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges borderEdges2 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges borderEdges3 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges borderEdges7 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges();
+            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
+            this.flowLayoutPanel2 = new System.Windows.Forms.FlowLayoutPanel();
+            this.flowLayoutPanel3 = new System.Windows.Forms.FlowLayoutPanel();
+            this.flowLayoutPanel4 = new System.Windows.Forms.FlowLayoutPanel();
+            this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
+            this.flowLayoutPanel5 = new System.Windows.Forms.FlowLayoutPanel();
+            this.BtnTablaTareas = new Bunifu.UI.WinForms.BunifuButton.BunifuButton2();
             this.LBDATE = new System.Windows.Forms.Label();
+            this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
             this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
             this.daycontainer = new System.Windows.Forms.FlowLayoutPanel();
-            this.BtnTablaTareas = new Bunifu.UI.WinForms.BunifuButton.BunifuButton2();
             this.btnAntes = new Bunifu.UI.WinForms.BunifuButton.BunifuButton2();
             this.btnDespues = new Bunifu.UI.WinForms.BunifuButton.BunifuButton2();
+            this.tableLayoutPanel1.SuspendLayout();
+            this.tableLayoutPanel2.SuspendLayout();
+            this.tableLayoutPanel3.SuspendLayout();
             this.SuspendLayout();
             // 
-            // LBDATE
+            // tableLayoutPanel1
             // 
-            this.LBDATE.AutoSize = true;
-            this.LBDATE.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LBDATE.ForeColor = System.Drawing.Color.Transparent;
-            this.LBDATE.Location = new System.Drawing.Point(305, 7);
-            this.LBDATE.Name = "LBDATE";
-            this.LBDATE.Size = new System.Drawing.Size(72, 31);
-            this.LBDATE.TabIndex = 0;
-            this.LBDATE.Text = "MES";
-            this.LBDATE.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.tableLayoutPanel1.ColumnCount = 3;
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 22.72727F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 54.54546F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 22.72727F));
+            this.tableLayoutPanel1.Controls.Add(this.btnDespues, 2, 2);
+            this.tableLayoutPanel1.Controls.Add(this.btnAntes, 0, 2);
+            this.tableLayoutPanel1.Controls.Add(this.flowLayoutPanel1, 0, 0);
+            this.tableLayoutPanel1.Controls.Add(this.flowLayoutPanel2, 0, 1);
+            this.tableLayoutPanel1.Controls.Add(this.flowLayoutPanel3, 2, 1);
+            this.tableLayoutPanel1.Controls.Add(this.flowLayoutPanel4, 2, 0);
+            this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel2, 1, 0);
+            this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel3, 1, 1);
+            this.tableLayoutPanel1.Controls.Add(this.daycontainer, 1, 2);
+            this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
+            this.tableLayoutPanel1.Name = "tableLayoutPanel1";
+            this.tableLayoutPanel1.RowCount = 3;
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 15.17972F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 15.17972F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 69.64056F));
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(1386, 788);
+            this.tableLayoutPanel1.TabIndex = 0;
             // 
-            // label2
+            // flowLayoutPanel1
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(112, 45);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(73, 20);
-            this.label2.TabIndex = 2;
-            this.label2.Text = "Domingo";
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(3, 3);
+            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(200, 100);
+            this.flowLayoutPanel1.TabIndex = 0;
             // 
-            // label3
+            // flowLayoutPanel2
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(372, 45);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(76, 20);
-            this.label3.TabIndex = 3;
-            this.label3.Text = "Miercoles";
+            this.flowLayoutPanel2.Location = new System.Drawing.Point(3, 122);
+            this.flowLayoutPanel2.Name = "flowLayoutPanel2";
+            this.flowLayoutPanel2.Size = new System.Drawing.Size(200, 100);
+            this.flowLayoutPanel2.TabIndex = 1;
             // 
-            // label4
+            // flowLayoutPanel3
             // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(210, 45);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(53, 20);
-            this.label4.TabIndex = 3;
-            this.label4.Text = "Lunes";
+            this.flowLayoutPanel3.Location = new System.Drawing.Point(1074, 122);
+            this.flowLayoutPanel3.Name = "flowLayoutPanel3";
+            this.flowLayoutPanel3.Size = new System.Drawing.Size(200, 100);
+            this.flowLayoutPanel3.TabIndex = 2;
             // 
-            // label5
+            // flowLayoutPanel4
             // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.Color.White;
-            this.label5.Location = new System.Drawing.Point(292, 45);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(58, 20);
-            this.label5.TabIndex = 4;
-            this.label5.Text = "Martes";
+            this.flowLayoutPanel4.Location = new System.Drawing.Point(1074, 3);
+            this.flowLayoutPanel4.Name = "flowLayoutPanel4";
+            this.flowLayoutPanel4.Size = new System.Drawing.Size(200, 100);
+            this.flowLayoutPanel4.TabIndex = 3;
             // 
-            // label6
+            // tableLayoutPanel2
             // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.ForeColor = System.Drawing.Color.White;
-            this.label6.Location = new System.Drawing.Point(651, 45);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(65, 20);
-            this.label6.TabIndex = 5;
-            this.label6.Text = "Sabado";
+            this.tableLayoutPanel2.ColumnCount = 3;
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33555F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 36.33242F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 30.33202F));
+            this.tableLayoutPanel2.Controls.Add(this.LBDATE, 1, 0);
+            this.tableLayoutPanel2.Controls.Add(this.BtnTablaTareas, 0, 0);
+            this.tableLayoutPanel2.Controls.Add(this.flowLayoutPanel5, 2, 0);
+            this.tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel2.Location = new System.Drawing.Point(318, 3);
+            this.tableLayoutPanel2.Name = "tableLayoutPanel2";
+            this.tableLayoutPanel2.RowCount = 1;
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(750, 113);
+            this.tableLayoutPanel2.TabIndex = 4;
             // 
-            // label7
+            // flowLayoutPanel5
             // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.ForeColor = System.Drawing.Color.White;
-            this.label7.Location = new System.Drawing.Point(472, 45);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(59, 20);
-            this.label7.TabIndex = 5;
-            this.label7.Text = "Jueves";
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.ForeColor = System.Drawing.Color.White;
-            this.label8.Location = new System.Drawing.Point(560, 45);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(63, 20);
-            this.label8.TabIndex = 6;
-            this.label8.Text = "Viernes";
-            // 
-            // daycontainer
-            // 
-            this.daycontainer.Location = new System.Drawing.Point(92, 68);
-            this.daycontainer.Name = "daycontainer";
-            this.daycontainer.Size = new System.Drawing.Size(661, 479);
-            this.daycontainer.TabIndex = 7;
-            this.daycontainer.Paint += new System.Windows.Forms.PaintEventHandler(this.flowLayoutPanel2_Paint);
+            this.flowLayoutPanel5.Location = new System.Drawing.Point(525, 3);
+            this.flowLayoutPanel5.Name = "flowLayoutPanel5";
+            this.flowLayoutPanel5.Size = new System.Drawing.Size(200, 100);
+            this.flowLayoutPanel5.TabIndex = 0;
             // 
             // BtnTablaTareas
             // 
             this.BtnTablaTareas.AllowAnimations = true;
             this.BtnTablaTareas.AllowMouseEffects = true;
             this.BtnTablaTareas.AllowToggling = false;
+            this.BtnTablaTareas.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.BtnTablaTareas.AnimationSpeed = 200;
             this.BtnTablaTareas.AutoGenerateColors = false;
             this.BtnTablaTareas.AutoRoundBorders = false;
@@ -162,11 +154,11 @@
             this.BtnTablaTareas.ColorContrastOnClick = 45;
             this.BtnTablaTareas.ColorContrastOnHover = 45;
             this.BtnTablaTareas.Cursor = System.Windows.Forms.Cursors.Default;
-            borderEdges1.BottomLeft = true;
-            borderEdges1.BottomRight = true;
-            borderEdges1.TopLeft = true;
-            borderEdges1.TopRight = true;
-            this.BtnTablaTareas.CustomizableEdges = borderEdges1;
+            borderEdges9.BottomLeft = true;
+            borderEdges9.BottomRight = true;
+            borderEdges9.TopLeft = true;
+            borderEdges9.TopRight = true;
+            this.BtnTablaTareas.CustomizableEdges = borderEdges9;
             this.BtnTablaTareas.DialogResult = System.Windows.Forms.DialogResult.None;
             this.BtnTablaTareas.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.BtnTablaTareas.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
@@ -190,7 +182,7 @@
             this.BtnTablaTareas.IdleIconLeftImage = null;
             this.BtnTablaTareas.IdleIconRightImage = null;
             this.BtnTablaTareas.IndicateFocus = false;
-            this.BtnTablaTareas.Location = new System.Drawing.Point(176, 3);
+            this.BtnTablaTareas.Location = new System.Drawing.Point(124, 36);
             this.BtnTablaTareas.Margin = new System.Windows.Forms.Padding(2);
             this.BtnTablaTareas.Name = "BtnTablaTareas";
             this.BtnTablaTareas.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
@@ -226,18 +218,149 @@
             this.BtnTablaTareas.OnPressedState.IconLeftImage = null;
             this.BtnTablaTareas.OnPressedState.IconRightImage = null;
             this.BtnTablaTareas.Size = new System.Drawing.Size(124, 40);
-            this.BtnTablaTareas.TabIndex = 10;
+            this.BtnTablaTareas.TabIndex = 22;
             this.BtnTablaTareas.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.BtnTablaTareas.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
             this.BtnTablaTareas.TextMarginLeft = 0;
             this.BtnTablaTareas.TextPadding = new System.Windows.Forms.Padding(0);
             this.BtnTablaTareas.UseDefaultRadiusAndThickness = true;
             // 
+            // LBDATE
+            // 
+            this.LBDATE.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.LBDATE.AutoSize = true;
+            this.LBDATE.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LBDATE.ForeColor = System.Drawing.Color.Transparent;
+            this.LBDATE.Location = new System.Drawing.Point(253, 41);
+            this.LBDATE.Name = "LBDATE";
+            this.LBDATE.Size = new System.Drawing.Size(72, 31);
+            this.LBDATE.TabIndex = 23;
+            this.LBDATE.Text = "MES";
+            this.LBDATE.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // tableLayoutPanel3
+            // 
+            this.tableLayoutPanel3.ColumnCount = 7;
+            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 14.72558F));
+            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 13.69921F));
+            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 13.69921F));
+            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 13.69921F));
+            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 14.72559F));
+            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 14.72559F));
+            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 14.72559F));
+            this.tableLayoutPanel3.Controls.Add(this.label6, 6, 0);
+            this.tableLayoutPanel3.Controls.Add(this.label8, 5, 0);
+            this.tableLayoutPanel3.Controls.Add(this.label7, 4, 0);
+            this.tableLayoutPanel3.Controls.Add(this.label3, 3, 0);
+            this.tableLayoutPanel3.Controls.Add(this.label5, 2, 0);
+            this.tableLayoutPanel3.Controls.Add(this.label4, 1, 0);
+            this.tableLayoutPanel3.Controls.Add(this.label2, 0, 0);
+            this.tableLayoutPanel3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel3.Location = new System.Drawing.Point(318, 122);
+            this.tableLayoutPanel3.Name = "tableLayoutPanel3";
+            this.tableLayoutPanel3.RowCount = 1;
+            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel3.Size = new System.Drawing.Size(750, 113);
+            this.tableLayoutPanel3.TabIndex = 5;
+            // 
+            // label2
+            // 
+            this.label2.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.White;
+            this.label2.Location = new System.Drawing.Point(18, 93);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(73, 20);
+            this.label2.TabIndex = 14;
+            this.label2.Text = "Domingo";
+            // 
+            // label4
+            // 
+            this.label4.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.Color.White;
+            this.label4.Location = new System.Drawing.Point(134, 93);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(53, 20);
+            this.label4.TabIndex = 15;
+            this.label4.Text = "Lunes";
+            // 
+            // label5
+            // 
+            this.label5.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.Color.White;
+            this.label5.Location = new System.Drawing.Point(234, 93);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(58, 20);
+            this.label5.TabIndex = 17;
+            this.label5.Text = "Martes";
+            // 
+            // label3
+            // 
+            this.label3.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.White;
+            this.label3.Location = new System.Drawing.Point(327, 93);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(76, 20);
+            this.label3.TabIndex = 18;
+            this.label3.Text = "Miercoles";
+            // 
+            // label7
+            // 
+            this.label7.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.ForeColor = System.Drawing.Color.White;
+            this.label7.Location = new System.Drawing.Point(441, 93);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(59, 20);
+            this.label7.TabIndex = 19;
+            this.label7.Text = "Jueves";
+            // 
+            // label8
+            // 
+            this.label8.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.ForeColor = System.Drawing.Color.White;
+            this.label8.Location = new System.Drawing.Point(529, 93);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(63, 20);
+            this.label8.TabIndex = 20;
+            this.label8.Text = "Viernes";
+            // 
+            // label6
+            // 
+            this.label6.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.ForeColor = System.Drawing.Color.White;
+            this.label6.Location = new System.Drawing.Point(639, 93);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(65, 20);
+            this.label6.TabIndex = 21;
+            this.label6.Text = "Sabado";
+            // 
+            // daycontainer
+            // 
+            this.daycontainer.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.daycontainer.Location = new System.Drawing.Point(318, 241);
+            this.daycontainer.Name = "daycontainer";
+            this.daycontainer.Size = new System.Drawing.Size(750, 544);
+            this.daycontainer.TabIndex = 11;
+            // 
             // btnAntes
             // 
             this.btnAntes.AllowAnimations = true;
             this.btnAntes.AllowMouseEffects = true;
             this.btnAntes.AllowToggling = false;
+            this.btnAntes.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.btnAntes.AnimationSpeed = 200;
             this.btnAntes.AutoGenerateColors = false;
             this.btnAntes.AutoRoundBorders = false;
@@ -252,11 +375,11 @@
             this.btnAntes.ColorContrastOnClick = 45;
             this.btnAntes.ColorContrastOnHover = 45;
             this.btnAntes.Cursor = System.Windows.Forms.Cursors.Default;
-            borderEdges2.BottomLeft = true;
-            borderEdges2.BottomRight = true;
-            borderEdges2.TopLeft = true;
-            borderEdges2.TopRight = true;
-            this.btnAntes.CustomizableEdges = borderEdges2;
+            borderEdges8.BottomLeft = true;
+            borderEdges8.BottomRight = true;
+            borderEdges8.TopLeft = true;
+            borderEdges8.TopRight = true;
+            this.btnAntes.CustomizableEdges = borderEdges8;
             this.btnAntes.DialogResult = System.Windows.Forms.DialogResult.None;
             this.btnAntes.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnAntes.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
@@ -280,7 +403,7 @@
             this.btnAntes.IdleIconLeftImage = ((System.Drawing.Image)(resources.GetObject("btnAntes.IdleIconLeftImage")));
             this.btnAntes.IdleIconRightImage = null;
             this.btnAntes.IndicateFocus = false;
-            this.btnAntes.Location = new System.Drawing.Point(10, 282);
+            this.btnAntes.Location = new System.Drawing.Point(236, 474);
             this.btnAntes.Name = "btnAntes";
             this.btnAntes.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnAntes.OnDisabledState.BorderRadius = 1;
@@ -315,7 +438,7 @@
             this.btnAntes.OnPressedState.IconLeftImage = null;
             this.btnAntes.OnPressedState.IconRightImage = null;
             this.btnAntes.Size = new System.Drawing.Size(76, 78);
-            this.btnAntes.TabIndex = 9;
+            this.btnAntes.TabIndex = 13;
             this.btnAntes.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btnAntes.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
             this.btnAntes.TextMarginLeft = 0;
@@ -327,6 +450,7 @@
             this.btnDespues.AllowAnimations = true;
             this.btnDespues.AllowMouseEffects = true;
             this.btnDespues.AllowToggling = false;
+            this.btnDespues.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.btnDespues.AnimationSpeed = 200;
             this.btnDespues.AutoGenerateColors = false;
             this.btnDespues.AutoRoundBorders = false;
@@ -341,11 +465,11 @@
             this.btnDespues.ColorContrastOnClick = 45;
             this.btnDespues.ColorContrastOnHover = 45;
             this.btnDespues.Cursor = System.Windows.Forms.Cursors.Default;
-            borderEdges3.BottomLeft = true;
-            borderEdges3.BottomRight = true;
-            borderEdges3.TopLeft = true;
-            borderEdges3.TopRight = true;
-            this.btnDespues.CustomizableEdges = borderEdges3;
+            borderEdges7.BottomLeft = true;
+            borderEdges7.BottomRight = true;
+            borderEdges7.TopLeft = true;
+            borderEdges7.TopRight = true;
+            this.btnDespues.CustomizableEdges = borderEdges7;
             this.btnDespues.DialogResult = System.Windows.Forms.DialogResult.None;
             this.btnDespues.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnDespues.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
@@ -369,7 +493,7 @@
             this.btnDespues.IdleIconLeftImage = ((System.Drawing.Image)(resources.GetObject("btnDespues.IdleIconLeftImage")));
             this.btnDespues.IdleIconRightImage = null;
             this.btnDespues.IndicateFocus = false;
-            this.btnDespues.Location = new System.Drawing.Point(738, 282);
+            this.btnDespues.Location = new System.Drawing.Point(1074, 474);
             this.btnDespues.Name = "btnDespues";
             this.btnDespues.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnDespues.OnDisabledState.BorderRadius = 1;
@@ -403,33 +527,21 @@
             this.btnDespues.OnPressedState.ForeColor = System.Drawing.Color.White;
             this.btnDespues.OnPressedState.IconLeftImage = null;
             this.btnDespues.OnPressedState.IconRightImage = null;
-            this.btnDespues.Size = new System.Drawing.Size(71, 78);
-            this.btnDespues.TabIndex = 8;
+            this.btnDespues.Size = new System.Drawing.Size(96, 78);
+            this.btnDespues.TabIndex = 14;
             this.btnDespues.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btnDespues.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
             this.btnDespues.TextMarginLeft = 0;
             this.btnDespues.TextPadding = new System.Windows.Forms.Padding(0);
             this.btnDespues.UseDefaultRadiusAndThickness = true;
-            this.btnDespues.Click += new System.EventHandler(this.bunifuButton21_Click);
             // 
             // calendario1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(41)))), ((int)(((byte)(41)))));
-            this.ClientSize = new System.Drawing.Size(878, 551);
-            this.Controls.Add(this.BtnTablaTareas);
-            this.Controls.Add(this.btnAntes);
-            this.Controls.Add(this.btnDespues);
-            this.Controls.Add(this.daycontainer);
-            this.Controls.Add(this.label8);
-            this.Controls.Add(this.label7);
-            this.Controls.Add(this.label6);
-            this.Controls.Add(this.label5);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.LBDATE);
+            this.ClientSize = new System.Drawing.Size(1386, 788);
+            this.Controls.Add(this.tableLayoutPanel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.MaximumSize = new System.Drawing.Size(1920, 1080);
             this.MinimumSize = new System.Drawing.Size(426, 240);
@@ -437,23 +549,36 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "calendario1";
             this.Load += new System.EventHandler(this.calendario1_Load);
+            this.tableLayoutPanel1.ResumeLayout(false);
+            this.tableLayoutPanel2.ResumeLayout(false);
+            this.tableLayoutPanel2.PerformLayout();
+            this.tableLayoutPanel3.ResumeLayout(false);
+            this.tableLayoutPanel3.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
         #endregion
+
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
+        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
+        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel2;
+        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel3;
+        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel4;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
+        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel5;
+        public Bunifu.UI.WinForms.BunifuButton.BunifuButton2 BtnTablaTareas;
+        public System.Windows.Forms.Label LBDATE;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel3;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label label6;
+        public System.Windows.Forms.FlowLayoutPanel daycontainer;
         public Bunifu.UI.WinForms.BunifuButton.BunifuButton2 btnAntes;
         public Bunifu.UI.WinForms.BunifuButton.BunifuButton2 btnDespues;
-        public System.Windows.Forms.Label LBDATE;
-        public System.Windows.Forms.FlowLayoutPanel daycontainer;
-        public Bunifu.UI.WinForms.BunifuButton.BunifuButton2 BtnTablaTareas;
     }
 }

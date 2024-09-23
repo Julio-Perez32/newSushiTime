@@ -13,10 +13,16 @@ namespace WindowsFormsApp1.Vista.Usuarios
 {
     public partial class editarUsuarios : Form
     {
-        public editarUsuarios(int idUsuario, string rol, string correo, string usuario, string userStatus, DateTime fechaCreacion, string nombre, string apellido, string dui, string direccion, string telefono)
+        public editarUsuarios(int accion)
         {
             InitializeComponent();
-            ControladorEU objnuevo = new ControladorEU(this, idUsuario, rol, correo, usuario, userStatus, fechaCreacion, nombre, apellido, dui, direccion, telefono);
+            ControladorAU objgu = new ControladorAU(this, accion);
+        }
+
+        public editarUsuarios(int accion, int idUsuario, string rol, string correo, string usuario, string userStatus, DateTime fechaCreacion, string nombre, string apellido, string dui, string direccion, string telefono)
+        {
+            InitializeComponent();
+            ControladorAU objnuevo = new ControladorAU(this, accion, idUsuario, rol, correo, usuario, userStatus, fechaCreacion, nombre, apellido, dui, direccion, telefono);
 
         }
 
