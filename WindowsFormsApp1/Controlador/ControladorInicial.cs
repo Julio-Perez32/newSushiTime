@@ -8,6 +8,7 @@ using WindowsFormsApp1.Modelo.DAO;
 using Sushi_Time_PTC_2024.Vista;
 using WindowsFormsApp1.Vista.Primer_Uso;
 using System.Windows.Forms;
+using Sushi_Time_PTC_2024.Vista.Planillas;
 
 
 namespace Sushi_Time_PTC_2024.Controlador

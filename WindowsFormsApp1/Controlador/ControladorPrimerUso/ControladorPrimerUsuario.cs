@@ -11,6 +11,7 @@ using System.Windows.Forms;
 using WindowsFormsApp1.Modelo.DTO;
 using Sushi_Time_PTC_2024.Modelo.DTO;
 using Sushi_Time_PTC_2024.Controlador.Helpers;
+using System.Runtime.Remoting;
 
 namespace WindowsFormsApp1.Controlador.ControladorPrimerUso
 {
@@ -27,6 +28,9 @@ namespace WindowsFormsApp1.Controlador.ControladorPrimerUso
             Vista.btnGuardar.Click += new EventHandler(RegistrarPrimerUsuario);
             Vista.comboRol.Enabled = true;
             ObjVista.pbSalir.Click += new EventHandler(QuitApplication);
+            ObjVista.txtNombre.KeyPress += new KeyPressEventHandler(TxtDescripcionTarea_KeyPress);
+            ObjVista.txtApellido.KeyPress += new KeyPressEventHandler(TxtDescripcionTarea_KeyPress);
+            ObjVista.txtTelefono.KeyPress += new KeyPressEventHandler(TxtSoloNumeros_KeyPress);
         }
 
         void CargarCombo(object sender, EventArgs e)
@@ -96,6 +100,31 @@ namespace WindowsFormsApp1.Controlador.ControladorPrimerUso
         private void QuitApplication(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+        private void TxtDescripcionTarea_KeyPress(object sender, KeyPressEventArgs e)
+        {
+
+            if (char.IsDigit(e.KeyChar))
+            {
+
+                e.Handled = true;
+                MessageBox.Show("No se permiten números en este campo.",
+                                "Entrada no válida",
+                                MessageBoxButtons.OK,
+                                MessageBoxIcon.Warning);
+            }
+        }
+        private void TxtSoloNumeros_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            // Si el carácter ingresado es una letra o un carácter de control (como la tecla de retroceso)
+            if (!char.IsDigit(e.KeyChar) && !char.IsControl(e.KeyChar))
+            {
+                e.Handled = true; // No permitir la entrada de caracteres que no sean dígitos
+                MessageBox.Show("Solo se permiten números en este campo.",
+                                "Entrada no válida",
+                                MessageBoxButtons.OK,
+                                MessageBoxIcon.Warning);
+            }
         }
     }
 }
