@@ -70,6 +70,7 @@ namespace Sushi_Time_PTC_2024.Controlador.Dashcarpet
             }
             currentForm = new T();
             currentForm.TopLevel = false;
+            currentForm.Dock = DockStyle.Fill;
             ObjDashboard.pnlVistas.Controls.Add(currentForm); // Cambiado a pnlVistas
             ObjDashboard.pnlVistas.Tag = currentForm;
             currentForm.BringToFront();

@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Dashboard));
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges borderEdges1 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.panel1 = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
@@ -42,6 +43,8 @@
             this.btnSanciones = new System.Windows.Forms.Button();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.btnCerrarSesion = new System.Windows.Forms.Button();
+            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            this.btndescarga = new Bunifu.UI.WinForms.BunifuButton.BunifuButton2();
             this.pnlVistas = new Bunifu.UI.WinForms.BunifuPanel();
             this.flowLayoutPanel1.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -51,6 +54,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
+            this.tableLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // flowLayoutPanel1
@@ -67,6 +71,7 @@
             this.flowLayoutPanel1.Controls.Add(this.btnSanciones);
             this.flowLayoutPanel1.Controls.Add(this.pictureBox6);
             this.flowLayoutPanel1.Controls.Add(this.btnCerrarSesion);
+            this.flowLayoutPanel1.Controls.Add(this.tableLayoutPanel1);
             this.flowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.flowLayoutPanel1.Location = new System.Drawing.Point(0, 0);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
@@ -219,6 +224,110 @@
             this.btnCerrarSesion.Text = "Cerrar sesion";
             this.btnCerrarSesion.UseVisualStyleBackColor = false;
             // 
+            // tableLayoutPanel1
+            // 
+            this.tableLayoutPanel1.ColumnCount = 1;
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel1.Controls.Add(this.btndescarga, 0, 0);
+            this.tableLayoutPanel1.Location = new System.Drawing.Point(3, 442);
+            this.tableLayoutPanel1.Name = "tableLayoutPanel1";
+            this.tableLayoutPanel1.RowCount = 1;
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(149, 66);
+            this.tableLayoutPanel1.TabIndex = 14;
+            // 
+            // btndescarga
+            // 
+            this.btndescarga.AllowAnimations = true;
+            this.btndescarga.AllowMouseEffects = true;
+            this.btndescarga.AllowToggling = false;
+            this.btndescarga.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btndescarga.AnimationSpeed = 200;
+            this.btndescarga.AutoGenerateColors = false;
+            this.btndescarga.AutoRoundBorders = false;
+            this.btndescarga.AutoSizeLeftIcon = true;
+            this.btndescarga.AutoSizeRightIcon = true;
+            this.btndescarga.BackColor = System.Drawing.Color.Transparent;
+            this.btndescarga.BackColor1 = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(41)))), ((int)(((byte)(41)))));
+            this.btndescarga.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btndescarga.BackgroundImage")));
+            this.btndescarga.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderStyles.Solid;
+            this.btndescarga.ButtonText = "Manual de Usuario";
+            this.btndescarga.ButtonTextMarginLeft = 0;
+            this.btndescarga.ColorContrastOnClick = 45;
+            this.btndescarga.ColorContrastOnHover = 45;
+            this.btndescarga.Cursor = System.Windows.Forms.Cursors.Default;
+            borderEdges1.BottomLeft = true;
+            borderEdges1.BottomRight = true;
+            borderEdges1.TopLeft = true;
+            borderEdges1.TopRight = true;
+            this.btndescarga.CustomizableEdges = borderEdges1;
+            this.btndescarga.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.btndescarga.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
+            this.btndescarga.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            this.btndescarga.DisabledForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(160)))), ((int)(((byte)(168)))));
+            this.btndescarga.FocusState = Bunifu.UI.WinForms.BunifuButton.BunifuButton2.ButtonStates.Pressed;
+            this.btndescarga.Font = new System.Drawing.Font("Yu Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btndescarga.ForeColor = System.Drawing.Color.White;
+            this.btndescarga.IconLeftAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btndescarga.IconLeftCursor = System.Windows.Forms.Cursors.Default;
+            this.btndescarga.IconLeftPadding = new System.Windows.Forms.Padding(11, 3, 3, 3);
+            this.btndescarga.IconMarginLeft = 11;
+            this.btndescarga.IconPadding = 10;
+            this.btndescarga.IconRightAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btndescarga.IconRightCursor = System.Windows.Forms.Cursors.Default;
+            this.btndescarga.IconRightPadding = new System.Windows.Forms.Padding(3, 3, 7, 3);
+            this.btndescarga.IconSize = 25;
+            this.btndescarga.IdleBorderColor = System.Drawing.Color.Transparent;
+            this.btndescarga.IdleBorderRadius = 20;
+            this.btndescarga.IdleBorderThickness = 1;
+            this.btndescarga.IdleFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(41)))), ((int)(((byte)(41)))));
+            this.btndescarga.IdleIconLeftImage = null;
+            this.btndescarga.IdleIconRightImage = null;
+            this.btndescarga.IndicateFocus = false;
+            this.btndescarga.Location = new System.Drawing.Point(3, 16);
+            this.btndescarga.Margin = new System.Windows.Forms.Padding(2);
+            this.btndescarga.Name = "btndescarga";
+            this.btndescarga.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
+            this.btndescarga.OnDisabledState.BorderRadius = 20;
+            this.btndescarga.OnDisabledState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderStyles.Solid;
+            this.btndescarga.OnDisabledState.BorderThickness = 1;
+            this.btndescarga.OnDisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            this.btndescarga.OnDisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(160)))), ((int)(((byte)(168)))));
+            this.btndescarga.OnDisabledState.IconLeftImage = null;
+            this.btndescarga.OnDisabledState.IconRightImage = null;
+            this.btndescarga.onHoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
+            this.btndescarga.onHoverState.BorderRadius = 20;
+            this.btndescarga.onHoverState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderStyles.Solid;
+            this.btndescarga.onHoverState.BorderThickness = 1;
+            this.btndescarga.onHoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
+            this.btndescarga.onHoverState.ForeColor = System.Drawing.Color.White;
+            this.btndescarga.onHoverState.IconLeftImage = null;
+            this.btndescarga.onHoverState.IconRightImage = null;
+            this.btndescarga.OnIdleState.BorderColor = System.Drawing.Color.Transparent;
+            this.btndescarga.OnIdleState.BorderRadius = 20;
+            this.btndescarga.OnIdleState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderStyles.Solid;
+            this.btndescarga.OnIdleState.BorderThickness = 1;
+            this.btndescarga.OnIdleState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(41)))), ((int)(((byte)(41)))));
+            this.btndescarga.OnIdleState.ForeColor = System.Drawing.Color.White;
+            this.btndescarga.OnIdleState.IconLeftImage = null;
+            this.btndescarga.OnIdleState.IconRightImage = null;
+            this.btndescarga.OnPressedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
+            this.btndescarga.OnPressedState.BorderRadius = 20;
+            this.btndescarga.OnPressedState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderStyles.Solid;
+            this.btndescarga.OnPressedState.BorderThickness = 1;
+            this.btndescarga.OnPressedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
+            this.btndescarga.OnPressedState.ForeColor = System.Drawing.Color.White;
+            this.btndescarga.OnPressedState.IconLeftImage = null;
+            this.btndescarga.OnPressedState.IconRightImage = null;
+            this.btndescarga.Size = new System.Drawing.Size(143, 34);
+            this.btndescarga.TabIndex = 64;
+            this.btndescarga.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btndescarga.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
+            this.btndescarga.TextMarginLeft = 0;
+            this.btndescarga.TextPadding = new System.Windows.Forms.Padding(0);
+            this.btndescarga.UseDefaultRadiusAndThickness = true;
+            this.btndescarga.Click += new System.EventHandler(this.btndescarga_Click);
+            // 
             // pnlVistas
             // 
             this.pnlVistas.BackgroundColor = System.Drawing.Color.Transparent;
@@ -253,6 +362,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
+            this.tableLayoutPanel1.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -273,5 +383,7 @@
         public System.Windows.Forms.Button btnCalendario;
         public System.Windows.Forms.Button btnSanciones;
         public System.Windows.Forms.Button btnCerrarSesion;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
+        public Bunifu.UI.WinForms.BunifuButton.BunifuButton2 btndescarga;
     }
 }

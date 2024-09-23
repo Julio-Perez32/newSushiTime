@@ -95,7 +95,6 @@
     <Compile Include="Controlador\AdministracionUsuarios\AdministracionUsuarios.cs" />
     <Compile Include="Controlador\AdministracionUsuarios\CañandirUsuario.cs" />
     <Compile Include="Controlador\AdministracionUsuarios\ControladorAU.cs" />
-    <Compile Include="Controlador\AdministracionUsuarios\ControladorEU.cs" />
     <Compile Include="Controlador\AdministracionUsuarios\CUsuarios.cs" />
     <Compile Include="Controlador\ControladorInicial.cs" />
     <Compile Include="Controlador\ControladorLogin\ControladorLogin.cs" />
