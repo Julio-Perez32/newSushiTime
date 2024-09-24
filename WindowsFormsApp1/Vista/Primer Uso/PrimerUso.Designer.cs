@@ -53,6 +53,7 @@
             Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges borderEdges2 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.pbSalir = new System.Windows.Forms.PictureBox();
             this.dtCreacion = new Bunifu.UI.WinForms.BunifuDatePicker();
             this.txtPBX = new Bunifu.UI.WinForms.BunifuTextBox();
             this.txtTelefonoEmpresa = new Bunifu.UI.WinForms.BunifuTextBox();
@@ -72,6 +73,7 @@
             this.bunifuPictureBox1 = new Bunifu.UI.WinForms.BunifuPictureBox();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbSalir)).BeginInit();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picEmpresa)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuPictureBox1)).BeginInit();
@@ -93,6 +95,7 @@
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(41)))), ((int)(((byte)(41)))));
+            this.panel3.Controls.Add(this.pbSalir);
             this.panel3.Controls.Add(this.dtCreacion);
             this.panel3.Controls.Add(this.txtPBX);
             this.panel3.Controls.Add(this.txtTelefonoEmpresa);
@@ -111,6 +114,16 @@
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(770, 470);
             this.panel3.TabIndex = 1;
+            // 
+            // pbSalir
+            // 
+            this.pbSalir.Image = global::WindowsFormsApp1.Properties.Resources.sushi_salmon_removebg_preview;
+            this.pbSalir.Location = new System.Drawing.Point(3, 3);
+            this.pbSalir.Name = "pbSalir";
+            this.pbSalir.Size = new System.Drawing.Size(40, 37);
+            this.pbSalir.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pbSalir.TabIndex = 47;
+            this.pbSalir.TabStop = false;
             // 
             // dtCreacion
             // 
@@ -169,7 +182,7 @@
             this.txtPBX.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.txtPBX.Lines = new string[0];
             this.txtPBX.Location = new System.Drawing.Point(523, 244);
-            this.txtPBX.MaxLength = 32767;
+            this.txtPBX.MaxLength = 20;
             this.txtPBX.MinimumSize = new System.Drawing.Size(1, 1);
             this.txtPBX.Modified = false;
             this.txtPBX.Multiline = false;
@@ -246,7 +259,7 @@
             this.txtTelefonoEmpresa.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.txtTelefonoEmpresa.Lines = new string[0];
             this.txtTelefonoEmpresa.Location = new System.Drawing.Point(296, 244);
-            this.txtTelefonoEmpresa.MaxLength = 32767;
+            this.txtTelefonoEmpresa.MaxLength = 20;
             this.txtTelefonoEmpresa.MinimumSize = new System.Drawing.Size(1, 1);
             this.txtTelefonoEmpresa.Modified = false;
             this.txtTelefonoEmpresa.Multiline = false;
@@ -323,7 +336,7 @@
             this.txtCorreoEmpresa.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.txtCorreoEmpresa.Lines = new string[0];
             this.txtCorreoEmpresa.Location = new System.Drawing.Point(37, 189);
-            this.txtCorreoEmpresa.MaxLength = 32767;
+            this.txtCorreoEmpresa.MaxLength = 100;
             this.txtCorreoEmpresa.MinimumSize = new System.Drawing.Size(1, 1);
             this.txtCorreoEmpresa.Modified = false;
             this.txtCorreoEmpresa.Multiline = false;
@@ -400,7 +413,7 @@
             this.txtDireccionEmpresa.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.txtDireccionEmpresa.Lines = new string[0];
             this.txtDireccionEmpresa.Location = new System.Drawing.Point(37, 109);
-            this.txtDireccionEmpresa.MaxLength = 32767;
+            this.txtDireccionEmpresa.MaxLength = 200;
             this.txtDireccionEmpresa.MinimumSize = new System.Drawing.Size(1, 1);
             this.txtDireccionEmpresa.Modified = false;
             this.txtDireccionEmpresa.Multiline = false;
@@ -477,7 +490,7 @@
             this.txtEmpresa.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.txtEmpresa.Lines = new string[0];
             this.txtEmpresa.Location = new System.Drawing.Point(37, 56);
-            this.txtEmpresa.MaxLength = 32767;
+            this.txtEmpresa.MaxLength = 100;
             this.txtEmpresa.MinimumSize = new System.Drawing.Size(1, 1);
             this.txtEmpresa.Modified = false;
             this.txtEmpresa.Multiline = false;
@@ -831,6 +844,7 @@
             this.panel1.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbSalir)).EndInit();
             this.panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.picEmpresa)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuPictureBox1)).EndInit();
@@ -858,5 +872,6 @@
         public Bunifu.UI.WinForms.BunifuDatePicker dtCreacion;
         public Bunifu.UI.WinForms.BunifuTextBox txtPBX;
         public Bunifu.UI.WinForms.BunifuPictureBox picEmpresa;
+        public System.Windows.Forms.PictureBox pbSalir;
     }
 }

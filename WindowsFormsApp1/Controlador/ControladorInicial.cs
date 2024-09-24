@@ -8,6 +8,7 @@ using WindowsFormsApp1.Modelo.DAO;
 using Sushi_Time_PTC_2024.Vista;
 using WindowsFormsApp1.Vista.Primer_Uso;
 using System.Windows.Forms;
+using Sushi_Time_PTC_2024.Vista.Planillas;
 
 
 namespace Sushi_Time_PTC_2024.Controlador
@@ -26,7 +27,7 @@ namespace Sushi_Time_PTC_2024.Controlador
             }
             else if(primerUsuario == 0)
             {
-                Application.Run(new CrearPrimerUsuario());
+                Application.Run(new CrearPrimerUsuario(1));
             }
             else
             {

@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CrearPrimerUsuario));
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges borderEdges2 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges borderEdges1 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges();
             this.GrpUser = new System.Windows.Forms.GroupBox();
             this.comboRol = new System.Windows.Forms.ComboBox();
             this.txtUsuario = new System.Windows.Forms.TextBox();
@@ -50,7 +50,9 @@
             this.txtNombre = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.btnGuardar = new Bunifu.UI.WinForms.BunifuButton.BunifuButton2();
+            this.pbSalir = new System.Windows.Forms.PictureBox();
             this.GrpUser.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbSalir)).BeginInit();
             this.SuspendLayout();
             // 
             // GrpUser
@@ -84,6 +86,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.txtUsuario.Location = new System.Drawing.Point(29, 53);
             this.txtUsuario.Margin = new System.Windows.Forms.Padding(5);
+            this.txtUsuario.MaxLength = 200;
             this.txtUsuario.Name = "txtUsuario";
             this.txtUsuario.Size = new System.Drawing.Size(224, 20);
             this.txtUsuario.TabIndex = 7;
@@ -115,18 +118,20 @@
             // 
             this.txtApellido.Location = new System.Drawing.Point(288, 89);
             this.txtApellido.Margin = new System.Windows.Forms.Padding(5);
+            this.txtApellido.MaxLength = 100;
             this.txtApellido.Name = "txtApellido";
             this.txtApellido.Size = new System.Drawing.Size(250, 20);
-            this.txtApellido.TabIndex = 38;
+            this.txtApellido.TabIndex = 1;
             // 
             // txtDireccion
             // 
             this.txtDireccion.Location = new System.Drawing.Point(32, 183);
             this.txtDireccion.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.txtDireccion.MaxLength = 255;
             this.txtDireccion.Multiline = true;
             this.txtDireccion.Name = "txtDireccion";
             this.txtDireccion.Size = new System.Drawing.Size(506, 47);
-            this.txtDireccion.TabIndex = 41;
+            this.txtDireccion.TabIndex = 4;
             // 
             // mskDocumento
             // 
@@ -135,7 +140,7 @@
             this.mskDocumento.Mask = "00000000-0";
             this.mskDocumento.Name = "mskDocumento";
             this.mskDocumento.Size = new System.Drawing.Size(250, 20);
-            this.mskDocumento.TabIndex = 40;
+            this.mskDocumento.TabIndex = 3;
             // 
             // dtFecha
             // 
@@ -146,23 +151,26 @@
             this.dtFecha.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.dtFecha.Name = "dtFecha";
             this.dtFecha.Size = new System.Drawing.Size(250, 22);
-            this.dtFecha.TabIndex = 39;
+            this.dtFecha.TabIndex = 2;
             // 
             // txtTelefono
             // 
             this.txtTelefono.Location = new System.Drawing.Point(290, 254);
             this.txtTelefono.Margin = new System.Windows.Forms.Padding(5);
+            this.txtTelefono.MaxLength = 20;
             this.txtTelefono.Name = "txtTelefono";
             this.txtTelefono.Size = new System.Drawing.Size(248, 20);
-            this.txtTelefono.TabIndex = 43;
+            this.txtTelefono.TabIndex = 6;
             // 
             // txtEmail
             // 
             this.txtEmail.Location = new System.Drawing.Point(30, 254);
             this.txtEmail.Margin = new System.Windows.Forms.Padding(5);
+            this.txtEmail.MaxLength = 100;
             this.txtEmail.Name = "txtEmail";
             this.txtEmail.Size = new System.Drawing.Size(250, 20);
-            this.txtEmail.TabIndex = 42;
+            this.txtEmail.TabIndex = 5;
+            this.txtEmail.TextChanged += new System.EventHandler(this.txtEmail_TextChanged);
             // 
             // label4
             // 
@@ -235,9 +243,10 @@
             // 
             this.txtNombre.Location = new System.Drawing.Point(30, 89);
             this.txtNombre.Margin = new System.Windows.Forms.Padding(5);
+            this.txtNombre.MaxLength = 100;
             this.txtNombre.Name = "txtNombre";
             this.txtNombre.Size = new System.Drawing.Size(250, 20);
-            this.txtNombre.TabIndex = 35;
+            this.txtNombre.TabIndex = 0;
             // 
             // label1
             // 
@@ -269,11 +278,11 @@
             this.btnGuardar.ColorContrastOnClick = 45;
             this.btnGuardar.ColorContrastOnHover = 45;
             this.btnGuardar.Cursor = System.Windows.Forms.Cursors.Default;
-            borderEdges2.BottomLeft = true;
-            borderEdges2.BottomRight = true;
-            borderEdges2.TopLeft = true;
-            borderEdges2.TopRight = true;
-            this.btnGuardar.CustomizableEdges = borderEdges2;
+            borderEdges1.BottomLeft = true;
+            borderEdges1.BottomRight = true;
+            borderEdges1.TopLeft = true;
+            borderEdges1.TopRight = true;
+            this.btnGuardar.CustomizableEdges = borderEdges1;
             this.btnGuardar.DialogResult = System.Windows.Forms.DialogResult.None;
             this.btnGuardar.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnGuardar.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
@@ -340,12 +349,23 @@
             this.btnGuardar.TextPadding = new System.Windows.Forms.Padding(0);
             this.btnGuardar.UseDefaultRadiusAndThickness = true;
             // 
+            // pbSalir
+            // 
+            this.pbSalir.Image = global::WindowsFormsApp1.Properties.Resources.sushi_salmon_removebg_preview;
+            this.pbSalir.Location = new System.Drawing.Point(516, 0);
+            this.pbSalir.Name = "pbSalir";
+            this.pbSalir.Size = new System.Drawing.Size(57, 50);
+            this.pbSalir.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pbSalir.TabIndex = 46;
+            this.pbSalir.TabStop = false;
+            // 
             // CrearPrimerUsuario
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(41)))), ((int)(((byte)(41)))));
             this.ClientSize = new System.Drawing.Size(572, 500);
+            this.Controls.Add(this.pbSalir);
             this.Controls.Add(this.btnGuardar);
             this.Controls.Add(this.GrpUser);
             this.Controls.Add(this.txtApellido);
@@ -368,6 +388,7 @@
             this.Text = "CrearPrimerUsuario";
             this.GrpUser.ResumeLayout(false);
             this.GrpUser.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbSalir)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -395,5 +416,6 @@
         public System.Windows.Forms.TextBox txtNombre;
         private System.Windows.Forms.Label label1;
         public Bunifu.UI.WinForms.BunifuButton.BunifuButton2 btnGuardar;
+        public System.Windows.Forms.PictureBox pbSalir;
     }
 }

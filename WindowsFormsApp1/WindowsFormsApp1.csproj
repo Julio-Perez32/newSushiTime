@@ -92,8 +92,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Controlador\AdministracionUsuarios\AdministracionUsuario.cs" />
+    <Compile Include="Controlador\AdministracionUsuarios\AdministracionUsuarios.cs" />
     <Compile Include="Controlador\AdministracionUsuarios\CañandirUsuario.cs" />
+    <Compile Include="Controlador\AdministracionUsuarios\ControladorAU.cs" />
+    <Compile Include="Controlador\AdministracionUsuarios\CUsuarios.cs" />
     <Compile Include="Controlador\ControladorInicial.cs" />
     <Compile Include="Controlador\ControladorLogin\ControladorLogin.cs" />
     <Compile Include="Controlador\ControladorPrimerUso\ControladorPrimerUso.cs" />
@@ -109,8 +111,12 @@
     <Compile Include="Controlador\Helpers\TemplateSushiTime.cs" />
     <Compile Include="Controlador\OlvidarContraseñas\ControladorPindeAdmincs.cs" />
     <Compile Include="Controlador\OlvidarContraseñas\controladorPreguntaSeguridad.cs" />
+    <Compile Include="Controlador\OlvidarContraseñas\ControllerRecuperarContraseña.cs" />
     <Compile Include="Controlador\OlvidarContraseñas\OlvidarContraseñas.cs" />
     <Compile Include="Controlador\RecuperacionAdmin\RecuperacionAdministrador.cs" />
+    <Compile Include="Modelo\DAO\UsuarioDAO.cs" />
+    <Compile Include="Modelo\DTO\UsuarioDTO.cs" />
+    <Compile Include="RecuperarContraseñaService.cs" />
     <Compile Include="Modelo\DAO\DAOadminU.cs" />
     <Compile Include="Modelo\DAO\DAOAgregarTarea.cs" />
     <Compile Include="Modelo\DAO\DAOLogin.cs" />
@@ -212,6 +218,12 @@
     <Compile Include="Vista\Olvidar contraseña\olvidarcontraseñaprincipal1.Designer.cs">
       <DependentUpon>olvidarcontraseñaprincipal1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Vista\Olvidar contraseña\RecuperacionContraseña.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vista\Olvidar contraseña\RecuperacionContraseña.Designer.cs">
+      <DependentUpon>RecuperacionContraseña.cs</DependentUpon>
+    </Compile>
     <Compile Include="Vista\Planillas\AgregarUsuario.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -241,6 +253,18 @@
     </Compile>
     <Compile Include="Vista\Sanciones y Observaciones\Sanciones.Designer.cs">
       <DependentUpon>Sanciones.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vista\Usuarios\dgvususarios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vista\Usuarios\dgvususarios.Designer.cs">
+      <DependentUpon>dgvususarios.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vista\Usuarios\editarUsuarios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vista\Usuarios\editarUsuarios.Designer.cs">
+      <DependentUpon>editarUsuarios.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -291,6 +315,9 @@
     <EmbeddedResource Include="Vista\Olvidar contraseña\olvidarcontraseñaprincipal1.resx">
       <DependentUpon>olvidarcontraseñaprincipal1.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Vista\Olvidar contraseña\RecuperacionContraseña.resx">
+      <DependentUpon>RecuperacionContraseña.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Vista\Planillas\AgregarUsuario.resx">
       <DependentUpon>AgregarUsuario.cs</DependentUpon>
     </EmbeddedResource>
@@ -305,6 +332,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Vista\Sanciones y Observaciones\Sanciones.resx">
       <DependentUpon>Sanciones.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vista\Usuarios\dgvususarios.resx">
+      <DependentUpon>dgvususarios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vista\Usuarios\editarUsuarios.resx">
+      <DependentUpon>editarUsuarios.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
