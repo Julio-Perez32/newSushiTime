@@ -111,10 +111,13 @@
     <Compile Include="Controlador\Helpers\TemplateSushiTime.cs" />
     <Compile Include="Controlador\OlvidarContraseñas\ControladorPindeAdmincs.cs" />
     <Compile Include="Controlador\OlvidarContraseñas\controladorPreguntaSeguridad.cs" />
+    <Compile Include="Controlador\OlvidarContraseñas\ControllerContraseñaAdmi2.cs" />
     <Compile Include="Controlador\OlvidarContraseñas\ControllerRecuperarContraseña.cs" />
     <Compile Include="Controlador\OlvidarContraseñas\OlvidarContraseñas.cs" />
     <Compile Include="Controlador\RecuperacionAdmin\RecuperacionAdministrador.cs" />
+    <Compile Include="Modelo\DAO\DAOComprobarContraseñaAdmi.cs" />
     <Compile Include="Modelo\DAO\UsuarioDAO.cs" />
+    <Compile Include="Modelo\DTO\DTORestablerSistema.cs" />
     <Compile Include="Modelo\DTO\UsuarioDTO.cs" />
     <Compile Include="RecuperarContraseñaService.cs" />
     <Compile Include="Modelo\DAO\DAOadminU.cs" />
@@ -224,6 +227,12 @@
     <Compile Include="Vista\Olvidar contraseña\RecuperacionContraseña.Designer.cs">
       <DependentUpon>RecuperacionContraseña.cs</DependentUpon>
     </Compile>
+    <Compile Include="Vista\Olvidar contraseña\RecuperacionDentrodelSistema.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vista\Olvidar contraseña\RecuperacionDentrodelSistema.Designer.cs">
+      <DependentUpon>RecuperacionDentrodelSistema.cs</DependentUpon>
+    </Compile>
     <Compile Include="Vista\Planillas\AgregarUsuario.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -317,6 +326,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Vista\Olvidar contraseña\RecuperacionContraseña.resx">
       <DependentUpon>RecuperacionContraseña.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vista\Olvidar contraseña\RecuperacionDentrodelSistema.resx">
+      <DependentUpon>RecuperacionDentrodelSistema.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Vista\Planillas\AgregarUsuario.resx">
       <DependentUpon>AgregarUsuario.cs</DependentUpon>

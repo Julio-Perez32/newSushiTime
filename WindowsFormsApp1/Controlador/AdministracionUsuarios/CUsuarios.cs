@@ -14,6 +14,7 @@ namespace WindowsFormsApp1.Controlador.AdministracionUsuario
     {
         dgvususarios objAdminU;
         CrearPrimerUsuario objagg;
+        
         public CUsuarios(dgvususarios Vista)
         {
             objAdminU = Vista;
@@ -114,6 +115,27 @@ namespace WindowsFormsApp1.Controlador.AdministracionUsuario
                 MessageBox.Show("No puede eliminar al usuario ya que la sesión está activa, cierre sesión en todos los dispositivos y vuelva a intentarlo.", "Error de proceso", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
-        
+
+        void RestaurarContra(object sender, EventArgs e)
+        {
+            /*int pos = ObjAdminUser.dgvpersonas.CurrentRow.Index;
+            VerPlanilla newPassword = new VerPlanilla();
+            newPassword.txtUsuarioAfectado.Text = ObjAdminUser.dgvpersonas[1, pos].Value.ToString();
+            newPassword.BringToFront();
+            newPassword.ShowDialog();
+            MessageBox.Show("La contraseña fue actualizada exitosamente", "Proceso Completado", MessageBoxButtons.OK, MessageBoxIcon.Information);*/
+
+
+            DAOadminU daoRestartPassword = new DAOadminU();
+            Encriptado commonClasses = new Encriptado();
+            int pos = objAdminU.dgvusuario.CurrentRow.Index;
+            //Capturando nombres del usuario
+            string firstName = objAdminU.dgvusuario[1, pos].Value.ToString();
+            string lastName = objAdminU.dgvusuario[2, pos].Value.ToString();
+            string nombrePersona = firstName + " " + lastName;
+            string emailDestinatario = objAdminU.dgvusuario[6, pos].Value.ToString();
+            daoRestartPassword.Usuario1 = objAdminU.dgvusuario[8, pos].Value.ToString();
+        }
+
     }
 }

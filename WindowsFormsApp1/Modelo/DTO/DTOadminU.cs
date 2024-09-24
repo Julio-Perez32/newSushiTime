@@ -30,7 +30,11 @@ namespace Sushi_Time_PTC_2024.Modelo.DTO
     { "Gerente", 2 },
     { "Empleado", 1 }
 };
+        private string Usuario;
+        private string Contraseña;
 
+        public string Usuario1 { get => Usuario; set => Usuario = value; }
+        public string Contraseña1 { get => Contraseña; set => Contraseña = value; }
 
         public int IDempleado { get => idEmpleado; set => idEmpleado = value; }
         public int idCargo { get => iDCargo; set => iDCargo = value; }
