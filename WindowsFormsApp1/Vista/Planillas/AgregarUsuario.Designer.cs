@@ -869,7 +869,7 @@
             this.txtTelefonoA.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.txtTelefonoA.Lines = new string[0];
             this.txtTelefonoA.Location = new System.Drawing.Point(476, 288);
-            this.txtTelefonoA.MaxLength = 50;
+            this.txtTelefonoA.MaxLength = 8;
             this.txtTelefonoA.MinimumSize = new System.Drawing.Size(1, 1);
             this.txtTelefonoA.Modified = false;
             this.txtTelefonoA.Multiline = false;
