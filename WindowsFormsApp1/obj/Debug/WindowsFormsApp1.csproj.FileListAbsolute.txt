@@ -160,7 +160,6 @@ C:\Users\Usuario\Documents\GitHub\newSushiTime\WindowsFormsApp1\obj\Debug\Sushi_
 C:\Users\Usuario\Documents\GitHub\newSushiTime\WindowsFormsApp1\obj\Debug\Sushi_Time_PTC_2024.Vista.Olvidar_contraseña.Formaccesoporadministrador.resources
 C:\Users\Usuario\Documents\GitHub\newSushiTime\WindowsFormsApp1\obj\Debug\Sushi_Time_PTC_2024.Vista.Olvidar_contraseña.FormPregunta_de_seguridad.resources
 C:\Users\Usuario\Documents\GitHub\newSushiTime\WindowsFormsApp1\obj\Debug\Sushi_Time_PTC_2024.Vista.Olvidar_contraseña.olvidarcontraseña.resources
-C:\Users\Usuario\Documents\GitHub\newSushiTime\WindowsFormsApp1\obj\Debug\Sushi_Time_PTC_2024.Vista.Olvidar_contraseña.olvidarcontraseñapregunta.resources
 C:\Users\Usuario\Documents\GitHub\newSushiTime\WindowsFormsApp1\obj\Debug\Sushi_Time_PTC_2024.Vista.Olvidar_contraseña.olvidarcontraseñaprincipal1.resources
 C:\Users\Usuario\Documents\GitHub\newSushiTime\WindowsFormsApp1\obj\Debug\Sushi_Time_PTC_2024.Vista.Administración_de_Empleados.AgregarUsuario.resources
 C:\Users\Usuario\Documents\GitHub\newSushiTime\WindowsFormsApp1\obj\Debug\Sushi_Time_PTC_2024.Vista.Planillas.VerPlanilla.resources

@@ -206,12 +206,6 @@
     <Compile Include="Vista\Olvidar contraseña\olvidarcontraseña.Designer.cs">
       <DependentUpon>olvidarcontraseña.cs</DependentUpon>
     </Compile>
-    <Compile Include="Vista\Olvidar contraseña\olvidarcontraseñapregunta.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Vista\Olvidar contraseña\olvidarcontraseñapregunta.Designer.cs">
-      <DependentUpon>olvidarcontraseñapregunta.cs</DependentUpon>
-    </Compile>
     <Compile Include="Vista\Olvidar contraseña\olvidarcontraseñaprincipal1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -308,9 +302,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Vista\Olvidar contraseña\olvidarcontraseña.resx">
       <DependentUpon>olvidarcontraseña.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Vista\Olvidar contraseña\olvidarcontraseñapregunta.resx">
-      <DependentUpon>olvidarcontraseñapregunta.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Vista\Olvidar contraseña\olvidarcontraseñaprincipal1.resx">
       <DependentUpon>olvidarcontraseñaprincipal1.cs</DependentUpon>

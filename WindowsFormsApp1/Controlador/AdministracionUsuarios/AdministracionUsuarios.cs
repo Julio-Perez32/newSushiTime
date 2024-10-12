@@ -25,7 +25,7 @@ namespace Sushi_Time_PTC_2024.Controlador.AdministracionUsuarios
             ObjAdminUser.btnIngresar.Click += new EventHandler(NewUser);
             ObjAdminUser.btnEditar.Click += new EventHandler(UpdateUser);
             ObjAdminUser.btneliminar.Click += new EventHandler(DeleteUser);
-            ObjAdminUser.txtbuscarT.KeyUp += new KeyEventHandler(Search);
+           // ObjAdminUser.txtbuscarT.KeyUp += new KeyEventHandler(Search);
             ObjAdminUser.btnBuscar.Click += new EventHandler(BuscarPeronasControllerEvent);
         }
 
@@ -183,7 +183,7 @@ namespace Sushi_Time_PTC_2024.Controlador.AdministracionUsuarios
                 if (MessageBox.Show($"• Se eliminará la información de la persona.\n\n• ¿Esta seguro que desea elimar a: {ObjAdminUser.dgvpersonas[1, pos].Value.ToString()} {ObjAdminUser.dgvpersonas[2, pos].Value.ToString()}, considere que dicha acción no se podrá revertir.", "Confirmar acción", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
                 {
                     DAOadminU daoDel = new DAOadminU();
-                    daoDel.IDempleado = int.Parse(ObjAdminUser.dgvpersonas[0, pos].Value.ToString());
+                    daoDel.IDempleado = int.Parse(ObjAdminUser.dgvpersonas[1, pos].Value.ToString());
                     int valorRetornado = daoDel.EliminarUsuario();
                     if (valorRetornado == 2)
                     {

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Sushi_Time_PTC_2024.Controlador.OlvidarContraseñas;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -15,6 +16,7 @@ namespace Sushi_Time_PTC_2024.Vista.Olvidar_contraseña
         public olvidarcontraseñaprincipal1()
         {
             InitializeComponent();
+            ControladorPindeAdmincs control = new ControladorPindeAdmincs(this);
         }
     }
 }

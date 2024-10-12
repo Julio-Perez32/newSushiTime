@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Sushi_Time_PTC_2024.Vista;
+using Sushi_Time_PTC_2024.Vista.Olvidar_contraseña;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -29,6 +31,8 @@ namespace WindowsFormsApp1.Controlador.OlvidarContraseñas
         private void CerrarForm(Object sender, EventArgs e)
         {
             ObjRecup.Close();
+            olvidarcontraseña login = new olvidarcontraseña();
+            login.Show();
         }
     }
 }

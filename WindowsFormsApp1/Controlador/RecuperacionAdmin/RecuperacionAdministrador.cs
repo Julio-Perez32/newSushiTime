@@ -25,7 +25,7 @@ namespace Sushi_Time_PTC_2024.Controlador.RecuperacionAdmin
         private void IngresarAD(object sender, EventArgs e)
         {
             objadmin.Hide();
-            Dashboard Dashboard = new Dashboard(objadmin.txtPinA.Text);
+            Dashboard Dashboard = new Dashboard(objadmin.txtRespuesta.Text);
             Dashboard.Show();
         }
 

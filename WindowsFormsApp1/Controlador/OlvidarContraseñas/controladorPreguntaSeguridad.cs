@@ -34,12 +34,14 @@ namespace Sushi_Time_PTC_2024.Controlador.ControladorPreguntadeseguridad
             }
             else
             {
-                MessageBox.Show("Error", "Respuesta Incorrecta", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Respuesta Incorrecta.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
         private void QuitApplication(object sender, EventArgs e)
         {
             objFormPregunta_de_seguridad.Hide();
+            olvidarcontraseña login = new olvidarcontraseña();
+            login.Show();
         }
 
     }

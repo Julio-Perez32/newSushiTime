@@ -50,13 +50,12 @@ namespace WindowsFormsApp1.Controlador.AdministracionUsuarios
             VerificarAccion();
         }
 
-
         public void UpdateRegister(object sender, EventArgs e)
         {
             DAOUsuarios daoUpdate = new DAOUsuarios();
             Encriptado encriptado = new Encriptado();
-            daoUpdate.IdUsuario = int.Parse(objed.txtid.ToString());
-            daoUpdate.Rol = int.Parse(objed.comboRol.Text.Trim());
+            daoUpdate.IdUsuario = int.Parse(objed.txtid.Text.Trim());
+            daoUpdate.Rol = int.Parse(objed.comboRol.SelectedValue.ToString());
             daoUpdate.Usuario = objed.txtUsuario.Text.Trim();
             daoUpdate.Nombre = objed.txtNombre.Text.Trim();
             daoUpdate.Dui = objed.mskDocumento.Text.Trim();
