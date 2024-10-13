@@ -24,6 +24,8 @@ namespace Sushi_Time_PTC_2024.Controlador.ControladorPrimerUso
             ObjVista = Vista;
             Vista.btnGuardar.Click += new EventHandler(GuardarInformacion);
             Vista.btnAttach.Click += new EventHandler(ColocarImagen);
+            ObjVista.pbSalir.Click += new EventHandler(QuitApplication);
+            ObjVista.txtTelefonoEmpresa.KeyPress += new KeyPressEventHandler(TxtSoloNumeros_KeyPress);
          }
 
         void GuardarInformacion(object sender, EventArgs e)
@@ -117,6 +119,22 @@ namespace Sushi_Time_PTC_2024.Controlador.ControladorPrimerUso
                 return false;
             }
             return true;
+        }
+        private void QuitApplication(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+        private void TxtSoloNumeros_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            // Si el carácter ingresado es una letra o un carácter de control (como la tecla de retroceso)
+            if (!char.IsDigit(e.KeyChar) && !char.IsControl(e.KeyChar))
+            {
+                e.Handled = true; // No permitir la entrada de caracteres que no sean dígitos
+                MessageBox.Show("Solo se permiten números en este campo.",
+                                "Entrada no válida",
+                                MessageBoxButtons.OK,
+                                MessageBoxIcon.Warning);
+            }
         }
     }
 }

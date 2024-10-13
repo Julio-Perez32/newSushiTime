@@ -60,11 +60,10 @@ namespace Sushi_Time_PTC_2024.Controlador.ControladorLogin
         {
             DAOLogin daorecu = new DAOLogin();
             daorecu.Username = objvista.txtUsuario.Text;
-
-            // Verificar si el usuario existe antes de permitir la recuperación
-            if (daorecu.ValidarPrimerUsoSistema() == 0) // Usuario no encontrado
+            if (daorecu.ValidarUsuario() == 0)
             {
                 olvidarcontraseña reinicio = new olvidarcontraseña();
+                objvista.Hide();
                 reinicio.Show();
             }
             else

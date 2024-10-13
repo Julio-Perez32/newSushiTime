@@ -196,6 +196,10 @@ namespace Sushi_Time_PTC_2024.Controlador.AdministracionUsuarios
             {
                 MessageBox.Show("No puede eliminar al usuario ya que la sesión está activa, cierre sesión en todos los dispositivos y vuelva a intentarlo.", "Error de proceso", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+
         }
+
+       
+
     }
 }

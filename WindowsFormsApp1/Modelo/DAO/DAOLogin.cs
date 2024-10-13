@@ -97,5 +97,36 @@ namespace Sushi_Time_PTC_2024.Modelo.DAO
                 }
             }
         }
+
+        public int ValidarUsuario()
+        {
+            SqlConnection connection = null;
+            try
+            {
+                connection = dbContext.getConnection();
+                // Inserta directamente el valor de 'Username' en la consulta
+                string query = $"SELECT COUNT(*) FROM Usuarios WHERE Usuario = '{Username}'";
+                SqlCommand cmd = new SqlCommand(query, connection);
+                int usuarioEncontrado = (int)cmd.ExecuteScalar();  // Devuelve 1 si encuentra el usuario, 0 si no lo encuentra
+                return usuarioEncontrado;
+            }
+            catch (SqlException sqlex)
+            {
+                MessageBox.Show($"SQL Error: {sqlex.Message}");
+                return -1;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Error: {ex.Message}");
+                return -1;
+            }
+            finally
+            {
+                if (connection != null && connection.State == ConnectionState.Open)
+                {
+                    connection.Close();
+                }
+            }
+        }
     }
 }

@@ -68,34 +68,34 @@ namespace WindowsFormsApp1.Modelo.DAO
                 // Se crea una conexión para garantizar que efectivamente haya conexión a la base.
                 Command.Connection = getConnection();
                 string query = "UPDATE Empleados SET " +
-                                "Correo = @param1, " +
-                                "Contraseña = @param2, " +
-                                "Usuario = @param3, " +
-                                "UserStatus = @param4, " +
-                                "Intentos = @param5, " +
-                                "idRol = @param6, " +
-                                "Nombre = @param7, " +
-                                "Apellido = @param8, " +
-                                "Dui = @param9, " +
-                                "Direccion = @param10, " +
-                                "Correo = @param11, " +
-                                "Telefono = @param12, " +
+                                "Usuario = @param1, " +
+                                "Nombre = @param2, " +
+                                "Dui = @param3, " +
+                                "Correo = @param4, " +
+                                "Telefono = @param5, " +
+                                "Apellido = @param6, " +
+                                "idRol = @param7, " +
+                                "Direccion = @param8, " +
+                                "FechaCreacion = @param9, " +
+                                "UserStatus = @param10, " +
+                                "Contraseña = @param11, " +
+                                "Intentos = @param12, " +
                                 "WHERE idUsuario = @param13";
 
                 // Crear comando y asignar valores a los parámetros
                 SqlCommand cmd = new SqlCommand(query, Command.Connection);
-                cmd.Parameters.AddWithValue("param1", Correo);
-                cmd.Parameters.AddWithValue("param2", Contraseña);
-                cmd.Parameters.AddWithValue("param3", Usuario);
-                cmd.Parameters.AddWithValue("param4", UserStatus);
-                cmd.Parameters.AddWithValue("param5", Intentos);
-                cmd.Parameters.AddWithValue("param6", Rol);
-                cmd.Parameters.AddWithValue("param7", Nombre);
-                cmd.Parameters.AddWithValue("param8", Apellido);
-                cmd.Parameters.AddWithValue("param9", Dui);
-                cmd.Parameters.AddWithValue("param10", Direccion);
-                cmd.Parameters.AddWithValue("param11", Correo);
-                cmd.Parameters.AddWithValue("param12", Telefono);
+                cmd.Parameters.AddWithValue("param1", Usuario);
+                cmd.Parameters.AddWithValue("param2", Nombre);
+                cmd.Parameters.AddWithValue("param3", Dui);
+                cmd.Parameters.AddWithValue("param4", Correo);
+                cmd.Parameters.AddWithValue("param5", Telefono);
+                cmd.Parameters.AddWithValue("param6", Apellido);
+                cmd.Parameters.AddWithValue("param7", Rol);
+                cmd.Parameters.AddWithValue("param8", Direccion);
+                cmd.Parameters.AddWithValue("param9", FechaCreacion);
+                cmd.Parameters.AddWithValue("param10", UserStatus);
+                cmd.Parameters.AddWithValue("param11", Contraseña);
+                cmd.Parameters.AddWithValue("param12", Intentos);
                 cmd.Parameters.AddWithValue("param13", IdUsuario);
 
                 // Ejecutar la consulta
@@ -166,6 +166,49 @@ namespace WindowsFormsApp1.Modelo.DAO
             }
             catch (Exception)
             {
+                return null;
+            }
+            finally
+            {
+                getConnection().Close();
+            }
+        }
+        public DataSet BuscarPersonas(string valor)
+        {
+            try
+            {
+                //Accedemos a la conexión que ya se tiene
+                Command.Connection = getConnection();
+
+                //Instrucción que se hará hacia la base de datos
+                string query = $"SELECT * FROM VistaUsuario WHERE Nombre LIKE '{valor}' ";
+
+                // Imprime la consulta para verificar que esté bien formada (usar solo en modo depuración)
+                Console.WriteLine($"Consulta ejecutada: {query}");
+
+                // Comando sql en el cual se pasa la instrucción y la conexión
+                SqlCommand cmd = new SqlCommand(query, Command.Connection);
+
+                // Se ejecuta el comando
+                SqlDataAdapter adp = new SqlDataAdapter(cmd);
+                DataSet ds = new DataSet();
+                adp.Fill(ds, "VistaUsuario");
+
+                // Verifica si se devolvieron filas
+                if (ds.Tables["VistaUsuario"].Rows.Count > 0)
+                {
+                    Console.WriteLine("Búsqueda exitosa, se encontraron resultados.");
+                }
+                else
+                {
+                    Console.WriteLine("No se encontraron resultados.");
+                }
+
+                return ds;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Error en la búsqueda: {ex.Message}");
                 return null;
             }
             finally
