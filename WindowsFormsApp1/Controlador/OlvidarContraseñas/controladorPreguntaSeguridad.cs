@@ -21,6 +21,7 @@ namespace Sushi_Time_PTC_2024.Controlador.ControladorPreguntadeseguridad
         {
             objFormPregunta_de_seguridad = vista;
             objFormPregunta_de_seguridad.btnEnviar.Click += new EventHandler(AccederPregunta);
+            objFormPregunta_de_seguridad.pbSalir.Click += new EventHandler(QuitApplication);
             dtoLogin = new DTOlogin();
             daoLogin = new DAOLogin();
         }
@@ -62,6 +63,12 @@ namespace Sushi_Time_PTC_2024.Controlador.ControladorPreguntadeseguridad
             {
                 MessageBox.Show("Respuesta de seguridad incorrecta.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+        }
+        private void QuitApplication(object sender, EventArgs e)
+        {
+            objFormPregunta_de_seguridad.Hide();
+            olvidarcontraseña login = new olvidarcontraseña();
+            login.Show();
         }
     }
 }

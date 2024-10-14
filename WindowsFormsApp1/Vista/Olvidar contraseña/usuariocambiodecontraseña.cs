@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Sushi_Time_PTC_2024.Vista.Olvidar_contraseña;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -16,6 +17,7 @@ namespace WindowsFormsApp1.Vista.Olvidar_contraseña
         {
             InitializeComponent();
             btnConfirmar.Click += new EventHandler(btnAceptar_Click);
+            pbSalir.Click += new EventHandler(salida);
         }
 
         private void btnAceptar_Click(object sender, EventArgs e)
@@ -29,7 +31,14 @@ namespace WindowsFormsApp1.Vista.Olvidar_contraseña
             {
                 MessageBox.Show("Por favor, ingresa un nombre de usuario.", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
-            }
         }
+        private void salida(object sender, EventArgs e)
+        {
+                this.Hide();
+                olvidarcontraseña login = new olvidarcontraseña();
+                login.Show();
+        }
+      
     }
+}
 
