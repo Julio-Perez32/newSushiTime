@@ -29,9 +29,9 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(editarUsuarios));
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges borderEdges7 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges borderEdges8 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges borderEdges9 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges borderEdges1 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges borderEdges2 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges borderEdges3 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges();
             this.btnEdicionC = new Bunifu.UI.WinForms.BunifuButton.BunifuButton2();
             this.btnCancelar = new Bunifu.UI.WinForms.BunifuButton.BunifuButton2();
             this.GrpUser = new System.Windows.Forms.GroupBox();
@@ -80,11 +80,11 @@
             this.btnEdicionC.ColorContrastOnClick = 45;
             this.btnEdicionC.ColorContrastOnHover = 45;
             this.btnEdicionC.Cursor = System.Windows.Forms.Cursors.Default;
-            borderEdges7.BottomLeft = true;
-            borderEdges7.BottomRight = true;
-            borderEdges7.TopLeft = true;
-            borderEdges7.TopRight = true;
-            this.btnEdicionC.CustomizableEdges = borderEdges7;
+            borderEdges1.BottomLeft = true;
+            borderEdges1.BottomRight = true;
+            borderEdges1.TopLeft = true;
+            borderEdges1.TopRight = true;
+            this.btnEdicionC.CustomizableEdges = borderEdges1;
             this.btnEdicionC.DialogResult = System.Windows.Forms.DialogResult.None;
             this.btnEdicionC.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnEdicionC.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
@@ -170,11 +170,11 @@
             this.btnCancelar.ColorContrastOnClick = 45;
             this.btnCancelar.ColorContrastOnHover = 45;
             this.btnCancelar.Cursor = System.Windows.Forms.Cursors.Default;
-            borderEdges8.BottomLeft = true;
-            borderEdges8.BottomRight = true;
-            borderEdges8.TopLeft = true;
-            borderEdges8.TopRight = true;
-            this.btnCancelar.CustomizableEdges = borderEdges8;
+            borderEdges2.BottomLeft = true;
+            borderEdges2.BottomRight = true;
+            borderEdges2.TopLeft = true;
+            borderEdges2.TopRight = true;
+            this.btnCancelar.CustomizableEdges = borderEdges2;
             this.btnCancelar.DialogResult = System.Windows.Forms.DialogResult.None;
             this.btnCancelar.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnCancelar.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
@@ -272,6 +272,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.txtUsuario.Location = new System.Drawing.Point(29, 53);
             this.txtUsuario.Margin = new System.Windows.Forms.Padding(5);
+            this.txtUsuario.MaxLength = 100;
             this.txtUsuario.Name = "txtUsuario";
             this.txtUsuario.Size = new System.Drawing.Size(224, 20);
             this.txtUsuario.TabIndex = 7;
@@ -303,6 +304,7 @@
             // 
             this.txtApellido.Location = new System.Drawing.Point(271, 41);
             this.txtApellido.Margin = new System.Windows.Forms.Padding(5);
+            this.txtApellido.MaxLength = 100;
             this.txtApellido.Name = "txtApellido";
             this.txtApellido.Size = new System.Drawing.Size(250, 20);
             this.txtApellido.TabIndex = 48;
@@ -311,6 +313,7 @@
             // 
             this.txtDireccion.Location = new System.Drawing.Point(15, 143);
             this.txtDireccion.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.txtDireccion.MaxLength = 1000;
             this.txtDireccion.Multiline = true;
             this.txtDireccion.Name = "txtDireccion";
             this.txtDireccion.Size = new System.Drawing.Size(506, 47);
@@ -340,6 +343,7 @@
             // 
             this.txtTelefono.Location = new System.Drawing.Point(273, 218);
             this.txtTelefono.Margin = new System.Windows.Forms.Padding(5);
+            this.txtTelefono.MaxLength = 8;
             this.txtTelefono.Name = "txtTelefono";
             this.txtTelefono.Size = new System.Drawing.Size(248, 20);
             this.txtTelefono.TabIndex = 53;
@@ -348,6 +352,7 @@
             // 
             this.txtEmail.Location = new System.Drawing.Point(13, 218);
             this.txtEmail.Margin = new System.Windows.Forms.Padding(5);
+            this.txtEmail.MaxLength = 100;
             this.txtEmail.Name = "txtEmail";
             this.txtEmail.Size = new System.Drawing.Size(250, 20);
             this.txtEmail.TabIndex = 52;
@@ -423,6 +428,7 @@
             // 
             this.txtNombre.Location = new System.Drawing.Point(13, 41);
             this.txtNombre.Margin = new System.Windows.Forms.Padding(5);
+            this.txtNombre.MaxLength = 100;
             this.txtNombre.Name = "txtNombre";
             this.txtNombre.Size = new System.Drawing.Size(250, 20);
             this.txtNombre.TabIndex = 47;
@@ -442,6 +448,7 @@
             // 
             this.txtUserStatus.Location = new System.Drawing.Point(13, 267);
             this.txtUserStatus.Margin = new System.Windows.Forms.Padding(5);
+            this.txtUserStatus.MaxLength = 100;
             this.txtUserStatus.Name = "txtUserStatus";
             this.txtUserStatus.Size = new System.Drawing.Size(250, 20);
             this.txtUserStatus.TabIndex = 64;
@@ -496,11 +503,11 @@
             this.btnCrear.ColorContrastOnClick = 45;
             this.btnCrear.ColorContrastOnHover = 45;
             this.btnCrear.Cursor = System.Windows.Forms.Cursors.Default;
-            borderEdges9.BottomLeft = true;
-            borderEdges9.BottomRight = true;
-            borderEdges9.TopLeft = true;
-            borderEdges9.TopRight = true;
-            this.btnCrear.CustomizableEdges = borderEdges9;
+            borderEdges3.BottomLeft = true;
+            borderEdges3.BottomRight = true;
+            borderEdges3.TopLeft = true;
+            borderEdges3.TopRight = true;
+            this.btnCrear.CustomizableEdges = borderEdges3;
             this.btnCrear.DialogResult = System.Windows.Forms.DialogResult.None;
             this.btnCrear.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnCrear.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));

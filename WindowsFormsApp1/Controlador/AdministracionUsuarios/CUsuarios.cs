@@ -21,6 +21,53 @@ namespace WindowsFormsApp1.Controlador.AdministracionUsuario
             objAdminU.btnCrearUsuario.Click += new EventHandler(NewUser);
             objAdminU.btnEditar.Click += new EventHandler(UpdateUser);
             objAdminU.btnEliminar.Click += new EventHandler(DeleteUser);
+            // objAdminU.txtbuscarT.KeyUp += new KeyEventHandler(Search);
+            objAdminU.btnBuscar.Click += new EventHandler(BuscarPeronasControllerEvent);
+        }
+
+        public void Search(object sender, KeyEventArgs e)
+        {
+            BuscarPeronasController();
+        }
+
+        public void BuscarPeronasControllerEvent(object sender, EventArgs e) { BuscarPeronasController(); }
+        void BuscarPeronasController()
+        {
+            // Crear instancia del DAO
+            DAOUsuarios dao = new DAOUsuarios();
+
+            // Obtener el valor que el usuario está escribiendo
+            string valorBusqueda = objAdminU.txtbuscarT.Text.Trim(); // Trim para evitar espacios vacíos
+
+            // Verificar que el valor de búsqueda no esté vacío y que tenga al menos 2 caracteres
+            if (string.IsNullOrEmpty(valorBusqueda) || valorBusqueda.Length < 2)
+            {
+                // Si el cuadro de búsqueda está vacío, mostrar todos los datos o restaurar la tabla completa
+                DataSet ds = dao.Obtenerempleados();
+                if (ds != null && ds.Tables.Count > 0 && ds.Tables["VistaUsuario"].Rows.Count > 0)
+                {
+                    objAdminU.dgvusuario.DataSource = ds.Tables["VistaUsuario"];
+                }
+                else
+                {
+                    objAdminU.dgvusuario.DataSource = null; // Limpiar si no hay datos
+                }
+                return;
+            }
+
+            // Ejecutar la búsqueda
+            DataSet resultadoBusqueda = dao.BuscarPersonas(valorBusqueda);
+
+            if (resultadoBusqueda != null && resultadoBusqueda.Tables.Count > 0 && resultadoBusqueda.Tables["VistaUsuario"].Rows.Count > 0)
+            {
+                // Llenar el DataGridView con los resultados de la búsqueda
+                objAdminU.dgvusuario.DataSource = resultadoBusqueda.Tables["VistaUsuario"];
+            }
+            else
+            {
+                // Si no hay resultados, vaciar el DataGridView sin mostrar mensajes
+                objAdminU.dgvusuario.DataSource = null;
+            }
         }
 
 
@@ -49,7 +96,7 @@ namespace WindowsFormsApp1.Controlador.AdministracionUsuario
         private void NewUser(object sender, EventArgs e)
         {
 
-           editarUsuarios openForm = new editarUsuarios(1);
+            editarUsuarios openForm = new editarUsuarios(1);
             openForm.ShowDialog();
             RefrescarData();
         }
@@ -61,13 +108,13 @@ namespace WindowsFormsApp1.Controlador.AdministracionUsuario
             try
             {
                 int pos = objAdminU.dgvusuario.CurrentRow.Index;
-                string usuario, Correo, userStatus, nombre, apellido, dui, direccion, telefono, rol;
-                int idUsuario;
+                string usuario, Correo, userStatus, nombre, apellido, dui, direccion, telefono, rol, Contraseña;
+                int idUsuario, intentos;
                 DateTime fechaCreacion;
                 idUsuario = int.Parse(objAdminU.dgvusuario[0, pos].Value.ToString());
-               // intentos = int.Parse(objAdminU.dgvusuario[1, pos].Value.ToString());
+                intentos = int.Parse(objAdminU.dgvusuario[1, pos].Value.ToString());
                 Correo = objAdminU.dgvusuario[2, pos].Value.ToString();
-               // Contraseña = objAdminU.dgvusuario[3, pos].Value.ToString();
+                Contraseña = objAdminU.dgvusuario[3, pos].Value.ToString();
                 usuario = objAdminU.dgvusuario[4, pos].Value.ToString();
                 userStatus = objAdminU.dgvusuario[5, pos].Value.ToString();
                 nombre = objAdminU.dgvusuario[6, pos].Value.ToString();
@@ -114,6 +161,26 @@ namespace WindowsFormsApp1.Controlador.AdministracionUsuario
                 MessageBox.Show("No puede eliminar al usuario ya que la sesión está activa, cierre sesión en todos los dispositivos y vuelva a intentarlo.", "Error de proceso", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
-        
+        void RestaurarContra(object sender, EventArgs e)
+        {
+            /*int pos = ObjAdminUser.dgvpersonas.CurrentRow.Index;
+            VerPlanilla newPassword = new VerPlanilla();
+            newPassword.txtUsuarioAfectado.Text = ObjAdminUser.dgvpersonas[1, pos].Value.ToString();
+            newPassword.BringToFront();
+            newPassword.ShowDialog();
+            MessageBox.Show("La contraseña fue actualizada exitosamente", "Proceso Completado", MessageBoxButtons.OK, MessageBoxIcon.Information);*/
+
+
+            DAOadminU daoRestartPassword = new DAOadminU();
+            Encriptado commonClasses = new Encriptado();
+            int pos = objAdminU.dgvusuario.CurrentRow.Index;
+            //Capturando nombres del usuario
+            string firstName = objAdminU.dgvusuario[1, pos].Value.ToString();
+            string lastName = objAdminU.dgvusuario[2, pos].Value.ToString();
+            string nombrePersona = firstName + " " + lastName;
+            string emailDestinatario = objAdminU.dgvusuario[6, pos].Value.ToString();
+            daoRestartPassword.Usuario1 = objAdminU.dgvusuario[8, pos].Value.ToString();
+        }
+
     }
 }

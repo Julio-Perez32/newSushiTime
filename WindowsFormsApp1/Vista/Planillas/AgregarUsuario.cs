@@ -22,7 +22,7 @@ namespace Sushi_Time_PTC_2024.Vista.Administración_de_Empleados
         public AgregarUsuario(int accion, int idEmpleado, string Nombre, string Apellido, string idCargo, string NumTelefono, string NumCuenta, string DUI, DateTime FechaNacimiento, string Direccion, string Hijos, DateTime FechaInicio, decimal Salario, DateTime FechaFin, string Correo)
         {
             InitializeComponent();
-            CañandirUsuario objnuevoU = new CañandirUsuario(this, accion, idEmpleado, idCargo, Apellido, Nombre, NumTelefono, NumCuenta, DUI, FechaNacimiento, Direccion, Hijos, FechaInicio, Salario, FechaFin, Correo);
+            CañandirUsuario objnuevoU = new CañandirUsuario(this, accion, idEmpleado, idCargo, Nombre, Apellido, NumTelefono, NumCuenta, DUI, FechaNacimiento, Direccion, Hijos, FechaInicio, Salario, FechaFin, Correo);
             {
 
             }

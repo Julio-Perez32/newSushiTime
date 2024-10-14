@@ -173,5 +173,48 @@ namespace WindowsFormsApp1.Modelo.DAO
                 getConnection().Close();
             }
         }
+        public DataSet BuscarPersonas(string valor)
+        {
+            try
+            {
+                //Accedemos a la conexión que ya se tiene
+                Command.Connection = getConnection();
+
+                //Instrucción que se hará hacia la base de datos
+                string query = $"SELECT * FROM VistaUsuario WHERE Nombre LIKE '{valor}' ";
+
+                // Imprime la consulta para verificar que esté bien formada (usar solo en modo depuración)
+                Console.WriteLine($"Consulta ejecutada: {query}");
+
+                // Comando sql en el cual se pasa la instrucción y la conexión
+                SqlCommand cmd = new SqlCommand(query, Command.Connection);
+
+                // Se ejecuta el comando
+                SqlDataAdapter adp = new SqlDataAdapter(cmd);
+                DataSet ds = new DataSet();
+                adp.Fill(ds, "VistaUsuario");
+
+                // Verifica si se devolvieron filas
+                if (ds.Tables["VistaUsuario"].Rows.Count > 0)
+                {
+                    Console.WriteLine("Búsqueda exitosa, se encontraron resultados.");
+                }
+                else
+                {
+                    Console.WriteLine("No se encontraron resultados.");
+                }
+
+                return ds;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Error en la búsqueda: {ex.Message}");
+                return null;
+            }
+            finally
+            {
+                getConnection().Close();
+            }
+        }
     }
 }
