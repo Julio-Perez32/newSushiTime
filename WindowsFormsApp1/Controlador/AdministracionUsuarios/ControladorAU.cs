@@ -64,10 +64,7 @@ namespace WindowsFormsApp1.Controlador.AdministracionUsuarios
             daoUpdate.Apellido = objed.txtApellido.Text.Trim();
             daoUpdate.Direccion = objed.txtDireccion.Text.Trim();
             daoUpdate.FechaCreacion = DateTime.Parse(objed.dtFecha.Text.Trim());
-            daoUpdate.IdUsuario = int.Parse(objed.txtid.Text.Trim());
             daoUpdate.UserStatus = objed.txtUserStatus.Text.Trim();
-            daoUpdate.Contraseña = encriptado.ComputeSha256Hash(objed.txtUsuario.Text.Trim() + "SushiTime24");
-            daoUpdate.Intentos = 0;
 
             int valorRetornado = daoUpdate.ActualizarUsuario();
 
@@ -77,10 +74,7 @@ namespace WindowsFormsApp1.Controlador.AdministracionUsuarios
                                 "Proceso completado",
                                 MessageBoxButtons.OK,
                                 MessageBoxIcon.Information);
-                MessageBox.Show($"Usuario administrador: {objed.txtUsuario.Text.Trim()}\nContraseña de usuario: {objed.txtUsuario.Text.Trim()}SushiTime24",
-                                   "Credenciales de acceso",
-                                   MessageBoxButtons.OK,
-                                   MessageBoxIcon.Information);
+  
                 objed.Hide();
             }
             else if (valorRetornado == 1)
@@ -93,9 +87,9 @@ namespace WindowsFormsApp1.Controlador.AdministracionUsuarios
             else
             {
                 MessageBox.Show("Los datos no pudieron ser actualizados debido a un error inesperado",
-                                "Proceso interrumpido",
-                                MessageBoxButtons.OK,
-                                MessageBoxIcon.Error);
+                         "Proceso interrumpido",
+                          MessageBoxButtons.OK,
+                          MessageBoxIcon.Error);
             }
         }
 
