@@ -29,9 +29,9 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(calendario1));
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges borderEdges4 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges borderEdges5 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges borderEdges6 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges borderEdges1 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges borderEdges2 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges borderEdges3 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.btnDespues = new Bunifu.UI.WinForms.BunifuButton.BunifuButton2();
             this.btnAntes = new Bunifu.UI.WinForms.BunifuButton.BunifuButton2();
@@ -78,7 +78,7 @@
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 17F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 13F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 70F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(1386, 788);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(1380, 788);
             this.tableLayoutPanel1.TabIndex = 0;
             // 
             // btnDespues
@@ -101,11 +101,11 @@
             this.btnDespues.ColorContrastOnClick = 45;
             this.btnDespues.ColorContrastOnHover = 45;
             this.btnDespues.Cursor = System.Windows.Forms.Cursors.Default;
-            borderEdges4.BottomLeft = true;
-            borderEdges4.BottomRight = true;
-            borderEdges4.TopLeft = true;
-            borderEdges4.TopRight = true;
-            this.btnDespues.CustomizableEdges = borderEdges4;
+            borderEdges1.BottomLeft = true;
+            borderEdges1.BottomRight = true;
+            borderEdges1.TopLeft = true;
+            borderEdges1.TopRight = true;
+            this.btnDespues.CustomizableEdges = borderEdges1;
             this.btnDespues.DialogResult = System.Windows.Forms.DialogResult.None;
             this.btnDespues.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnDespues.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
@@ -129,7 +129,7 @@
             this.btnDespues.IdleIconLeftImage = ((System.Drawing.Image)(resources.GetObject("btnDespues.IdleIconLeftImage")));
             this.btnDespues.IdleIconRightImage = null;
             this.btnDespues.IndicateFocus = false;
-            this.btnDespues.Location = new System.Drawing.Point(1042, 472);
+            this.btnDespues.Location = new System.Drawing.Point(1038, 472);
             this.btnDespues.Name = "btnDespues";
             this.btnDespues.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnDespues.OnDisabledState.BorderRadius = 1;
@@ -191,11 +191,11 @@
             this.btnAntes.ColorContrastOnClick = 45;
             this.btnAntes.ColorContrastOnHover = 45;
             this.btnAntes.Cursor = System.Windows.Forms.Cursors.Default;
-            borderEdges5.BottomLeft = true;
-            borderEdges5.BottomRight = true;
-            borderEdges5.TopLeft = true;
-            borderEdges5.TopRight = true;
-            this.btnAntes.CustomizableEdges = borderEdges5;
+            borderEdges2.BottomLeft = true;
+            borderEdges2.BottomRight = true;
+            borderEdges2.TopLeft = true;
+            borderEdges2.TopRight = true;
+            this.btnAntes.CustomizableEdges = borderEdges2;
             this.btnAntes.DialogResult = System.Windows.Forms.DialogResult.None;
             this.btnAntes.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnAntes.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
@@ -219,7 +219,7 @@
             this.btnAntes.IdleIconLeftImage = ((System.Drawing.Image)(resources.GetObject("btnAntes.IdleIconLeftImage")));
             this.btnAntes.IdleIconRightImage = null;
             this.btnAntes.IndicateFocus = false;
-            this.btnAntes.Location = new System.Drawing.Point(267, 472);
+            this.btnAntes.Location = new System.Drawing.Point(266, 472);
             this.btnAntes.Name = "btnAntes";
             this.btnAntes.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnAntes.OnDisabledState.BorderRadius = 1;
@@ -270,7 +270,7 @@
             // 
             // flowLayoutPanel2
             // 
-            this.flowLayoutPanel2.Location = new System.Drawing.Point(1042, 3);
+            this.flowLayoutPanel2.Location = new System.Drawing.Point(1038, 3);
             this.flowLayoutPanel2.Name = "flowLayoutPanel2";
             this.flowLayoutPanel2.Size = new System.Drawing.Size(177, 67);
             this.flowLayoutPanel2.TabIndex = 1;
@@ -293,11 +293,11 @@
             this.tableLayoutPanel2.Controls.Add(this.label4, 1, 0);
             this.tableLayoutPanel2.Controls.Add(this.label2, 0, 0);
             this.tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel2.Location = new System.Drawing.Point(349, 136);
+            this.tableLayoutPanel2.Location = new System.Drawing.Point(348, 136);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
             this.tableLayoutPanel2.RowCount = 1;
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel2.Size = new System.Drawing.Size(687, 96);
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(684, 96);
             this.tableLayoutPanel2.TabIndex = 4;
             // 
             // label6
@@ -306,7 +306,7 @@
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.White;
-            this.label6.Location = new System.Drawing.Point(591, 76);
+            this.label6.Location = new System.Drawing.Point(585, 76);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(65, 20);
             this.label6.TabIndex = 20;
@@ -318,7 +318,7 @@
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.Color.White;
-            this.label8.Location = new System.Drawing.Point(493, 76);
+            this.label8.Location = new System.Drawing.Point(488, 76);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(63, 20);
             this.label8.TabIndex = 19;
@@ -330,7 +330,7 @@
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.Color.White;
-            this.label7.Location = new System.Drawing.Point(395, 76);
+            this.label7.Location = new System.Drawing.Point(391, 76);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(59, 20);
             this.label7.TabIndex = 18;
@@ -342,7 +342,7 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(305, 76);
+            this.label3.Location = new System.Drawing.Point(301, 76);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(76, 20);
             this.label3.TabIndex = 17;
@@ -354,7 +354,7 @@
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.White;
-            this.label5.Location = new System.Drawing.Point(216, 76);
+            this.label5.Location = new System.Drawing.Point(213, 76);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(58, 20);
             this.label5.TabIndex = 16;
@@ -366,7 +366,7 @@
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(120, 76);
+            this.label4.Location = new System.Drawing.Point(119, 76);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(53, 20);
             this.label4.TabIndex = 14;
@@ -378,7 +378,7 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(24, 76);
+            this.label2.Location = new System.Drawing.Point(23, 76);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(50, 20);
             this.label2.TabIndex = 13;
@@ -393,11 +393,11 @@
             this.tableLayoutPanel3.Controls.Add(this.LBDATE, 1, 0);
             this.tableLayoutPanel3.Controls.Add(this.BtnTablaTareas, 0, 0);
             this.tableLayoutPanel3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel3.Location = new System.Drawing.Point(349, 3);
+            this.tableLayoutPanel3.Location = new System.Drawing.Point(348, 3);
             this.tableLayoutPanel3.Name = "tableLayoutPanel3";
             this.tableLayoutPanel3.RowCount = 1;
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel3.Size = new System.Drawing.Size(687, 127);
+            this.tableLayoutPanel3.Size = new System.Drawing.Size(684, 127);
             this.tableLayoutPanel3.TabIndex = 5;
             // 
             // LBDATE
@@ -406,7 +406,7 @@
             this.LBDATE.AutoSize = true;
             this.LBDATE.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LBDATE.ForeColor = System.Drawing.Color.Transparent;
-            this.LBDATE.Location = new System.Drawing.Point(277, 48);
+            this.LBDATE.Location = new System.Drawing.Point(276, 48);
             this.LBDATE.Name = "LBDATE";
             this.LBDATE.Size = new System.Drawing.Size(72, 31);
             this.LBDATE.TabIndex = 21;
@@ -433,11 +433,11 @@
             this.BtnTablaTareas.ColorContrastOnClick = 45;
             this.BtnTablaTareas.ColorContrastOnHover = 45;
             this.BtnTablaTareas.Cursor = System.Windows.Forms.Cursors.Default;
-            borderEdges6.BottomLeft = true;
-            borderEdges6.BottomRight = true;
-            borderEdges6.TopLeft = true;
-            borderEdges6.TopRight = true;
-            this.BtnTablaTareas.CustomizableEdges = borderEdges6;
+            borderEdges3.BottomLeft = true;
+            borderEdges3.BottomRight = true;
+            borderEdges3.TopLeft = true;
+            borderEdges3.TopRight = true;
+            this.BtnTablaTareas.CustomizableEdges = borderEdges3;
             this.BtnTablaTareas.DialogResult = System.Windows.Forms.DialogResult.None;
             this.BtnTablaTareas.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.BtnTablaTareas.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
@@ -461,7 +461,7 @@
             this.BtnTablaTareas.IdleIconLeftImage = null;
             this.BtnTablaTareas.IdleIconRightImage = null;
             this.BtnTablaTareas.IndicateFocus = false;
-            this.BtnTablaTareas.Location = new System.Drawing.Point(107, 43);
+            this.BtnTablaTareas.Location = new System.Drawing.Point(106, 43);
             this.BtnTablaTareas.Margin = new System.Windows.Forms.Padding(2);
             this.BtnTablaTareas.Name = "BtnTablaTareas";
             this.BtnTablaTareas.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
@@ -513,7 +513,7 @@
             // 
             // flowLayoutPanel6
             // 
-            this.flowLayoutPanel6.Location = new System.Drawing.Point(1042, 136);
+            this.flowLayoutPanel6.Location = new System.Drawing.Point(1038, 136);
             this.flowLayoutPanel6.Name = "flowLayoutPanel6";
             this.flowLayoutPanel6.Size = new System.Drawing.Size(200, 96);
             this.flowLayoutPanel6.TabIndex = 7;
@@ -521,9 +521,9 @@
             // daycontainer
             // 
             this.daycontainer.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.daycontainer.Location = new System.Drawing.Point(349, 238);
+            this.daycontainer.Location = new System.Drawing.Point(348, 238);
             this.daycontainer.Name = "daycontainer";
-            this.daycontainer.Size = new System.Drawing.Size(687, 547);
+            this.daycontainer.Size = new System.Drawing.Size(684, 547);
             this.daycontainer.TabIndex = 23;
             // 
             // calendario1
@@ -531,7 +531,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(41)))), ((int)(((byte)(41)))));
-            this.ClientSize = new System.Drawing.Size(1386, 788);
+            this.ClientSize = new System.Drawing.Size(1380, 788);
             this.Controls.Add(this.tableLayoutPanel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.MaximumSize = new System.Drawing.Size(1920, 1080);
