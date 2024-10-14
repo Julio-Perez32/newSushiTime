@@ -31,21 +31,19 @@ namespace Sushi_Time_PTC_2024.Controlador.ControladorLogin
             DAOData.Username = objvista.txtUsuario.Text;
             DAOData.Password = objvista.txtIngresarContraseña.Text;
 
-            // Validar el login
             int answer = DAOData.ValidarLogin();
-            // Manejar el resultado del login
             switch (answer)
             {
-                case 1: // Usuario y contraseña correctos
+                case 1:
                     objvista.Hide();
                     Dashboard dashboard = new Dashboard(objvista.txtUsuario.Text);
                     dashboard.Show();
                     break;
-                case 0: // Usuario no existe o contraseña incorrecta
+                case 0:
                 default:
                     MessageBox.Show("Datos incorrectos", "Error al iniciar sesión", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     break;
-                case -1: // Error al conectar a la base de datos
+                case -1:
                     MessageBox.Show("Error al conectar a la base de datos", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     break;
             }
@@ -60,7 +58,7 @@ namespace Sushi_Time_PTC_2024.Controlador.ControladorLogin
         {
             DAOLogin daorecu = new DAOLogin();
             daorecu.Username = objvista.txtUsuario.Text;
-            if (daorecu.ValidarUsuario() == 0)
+            if (daorecu.ValidarUsuario() == 1)
             {
                 olvidarcontraseña reinicio = new olvidarcontraseña();
                 objvista.Hide();

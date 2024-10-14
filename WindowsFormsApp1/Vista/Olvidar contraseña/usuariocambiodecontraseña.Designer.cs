@@ -246,6 +246,7 @@
             this.Controls.Add(this.btnConfirmar);
             this.Controls.Add(this.txtUsername);
             this.Controls.Add(this.bunifuLabel1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "usuariocambiodecontraseña";
             this.Text = "usuariocambiodecontraseña";
             ((System.ComponentModel.ISupportInitialize)(this.pbSalir)).EndInit();

@@ -3,24 +3,23 @@ using System;
 using System.Data;
 using System.Data.SqlClient;
 using System.Windows.Forms;
-using WindowsFormsApp1.Modelo.DTO; // Asegúrate de que la ruta es correcta
+using WindowsFormsApp1.Modelo.DTO;
 
 namespace WindowsFormsApp1.Modelo.DAO
 {
     internal class DAOUsuario
     {
         private readonly SqlCommand Command = new SqlCommand();
-        private readonly dbContext dbContext; // Asegúrate de tener un contexto adecuado para la conexión
+        private readonly dbContext dbContext;
 
         public DAOUsuario(dbContext context)
         {
             dbContext = context;
         }
 
-        // Método para verificar si el usuario existe en la base de datos
         public bool VerificarUsuario(DTOUsuarios dtoUsuario)
         {
-            string query = "SELECT COUNT(*) FROM usuarios WHERE Usuario = @Usuario";
+            string query = "SELECT COUNT(*) FROM Usuarios WHERE Usuario = @Usuario";
 
             using (SqlConnection connection = dbContext.getConnection())
             {

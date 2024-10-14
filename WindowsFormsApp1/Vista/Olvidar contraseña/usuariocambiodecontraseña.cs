@@ -15,20 +15,21 @@ namespace WindowsFormsApp1.Vista.Olvidar_contraseña
         public usuariocambiodecontraseña()
         {
             InitializeComponent();
-            btnConfirmar.Click += new EventHandler(btnAceptar_Click); // Conecta el evento
+            btnConfirmar.Click += new EventHandler(btnAceptar_Click);
         }
 
         private void btnAceptar_Click(object sender, EventArgs e)
         {
-            if (!string.IsNullOrEmpty(txtUsername.Text)) // Verifica que haya un nombre de usuario
+            if (!string.IsNullOrEmpty(txtUsername.Text))
             {
-                this.DialogResult = DialogResult.OK; // Establece el resultado
-                this.Close(); // Cierra el formulario
+                this.DialogResult = DialogResult.OK;
+                this.Close();
             }
             else
             {
                 MessageBox.Show("Por favor, ingresa un nombre de usuario.", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
+            }
         }
     }
-}
+
