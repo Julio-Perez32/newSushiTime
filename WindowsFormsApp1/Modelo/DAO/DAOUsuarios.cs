@@ -31,7 +31,7 @@ namespace WindowsFormsApp1.Modelo.DAO
                 cmd.Parameters.AddWithValue("@password", Contraseña);
                 cmd.Parameters.AddWithValue("@userStatus", UserStatus);
                 cmd.Parameters.AddWithValue("@userAttempts", Intentos);
-                cmd.Parameters.AddWithValue("@idRol", Rol); // Asegúrate de que este valor sea el id del rol
+                cmd.Parameters.AddWithValue("@idRol", Rol);
                 cmd.Parameters.AddWithValue("@nombre", Nombre);
                 cmd.Parameters.AddWithValue("@apellido", Apellido);
                 cmd.Parameters.AddWithValue("@dui", Dui);
@@ -41,23 +41,23 @@ namespace WindowsFormsApp1.Modelo.DAO
                 cmd.Parameters.AddWithValue("@fechaCreacion", FechaCreacion);
 
                 int respuesta = cmd.ExecuteNonQuery();
-                return respuesta > 0 ? 1 : 0; // Retorna 1 si se insertó correctamente
+                return respuesta > 0 ? 1 : 0;
             }
             catch (SqlException ex)
             {
                 MessageBox.Show($"Error SQL: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                return -1; // Indica un error
+                return -1;
             }
             catch (Exception ex)
             {
                 MessageBox.Show($"Error: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                return -1; // Indica un error
+                return -1;
             }
             finally
             {
                 if (Command.Connection != null && Command.Connection.State == ConnectionState.Open)
                 {
-                    Command.Connection.Close(); // Cerrar conexión
+                    Command.Connection.Close();
                 }
             }
         }
@@ -65,7 +65,7 @@ namespace WindowsFormsApp1.Modelo.DAO
         {
             try
             {
-                // Se crea una conexión para garantizar que efectivamente haya conexión a la base.
+               
                 Command.Connection = getConnection();
                 string query = "UPDATE Empleados SET " +
                                 "Usuario = @param1, " +
@@ -82,7 +82,6 @@ namespace WindowsFormsApp1.Modelo.DAO
                                 "Intentos = @param12, " +
                                 "WHERE idUsuario = @param13";
 
-                // Crear comando y asignar valores a los parámetros
                 SqlCommand cmd = new SqlCommand(query, Command.Connection);
                 cmd.Parameters.AddWithValue("param1", Usuario);
                 cmd.Parameters.AddWithValue("param2", Nombre);
@@ -98,20 +97,16 @@ namespace WindowsFormsApp1.Modelo.DAO
                 cmd.Parameters.AddWithValue("param12", Intentos);
                 cmd.Parameters.AddWithValue("param13", IdUsuario);
 
-                // Ejecutar la consulta
                 int respuesta = cmd.ExecuteNonQuery();
 
-                // Retorna 2 si la actualización fue exitosa
                 return respuesta == 1 ? 2 : 1;
             }
             catch (Exception)
             {
-                // Retorna -1 en caso de error
                 return -1;
             }
             finally
             {
-                // Cerrar la conexión
                 getConnection().Close();
             }
         }

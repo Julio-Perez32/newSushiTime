@@ -20,9 +20,7 @@ namespace Sushi_Time_PTC_2024.Controlador.OlvidarContraseñas
         private void AccederPregunta(object sender, EventArgs e)
         {
             string Respuesta = objacces.txtRespuesta.Text;
-
-            // Verificar la respuesta y abrir el formulario de cambio de contraseña si es correcta
-            if (Respuesta == "12345")
+            if (Respuesta == "121824")
             {
                 objacces.Hide();
                 cambiodecontraseña formCambioDeContraseña = new cambiodecontraseña();

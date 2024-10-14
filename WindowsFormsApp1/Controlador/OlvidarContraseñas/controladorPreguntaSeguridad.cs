@@ -1,7 +1,8 @@
 ﻿using System;
 using System.Windows.Forms;
 using WindowsFormsApp1.Modelo.DTO;
-using Sushi_Time_PTC_2024.Modelo.DAO; // Asegúrate de que la ruta es correcta
+using Sushi_Time_PTC_2024.Modelo.DTO;
+using Sushi_Time_PTC_2024.Modelo.DAO;
 using Sushi_Time_PTC_2024.Vista;
 using Sushi_Time_PTC_2024.Vista.Olvidar_contraseña;
 using Sushi_Time_PTC_2024.Modelo;
@@ -13,57 +14,56 @@ namespace Sushi_Time_PTC_2024.Controlador.ControladorPreguntadeseguridad
     internal class controladorPreguntaSeguridad
     {
         private FormPregunta_de_seguridad objFormPregunta_de_seguridad;
+        private DTOlogin dtoLogin;
+        private DAOLogin daoLogin;
 
-        public controladorPreguntaSeguridad(FormPregunta_de_seguridad Vista)
+        public controladorPreguntaSeguridad(FormPregunta_de_seguridad vista)
         {
-            objFormPregunta_de_seguridad = Vista;
+            objFormPregunta_de_seguridad = vista;
             objFormPregunta_de_seguridad.btnEnviar.Click += new EventHandler(AccederPregunta);
-            
+            dtoLogin = new DTOlogin();
+            daoLogin = new DAOLogin();
         }
 
         private void AccederPregunta(object sender, EventArgs e)
         {
             string respuesta = objFormPregunta_de_seguridad.txtRespuesta.Text;
 
+            // Verifica si la respuesta de seguridad es correcta
             if (respuesta == "2018")
             {
                 objFormPregunta_de_seguridad.Hide();
 
-                // Abre el formulario de ingreso de usuario
-                usuariocambiodecontraseña formIngresarUsuario = new usuariocambiodecontraseña();
-                if (formIngresarUsuario.ShowDialog() == DialogResult.OK)
+                // Muestra el formulario para ingresar el nombre de usuario
+                using (usuariocambiodecontraseña formIngresarUsuario = new usuariocambiodecontraseña())
                 {
-                    // Crear una instancia del DTO y asignar valores
-                    DTOUsuarios dtoUsuario = new DTOUsuarios
+                    if (formIngresarUsuario.ShowDialog() == DialogResult.OK)
                     {
-                        NombreUsuario = formIngresarUsuario.txtUsername.Text,
-                       
-                    };
+                        dtoLogin.Username = formIngresarUsuario.txtUsername.Text;
+                        daoLogin.Username = dtoLogin.Username;
 
-                    // Mostrar los valores en un MessageBox para depuración
-                    MessageBox.Show($"Usuario: {dtoUsuario.NombreUsuario}");
+                        int usuarioValido = daoLogin.ValidarUsuario();
 
-                    // Crear una instancia del DAO
-                    DAOUsuario daoUsuario = new DAOUsuario(new dbContext());
-
-                    // Verificar el usuario usando el DAO
-                    if (daoUsuario.VerificarUsuario(dtoUsuario))
-                    {
-                        // Si el usuario es válido, abrir el formulario de cambio de contraseña
-                        cambiodecontraseña formCambioDeContraseña = new cambiodecontraseña();
-                        formCambioDeContraseña.Show();
-                    }
-                    else
-                    {
-                        MessageBox.Show("Nombre de usuario o contraseña incorrectos.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        if (usuarioValido == 1)
+                        {
+                            // Usuario válido, muestra el formulario de cambio de contraseña
+                            cambiodecontraseña formCambioDeContraseña = new cambiodecontraseña();
+                            formCambioDeContraseña.Show();
+                        }
+                        else
+                        {
+                            // Usuario no encontrado, muestra el mensaje de error y mantiene el formulario abierto
+                            MessageBox.Show("Nombre de usuario no encontrado. Intente de nuevo.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        }
                     }
                 }
             }
             else
             {
-                MessageBox.Show("Error", "Respuesta Incorrecta", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Respuesta de seguridad incorrecta.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
-
     }
 }
+
+
