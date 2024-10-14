@@ -1,181 +1,257 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Usuario\\Documents\\GitHub\\newSushiTime\\",
+  "WorkspaceRootPath": "C:\\Users\\chivasd\\Documents\\GitHub\\newSushiTime\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{AB44B6D5-0C4D-43EC-B6CC-F69F10A366D4}|WindowsFormsApp1\\WindowsFormsApp1.csproj|C:\\Users\\Usuario\\Documents\\GitHub\\newSushiTime\\windowsformsapp1\\vista\\usuarios\\dgvususarios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{AB44B6D5-0C4D-43EC-B6CC-F69F10A366D4}|WindowsFormsApp1\\WindowsFormsApp1.csproj|solutionrelative:windowsformsapp1\\vista\\usuarios\\dgvususarios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{AB44B6D5-0C4D-43EC-B6CC-F69F10A366D4}|WindowsFormsApp1\\WindowsFormsApp1.csproj|c:\\users\\chivasd\\documents\\github\\newsushitime\\windowsformsapp1\\modelo\\dao\\daousuario2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AB44B6D5-0C4D-43EC-B6CC-F69F10A366D4}|WindowsFormsApp1\\WindowsFormsApp1.csproj|solutionrelative:windowsformsapp1\\modelo\\dao\\daousuario2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AB44B6D5-0C4D-43EC-B6CC-F69F10A366D4}|WindowsFormsApp1\\WindowsFormsApp1.csproj|C:\\Users\\Usuario\\Documents\\GitHub\\newSushiTime\\windowsformsapp1\\vista\\planillas\\verplanilla.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{AB44B6D5-0C4D-43EC-B6CC-F69F10A366D4}|WindowsFormsApp1\\WindowsFormsApp1.csproj|solutionrelative:windowsformsapp1\\vista\\planillas\\verplanilla.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AB44B6D5-0C4D-43EC-B6CC-F69F10A366D4}|WindowsFormsApp1\\WindowsFormsApp1.csproj|C:\\Users\\Usuario\\Documents\\GitHub\\newSushiTime\\windowsformsapp1\\vista\\usuarios\\editarusuarios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{AB44B6D5-0C4D-43EC-B6CC-F69F10A366D4}|WindowsFormsApp1\\WindowsFormsApp1.csproj|solutionrelative:windowsformsapp1\\vista\\usuarios\\editarusuarios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AB44B6D5-0C4D-43EC-B6CC-F69F10A366D4}|WindowsFormsApp1\\WindowsFormsApp1.csproj|C:\\Users\\Usuario\\Documents\\GitHub\\newSushiTime\\windowsformsapp1\\vista\\primer uso\\primeruso.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{AB44B6D5-0C4D-43EC-B6CC-F69F10A366D4}|WindowsFormsApp1\\WindowsFormsApp1.csproj|solutionrelative:windowsformsapp1\\vista\\primer uso\\primeruso.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AB44B6D5-0C4D-43EC-B6CC-F69F10A366D4}|WindowsFormsApp1\\WindowsFormsApp1.csproj|C:\\Users\\Usuario\\Documents\\GitHub\\newSushiTime\\windowsformsapp1\\vista\\olvidar contrase\u00F1a\\recuperaciondentrodelsistema.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AB44B6D5-0C4D-43EC-B6CC-F69F10A366D4}|WindowsFormsApp1\\WindowsFormsApp1.csproj|solutionrelative:windowsformsapp1\\vista\\olvidar contrase\u00F1a\\recuperaciondentrodelsistema.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AB44B6D5-0C4D-43EC-B6CC-F69F10A366D4}|WindowsFormsApp1\\WindowsFormsApp1.csproj|C:\\Users\\Usuario\\Documents\\GitHub\\newSushiTime\\windowsformsapp1\\controlador\\olvidarcontrase\u00F1as\\controllercontrase\u00F1aadmi2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AB44B6D5-0C4D-43EC-B6CC-F69F10A366D4}|WindowsFormsApp1\\WindowsFormsApp1.csproj|solutionrelative:windowsformsapp1\\controlador\\olvidarcontrase\u00F1as\\controllercontrase\u00F1aadmi2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AB44B6D5-0C4D-43EC-B6CC-F69F10A366D4}|WindowsFormsApp1\\WindowsFormsApp1.csproj|c:\\users\\usuario\\documents\\github\\newsushitime\\windowsformsapp1\\vista\\dashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AB44B6D5-0C4D-43EC-B6CC-F69F10A366D4}|WindowsFormsApp1\\WindowsFormsApp1.csproj|solutionrelative:windowsformsapp1\\vista\\dashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AB44B6D5-0C4D-43EC-B6CC-F69F10A366D4}|WindowsFormsApp1\\WindowsFormsApp1.csproj|C:\\Users\\Usuario\\Documents\\GitHub\\newSushiTime\\windowsformsapp1\\vista\\dashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{AB44B6D5-0C4D-43EC-B6CC-F69F10A366D4}|WindowsFormsApp1\\WindowsFormsApp1.csproj|solutionrelative:windowsformsapp1\\vista\\dashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AB44B6D5-0C4D-43EC-B6CC-F69F10A366D4}|WindowsFormsApp1\\WindowsFormsApp1.csproj|C:\\Users\\Usuario\\Documents\\GitHub\\newSushiTime\\windowsformsapp1\\controlador\\dashcarpet\\controld.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AB44B6D5-0C4D-43EC-B6CC-F69F10A366D4}|WindowsFormsApp1\\WindowsFormsApp1.csproj|solutionrelative:windowsformsapp1\\controlador\\dashcarpet\\controld.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AB44B6D5-0C4D-43EC-B6CC-F69F10A366D4}|WindowsFormsApp1\\WindowsFormsApp1.csproj|C:\\Users\\Usuario\\Documents\\GitHub\\newSushiTime\\windowsformsapp1\\controlador\\administracionusuarios\\cusuarios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AB44B6D5-0C4D-43EC-B6CC-F69F10A366D4}|WindowsFormsApp1\\WindowsFormsApp1.csproj|solutionrelative:windowsformsapp1\\controlador\\administracionusuarios\\cusuarios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AB44B6D5-0C4D-43EC-B6CC-F69F10A366D4}|WindowsFormsApp1\\WindowsFormsApp1.csproj|C:\\Users\\Usuario\\Documents\\GitHub\\newSushiTime\\windowsformsapp1\\vista\\usuarios\\dgvususarios.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AB44B6D5-0C4D-43EC-B6CC-F69F10A366D4}|WindowsFormsApp1\\WindowsFormsApp1.csproj|solutionrelative:windowsformsapp1\\vista\\usuarios\\dgvususarios.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AB44B6D5-0C4D-43EC-B6CC-F69F10A366D4}|WindowsFormsApp1\\WindowsFormsApp1.csproj|C:\\Users\\Usuario\\Documents\\GitHub\\newSushiTime\\windowsformsapp1\\controlador\\administracionusuarios\\controladorau.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AB44B6D5-0C4D-43EC-B6CC-F69F10A366D4}|WindowsFormsApp1\\WindowsFormsApp1.csproj|solutionrelative:windowsformsapp1\\controlador\\administracionusuarios\\controladorau.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AB44B6D5-0C4D-43EC-B6CC-F69F10A366D4}|WindowsFormsApp1\\WindowsFormsApp1.csproj|C:\\Users\\Usuario\\Documents\\GitHub\\newSushiTime\\windowsformsapp1\\controlador\\administracionusuarios\\administracionusuarios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AB44B6D5-0C4D-43EC-B6CC-F69F10A366D4}|WindowsFormsApp1\\WindowsFormsApp1.csproj|solutionrelative:windowsformsapp1\\controlador\\administracionusuarios\\administracionusuarios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AB44B6D5-0C4D-43EC-B6CC-F69F10A366D4}|WindowsFormsApp1\\WindowsFormsApp1.csproj|C:\\Users\\Usuario\\Documents\\GitHub\\newSushiTime\\windowsformsapp1\\modelo\\dao\\daocomprobarcontrase\u00F1aadmi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AB44B6D5-0C4D-43EC-B6CC-F69F10A366D4}|WindowsFormsApp1\\WindowsFormsApp1.csproj|solutionrelative:windowsformsapp1\\modelo\\dao\\daocomprobarcontrase\u00F1aadmi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AB44B6D5-0C4D-43EC-B6CC-F69F10A366D4}|WindowsFormsApp1\\WindowsFormsApp1.csproj|C:\\Users\\Usuario\\Documents\\GitHub\\newSushiTime\\windowsformsapp1\\modelo\\dao\\daorecuperacioncontra.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AB44B6D5-0C4D-43EC-B6CC-F69F10A366D4}|WindowsFormsApp1\\WindowsFormsApp1.csproj|solutionrelative:windowsformsapp1\\modelo\\dao\\daorecuperacioncontra.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AB44B6D5-0C4D-43EC-B6CC-F69F10A366D4}|WindowsFormsApp1\\WindowsFormsApp1.csproj|C:\\Users\\Usuario\\Documents\\GitHub\\newSushiTime\\windowsformsapp1\\modelo\\dao\\daoadminu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AB44B6D5-0C4D-43EC-B6CC-F69F10A366D4}|WindowsFormsApp1\\WindowsFormsApp1.csproj|solutionrelative:windowsformsapp1\\modelo\\dao\\daoadminu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AB44B6D5-0C4D-43EC-B6CC-F69F10A366D4}|WindowsFormsApp1\\WindowsFormsApp1.csproj|C:\\Users\\Usuario\\Documents\\GitHub\\newSushiTime\\windowsformsapp1\\modelo\\dao\\daousuarios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{AB44B6D5-0C4D-43EC-B6CC-F69F10A366D4}|WindowsFormsApp1\\WindowsFormsApp1.csproj|C:\\Users\\chivasd\\Documents\\GitHub\\newSushiTime\\windowsformsapp1\\modelo\\dao\\daousuarios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{AB44B6D5-0C4D-43EC-B6CC-F69F10A366D4}|WindowsFormsApp1\\WindowsFormsApp1.csproj|solutionrelative:windowsformsapp1\\modelo\\dao\\daousuarios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AB44B6D5-0C4D-43EC-B6CC-F69F10A366D4}|WindowsFormsApp1\\WindowsFormsApp1.csproj|C:\\Users\\Usuario\\Documents\\GitHub\\newSushiTime\\windowsformsapp1\\vista\\calendario\\calendario1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{AB44B6D5-0C4D-43EC-B6CC-F69F10A366D4}|WindowsFormsApp1\\WindowsFormsApp1.csproj|solutionrelative:windowsformsapp1\\vista\\calendario\\calendario1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{AB44B6D5-0C4D-43EC-B6CC-F69F10A366D4}|WindowsFormsApp1\\WindowsFormsApp1.csproj|c:\\users\\chivasd\\documents\\github\\newsushitime\\windowsformsapp1\\modelo\\dto\\dtousuarios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AB44B6D5-0C4D-43EC-B6CC-F69F10A366D4}|WindowsFormsApp1\\WindowsFormsApp1.csproj|solutionrelative:windowsformsapp1\\modelo\\dto\\dtousuarios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AB44B6D5-0C4D-43EC-B6CC-F69F10A366D4}|WindowsFormsApp1\\WindowsFormsApp1.csproj|C:\\Users\\Usuario\\Documents\\GitHub\\newSushiTime\\windowsformsapp1\\modelo\\dto\\dtorecuperacioncontra.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AB44B6D5-0C4D-43EC-B6CC-F69F10A366D4}|WindowsFormsApp1\\WindowsFormsApp1.csproj|solutionrelative:windowsformsapp1\\modelo\\dto\\dtorecuperacioncontra.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{AB44B6D5-0C4D-43EC-B6CC-F69F10A366D4}|WindowsFormsApp1\\WindowsFormsApp1.csproj|c:\\users\\chivasd\\documents\\github\\newsushitime\\windowsformsapp1\\modelo\\dao\\daoagregartarea.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AB44B6D5-0C4D-43EC-B6CC-F69F10A366D4}|WindowsFormsApp1\\WindowsFormsApp1.csproj|solutionrelative:windowsformsapp1\\modelo\\dao\\daoagregartarea.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AB44B6D5-0C4D-43EC-B6CC-F69F10A366D4}|WindowsFormsApp1\\WindowsFormsApp1.csproj|C:\\Users\\Usuario\\Documents\\GitHub\\newSushiTime\\windowsformsapp1\\vista\\olvidar contrase\u00F1a\\formaccesoporadministrador.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{AB44B6D5-0C4D-43EC-B6CC-F69F10A366D4}|WindowsFormsApp1\\WindowsFormsApp1.csproj|solutionrelative:windowsformsapp1\\vista\\olvidar contrase\u00F1a\\formaccesoporadministrador.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{AB44B6D5-0C4D-43EC-B6CC-F69F10A366D4}|WindowsFormsApp1\\WindowsFormsApp1.csproj|c:\\users\\chivasd\\documents\\github\\newsushitime\\windowsformsapp1\\controlador\\olvidarcontrase\u00F1as\\controladorpreguntaseguridad.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AB44B6D5-0C4D-43EC-B6CC-F69F10A366D4}|WindowsFormsApp1\\WindowsFormsApp1.csproj|solutionrelative:windowsformsapp1\\controlador\\olvidarcontrase\u00F1as\\controladorpreguntaseguridad.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AB44B6D5-0C4D-43EC-B6CC-F69F10A366D4}|WindowsFormsApp1\\WindowsFormsApp1.csproj|C:\\Users\\Usuario\\Documents\\GitHub\\newSushiTime\\windowsformsapp1\\vista\\olvidar contrase\u00F1a\\formpregunta de seguridad.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{AB44B6D5-0C4D-43EC-B6CC-F69F10A366D4}|WindowsFormsApp1\\WindowsFormsApp1.csproj|solutionrelative:windowsformsapp1\\vista\\olvidar contrase\u00F1a\\formpregunta de seguridad.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{AB44B6D5-0C4D-43EC-B6CC-F69F10A366D4}|WindowsFormsApp1\\WindowsFormsApp1.csproj|c:\\users\\chivasd\\documents\\github\\newsushitime\\windowsformsapp1\\controlador\\olvidarcontrase\u00F1as\\controladorpindeadmincs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AB44B6D5-0C4D-43EC-B6CC-F69F10A366D4}|WindowsFormsApp1\\WindowsFormsApp1.csproj|solutionrelative:windowsformsapp1\\controlador\\olvidarcontrase\u00F1as\\controladorpindeadmincs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AB44B6D5-0C4D-43EC-B6CC-F69F10A366D4}|WindowsFormsApp1\\WindowsFormsApp1.csproj|C:\\Users\\Usuario\\Documents\\GitHub\\newSushiTime\\windowsformsapp1\\vista\\olvidar contrase\u00F1a\\recuperaciondentrodelsistema.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{AB44B6D5-0C4D-43EC-B6CC-F69F10A366D4}|WindowsFormsApp1\\WindowsFormsApp1.csproj|solutionrelative:windowsformsapp1\\vista\\olvidar contrase\u00F1a\\recuperaciondentrodelsistema.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{AB44B6D5-0C4D-43EC-B6CC-F69F10A366D4}|WindowsFormsApp1\\WindowsFormsApp1.csproj|c:\\users\\chivasd\\documents\\github\\newsushitime\\windowsformsapp1\\modelo\\dto\\dtotarea.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AB44B6D5-0C4D-43EC-B6CC-F69F10A366D4}|WindowsFormsApp1\\WindowsFormsApp1.csproj|solutionrelative:windowsformsapp1\\modelo\\dto\\dtotarea.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AB44B6D5-0C4D-43EC-B6CC-F69F10A366D4}|WindowsFormsApp1\\WindowsFormsApp1.csproj|C:\\Users\\Usuario\\Documents\\GitHub\\newSushiTime\\windowsformsapp1\\vista\\olvidar contrase\u00F1a\\recuperacioncontrase\u00F1a.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{AB44B6D5-0C4D-43EC-B6CC-F69F10A366D4}|WindowsFormsApp1\\WindowsFormsApp1.csproj|solutionrelative:windowsformsapp1\\vista\\olvidar contrase\u00F1a\\recuperacioncontrase\u00F1a.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{AB44B6D5-0C4D-43EC-B6CC-F69F10A366D4}|WindowsFormsApp1\\WindowsFormsApp1.csproj|c:\\users\\chivasd\\documents\\github\\newsushitime\\windowsformsapp1\\modelo\\dto\\dtotablatareas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AB44B6D5-0C4D-43EC-B6CC-F69F10A366D4}|WindowsFormsApp1\\WindowsFormsApp1.csproj|solutionrelative:windowsformsapp1\\modelo\\dto\\dtotablatareas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AB44B6D5-0C4D-43EC-B6CC-F69F10A366D4}|WindowsFormsApp1\\WindowsFormsApp1.csproj|C:\\Users\\Usuario\\Documents\\GitHub\\newSushiTime\\windowsformsapp1\\modelo\\dto\\dtoadminu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AB44B6D5-0C4D-43EC-B6CC-F69F10A366D4}|WindowsFormsApp1\\WindowsFormsApp1.csproj|solutionrelative:windowsformsapp1\\modelo\\dto\\dtoadminu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{AB44B6D5-0C4D-43EC-B6CC-F69F10A366D4}|WindowsFormsApp1\\WindowsFormsApp1.csproj|c:\\users\\chivasd\\documents\\github\\newsushitime\\windowsformsapp1\\vista\\olvidar contrase\u00F1a\\usuariocambiodecontrase\u00F1a.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AB44B6D5-0C4D-43EC-B6CC-F69F10A366D4}|WindowsFormsApp1\\WindowsFormsApp1.csproj|solutionrelative:windowsformsapp1\\vista\\olvidar contrase\u00F1a\\usuariocambiodecontrase\u00F1a.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AB44B6D5-0C4D-43EC-B6CC-F69F10A366D4}|WindowsFormsApp1\\WindowsFormsApp1.csproj|C:\\Users\\Usuario\\Documents\\GitHub\\newSushiTime\\windowsformsapp1\\modelo\\dto\\dtoagregartarea.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AB44B6D5-0C4D-43EC-B6CC-F69F10A366D4}|WindowsFormsApp1\\WindowsFormsApp1.csproj|solutionrelative:windowsformsapp1\\modelo\\dto\\dtoagregartarea.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{AB44B6D5-0C4D-43EC-B6CC-F69F10A366D4}|WindowsFormsApp1\\WindowsFormsApp1.csproj|c:\\users\\chivasd\\documents\\github\\newsushitime\\windowsformsapp1\\vista\\olvidar contrase\u00F1a\\usuariocambiodecontrase\u00F1a.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{AB44B6D5-0C4D-43EC-B6CC-F69F10A366D4}|WindowsFormsApp1\\WindowsFormsApp1.csproj|solutionrelative:windowsformsapp1\\vista\\olvidar contrase\u00F1a\\usuariocambiodecontrase\u00F1a.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AB44B6D5-0C4D-43EC-B6CC-F69F10A366D4}|WindowsFormsApp1\\WindowsFormsApp1.csproj|C:\\Users\\Usuario\\Documents\\GitHub\\newSushiTime\\windowsformsapp1\\controlador\\controladorprimeruso\\controladorprimerusuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AB44B6D5-0C4D-43EC-B6CC-F69F10A366D4}|WindowsFormsApp1\\WindowsFormsApp1.csproj|solutionrelative:windowsformsapp1\\controlador\\controladorprimeruso\\controladorprimerusuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AB44B6D5-0C4D-43EC-B6CC-F69F10A366D4}|WindowsFormsApp1\\WindowsFormsApp1.csproj|C:\\Users\\Usuario\\Documents\\GitHub\\newSushiTime\\windowsformsapp1\\modelo\\dto\\dtorestablersistema.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AB44B6D5-0C4D-43EC-B6CC-F69F10A366D4}|WindowsFormsApp1\\WindowsFormsApp1.csproj|solutionrelative:windowsformsapp1\\modelo\\dto\\dtorestablersistema.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AB44B6D5-0C4D-43EC-B6CC-F69F10A366D4}|WindowsFormsApp1\\WindowsFormsApp1.csproj|C:\\Users\\Usuario\\Documents\\GitHub\\newSushiTime\\windowsformsapp1\\vista\\calendario\\agregartarea.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AB44B6D5-0C4D-43EC-B6CC-F69F10A366D4}|WindowsFormsApp1\\WindowsFormsApp1.csproj|solutionrelative:windowsformsapp1\\vista\\calendario\\agregartarea.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AB44B6D5-0C4D-43EC-B6CC-F69F10A366D4}|WindowsFormsApp1\\WindowsFormsApp1.csproj|C:\\Users\\Usuario\\Documents\\GitHub\\newSushiTime\\windowsformsapp1\\vista\\calendario\\agregartarea.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{AB44B6D5-0C4D-43EC-B6CC-F69F10A366D4}|WindowsFormsApp1\\WindowsFormsApp1.csproj|solutionrelative:windowsformsapp1\\vista\\calendario\\agregartarea.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AB44B6D5-0C4D-43EC-B6CC-F69F10A366D4}|WindowsFormsApp1\\WindowsFormsApp1.csproj|C:\\Users\\Usuario\\Documents\\GitHub\\newSushiTime\\windowsformsapp1\\vista\\olvidar contrase\u00F1a\\olvidarcontrase\u00F1a.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{AB44B6D5-0C4D-43EC-B6CC-F69F10A366D4}|WindowsFormsApp1\\WindowsFormsApp1.csproj|solutionrelative:windowsformsapp1\\vista\\olvidar contrase\u00F1a\\olvidarcontrase\u00F1a.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AB44B6D5-0C4D-43EC-B6CC-F69F10A366D4}|WindowsFormsApp1\\WindowsFormsApp1.csproj|C:\\Users\\Usuario\\Documents\\GitHub\\newSushiTime\\windowsformsapp1\\vista\\usuarios\\editarusuarios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AB44B6D5-0C4D-43EC-B6CC-F69F10A366D4}|WindowsFormsApp1\\WindowsFormsApp1.csproj|solutionrelative:windowsformsapp1\\vista\\usuarios\\editarusuarios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AB44B6D5-0C4D-43EC-B6CC-F69F10A366D4}|WindowsFormsApp1\\WindowsFormsApp1.csproj|C:\\Users\\Usuario\\Documents\\GitHub\\newSushiTime\\windowsformsapp1\\modelo\\dto\\dtologin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AB44B6D5-0C4D-43EC-B6CC-F69F10A366D4}|WindowsFormsApp1\\WindowsFormsApp1.csproj|solutionrelative:windowsformsapp1\\modelo\\dto\\dtologin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AB44B6D5-0C4D-43EC-B6CC-F69F10A366D4}|WindowsFormsApp1\\WindowsFormsApp1.csproj|C:\\Users\\Usuario\\Documents\\GitHub\\newSushiTime\\windowsformsapp1\\modelo\\dto\\dtoprimerusuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AB44B6D5-0C4D-43EC-B6CC-F69F10A366D4}|WindowsFormsApp1\\WindowsFormsApp1.csproj|solutionrelative:windowsformsapp1\\modelo\\dto\\dtoprimerusuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AB44B6D5-0C4D-43EC-B6CC-F69F10A366D4}|WindowsFormsApp1\\WindowsFormsApp1.csproj|C:\\Users\\Usuario\\Documents\\GitHub\\newSushiTime\\windowsformsapp1\\modelo\\dao\\daoprimerusuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AB44B6D5-0C4D-43EC-B6CC-F69F10A366D4}|WindowsFormsApp1\\WindowsFormsApp1.csproj|solutionrelative:windowsformsapp1\\modelo\\dao\\daoprimerusuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AB44B6D5-0C4D-43EC-B6CC-F69F10A366D4}|WindowsFormsApp1\\WindowsFormsApp1.csproj|C:\\Users\\Usuario\\Documents\\GitHub\\newSushiTime\\windowsformsapp1\\modelo\\dao\\daologin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AB44B6D5-0C4D-43EC-B6CC-F69F10A366D4}|WindowsFormsApp1\\WindowsFormsApp1.csproj|solutionrelative:windowsformsapp1\\modelo\\dao\\daologin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AB44B6D5-0C4D-43EC-B6CC-F69F10A366D4}|WindowsFormsApp1\\WindowsFormsApp1.csproj|C:\\Users\\Usuario\\Documents\\GitHub\\newSushiTime\\windowsformsapp1\\vista\\usuarios\\editarusuarios.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AB44B6D5-0C4D-43EC-B6CC-F69F10A366D4}|WindowsFormsApp1\\WindowsFormsApp1.csproj|solutionrelative:windowsformsapp1\\vista\\usuarios\\editarusuarios.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AB44B6D5-0C4D-43EC-B6CC-F69F10A366D4}|WindowsFormsApp1\\WindowsFormsApp1.csproj|C:\\Users\\Usuario\\Documents\\GitHub\\newSushiTime\\windowsformsapp1\\controlador\\controladorprimeruso\\controladorprimeruso.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AB44B6D5-0C4D-43EC-B6CC-F69F10A366D4}|WindowsFormsApp1\\WindowsFormsApp1.csproj|solutionrelative:windowsformsapp1\\controlador\\controladorprimeruso\\controladorprimeruso.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AB44B6D5-0C4D-43EC-B6CC-F69F10A366D4}|WindowsFormsApp1\\WindowsFormsApp1.csproj|C:\\Users\\Usuario\\Documents\\GitHub\\newSushiTime\\windowsformsapp1\\controlador\\administracionusuarios\\ca\u00F1andirusuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{AB44B6D5-0C4D-43EC-B6CC-F69F10A366D4}|WindowsFormsApp1\\WindowsFormsApp1.csproj|C:\\Users\\chivasd\\Documents\\GitHub\\newSushiTime\\windowsformsapp1\\controlador\\administracionusuarios\\ca\u00F1andirusuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{AB44B6D5-0C4D-43EC-B6CC-F69F10A366D4}|WindowsFormsApp1\\WindowsFormsApp1.csproj|solutionrelative:windowsformsapp1\\controlador\\administracionusuarios\\ca\u00F1andirusuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AB44B6D5-0C4D-43EC-B6CC-F69F10A366D4}|WindowsFormsApp1\\WindowsFormsApp1.csproj|C:\\Users\\Usuario\\Documents\\GitHub\\newSushiTime\\windowsformsapp1\\vista\\planillas\\agregarusuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{AB44B6D5-0C4D-43EC-B6CC-F69F10A366D4}|WindowsFormsApp1\\WindowsFormsApp1.csproj|c:\\users\\chivasd\\documents\\github\\newsushitime\\windowsformsapp1\\modelo\\dto\\usuariodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AB44B6D5-0C4D-43EC-B6CC-F69F10A366D4}|WindowsFormsApp1\\WindowsFormsApp1.csproj|solutionrelative:windowsformsapp1\\modelo\\dto\\usuariodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AB44B6D5-0C4D-43EC-B6CC-F69F10A366D4}|WindowsFormsApp1\\WindowsFormsApp1.csproj|C:\\Users\\chivasd\\Documents\\GitHub\\newSushiTime\\windowsformsapp1\\controlador\\olvidarcontrase\u00F1as\\controllercontrase\u00F1aadmi2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AB44B6D5-0C4D-43EC-B6CC-F69F10A366D4}|WindowsFormsApp1\\WindowsFormsApp1.csproj|solutionrelative:windowsformsapp1\\controlador\\olvidarcontrase\u00F1as\\controllercontrase\u00F1aadmi2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AB44B6D5-0C4D-43EC-B6CC-F69F10A366D4}|WindowsFormsApp1\\WindowsFormsApp1.csproj|C:\\Users\\chivasd\\Documents\\GitHub\\newSushiTime\\windowsformsapp1\\modelo\\dao\\daocomprobarcontrase\u00F1aadmi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AB44B6D5-0C4D-43EC-B6CC-F69F10A366D4}|WindowsFormsApp1\\WindowsFormsApp1.csproj|solutionrelative:windowsformsapp1\\modelo\\dao\\daocomprobarcontrase\u00F1aadmi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AB44B6D5-0C4D-43EC-B6CC-F69F10A366D4}|WindowsFormsApp1\\WindowsFormsApp1.csproj|c:\\users\\chivasd\\documents\\github\\newsushitime\\windowsformsapp1\\modelo\\dao\\daoprimeruso.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AB44B6D5-0C4D-43EC-B6CC-F69F10A366D4}|WindowsFormsApp1\\WindowsFormsApp1.csproj|solutionrelative:windowsformsapp1\\modelo\\dao\\daoprimeruso.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AB44B6D5-0C4D-43EC-B6CC-F69F10A366D4}|WindowsFormsApp1\\WindowsFormsApp1.csproj|C:\\Users\\chivasd\\Documents\\GitHub\\newSushiTime\\windowsformsapp1\\modelo\\dao\\daoprimerusuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AB44B6D5-0C4D-43EC-B6CC-F69F10A366D4}|WindowsFormsApp1\\WindowsFormsApp1.csproj|solutionrelative:windowsformsapp1\\modelo\\dao\\daoprimerusuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AB44B6D5-0C4D-43EC-B6CC-F69F10A366D4}|WindowsFormsApp1\\WindowsFormsApp1.csproj|c:\\users\\chivasd\\documents\\github\\newsushitime\\windowsformsapp1\\modelo\\dao\\daotablatareas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AB44B6D5-0C4D-43EC-B6CC-F69F10A366D4}|WindowsFormsApp1\\WindowsFormsApp1.csproj|solutionrelative:windowsformsapp1\\modelo\\dao\\daotablatareas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AB44B6D5-0C4D-43EC-B6CC-F69F10A366D4}|WindowsFormsApp1\\WindowsFormsApp1.csproj|c:\\users\\chivasd\\documents\\github\\newsushitime\\windowsformsapp1\\vista\\olvidar contrase\u00F1a\\cambiodecontrase\u00F1a.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AB44B6D5-0C4D-43EC-B6CC-F69F10A366D4}|WindowsFormsApp1\\WindowsFormsApp1.csproj|solutionrelative:windowsformsapp1\\vista\\olvidar contrase\u00F1a\\cambiodecontrase\u00F1a.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AB44B6D5-0C4D-43EC-B6CC-F69F10A366D4}|WindowsFormsApp1\\WindowsFormsApp1.csproj|C:\\Users\\chivasd\\Documents\\GitHub\\newSushiTime\\windowsformsapp1\\modelo\\dto\\dtoadminu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AB44B6D5-0C4D-43EC-B6CC-F69F10A366D4}|WindowsFormsApp1\\WindowsFormsApp1.csproj|solutionrelative:windowsformsapp1\\modelo\\dto\\dtoadminu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AB44B6D5-0C4D-43EC-B6CC-F69F10A366D4}|WindowsFormsApp1\\WindowsFormsApp1.csproj|C:\\Users\\chivasd\\Documents\\GitHub\\newSushiTime\\windowsformsapp1\\modelo\\dao\\daoadminu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AB44B6D5-0C4D-43EC-B6CC-F69F10A366D4}|WindowsFormsApp1\\WindowsFormsApp1.csproj|solutionrelative:windowsformsapp1\\modelo\\dao\\daoadminu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AB44B6D5-0C4D-43EC-B6CC-F69F10A366D4}|WindowsFormsApp1\\WindowsFormsApp1.csproj|c:\\users\\chivasd\\documents\\github\\newsushitime\\windowsformsapp1\\modelo\\dao\\usuariodao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AB44B6D5-0C4D-43EC-B6CC-F69F10A366D4}|WindowsFormsApp1\\WindowsFormsApp1.csproj|solutionrelative:windowsformsapp1\\modelo\\dao\\usuariodao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AB44B6D5-0C4D-43EC-B6CC-F69F10A366D4}|WindowsFormsApp1\\WindowsFormsApp1.csproj|c:\\users\\chivasd\\documents\\github\\newsushitime\\windowsformsapp1\\vista\\olvidar contrase\u00F1a\\cambiodecontrase\u00F1a.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{AB44B6D5-0C4D-43EC-B6CC-F69F10A366D4}|WindowsFormsApp1\\WindowsFormsApp1.csproj|solutionrelative:windowsformsapp1\\vista\\olvidar contrase\u00F1a\\cambiodecontrase\u00F1a.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AB44B6D5-0C4D-43EC-B6CC-F69F10A366D4}|WindowsFormsApp1\\WindowsFormsApp1.csproj|C:\\Users\\chivasd\\Documents\\GitHub\\newSushiTime\\windowsformsapp1\\vista\\olvidar contrase\u00F1a\\formaccesoporadministrador.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{AB44B6D5-0C4D-43EC-B6CC-F69F10A366D4}|WindowsFormsApp1\\WindowsFormsApp1.csproj|solutionrelative:windowsformsapp1\\vista\\olvidar contrase\u00F1a\\formaccesoporadministrador.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AB44B6D5-0C4D-43EC-B6CC-F69F10A366D4}|WindowsFormsApp1\\WindowsFormsApp1.csproj|c:\\users\\chivasd\\documents\\github\\newsushitime\\windowsformsapp1\\vista\\primer uso\\crearprimerusuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AB44B6D5-0C4D-43EC-B6CC-F69F10A366D4}|WindowsFormsApp1\\WindowsFormsApp1.csproj|solutionrelative:windowsformsapp1\\vista\\primer uso\\crearprimerusuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AB44B6D5-0C4D-43EC-B6CC-F69F10A366D4}|WindowsFormsApp1\\WindowsFormsApp1.csproj|C:\\Users\\chivasd\\Documents\\GitHub\\newSushiTime\\windowsformsapp1\\modelo\\dto\\dtoagregartarea.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AB44B6D5-0C4D-43EC-B6CC-F69F10A366D4}|WindowsFormsApp1\\WindowsFormsApp1.csproj|solutionrelative:windowsformsapp1\\modelo\\dto\\dtoagregartarea.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AB44B6D5-0C4D-43EC-B6CC-F69F10A366D4}|WindowsFormsApp1\\WindowsFormsApp1.csproj|C:\\Users\\chivasd\\Documents\\GitHub\\newSushiTime\\windowsformsapp1\\modelo\\dao\\daologin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AB44B6D5-0C4D-43EC-B6CC-F69F10A366D4}|WindowsFormsApp1\\WindowsFormsApp1.csproj|solutionrelative:windowsformsapp1\\modelo\\dao\\daologin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AB44B6D5-0C4D-43EC-B6CC-F69F10A366D4}|WindowsFormsApp1\\WindowsFormsApp1.csproj|C:\\Users\\chivasd\\Documents\\GitHub\\newSushiTime\\windowsformsapp1\\modelo\\dto\\dtologin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AB44B6D5-0C4D-43EC-B6CC-F69F10A366D4}|WindowsFormsApp1\\WindowsFormsApp1.csproj|solutionrelative:windowsformsapp1\\modelo\\dto\\dtologin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AB44B6D5-0C4D-43EC-B6CC-F69F10A366D4}|WindowsFormsApp1\\WindowsFormsApp1.csproj|c:\\users\\chivasd\\documents\\github\\newsushitime\\windowsformsapp1\\controlador\\olvidarcontrase\u00F1as\\controllerrecuperarcontrase\u00F1a.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AB44B6D5-0C4D-43EC-B6CC-F69F10A366D4}|WindowsFormsApp1\\WindowsFormsApp1.csproj|solutionrelative:windowsformsapp1\\controlador\\olvidarcontrase\u00F1as\\controllerrecuperarcontrase\u00F1a.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AB44B6D5-0C4D-43EC-B6CC-F69F10A366D4}|WindowsFormsApp1\\WindowsFormsApp1.csproj|C:\\Users\\chivasd\\Documents\\GitHub\\newSushiTime\\windowsformsapp1\\modelo\\dto\\dtorecuperacioncontra.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AB44B6D5-0C4D-43EC-B6CC-F69F10A366D4}|WindowsFormsApp1\\WindowsFormsApp1.csproj|solutionrelative:windowsformsapp1\\modelo\\dto\\dtorecuperacioncontra.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AB44B6D5-0C4D-43EC-B6CC-F69F10A366D4}|WindowsFormsApp1\\WindowsFormsApp1.csproj|C:\\Users\\chivasd\\Documents\\GitHub\\newSushiTime\\windowsformsapp1\\modelo\\dao\\daorecuperacioncontra.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AB44B6D5-0C4D-43EC-B6CC-F69F10A366D4}|WindowsFormsApp1\\WindowsFormsApp1.csproj|solutionrelative:windowsformsapp1\\modelo\\dao\\daorecuperacioncontra.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AB44B6D5-0C4D-43EC-B6CC-F69F10A366D4}|WindowsFormsApp1\\WindowsFormsApp1.csproj|c:\\users\\chivasd\\documents\\github\\newsushitime\\windowsformsapp1\\vista\\olvidar contrase\u00F1a\\formaccesoporadministrador.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AB44B6D5-0C4D-43EC-B6CC-F69F10A366D4}|WindowsFormsApp1\\WindowsFormsApp1.csproj|solutionrelative:windowsformsapp1\\vista\\olvidar contrase\u00F1a\\formaccesoporadministrador.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AB44B6D5-0C4D-43EC-B6CC-F69F10A366D4}|WindowsFormsApp1\\WindowsFormsApp1.csproj|c:\\users\\chivasd\\documents\\github\\newsushitime\\windowsformsapp1\\vista\\olvidar contrase\u00F1a\\recuperacioncontrase\u00F1a.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{AB44B6D5-0C4D-43EC-B6CC-F69F10A366D4}|WindowsFormsApp1\\WindowsFormsApp1.csproj|solutionrelative:windowsformsapp1\\vista\\olvidar contrase\u00F1a\\recuperacioncontrase\u00F1a.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AB44B6D5-0C4D-43EC-B6CC-F69F10A366D4}|WindowsFormsApp1\\WindowsFormsApp1.csproj|c:\\users\\chivasd\\documents\\github\\newsushitime\\windowsformsapp1\\vista\\olvidar contrase\u00F1a\\olvidarcontrase\u00F1apregunta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{AB44B6D5-0C4D-43EC-B6CC-F69F10A366D4}|WindowsFormsApp1\\WindowsFormsApp1.csproj|solutionrelative:windowsformsapp1\\vista\\olvidar contrase\u00F1a\\olvidarcontrase\u00F1apregunta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AB44B6D5-0C4D-43EC-B6CC-F69F10A366D4}|WindowsFormsApp1\\WindowsFormsApp1.csproj|C:\\Users\\chivasd\\Documents\\GitHub\\newSushiTime\\windowsformsapp1\\vista\\olvidar contrase\u00F1a\\formpregunta de seguridad.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{AB44B6D5-0C4D-43EC-B6CC-F69F10A366D4}|WindowsFormsApp1\\WindowsFormsApp1.csproj|solutionrelative:windowsformsapp1\\vista\\olvidar contrase\u00F1a\\formpregunta de seguridad.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AB44B6D5-0C4D-43EC-B6CC-F69F10A366D4}|WindowsFormsApp1\\WindowsFormsApp1.csproj|C:\\Users\\chivasd\\Documents\\GitHub\\newSushiTime\\windowsformsapp1\\vista\\olvidar contrase\u00F1a\\recuperaciondentrodelsistema.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{AB44B6D5-0C4D-43EC-B6CC-F69F10A366D4}|WindowsFormsApp1\\WindowsFormsApp1.csproj|solutionrelative:windowsformsapp1\\vista\\olvidar contrase\u00F1a\\recuperaciondentrodelsistema.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AB44B6D5-0C4D-43EC-B6CC-F69F10A366D4}|WindowsFormsApp1\\WindowsFormsApp1.csproj|c:\\users\\chivasd\\documents\\github\\newsushitime\\windowsformsapp1\\vista\\olvidar contrase\u00F1a\\olvidarcontrase\u00F1aprincipal1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{AB44B6D5-0C4D-43EC-B6CC-F69F10A366D4}|WindowsFormsApp1\\WindowsFormsApp1.csproj|solutionrelative:windowsformsapp1\\vista\\olvidar contrase\u00F1a\\olvidarcontrase\u00F1aprincipal1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AB44B6D5-0C4D-43EC-B6CC-F69F10A366D4}|WindowsFormsApp1\\WindowsFormsApp1.csproj|C:\\Users\\chivasd\\Documents\\GitHub\\newSushiTime\\windowsformsapp1\\vista\\olvidar contrase\u00F1a\\olvidarcontrase\u00F1a.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{AB44B6D5-0C4D-43EC-B6CC-F69F10A366D4}|WindowsFormsApp1\\WindowsFormsApp1.csproj|solutionrelative:windowsformsapp1\\vista\\olvidar contrase\u00F1a\\olvidarcontrase\u00F1a.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AB44B6D5-0C4D-43EC-B6CC-F69F10A366D4}|WindowsFormsApp1\\WindowsFormsApp1.csproj|C:\\Users\\chivasd\\Documents\\GitHub\\newSushiTime\\windowsformsapp1\\vista\\dashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{AB44B6D5-0C4D-43EC-B6CC-F69F10A366D4}|WindowsFormsApp1\\WindowsFormsApp1.csproj|solutionrelative:windowsformsapp1\\vista\\dashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AB44B6D5-0C4D-43EC-B6CC-F69F10A366D4}|WindowsFormsApp1\\WindowsFormsApp1.csproj|c:\\users\\chivasd\\documents\\github\\newsushitime\\windowsformsapp1\\vista\\usuarios\\dgvususarios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{AB44B6D5-0C4D-43EC-B6CC-F69F10A366D4}|WindowsFormsApp1\\WindowsFormsApp1.csproj|solutionrelative:windowsformsapp1\\vista\\usuarios\\dgvususarios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AB44B6D5-0C4D-43EC-B6CC-F69F10A366D4}|WindowsFormsApp1\\WindowsFormsApp1.csproj|C:\\Users\\chivasd\\Documents\\GitHub\\newSushiTime\\windowsformsapp1\\vista\\planillas\\verplanilla.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{AB44B6D5-0C4D-43EC-B6CC-F69F10A366D4}|WindowsFormsApp1\\WindowsFormsApp1.csproj|solutionrelative:windowsformsapp1\\vista\\planillas\\verplanilla.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AB44B6D5-0C4D-43EC-B6CC-F69F10A366D4}|WindowsFormsApp1\\WindowsFormsApp1.csproj|C:\\Users\\chivasd\\Documents\\GitHub\\newSushiTime\\windowsformsapp1\\vista\\usuarios\\editarusuarios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{AB44B6D5-0C4D-43EC-B6CC-F69F10A366D4}|WindowsFormsApp1\\WindowsFormsApp1.csproj|solutionrelative:windowsformsapp1\\vista\\usuarios\\editarusuarios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AB44B6D5-0C4D-43EC-B6CC-F69F10A366D4}|WindowsFormsApp1\\WindowsFormsApp1.csproj|C:\\Users\\chivasd\\Documents\\GitHub\\newSushiTime\\windowsformsapp1\\vista\\primer uso\\primeruso.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{AB44B6D5-0C4D-43EC-B6CC-F69F10A366D4}|WindowsFormsApp1\\WindowsFormsApp1.csproj|solutionrelative:windowsformsapp1\\vista\\primer uso\\primeruso.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AB44B6D5-0C4D-43EC-B6CC-F69F10A366D4}|WindowsFormsApp1\\WindowsFormsApp1.csproj|C:\\Users\\chivasd\\Documents\\GitHub\\newSushiTime\\windowsformsapp1\\vista\\olvidar contrase\u00F1a\\recuperaciondentrodelsistema.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AB44B6D5-0C4D-43EC-B6CC-F69F10A366D4}|WindowsFormsApp1\\WindowsFormsApp1.csproj|solutionrelative:windowsformsapp1\\vista\\olvidar contrase\u00F1a\\recuperaciondentrodelsistema.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AB44B6D5-0C4D-43EC-B6CC-F69F10A366D4}|WindowsFormsApp1\\WindowsFormsApp1.csproj|C:\\Users\\chivasd\\Documents\\GitHub\\newSushiTime\\windowsformsapp1\\controlador\\dashcarpet\\controld.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AB44B6D5-0C4D-43EC-B6CC-F69F10A366D4}|WindowsFormsApp1\\WindowsFormsApp1.csproj|solutionrelative:windowsformsapp1\\controlador\\dashcarpet\\controld.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AB44B6D5-0C4D-43EC-B6CC-F69F10A366D4}|WindowsFormsApp1\\WindowsFormsApp1.csproj|C:\\Users\\chivasd\\Documents\\GitHub\\newSushiTime\\windowsformsapp1\\controlador\\administracionusuarios\\cusuarios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AB44B6D5-0C4D-43EC-B6CC-F69F10A366D4}|WindowsFormsApp1\\WindowsFormsApp1.csproj|solutionrelative:windowsformsapp1\\controlador\\administracionusuarios\\cusuarios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AB44B6D5-0C4D-43EC-B6CC-F69F10A366D4}|WindowsFormsApp1\\WindowsFormsApp1.csproj|C:\\Users\\chivasd\\Documents\\GitHub\\newSushiTime\\windowsformsapp1\\vista\\usuarios\\dgvususarios.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AB44B6D5-0C4D-43EC-B6CC-F69F10A366D4}|WindowsFormsApp1\\WindowsFormsApp1.csproj|solutionrelative:windowsformsapp1\\vista\\usuarios\\dgvususarios.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AB44B6D5-0C4D-43EC-B6CC-F69F10A366D4}|WindowsFormsApp1\\WindowsFormsApp1.csproj|C:\\Users\\chivasd\\Documents\\GitHub\\newSushiTime\\windowsformsapp1\\controlador\\administracionusuarios\\controladorau.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AB44B6D5-0C4D-43EC-B6CC-F69F10A366D4}|WindowsFormsApp1\\WindowsFormsApp1.csproj|solutionrelative:windowsformsapp1\\controlador\\administracionusuarios\\controladorau.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AB44B6D5-0C4D-43EC-B6CC-F69F10A366D4}|WindowsFormsApp1\\WindowsFormsApp1.csproj|C:\\Users\\chivasd\\Documents\\GitHub\\newSushiTime\\windowsformsapp1\\controlador\\administracionusuarios\\administracionusuarios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AB44B6D5-0C4D-43EC-B6CC-F69F10A366D4}|WindowsFormsApp1\\WindowsFormsApp1.csproj|solutionrelative:windowsformsapp1\\controlador\\administracionusuarios\\administracionusuarios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AB44B6D5-0C4D-43EC-B6CC-F69F10A366D4}|WindowsFormsApp1\\WindowsFormsApp1.csproj|C:\\Users\\chivasd\\Documents\\GitHub\\newSushiTime\\windowsformsapp1\\vista\\calendario\\calendario1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{AB44B6D5-0C4D-43EC-B6CC-F69F10A366D4}|WindowsFormsApp1\\WindowsFormsApp1.csproj|solutionrelative:windowsformsapp1\\vista\\calendario\\calendario1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AB44B6D5-0C4D-43EC-B6CC-F69F10A366D4}|WindowsFormsApp1\\WindowsFormsApp1.csproj|C:\\Users\\chivasd\\Documents\\GitHub\\newSushiTime\\windowsformsapp1\\controlador\\controladorprimeruso\\controladorprimerusuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AB44B6D5-0C4D-43EC-B6CC-F69F10A366D4}|WindowsFormsApp1\\WindowsFormsApp1.csproj|solutionrelative:windowsformsapp1\\controlador\\controladorprimeruso\\controladorprimerusuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AB44B6D5-0C4D-43EC-B6CC-F69F10A366D4}|WindowsFormsApp1\\WindowsFormsApp1.csproj|C:\\Users\\chivasd\\Documents\\GitHub\\newSushiTime\\windowsformsapp1\\modelo\\dto\\dtorestablersistema.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AB44B6D5-0C4D-43EC-B6CC-F69F10A366D4}|WindowsFormsApp1\\WindowsFormsApp1.csproj|solutionrelative:windowsformsapp1\\modelo\\dto\\dtorestablersistema.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AB44B6D5-0C4D-43EC-B6CC-F69F10A366D4}|WindowsFormsApp1\\WindowsFormsApp1.csproj|C:\\Users\\chivasd\\Documents\\GitHub\\newSushiTime\\windowsformsapp1\\vista\\calendario\\agregartarea.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AB44B6D5-0C4D-43EC-B6CC-F69F10A366D4}|WindowsFormsApp1\\WindowsFormsApp1.csproj|solutionrelative:windowsformsapp1\\vista\\calendario\\agregartarea.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AB44B6D5-0C4D-43EC-B6CC-F69F10A366D4}|WindowsFormsApp1\\WindowsFormsApp1.csproj|C:\\Users\\chivasd\\Documents\\GitHub\\newSushiTime\\windowsformsapp1\\vista\\calendario\\agregartarea.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{AB44B6D5-0C4D-43EC-B6CC-F69F10A366D4}|WindowsFormsApp1\\WindowsFormsApp1.csproj|solutionrelative:windowsformsapp1\\vista\\calendario\\agregartarea.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AB44B6D5-0C4D-43EC-B6CC-F69F10A366D4}|WindowsFormsApp1\\WindowsFormsApp1.csproj|C:\\Users\\chivasd\\Documents\\GitHub\\newSushiTime\\windowsformsapp1\\vista\\usuarios\\editarusuarios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AB44B6D5-0C4D-43EC-B6CC-F69F10A366D4}|WindowsFormsApp1\\WindowsFormsApp1.csproj|solutionrelative:windowsformsapp1\\vista\\usuarios\\editarusuarios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AB44B6D5-0C4D-43EC-B6CC-F69F10A366D4}|WindowsFormsApp1\\WindowsFormsApp1.csproj|C:\\Users\\chivasd\\Documents\\GitHub\\newSushiTime\\windowsformsapp1\\modelo\\dto\\dtoprimerusuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AB44B6D5-0C4D-43EC-B6CC-F69F10A366D4}|WindowsFormsApp1\\WindowsFormsApp1.csproj|solutionrelative:windowsformsapp1\\modelo\\dto\\dtoprimerusuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AB44B6D5-0C4D-43EC-B6CC-F69F10A366D4}|WindowsFormsApp1\\WindowsFormsApp1.csproj|C:\\Users\\chivasd\\Documents\\GitHub\\newSushiTime\\windowsformsapp1\\vista\\usuarios\\editarusuarios.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AB44B6D5-0C4D-43EC-B6CC-F69F10A366D4}|WindowsFormsApp1\\WindowsFormsApp1.csproj|solutionrelative:windowsformsapp1\\vista\\usuarios\\editarusuarios.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AB44B6D5-0C4D-43EC-B6CC-F69F10A366D4}|WindowsFormsApp1\\WindowsFormsApp1.csproj|C:\\Users\\chivasd\\Documents\\GitHub\\newSushiTime\\windowsformsapp1\\controlador\\controladorprimeruso\\controladorprimeruso.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AB44B6D5-0C4D-43EC-B6CC-F69F10A366D4}|WindowsFormsApp1\\WindowsFormsApp1.csproj|solutionrelative:windowsformsapp1\\controlador\\controladorprimeruso\\controladorprimeruso.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AB44B6D5-0C4D-43EC-B6CC-F69F10A366D4}|WindowsFormsApp1\\WindowsFormsApp1.csproj|C:\\Users\\chivasd\\Documents\\GitHub\\newSushiTime\\windowsformsapp1\\vista\\planillas\\agregarusuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{AB44B6D5-0C4D-43EC-B6CC-F69F10A366D4}|WindowsFormsApp1\\WindowsFormsApp1.csproj|solutionrelative:windowsformsapp1\\vista\\planillas\\agregarusuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AB44B6D5-0C4D-43EC-B6CC-F69F10A366D4}|WindowsFormsApp1\\WindowsFormsApp1.csproj|C:\\Users\\Usuario\\Documents\\GitHub\\newSushiTime\\windowsformsapp1\\vista\\primer uso\\crearprimerusuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{AB44B6D5-0C4D-43EC-B6CC-F69F10A366D4}|WindowsFormsApp1\\WindowsFormsApp1.csproj|C:\\Users\\chivasd\\Documents\\GitHub\\newSushiTime\\windowsformsapp1\\vista\\primer uso\\crearprimerusuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{AB44B6D5-0C4D-43EC-B6CC-F69F10A366D4}|WindowsFormsApp1\\WindowsFormsApp1.csproj|solutionrelative:windowsformsapp1\\vista\\primer uso\\crearprimerusuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AB44B6D5-0C4D-43EC-B6CC-F69F10A366D4}|WindowsFormsApp1\\WindowsFormsApp1.csproj|C:\\Users\\Usuario\\Documents\\GitHub\\newSushiTime\\windowsformsapp1\\vista\\planillas\\agregarusuario.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{AB44B6D5-0C4D-43EC-B6CC-F69F10A366D4}|WindowsFormsApp1\\WindowsFormsApp1.csproj|C:\\Users\\chivasd\\Documents\\GitHub\\newSushiTime\\windowsformsapp1\\vista\\planillas\\agregarusuario.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{AB44B6D5-0C4D-43EC-B6CC-F69F10A366D4}|WindowsFormsApp1\\WindowsFormsApp1.csproj|solutionrelative:windowsformsapp1\\vista\\planillas\\agregarusuario.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AB44B6D5-0C4D-43EC-B6CC-F69F10A366D4}|WindowsFormsApp1\\WindowsFormsApp1.csproj|C:\\Users\\Usuario\\Documents\\GitHub\\newSushiTime\\windowsformsapp1\\controlador\\controladorinicial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{AB44B6D5-0C4D-43EC-B6CC-F69F10A366D4}|WindowsFormsApp1\\WindowsFormsApp1.csproj|C:\\Users\\chivasd\\Documents\\GitHub\\newSushiTime\\windowsformsapp1\\controlador\\controladorinicial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{AB44B6D5-0C4D-43EC-B6CC-F69F10A366D4}|WindowsFormsApp1\\WindowsFormsApp1.csproj|solutionrelative:windowsformsapp1\\controlador\\controladorinicial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AB44B6D5-0C4D-43EC-B6CC-F69F10A366D4}|WindowsFormsApp1\\WindowsFormsApp1.csproj|C:\\Users\\Usuario\\Documents\\GitHub\\newSushiTime\\windowsformsapp1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{AB44B6D5-0C4D-43EC-B6CC-F69F10A366D4}|WindowsFormsApp1\\WindowsFormsApp1.csproj|C:\\Users\\chivasd\\Documents\\GitHub\\newSushiTime\\windowsformsapp1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{AB44B6D5-0C4D-43EC-B6CC-F69F10A366D4}|WindowsFormsApp1\\WindowsFormsApp1.csproj|solutionrelative:windowsformsapp1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AB44B6D5-0C4D-43EC-B6CC-F69F10A366D4}|WindowsFormsApp1\\WindowsFormsApp1.csproj|C:\\Users\\Usuario\\Documents\\GitHub\\newSushiTime\\windowsformsapp1\\vista\\calendario\\calendario1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{AB44B6D5-0C4D-43EC-B6CC-F69F10A366D4}|WindowsFormsApp1\\WindowsFormsApp1.csproj|C:\\Users\\chivasd\\Documents\\GitHub\\newSushiTime\\windowsformsapp1\\vista\\calendario\\calendario1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{AB44B6D5-0C4D-43EC-B6CC-F69F10A366D4}|WindowsFormsApp1\\WindowsFormsApp1.csproj|solutionrelative:windowsformsapp1\\vista\\calendario\\calendario1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -186,303 +262,475 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 8,
           "Children": [
             {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Dashboard.cs",
-              "DocumentMoniker": "C:\\Users\\Usuario\\Documents\\GitHub\\newSushiTime\\WindowsFormsApp1\\Vista\\Dashboard.cs",
-              "RelativeDocumentMoniker": "WindowsFormsApp1\\Vista\\Dashboard.cs",
-              "ToolTip": "C:\\Users\\Usuario\\Documents\\GitHub\\newSushiTime\\WindowsFormsApp1\\Vista\\Dashboard.cs",
-              "RelativeToolTip": "WindowsFormsApp1\\Vista\\Dashboard.cs",
-              "ViewState": "AgIAAGgAAAAAAAAAAAAAAE8AAAARAAAAAAAAAA==",
+              "DocumentIndex": 4,
+              "Title": "controladorPreguntaSeguridad.cs",
+              "DocumentMoniker": "C:\\Users\\chivasd\\Documents\\GitHub\\newSushiTime\\WindowsFormsApp1\\Controlador\\OlvidarContrase\u00F1as\\controladorPreguntaSeguridad.cs",
+              "RelativeDocumentMoniker": "WindowsFormsApp1\\Controlador\\OlvidarContrase\u00F1as\\controladorPreguntaSeguridad.cs",
+              "ToolTip": "C:\\Users\\chivasd\\Documents\\GitHub\\newSushiTime\\WindowsFormsApp1\\Controlador\\OlvidarContrase\u00F1as\\controladorPreguntaSeguridad.cs",
+              "RelativeToolTip": "WindowsFormsApp1\\Controlador\\OlvidarContrase\u00F1as\\controladorPreguntaSeguridad.cs",
+              "ViewState": "AgIAABkAAAAAAAAAAAAAwCsAAABJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-24T04:22:31.199Z",
+              "WhenOpened": "2024-10-13T23:27:24.485Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "usuariocambiodecontrase\u00F1a.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\chivasd\\Documents\\GitHub\\newSushiTime\\WindowsFormsApp1\\Vista\\Olvidar contrase\u00F1a\\usuariocambiodecontrase\u00F1a.cs",
+              "RelativeDocumentMoniker": "WindowsFormsApp1\\Vista\\Olvidar contrase\u00F1a\\usuariocambiodecontrase\u00F1a.cs",
+              "ToolTip": "C:\\Users\\chivasd\\Documents\\GitHub\\newSushiTime\\WindowsFormsApp1\\Vista\\Olvidar contrase\u00F1a\\usuariocambiodecontrase\u00F1a.cs [Dise\u00F1o]",
+              "RelativeToolTip": "WindowsFormsApp1\\Vista\\Olvidar contrase\u00F1a\\usuariocambiodecontrase\u00F1a.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-13T23:40:37.412Z",
+              "EditorCaption": " [Dise\u00F1o]"
             },
             {
               "$type": "Document",
               "DocumentIndex": 8,
-              "Title": "ControlD.cs",
-              "DocumentMoniker": "C:\\Users\\Usuario\\Documents\\GitHub\\newSushiTime\\WindowsFormsApp1\\Controlador\\Dashcarpet\\ControlD.cs",
-              "RelativeDocumentMoniker": "WindowsFormsApp1\\Controlador\\Dashcarpet\\ControlD.cs",
-              "ToolTip": "C:\\Users\\Usuario\\Documents\\GitHub\\newSushiTime\\WindowsFormsApp1\\Controlador\\Dashcarpet\\ControlD.cs",
-              "RelativeToolTip": "WindowsFormsApp1\\Controlador\\Dashcarpet\\ControlD.cs",
-              "ViewState": "AQIAABcAAAAAAAAAAAAAwCAAAABaAAAA",
+              "Title": "usuariocambiodecontrase\u00F1a.cs",
+              "DocumentMoniker": "C:\\Users\\chivasd\\Documents\\GitHub\\newSushiTime\\WindowsFormsApp1\\Vista\\Olvidar contrase\u00F1a\\usuariocambiodecontrase\u00F1a.cs",
+              "RelativeDocumentMoniker": "WindowsFormsApp1\\Vista\\Olvidar contrase\u00F1a\\usuariocambiodecontrase\u00F1a.cs",
+              "ToolTip": "C:\\Users\\chivasd\\Documents\\GitHub\\newSushiTime\\WindowsFormsApp1\\Vista\\Olvidar contrase\u00F1a\\usuariocambiodecontrase\u00F1a.cs",
+              "RelativeToolTip": "WindowsFormsApp1\\Vista\\Olvidar contrase\u00F1a\\usuariocambiodecontrase\u00F1a.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAcwBEAAAAYAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-24T04:21:23.574Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "dgvususarios.Designer.cs",
-              "DocumentMoniker": "C:\\Users\\Usuario\\Documents\\GitHub\\newSushiTime\\WindowsFormsApp1\\Vista\\Usuarios\\dgvususarios.Designer.cs",
-              "RelativeDocumentMoniker": "WindowsFormsApp1\\Vista\\Usuarios\\dgvususarios.Designer.cs",
-              "ToolTip": "C:\\Users\\Usuario\\Documents\\GitHub\\newSushiTime\\WindowsFormsApp1\\Vista\\Usuarios\\dgvususarios.Designer.cs",
-              "RelativeToolTip": "WindowsFormsApp1\\Vista\\Usuarios\\dgvususarios.Designer.cs",
-              "ViewState": "AgIAABQAAAAAAAAAAAAawOIBAAA/AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-24T04:13:02.822Z",
+              "WhenOpened": "2024-10-13T23:43:34.405Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "DAOUsuarios.cs",
-              "DocumentMoniker": "C:\\Users\\Usuario\\Documents\\GitHub\\newSushiTime\\WindowsFormsApp1\\Modelo\\DAO\\DAOUsuarios.cs",
-              "RelativeDocumentMoniker": "WindowsFormsApp1\\Modelo\\DAO\\DAOUsuarios.cs",
-              "ToolTip": "C:\\Users\\Usuario\\Documents\\GitHub\\newSushiTime\\WindowsFormsApp1\\Modelo\\DAO\\DAOUsuarios.cs",
-              "RelativeToolTip": "WindowsFormsApp1\\Modelo\\DAO\\DAOUsuarios.cs",
-              "ViewState": "AQIAAKkAAAAAAAAAAAAkwAAAAAAAAAAA",
+              "DocumentIndex": 0,
+              "Title": "DAOUsuario2.cs",
+              "DocumentMoniker": "C:\\Users\\chivasd\\Documents\\GitHub\\newSushiTime\\WindowsFormsApp1\\Modelo\\DAO\\DAOUsuario2.cs",
+              "RelativeDocumentMoniker": "WindowsFormsApp1\\Modelo\\DAO\\DAOUsuario2.cs",
+              "ToolTip": "C:\\Users\\chivasd\\Documents\\GitHub\\newSushiTime\\WindowsFormsApp1\\Modelo\\DAO\\DAOUsuario2.cs",
+              "RelativeToolTip": "WindowsFormsApp1\\Modelo\\DAO\\DAOUsuario2.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-24T04:09:21.397Z"
+              "WhenOpened": "2024-10-14T00:25:24.002Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{e5c86464-96be-4d7c-9a8b-abcb3bbf5f92}"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "dgvususarios.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\Usuario\\Documents\\GitHub\\newSushiTime\\WindowsFormsApp1\\Vista\\Usuarios\\dgvususarios.cs",
-              "RelativeDocumentMoniker": "WindowsFormsApp1\\Vista\\Usuarios\\dgvususarios.cs",
-              "ToolTip": "C:\\Users\\Usuario\\Documents\\GitHub\\newSushiTime\\WindowsFormsApp1\\Vista\\Usuarios\\dgvususarios.cs [Dise\u00F1o]",
-              "RelativeToolTip": "WindowsFormsApp1\\Vista\\Usuarios\\dgvususarios.cs [Dise\u00F1o]",
+              "DocumentIndex": 7,
+              "Title": "DTOTablaTareas.cs",
+              "DocumentMoniker": "C:\\Users\\chivasd\\Documents\\GitHub\\newSushiTime\\WindowsFormsApp1\\Modelo\\DTO\\DTOTablaTareas.cs",
+              "RelativeDocumentMoniker": "WindowsFormsApp1\\Modelo\\DTO\\DTOTablaTareas.cs",
+              "ToolTip": "C:\\Users\\chivasd\\Documents\\GitHub\\newSushiTime\\WindowsFormsApp1\\Modelo\\DTO\\DTOTablaTareas.cs",
+              "RelativeToolTip": "WindowsFormsApp1\\Modelo\\DTO\\DTOTablaTareas.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-24T04:08:41.172Z",
-              "EditorCaption": " [Dise\u00F1o]"
+              "WhenOpened": "2024-10-14T01:34:21.352Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "VerPlanilla.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\Usuario\\Documents\\GitHub\\newSushiTime\\WindowsFormsApp1\\Vista\\Planillas\\VerPlanilla.cs",
-              "RelativeDocumentMoniker": "WindowsFormsApp1\\Vista\\Planillas\\VerPlanilla.cs",
-              "ToolTip": "C:\\Users\\Usuario\\Documents\\GitHub\\newSushiTime\\WindowsFormsApp1\\Vista\\Planillas\\VerPlanilla.cs [Dise\u00F1o]",
-              "RelativeToolTip": "WindowsFormsApp1\\Vista\\Planillas\\VerPlanilla.cs [Dise\u00F1o]",
+              "Title": "DAOUsuarios.cs",
+              "DocumentMoniker": "C:\\Users\\chivasd\\Documents\\GitHub\\newSushiTime\\WindowsFormsApp1\\Modelo\\DAO\\DAOUsuarios.cs",
+              "RelativeDocumentMoniker": "WindowsFormsApp1\\Modelo\\DAO\\DAOUsuarios.cs",
+              "ToolTip": "C:\\Users\\chivasd\\Documents\\GitHub\\newSushiTime\\WindowsFormsApp1\\Modelo\\DAO\\DAOUsuarios.cs",
+              "RelativeToolTip": "WindowsFormsApp1\\Modelo\\DAO\\DAOUsuarios.cs",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAuwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-24T04:04:14.202Z",
-              "EditorCaption": " [Dise\u00F1o]"
+              "WhenOpened": "2024-09-24T04:09:21.397Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
-              "Title": "RecuperacionContrase\u00F1a.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\Usuario\\Documents\\GitHub\\newSushiTime\\WindowsFormsApp1\\Vista\\Olvidar contrase\u00F1a\\RecuperacionContrase\u00F1a.cs",
-              "RelativeDocumentMoniker": "WindowsFormsApp1\\Vista\\Olvidar contrase\u00F1a\\RecuperacionContrase\u00F1a.cs",
-              "ToolTip": "C:\\Users\\ivino\\OneDrive\\Documentos\\GitHub\\newSushiTime\\WindowsFormsApp1\\Vista\\Olvidar contrase\u00F1a\\RecuperacionContrase\u00F1a.cs [Dise\u00F1o]",
-              "RelativeToolTip": "..\\..\\..\\..\\ivino\\OneDrive\\Documentos\\GitHub\\newSushiTime\\WindowsFormsApp1\\Vista\\Olvidar contrase\u00F1a\\RecuperacionContrase\u00F1a.cs [Dise\u00F1o]",
+              "DocumentIndex": 2,
+              "Title": "DTOUsuarios.cs",
+              "DocumentMoniker": "C:\\Users\\chivasd\\Documents\\GitHub\\newSushiTime\\WindowsFormsApp1\\Modelo\\DTO\\DTOUsuarios.cs",
+              "RelativeDocumentMoniker": "WindowsFormsApp1\\Modelo\\DTO\\DTOUsuarios.cs",
+              "ToolTip": "C:\\Users\\chivasd\\Documents\\GitHub\\newSushiTime\\WindowsFormsApp1\\Modelo\\DTO\\DTOUsuarios.cs",
+              "RelativeToolTip": "WindowsFormsApp1\\Modelo\\DTO\\DTOUsuarios.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-24T04:00:43.841Z"
+              "WhenOpened": "2024-10-14T00:27:38.395Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
-              "Title": "AgregarTarea.cs",
-              "DocumentMoniker": "C:\\Users\\Usuario\\Documents\\GitHub\\newSushiTime\\WindowsFormsApp1\\Vista\\Calendario\\AgregarTarea.cs",
-              "RelativeDocumentMoniker": "WindowsFormsApp1\\Vista\\Calendario\\AgregarTarea.cs",
-              "ToolTip": "C:\\Users\\Usuario\\Documents\\GitHub\\newSushiTime\\WindowsFormsApp1\\Vista\\Calendario\\AgregarTarea.cs",
-              "RelativeToolTip": "WindowsFormsApp1\\Vista\\Calendario\\AgregarTarea.cs",
-              "ViewState": "AQIAAAcAAAAAAAAAAAAiwBIAAAAoAAAA",
+              "DocumentIndex": 3,
+              "Title": "DAOAgregarTarea.cs",
+              "DocumentMoniker": "C:\\Users\\chivasd\\Documents\\GitHub\\newSushiTime\\WindowsFormsApp1\\Modelo\\DAO\\DAOAgregarTarea.cs",
+              "RelativeDocumentMoniker": "WindowsFormsApp1\\Modelo\\DAO\\DAOAgregarTarea.cs",
+              "ToolTip": "C:\\Users\\chivasd\\Documents\\GitHub\\newSushiTime\\WindowsFormsApp1\\Modelo\\DAO\\DAOAgregarTarea.cs",
+              "RelativeToolTip": "WindowsFormsApp1\\Modelo\\DAO\\DAOAgregarTarea.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAA0AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-24T03:45:54.164Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "DAORecuperacionContra.cs",
-              "DocumentMoniker": "C:\\Users\\Usuario\\Documents\\GitHub\\newSushiTime\\WindowsFormsApp1\\Modelo\\DAO\\DAORecuperacionContra.cs",
-              "RelativeDocumentMoniker": "WindowsFormsApp1\\Modelo\\DAO\\DAORecuperacionContra.cs",
-              "ToolTip": "C:\\Users\\Usuario\\Documents\\GitHub\\newSushiTime\\WindowsFormsApp1\\Modelo\\DAO\\DAORecuperacionContra.cs",
-              "RelativeToolTip": "WindowsFormsApp1\\Modelo\\DAO\\DAORecuperacionContra.cs",
-              "ViewState": "AQIAADEAAAAAAAAAAAAQwAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-24T03:39:14.945Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "DAOadminU.cs",
-              "DocumentMoniker": "C:\\Users\\Usuario\\Documents\\GitHub\\newSushiTime\\WindowsFormsApp1\\Modelo\\DAO\\DAOadminU.cs",
-              "RelativeDocumentMoniker": "WindowsFormsApp1\\Modelo\\DAO\\DAOadminU.cs",
-              "ToolTip": "C:\\Users\\Usuario\\Documents\\GitHub\\newSushiTime\\WindowsFormsApp1\\Modelo\\DAO\\DAOadminU.cs",
-              "RelativeToolTip": "WindowsFormsApp1\\Modelo\\DAO\\DAOadminU.cs",
-              "ViewState": "AQIAALQAAAAAAAAAAAAuwAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-24T03:38:38.572Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 32,
-              "Title": "DTOPrimerUsuario.cs",
-              "DocumentMoniker": "C:\\Users\\Usuario\\Documents\\GitHub\\newSushiTime\\WindowsFormsApp1\\Modelo\\DTO\\DTOPrimerUsuario.cs",
-              "RelativeDocumentMoniker": "WindowsFormsApp1\\Modelo\\DTO\\DTOPrimerUsuario.cs",
-              "ToolTip": "C:\\Users\\Usuario\\Documents\\GitHub\\newSushiTime\\WindowsFormsApp1\\Modelo\\DTO\\DTOPrimerUsuario.cs",
-              "RelativeToolTip": "WindowsFormsApp1\\Modelo\\DTO\\DTOPrimerUsuario.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-24T03:33:22.275Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 24,
-              "Title": "DTOAgregarTarea.cs",
-              "DocumentMoniker": "C:\\Users\\Usuario\\Documents\\GitHub\\newSushiTime\\WindowsFormsApp1\\Modelo\\DTO\\DTOAgregarTarea.cs",
-              "RelativeDocumentMoniker": "WindowsFormsApp1\\Modelo\\DTO\\DTOAgregarTarea.cs",
-              "ToolTip": "C:\\Users\\Usuario\\Documents\\GitHub\\newSushiTime\\WindowsFormsApp1\\Modelo\\DTO\\DTOAgregarTarea.cs",
-              "RelativeToolTip": "WindowsFormsApp1\\Modelo\\DTO\\DTOAgregarTarea.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-24T03:32:49.368Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 31,
-              "Title": "DTOlogin.cs",
-              "DocumentMoniker": "C:\\Users\\Usuario\\Documents\\GitHub\\newSushiTime\\WindowsFormsApp1\\Modelo\\DTO\\DTOlogin.cs",
-              "RelativeDocumentMoniker": "WindowsFormsApp1\\Modelo\\DTO\\DTOlogin.cs",
-              "ToolTip": "C:\\Users\\Usuario\\Documents\\GitHub\\newSushiTime\\WindowsFormsApp1\\Modelo\\DTO\\DTOlogin.cs",
-              "RelativeToolTip": "WindowsFormsApp1\\Modelo\\DTO\\DTOlogin.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-24T03:32:48.245Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "DTORecuperacionContra.cs",
-              "DocumentMoniker": "C:\\Users\\Usuario\\Documents\\GitHub\\newSushiTime\\WindowsFormsApp1\\Modelo\\DTO\\DTORecuperacionContra.cs",
-              "RelativeDocumentMoniker": "WindowsFormsApp1\\Modelo\\DTO\\DTORecuperacionContra.cs",
-              "ToolTip": "C:\\Users\\Usuario\\Documents\\GitHub\\newSushiTime\\WindowsFormsApp1\\Modelo\\DTO\\DTORecuperacionContra.cs",
-              "RelativeToolTip": "WindowsFormsApp1\\Modelo\\DTO\\DTORecuperacionContra.cs",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-24T03:32:23.729Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 26,
-              "Title": "DTORestablerSistema.cs",
-              "DocumentMoniker": "C:\\Users\\Usuario\\Documents\\GitHub\\newSushiTime\\WindowsFormsApp1\\Modelo\\DTO\\DTORestablerSistema.cs",
-              "RelativeDocumentMoniker": "WindowsFormsApp1\\Modelo\\DTO\\DTORestablerSistema.cs",
-              "ToolTip": "C:\\Users\\Usuario\\Documents\\GitHub\\newSushiTime\\WindowsFormsApp1\\Modelo\\DTO\\DTORestablerSistema.cs",
-              "RelativeToolTip": "WindowsFormsApp1\\Modelo\\DTO\\DTORestablerSistema.cs",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAiwAsAAAAHAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-24T03:32:05.025Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 23,
-              "Title": "DTOadminU.cs",
-              "DocumentMoniker": "C:\\Users\\Usuario\\Documents\\GitHub\\newSushiTime\\WindowsFormsApp1\\Modelo\\DTO\\DTOadminU.cs",
-              "RelativeDocumentMoniker": "WindowsFormsApp1\\Modelo\\DTO\\DTOadminU.cs",
-              "ToolTip": "C:\\Users\\Usuario\\Documents\\GitHub\\newSushiTime\\WindowsFormsApp1\\Modelo\\DTO\\DTOadminU.cs",
-              "RelativeToolTip": "WindowsFormsApp1\\Modelo\\DTO\\DTOadminU.cs",
-              "ViewState": "AQIAABEAAAAAAAAAAAAmwCAAAAAfAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-24T03:29:08.789Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 33,
-              "Title": "DAOPrimerUsuario.cs",
-              "DocumentMoniker": "C:\\Users\\Usuario\\Documents\\GitHub\\newSushiTime\\WindowsFormsApp1\\Modelo\\DAO\\DAOPrimerUsuario.cs",
-              "RelativeDocumentMoniker": "WindowsFormsApp1\\Modelo\\DAO\\DAOPrimerUsuario.cs",
-              "ToolTip": "C:\\Users\\Usuario\\Documents\\GitHub\\newSushiTime\\WindowsFormsApp1\\Modelo\\DAO\\DAOPrimerUsuario.cs",
-              "RelativeToolTip": "WindowsFormsApp1\\Modelo\\DAO\\DAOPrimerUsuario.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAA3AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-24T03:28:14.437Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 34,
-              "Title": "DAOLogin.cs",
-              "DocumentMoniker": "C:\\Users\\Usuario\\Documents\\GitHub\\newSushiTime\\WindowsFormsApp1\\Modelo\\DAO\\DAOLogin.cs",
-              "RelativeDocumentMoniker": "WindowsFormsApp1\\Modelo\\DAO\\DAOLogin.cs",
-              "ToolTip": "C:\\Users\\Usuario\\Documents\\GitHub\\newSushiTime\\WindowsFormsApp1\\Modelo\\DAO\\DAOLogin.cs",
-              "RelativeToolTip": "WindowsFormsApp1\\Modelo\\DAO\\DAOLogin.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-24T03:28:10.806Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "DAOComprobarContrase\u00F1aAdmi.cs",
-              "DocumentMoniker": "C:\\Users\\Usuario\\Documents\\GitHub\\newSushiTime\\WindowsFormsApp1\\Modelo\\DAO\\DAOComprobarContrase\u00F1aAdmi.cs",
-              "RelativeDocumentMoniker": "WindowsFormsApp1\\Modelo\\DAO\\DAOComprobarContrase\u00F1aAdmi.cs",
-              "ToolTip": "C:\\Users\\Usuario\\Documents\\GitHub\\newSushiTime\\WindowsFormsApp1\\Modelo\\DAO\\DAOComprobarContrase\u00F1aAdmi.cs",
-              "RelativeToolTip": "WindowsFormsApp1\\Modelo\\DAO\\DAOComprobarContrase\u00F1aAdmi.cs",
-              "ViewState": "AQIAAD8AAAAAAAAAAAAYwB4AAAANAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-24T03:20:40.456Z"
+              "WhenOpened": "2024-10-13T23:51:23.747Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 5,
+              "Title": "ControladorPindeAdmincs.cs",
+              "DocumentMoniker": "C:\\Users\\chivasd\\Documents\\GitHub\\newSushiTime\\WindowsFormsApp1\\Controlador\\OlvidarContrase\u00F1as\\ControladorPindeAdmincs.cs",
+              "RelativeDocumentMoniker": "WindowsFormsApp1\\Controlador\\OlvidarContrase\u00F1as\\ControladorPindeAdmincs.cs",
+              "ToolTip": "C:\\Users\\chivasd\\Documents\\GitHub\\newSushiTime\\WindowsFormsApp1\\Controlador\\OlvidarContrase\u00F1as\\ControladorPindeAdmincs.cs",
+              "RelativeToolTip": "WindowsFormsApp1\\Controlador\\OlvidarContrase\u00F1as\\ControladorPindeAdmincs.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAQwBoAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-13T23:33:11.237Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "DTOTarea.cs",
+              "DocumentMoniker": "C:\\Users\\chivasd\\Documents\\GitHub\\newSushiTime\\WindowsFormsApp1\\Modelo\\DTO\\DTOTarea.cs",
+              "RelativeDocumentMoniker": "WindowsFormsApp1\\Modelo\\DTO\\DTOTarea.cs",
+              "ToolTip": "C:\\Users\\chivasd\\Documents\\GitHub\\newSushiTime\\WindowsFormsApp1\\Modelo\\DTO\\DTOTarea.cs",
+              "RelativeToolTip": "WindowsFormsApp1\\Modelo\\DTO\\DTOTarea.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-14T01:41:11.593Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Ca\u00F1andirUsuario.cs",
+              "DocumentMoniker": "C:\\Users\\chivasd\\Documents\\GitHub\\newSushiTime\\WindowsFormsApp1\\Controlador\\AdministracionUsuarios\\Ca\u00F1andirUsuario.cs",
+              "RelativeDocumentMoniker": "WindowsFormsApp1\\Controlador\\AdministracionUsuarios\\Ca\u00F1andirUsuario.cs",
+              "ToolTip": "C:\\Users\\chivasd\\Documents\\GitHub\\newSushiTime\\WindowsFormsApp1\\Controlador\\AdministracionUsuarios\\Ca\u00F1andirUsuario.cs",
+              "RelativeToolTip": "WindowsFormsApp1\\Controlador\\AdministracionUsuarios\\Ca\u00F1andirUsuario.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAwBUAAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-23T20:43:15.642Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "UsuarioDTO.cs",
+              "DocumentMoniker": "C:\\Users\\chivasd\\Documents\\GitHub\\newSushiTime\\WindowsFormsApp1\\Modelo\\DTO\\UsuarioDTO.cs",
+              "RelativeDocumentMoniker": "WindowsFormsApp1\\Modelo\\DTO\\UsuarioDTO.cs",
+              "ToolTip": "C:\\Users\\chivasd\\Documents\\GitHub\\newSushiTime\\WindowsFormsApp1\\Modelo\\DTO\\UsuarioDTO.cs",
+              "RelativeToolTip": "WindowsFormsApp1\\Modelo\\DTO\\UsuarioDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-14T00:57:45.451Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
               "Title": "ControllerContrase\u00F1aAdmi2.cs",
-              "DocumentMoniker": "C:\\Users\\Usuario\\Documents\\GitHub\\newSushiTime\\WindowsFormsApp1\\Controlador\\OlvidarContrase\u00F1as\\ControllerContrase\u00F1aAdmi2.cs",
+              "DocumentMoniker": "C:\\Users\\chivasd\\Documents\\GitHub\\newSushiTime\\WindowsFormsApp1\\Controlador\\OlvidarContrase\u00F1as\\ControllerContrase\u00F1aAdmi2.cs",
               "RelativeDocumentMoniker": "WindowsFormsApp1\\Controlador\\OlvidarContrase\u00F1as\\ControllerContrase\u00F1aAdmi2.cs",
-              "ToolTip": "C:\\Users\\Usuario\\Documents\\GitHub\\newSushiTime\\WindowsFormsApp1\\Controlador\\OlvidarContrase\u00F1as\\ControllerContrase\u00F1aAdmi2.cs",
+              "ToolTip": "C:\\Users\\chivasd\\Documents\\GitHub\\newSushiTime\\WindowsFormsApp1\\Controlador\\OlvidarContrase\u00F1as\\ControllerContrase\u00F1aAdmi2.cs",
               "RelativeToolTip": "WindowsFormsApp1\\Controlador\\OlvidarContrase\u00F1as\\ControllerContrase\u00F1aAdmi2.cs",
-              "ViewState": "AgIAACYAAAAAAAAAAAAwwEQAAAANAAAAAAAAAA==",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAAEQAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-24T03:17:17.821Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "RecuperacionDentrodelSistema.cs",
-              "DocumentMoniker": "C:\\Users\\Usuario\\Documents\\GitHub\\newSushiTime\\WindowsFormsApp1\\Vista\\Olvidar contrase\u00F1a\\RecuperacionDentrodelSistema.cs",
-              "RelativeDocumentMoniker": "WindowsFormsApp1\\Vista\\Olvidar contrase\u00F1a\\RecuperacionDentrodelSistema.cs",
-              "ToolTip": "C:\\Users\\Usuario\\Documents\\GitHub\\newSushiTime\\WindowsFormsApp1\\Vista\\Olvidar contrase\u00F1a\\RecuperacionDentrodelSistema.cs",
-              "RelativeToolTip": "WindowsFormsApp1\\Vista\\Olvidar contrase\u00F1a\\RecuperacionDentrodelSistema.cs",
-              "ViewState": "AgIAAAUAAAAAAAAAAAAvwBYAAAAJAAAAAAAAAA==",
+              "DocumentIndex": 13,
+              "Title": "DAOComprobarContrase\u00F1aAdmi.cs",
+              "DocumentMoniker": "C:\\Users\\chivasd\\Documents\\GitHub\\newSushiTime\\WindowsFormsApp1\\Modelo\\DAO\\DAOComprobarContrase\u00F1aAdmi.cs",
+              "RelativeDocumentMoniker": "WindowsFormsApp1\\Modelo\\DAO\\DAOComprobarContrase\u00F1aAdmi.cs",
+              "ToolTip": "C:\\Users\\chivasd\\Documents\\GitHub\\newSushiTime\\WindowsFormsApp1\\Modelo\\DAO\\DAOComprobarContrase\u00F1aAdmi.cs",
+              "RelativeToolTip": "WindowsFormsApp1\\Modelo\\DAO\\DAOComprobarContrase\u00F1aAdmi.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-24T03:13:37.531Z",
+              "WhenOpened": "2024-09-24T03:20:40.456Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "DAOPrimerUso.cs",
+              "DocumentMoniker": "C:\\Users\\chivasd\\Documents\\GitHub\\newSushiTime\\WindowsFormsApp1\\Modelo\\DAO\\DAOPrimerUso.cs",
+              "RelativeDocumentMoniker": "WindowsFormsApp1\\Modelo\\DAO\\DAOPrimerUso.cs",
+              "ToolTip": "C:\\Users\\chivasd\\Documents\\GitHub\\newSushiTime\\WindowsFormsApp1\\Modelo\\DAO\\DAOPrimerUso.cs",
+              "RelativeToolTip": "WindowsFormsApp1\\Modelo\\DAO\\DAOPrimerUso.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-14T00:34:10.33Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "DAOPrimerUsuario.cs",
+              "DocumentMoniker": "C:\\Users\\chivasd\\Documents\\GitHub\\newSushiTime\\WindowsFormsApp1\\Modelo\\DAO\\DAOPrimerUsuario.cs",
+              "RelativeDocumentMoniker": "WindowsFormsApp1\\Modelo\\DAO\\DAOPrimerUsuario.cs",
+              "ToolTip": "C:\\Users\\chivasd\\Documents\\GitHub\\newSushiTime\\WindowsFormsApp1\\Modelo\\DAO\\DAOPrimerUsuario.cs",
+              "RelativeToolTip": "WindowsFormsApp1\\Modelo\\DAO\\DAOPrimerUsuario.cs",
+              "ViewState": "AgIAABMAAAAAAAAAAAA1wCsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-24T03:28:14.437Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "DAOTablaTareas.cs",
+              "DocumentMoniker": "C:\\Users\\chivasd\\Documents\\GitHub\\newSushiTime\\WindowsFormsApp1\\Modelo\\DAO\\DAOTablaTareas.cs",
+              "RelativeDocumentMoniker": "WindowsFormsApp1\\Modelo\\DAO\\DAOTablaTareas.cs",
+              "ToolTip": "C:\\Users\\chivasd\\Documents\\GitHub\\newSushiTime\\WindowsFormsApp1\\Modelo\\DAO\\DAOTablaTareas.cs",
+              "RelativeToolTip": "WindowsFormsApp1\\Modelo\\DAO\\DAOTablaTareas.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-14T00:34:11.387Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "UsuarioDAO.cs",
+              "DocumentMoniker": "C:\\Users\\chivasd\\Documents\\GitHub\\newSushiTime\\WindowsFormsApp1\\Modelo\\DAO\\UsuarioDAO.cs",
+              "RelativeDocumentMoniker": "WindowsFormsApp1\\Modelo\\DAO\\UsuarioDAO.cs",
+              "ToolTip": "C:\\Users\\chivasd\\Documents\\GitHub\\newSushiTime\\WindowsFormsApp1\\Modelo\\DAO\\UsuarioDAO.cs",
+              "RelativeToolTip": "WindowsFormsApp1\\Modelo\\DAO\\UsuarioDAO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-14T00:25:49.789Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 19,
-              "Title": "Formaccesoporadministrador.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\Usuario\\Documents\\GitHub\\newSushiTime\\WindowsFormsApp1\\Vista\\Olvidar contrase\u00F1a\\Formaccesoporadministrador.cs",
-              "RelativeDocumentMoniker": "WindowsFormsApp1\\Vista\\Olvidar contrase\u00F1a\\Formaccesoporadministrador.cs",
-              "ToolTip": "C:\\Users\\ivino\\OneDrive\\Documentos\\GitHub\\newSushiTime\\WindowsFormsApp1\\Vista\\Olvidar contrase\u00F1a\\Formaccesoporadministrador.cs [Dise\u00F1o]",
-              "RelativeToolTip": "..\\..\\..\\..\\ivino\\OneDrive\\Documentos\\GitHub\\newSushiTime\\WindowsFormsApp1\\Vista\\Olvidar contrase\u00F1a\\Formaccesoporadministrador.cs [Dise\u00F1o]",
+              "Title": "DAOadminU.cs",
+              "DocumentMoniker": "C:\\Users\\chivasd\\Documents\\GitHub\\newSushiTime\\WindowsFormsApp1\\Modelo\\DAO\\DAOadminU.cs",
+              "RelativeDocumentMoniker": "WindowsFormsApp1\\Modelo\\DAO\\DAOadminU.cs",
+              "ToolTip": "C:\\Users\\chivasd\\Documents\\GitHub\\newSushiTime\\WindowsFormsApp1\\Modelo\\DAO\\DAOadminU.cs",
+              "RelativeToolTip": "WindowsFormsApp1\\Modelo\\DAO\\DAOadminU.cs",
+              "ViewState": "AgIAALQAAAAAAAAAAAAuwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-24T03:13:16.071Z"
+              "WhenOpened": "2024-09-24T03:38:38.572Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
-              "Title": "FormPregunta de seguridad.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\Usuario\\Documents\\GitHub\\newSushiTime\\WindowsFormsApp1\\Vista\\Olvidar contrase\u00F1a\\FormPregunta de seguridad.cs",
-              "RelativeDocumentMoniker": "WindowsFormsApp1\\Vista\\Olvidar contrase\u00F1a\\FormPregunta de seguridad.cs",
-              "ToolTip": "C:\\Users\\ivino\\OneDrive\\Documentos\\GitHub\\newSushiTime\\WindowsFormsApp1\\Vista\\Olvidar contrase\u00F1a\\FormPregunta de seguridad.cs [Dise\u00F1o]",
-              "RelativeToolTip": "..\\..\\..\\..\\ivino\\OneDrive\\Documentos\\GitHub\\newSushiTime\\WindowsFormsApp1\\Vista\\Olvidar contrase\u00F1a\\FormPregunta de seguridad.cs [Dise\u00F1o]",
+              "DocumentIndex": 17,
+              "Title": "cambiodecontrase\u00F1a.cs",
+              "DocumentMoniker": "C:\\Users\\chivasd\\Documents\\GitHub\\newSushiTime\\WindowsFormsApp1\\Vista\\Olvidar contrase\u00F1a\\cambiodecontrase\u00F1a.cs",
+              "RelativeDocumentMoniker": "WindowsFormsApp1\\Vista\\Olvidar contrase\u00F1a\\cambiodecontrase\u00F1a.cs",
+              "ToolTip": "C:\\Users\\chivasd\\Documents\\GitHub\\newSushiTime\\WindowsFormsApp1\\Vista\\Olvidar contrase\u00F1a\\cambiodecontrase\u00F1a.cs",
+              "RelativeToolTip": "WindowsFormsApp1\\Vista\\Olvidar contrase\u00F1a\\cambiodecontrase\u00F1a.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAArAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-24T03:13:07.723Z"
+              "WhenOpened": "2024-10-13T23:34:13.582Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 29,
-              "Title": "olvidarcontrase\u00F1a.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\Usuario\\Documents\\GitHub\\newSushiTime\\WindowsFormsApp1\\Vista\\Olvidar contrase\u00F1a\\olvidarcontrase\u00F1a.cs",
-              "RelativeDocumentMoniker": "WindowsFormsApp1\\Vista\\Olvidar contrase\u00F1a\\olvidarcontrase\u00F1a.cs",
-              "ToolTip": "C:\\Users\\ivino\\OneDrive\\Documentos\\GitHub\\newSushiTime\\WindowsFormsApp1\\Vista\\Olvidar contrase\u00F1a\\olvidarcontrase\u00F1a.cs [Dise\u00F1o]",
-              "RelativeToolTip": "..\\..\\..\\..\\ivino\\OneDrive\\Documentos\\GitHub\\newSushiTime\\WindowsFormsApp1\\Vista\\Olvidar contrase\u00F1a\\olvidarcontrase\u00F1a.cs [Dise\u00F1o]",
+              "DocumentIndex": 18,
+              "Title": "DTOadminU.cs",
+              "DocumentMoniker": "C:\\Users\\chivasd\\Documents\\GitHub\\newSushiTime\\WindowsFormsApp1\\Modelo\\DTO\\DTOadminU.cs",
+              "RelativeDocumentMoniker": "WindowsFormsApp1\\Modelo\\DTO\\DTOadminU.cs",
+              "ToolTip": "C:\\Users\\chivasd\\Documents\\GitHub\\newSushiTime\\WindowsFormsApp1\\Modelo\\DTO\\DTOadminU.cs",
+              "RelativeToolTip": "WindowsFormsApp1\\Modelo\\DTO\\DTOadminU.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACAAAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-24T03:12:59.76Z"
+              "WhenOpened": "2024-09-24T03:29:08.789Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 21,
+              "Title": "cambiodecontrase\u00F1a.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\chivasd\\Documents\\GitHub\\newSushiTime\\WindowsFormsApp1\\Vista\\Olvidar contrase\u00F1a\\cambiodecontrase\u00F1a.cs",
+              "RelativeDocumentMoniker": "WindowsFormsApp1\\Vista\\Olvidar contrase\u00F1a\\cambiodecontrase\u00F1a.cs",
+              "ToolTip": "C:\\Users\\chivasd\\Documents\\GitHub\\newSushiTime\\WindowsFormsApp1\\Vista\\Olvidar contrase\u00F1a\\cambiodecontrase\u00F1a.cs [Dise\u00F1o]",
+              "RelativeToolTip": "WindowsFormsApp1\\Vista\\Olvidar contrase\u00F1a\\cambiodecontrase\u00F1a.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-13T23:20:56.589Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "Formaccesoporadministrador.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\chivasd\\Documents\\GitHub\\newSushiTime\\WindowsFormsApp1\\Vista\\Olvidar contrase\u00F1a\\Formaccesoporadministrador.cs",
+              "RelativeDocumentMoniker": "WindowsFormsApp1\\Vista\\Olvidar contrase\u00F1a\\Formaccesoporadministrador.cs",
+              "ToolTip": "C:\\Users\\chivasd\\Documents\\GitHub\\newSushiTime\\WindowsFormsApp1\\Vista\\Olvidar contrase\u00F1a\\Formaccesoporadministrador.cs [Dise\u00F1o]",
+              "RelativeToolTip": "WindowsFormsApp1\\Vista\\Olvidar contrase\u00F1a\\Formaccesoporadministrador.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-24T03:13:16.071Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "CrearPrimerUsuario.cs",
+              "DocumentMoniker": "C:\\Users\\chivasd\\Documents\\GitHub\\newSushiTime\\WindowsFormsApp1\\Vista\\Primer Uso\\CrearPrimerUsuario.cs",
+              "RelativeDocumentMoniker": "WindowsFormsApp1\\Vista\\Primer Uso\\CrearPrimerUsuario.cs",
+              "ToolTip": "C:\\Users\\chivasd\\Documents\\GitHub\\newSushiTime\\WindowsFormsApp1\\Vista\\Primer Uso\\CrearPrimerUsuario.cs",
+              "RelativeToolTip": "WindowsFormsApp1\\Vista\\Primer Uso\\CrearPrimerUsuario.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-13T23:59:56.207Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "ControllerRecuperarContrase\u00F1a.cs",
+              "DocumentMoniker": "C:\\Users\\chivasd\\Documents\\GitHub\\newSushiTime\\WindowsFormsApp1\\Controlador\\OlvidarContrase\u00F1as\\ControllerRecuperarContrase\u00F1a.cs",
+              "RelativeDocumentMoniker": "WindowsFormsApp1\\Controlador\\OlvidarContrase\u00F1as\\ControllerRecuperarContrase\u00F1a.cs",
+              "ToolTip": "C:\\Users\\chivasd\\Documents\\GitHub\\newSushiTime\\WindowsFormsApp1\\Controlador\\OlvidarContrase\u00F1as\\ControllerRecuperarContrase\u00F1a.cs",
+              "RelativeToolTip": "WindowsFormsApp1\\Controlador\\OlvidarContrase\u00F1as\\ControllerRecuperarContrase\u00F1a.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-13T23:33:42.344Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "DAOLogin.cs",
+              "DocumentMoniker": "C:\\Users\\chivasd\\Documents\\GitHub\\newSushiTime\\WindowsFormsApp1\\Modelo\\DAO\\DAOLogin.cs",
+              "RelativeDocumentMoniker": "WindowsFormsApp1\\Modelo\\DAO\\DAOLogin.cs",
+              "ToolTip": "C:\\Users\\chivasd\\Documents\\GitHub\\newSushiTime\\WindowsFormsApp1\\Modelo\\DAO\\DAOLogin.cs",
+              "RelativeToolTip": "WindowsFormsApp1\\Modelo\\DAO\\DAOLogin.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-24T03:28:10.806Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "DTOAgregarTarea.cs",
+              "DocumentMoniker": "C:\\Users\\chivasd\\Documents\\GitHub\\newSushiTime\\WindowsFormsApp1\\Modelo\\DTO\\DTOAgregarTarea.cs",
+              "RelativeDocumentMoniker": "WindowsFormsApp1\\Modelo\\DTO\\DTOAgregarTarea.cs",
+              "ToolTip": "C:\\Users\\chivasd\\Documents\\GitHub\\newSushiTime\\WindowsFormsApp1\\Modelo\\DTO\\DTOAgregarTarea.cs",
+              "RelativeToolTip": "WindowsFormsApp1\\Modelo\\DTO\\DTOAgregarTarea.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-24T03:32:49.368Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "DTOlogin.cs",
+              "DocumentMoniker": "C:\\Users\\chivasd\\Documents\\GitHub\\newSushiTime\\WindowsFormsApp1\\Modelo\\DTO\\DTOlogin.cs",
+              "RelativeDocumentMoniker": "WindowsFormsApp1\\Modelo\\DTO\\DTOlogin.cs",
+              "ToolTip": "C:\\Users\\chivasd\\Documents\\GitHub\\newSushiTime\\WindowsFormsApp1\\Modelo\\DTO\\DTOlogin.cs",
+              "RelativeToolTip": "WindowsFormsApp1\\Modelo\\DTO\\DTOlogin.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-24T03:32:48.245Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "DTORecuperacionContra.cs",
+              "DocumentMoniker": "C:\\Users\\chivasd\\Documents\\GitHub\\newSushiTime\\WindowsFormsApp1\\Modelo\\DTO\\DTORecuperacionContra.cs",
+              "RelativeDocumentMoniker": "WindowsFormsApp1\\Modelo\\DTO\\DTORecuperacionContra.cs",
+              "ToolTip": "C:\\Users\\chivasd\\Documents\\GitHub\\newSushiTime\\WindowsFormsApp1\\Modelo\\DTO\\DTORecuperacionContra.cs",
+              "RelativeToolTip": "WindowsFormsApp1\\Modelo\\DTO\\DTORecuperacionContra.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-24T03:32:23.729Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "DAORecuperacionContra.cs",
+              "DocumentMoniker": "C:\\Users\\chivasd\\Documents\\GitHub\\newSushiTime\\WindowsFormsApp1\\Modelo\\DAO\\DAORecuperacionContra.cs",
+              "RelativeDocumentMoniker": "WindowsFormsApp1\\Modelo\\DAO\\DAORecuperacionContra.cs",
+              "ToolTip": "C:\\Users\\chivasd\\Documents\\GitHub\\newSushiTime\\WindowsFormsApp1\\Modelo\\DAO\\DAORecuperacionContra.cs",
+              "RelativeToolTip": "WindowsFormsApp1\\Modelo\\DAO\\DAORecuperacionContra.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-24T03:39:14.945Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "Formaccesoporadministrador.cs",
+              "DocumentMoniker": "C:\\Users\\chivasd\\Documents\\GitHub\\newSushiTime\\WindowsFormsApp1\\Vista\\Olvidar contrase\u00F1a\\Formaccesoporadministrador.cs",
+              "RelativeDocumentMoniker": "WindowsFormsApp1\\Vista\\Olvidar contrase\u00F1a\\Formaccesoporadministrador.cs",
+              "ToolTip": "C:\\Users\\chivasd\\Documents\\GitHub\\newSushiTime\\WindowsFormsApp1\\Vista\\Olvidar contrase\u00F1a\\Formaccesoporadministrador.cs",
+              "RelativeToolTip": "WindowsFormsApp1\\Vista\\Olvidar contrase\u00F1a\\Formaccesoporadministrador.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-13T23:41:53.408Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "RecuperacionContrase\u00F1a.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\chivasd\\Documents\\GitHub\\newSushiTime\\WindowsFormsApp1\\Vista\\Olvidar contrase\u00F1a\\RecuperacionContrase\u00F1a.cs",
+              "RelativeDocumentMoniker": "WindowsFormsApp1\\Vista\\Olvidar contrase\u00F1a\\RecuperacionContrase\u00F1a.cs",
+              "ToolTip": "C:\\Users\\chivasd\\Documents\\GitHub\\newSushiTime\\WindowsFormsApp1\\Vista\\Olvidar contrase\u00F1a\\RecuperacionContrase\u00F1a.cs [Dise\u00F1o]",
+              "RelativeToolTip": "WindowsFormsApp1\\Vista\\Olvidar contrase\u00F1a\\RecuperacionContrase\u00F1a.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-13T23:38:30.217Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "olvidarcontrase\u00F1apregunta.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\chivasd\\Documents\\GitHub\\newSushiTime\\WindowsFormsApp1\\Vista\\Olvidar contrase\u00F1a\\olvidarcontrase\u00F1apregunta.cs",
+              "RelativeDocumentMoniker": "WindowsFormsApp1\\Vista\\Olvidar contrase\u00F1a\\olvidarcontrase\u00F1apregunta.cs",
+              "ToolTip": "C:\\Users\\chivasd\\Documents\\GitHub\\newSushiTime\\WindowsFormsApp1\\Vista\\Olvidar contrase\u00F1a\\olvidarcontrase\u00F1apregunta.cs [Dise\u00F1o]",
+              "RelativeToolTip": "WindowsFormsApp1\\Vista\\Olvidar contrase\u00F1a\\olvidarcontrase\u00F1apregunta.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-13T23:38:28.652Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "FormPregunta de seguridad.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\chivasd\\Documents\\GitHub\\newSushiTime\\WindowsFormsApp1\\Vista\\Olvidar contrase\u00F1a\\FormPregunta de seguridad.cs",
+              "RelativeDocumentMoniker": "WindowsFormsApp1\\Vista\\Olvidar contrase\u00F1a\\FormPregunta de seguridad.cs",
+              "ToolTip": "C:\\Users\\chivasd\\Documents\\GitHub\\newSushiTime\\WindowsFormsApp1\\Vista\\Olvidar contrase\u00F1a\\FormPregunta de seguridad.cs [Dise\u00F1o]",
+              "RelativeToolTip": "WindowsFormsApp1\\Vista\\Olvidar contrase\u00F1a\\FormPregunta de seguridad.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-24T03:13:07.723Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
               "Title": "RecuperacionDentrodelSistema.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\Usuario\\Documents\\GitHub\\newSushiTime\\WindowsFormsApp1\\Vista\\Olvidar contrase\u00F1a\\RecuperacionDentrodelSistema.cs",
+              "DocumentMoniker": "C:\\Users\\chivasd\\Documents\\GitHub\\newSushiTime\\WindowsFormsApp1\\Vista\\Olvidar contrase\u00F1a\\RecuperacionDentrodelSistema.cs",
               "RelativeDocumentMoniker": "WindowsFormsApp1\\Vista\\Olvidar contrase\u00F1a\\RecuperacionDentrodelSistema.cs",
-              "ToolTip": "C:\\Users\\Usuario\\Documents\\GitHub\\newSushiTime\\WindowsFormsApp1\\Vista\\Olvidar contrase\u00F1a\\RecuperacionDentrodelSistema.cs [Dise\u00F1o]",
+              "ToolTip": "C:\\Users\\chivasd\\Documents\\GitHub\\newSushiTime\\WindowsFormsApp1\\Vista\\Olvidar contrase\u00F1a\\RecuperacionDentrodelSistema.cs [Dise\u00F1o]",
               "RelativeToolTip": "WindowsFormsApp1\\Vista\\Olvidar contrase\u00F1a\\RecuperacionDentrodelSistema.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-24T03:12:00.71Z",
@@ -491,35 +739,166 @@
             {
               "$type": "Document",
               "DocumentIndex": 35,
-              "Title": "editarUsuarios.Designer.cs",
-              "DocumentMoniker": "C:\\Users\\Usuario\\Documents\\GitHub\\newSushiTime\\WindowsFormsApp1\\Vista\\Usuarios\\editarUsuarios.Designer.cs",
-              "RelativeDocumentMoniker": "WindowsFormsApp1\\Vista\\Usuarios\\editarUsuarios.Designer.cs",
-              "ToolTip": "C:\\Users\\Usuario\\Documents\\GitHub\\newSushiTime\\WindowsFormsApp1\\Vista\\Usuarios\\editarUsuarios.Designer.cs",
-              "RelativeToolTip": "WindowsFormsApp1\\Vista\\Usuarios\\editarUsuarios.Designer.cs",
+              "Title": "olvidarcontrase\u00F1aprincipal1.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\chivasd\\Documents\\GitHub\\newSushiTime\\WindowsFormsApp1\\Vista\\Olvidar contrase\u00F1a\\olvidarcontrase\u00F1aprincipal1.cs",
+              "RelativeDocumentMoniker": "WindowsFormsApp1\\Vista\\Olvidar contrase\u00F1a\\olvidarcontrase\u00F1aprincipal1.cs",
+              "ToolTip": "C:\\Users\\chivasd\\Documents\\GitHub\\newSushiTime\\WindowsFormsApp1\\Vista\\Olvidar contrase\u00F1a\\olvidarcontrase\u00F1aprincipal1.cs [Dise\u00F1o]",
+              "RelativeToolTip": "WindowsFormsApp1\\Vista\\Olvidar contrase\u00F1a\\olvidarcontrase\u00F1aprincipal1.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-23T21:32:02.193Z",
+              "WhenOpened": "2024-10-13T23:38:29.348Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 37,
+              "Title": "Dashboard.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\chivasd\\Documents\\GitHub\\newSushiTime\\WindowsFormsApp1\\Vista\\Dashboard.cs",
+              "RelativeDocumentMoniker": "WindowsFormsApp1\\Vista\\Dashboard.cs",
+              "ToolTip": "C:\\Users\\chivasd\\Documents\\GitHub\\newSushiTime\\WindowsFormsApp1\\Vista\\Dashboard.cs [Dise\u00F1o]",
+              "RelativeToolTip": "WindowsFormsApp1\\Vista\\Dashboard.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-23T07:07:20.608Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "olvidarcontrase\u00F1a.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\chivasd\\Documents\\GitHub\\newSushiTime\\WindowsFormsApp1\\Vista\\Olvidar contrase\u00F1a\\olvidarcontrase\u00F1a.cs",
+              "RelativeDocumentMoniker": "WindowsFormsApp1\\Vista\\Olvidar contrase\u00F1a\\olvidarcontrase\u00F1a.cs",
+              "ToolTip": "C:\\Users\\chivasd\\Documents\\GitHub\\newSushiTime\\WindowsFormsApp1\\Vista\\Olvidar contrase\u00F1a\\olvidarcontrase\u00F1a.cs [Dise\u00F1o]",
+              "RelativeToolTip": "WindowsFormsApp1\\Vista\\Olvidar contrase\u00F1a\\olvidarcontrase\u00F1a.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-24T03:12:59.76Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 38,
+              "Title": "dgvususarios.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\chivasd\\Documents\\GitHub\\newSushiTime\\WindowsFormsApp1\\Vista\\Usuarios\\dgvususarios.cs",
+              "RelativeDocumentMoniker": "WindowsFormsApp1\\Vista\\Usuarios\\dgvususarios.cs",
+              "ToolTip": "C:\\Users\\chivasd\\Documents\\GitHub\\newSushiTime\\WindowsFormsApp1\\Vista\\Usuarios\\dgvususarios.cs [Dise\u00F1o]",
+              "RelativeToolTip": "WindowsFormsApp1\\Vista\\Usuarios\\dgvususarios.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-24T04:08:41.172Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 51,
+              "Title": "AgregarTarea.cs",
+              "DocumentMoniker": "C:\\Users\\chivasd\\Documents\\GitHub\\newSushiTime\\WindowsFormsApp1\\Vista\\Calendario\\AgregarTarea.cs",
+              "RelativeDocumentMoniker": "WindowsFormsApp1\\Vista\\Calendario\\AgregarTarea.cs",
+              "ToolTip": "C:\\Users\\chivasd\\Documents\\GitHub\\newSushiTime\\WindowsFormsApp1\\Vista\\Calendario\\AgregarTarea.cs",
+              "RelativeToolTip": "WindowsFormsApp1\\Vista\\Calendario\\AgregarTarea.cs",
+              "ViewState": "AQIAAAcAAAAAAAAAAAAiwBIAAAAoAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-24T03:45:54.164Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 39,
+              "Title": "VerPlanilla.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\chivasd\\Documents\\GitHub\\newSushiTime\\WindowsFormsApp1\\Vista\\Planillas\\VerPlanilla.cs",
+              "RelativeDocumentMoniker": "WindowsFormsApp1\\Vista\\Planillas\\VerPlanilla.cs",
+              "ToolTip": "C:\\Users\\Usuario\\Documents\\GitHub\\newSushiTime\\WindowsFormsApp1\\Vista\\Planillas\\VerPlanilla.cs [Dise\u00F1o]",
+              "RelativeToolTip": "..\\..\\..\\..\\Usuario\\Documents\\GitHub\\newSushiTime\\WindowsFormsApp1\\Vista\\Planillas\\VerPlanilla.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-24T04:04:14.202Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 45,
+              "Title": "dgvususarios.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\chivasd\\Documents\\GitHub\\newSushiTime\\WindowsFormsApp1\\Vista\\Usuarios\\dgvususarios.Designer.cs",
+              "RelativeDocumentMoniker": "WindowsFormsApp1\\Vista\\Usuarios\\dgvususarios.Designer.cs",
+              "ToolTip": "C:\\Users\\chivasd\\Documents\\GitHub\\newSushiTime\\WindowsFormsApp1\\Vista\\Usuarios\\dgvususarios.Designer.cs",
+              "RelativeToolTip": "WindowsFormsApp1\\Vista\\Usuarios\\dgvususarios.Designer.cs",
+              "ViewState": "AgIAABQAAAAAAAAAAAAawOIBAAA/AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-24T04:13:02.822Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 30,
+              "DocumentIndex": 43,
+              "Title": "ControlD.cs",
+              "DocumentMoniker": "C:\\Users\\chivasd\\Documents\\GitHub\\newSushiTime\\WindowsFormsApp1\\Controlador\\Dashcarpet\\ControlD.cs",
+              "RelativeDocumentMoniker": "WindowsFormsApp1\\Controlador\\Dashcarpet\\ControlD.cs",
+              "ToolTip": "C:\\Users\\chivasd\\Documents\\GitHub\\newSushiTime\\WindowsFormsApp1\\Controlador\\Dashcarpet\\ControlD.cs",
+              "RelativeToolTip": "WindowsFormsApp1\\Controlador\\Dashcarpet\\ControlD.cs",
+              "ViewState": "AQIAABcAAAAAAAAAAAAAwCAAAABaAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-24T04:21:23.574Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 54,
+              "Title": "DTOPrimerUsuario.cs",
+              "DocumentMoniker": "C:\\Users\\chivasd\\Documents\\GitHub\\newSushiTime\\WindowsFormsApp1\\Modelo\\DTO\\DTOPrimerUsuario.cs",
+              "RelativeDocumentMoniker": "WindowsFormsApp1\\Modelo\\DTO\\DTOPrimerUsuario.cs",
+              "ToolTip": "C:\\Users\\chivasd\\Documents\\GitHub\\newSushiTime\\WindowsFormsApp1\\Modelo\\DTO\\DTOPrimerUsuario.cs",
+              "RelativeToolTip": "WindowsFormsApp1\\Modelo\\DTO\\DTOPrimerUsuario.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-24T03:33:22.275Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 50,
+              "Title": "DTORestablerSistema.cs",
+              "DocumentMoniker": "C:\\Users\\chivasd\\Documents\\GitHub\\newSushiTime\\WindowsFormsApp1\\Modelo\\DTO\\DTORestablerSistema.cs",
+              "RelativeDocumentMoniker": "WindowsFormsApp1\\Modelo\\DTO\\DTORestablerSistema.cs",
+              "ToolTip": "C:\\Users\\chivasd\\Documents\\GitHub\\newSushiTime\\WindowsFormsApp1\\Modelo\\DTO\\DTORestablerSistema.cs",
+              "RelativeToolTip": "WindowsFormsApp1\\Modelo\\DTO\\DTORestablerSistema.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAiwAsAAAAHAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-24T03:32:05.025Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 42,
+              "Title": "RecuperacionDentrodelSistema.cs",
+              "DocumentMoniker": "C:\\Users\\chivasd\\Documents\\GitHub\\newSushiTime\\WindowsFormsApp1\\Vista\\Olvidar contrase\u00F1a\\RecuperacionDentrodelSistema.cs",
+              "RelativeDocumentMoniker": "WindowsFormsApp1\\Vista\\Olvidar contrase\u00F1a\\RecuperacionDentrodelSistema.cs",
+              "ToolTip": "C:\\Users\\chivasd\\Documents\\GitHub\\newSushiTime\\WindowsFormsApp1\\Vista\\Olvidar contrase\u00F1a\\RecuperacionDentrodelSistema.cs",
+              "RelativeToolTip": "WindowsFormsApp1\\Vista\\Olvidar contrase\u00F1a\\RecuperacionDentrodelSistema.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAvwBYAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-24T03:13:37.531Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 55,
+              "Title": "editarUsuarios.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\chivasd\\Documents\\GitHub\\newSushiTime\\WindowsFormsApp1\\Vista\\Usuarios\\editarUsuarios.Designer.cs",
+              "RelativeDocumentMoniker": "WindowsFormsApp1\\Vista\\Usuarios\\editarUsuarios.Designer.cs",
+              "ToolTip": "C:\\Users\\chivasd\\Documents\\GitHub\\newSushiTime\\WindowsFormsApp1\\Vista\\Usuarios\\editarUsuarios.Designer.cs",
+              "RelativeToolTip": "WindowsFormsApp1\\Vista\\Usuarios\\editarUsuarios.Designer.cs",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-23T21:32:02.193Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 53,
               "Title": "editarUsuarios.cs",
-              "DocumentMoniker": "C:\\Users\\Usuario\\Documents\\GitHub\\newSushiTime\\WindowsFormsApp1\\Vista\\Usuarios\\editarUsuarios.cs",
+              "DocumentMoniker": "C:\\Users\\chivasd\\Documents\\GitHub\\newSushiTime\\WindowsFormsApp1\\Vista\\Usuarios\\editarUsuarios.cs",
               "RelativeDocumentMoniker": "WindowsFormsApp1\\Vista\\Usuarios\\editarUsuarios.cs",
-              "ToolTip": "C:\\Users\\Usuario\\Documents\\GitHub\\newSushiTime\\WindowsFormsApp1\\Vista\\Usuarios\\editarUsuarios.cs",
+              "ToolTip": "C:\\Users\\chivasd\\Documents\\GitHub\\newSushiTime\\WindowsFormsApp1\\Vista\\Usuarios\\editarUsuarios.cs",
               "RelativeToolTip": "WindowsFormsApp1\\Vista\\Usuarios\\editarUsuarios.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-23T21:32:01.115Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-23T21:32:01.115Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 44,
               "Title": "CUsuarios.cs",
-              "DocumentMoniker": "C:\\Users\\Usuario\\Documents\\GitHub\\newSushiTime\\WindowsFormsApp1\\Controlador\\AdministracionUsuarios\\CUsuarios.cs",
+              "DocumentMoniker": "C:\\Users\\chivasd\\Documents\\GitHub\\newSushiTime\\WindowsFormsApp1\\Controlador\\AdministracionUsuarios\\CUsuarios.cs",
               "RelativeDocumentMoniker": "WindowsFormsApp1\\Controlador\\AdministracionUsuarios\\CUsuarios.cs",
-              "ToolTip": "C:\\Users\\Usuario\\Documents\\GitHub\\newSushiTime\\WindowsFormsApp1\\Controlador\\AdministracionUsuarios\\CUsuarios.cs",
+              "ToolTip": "C:\\Users\\chivasd\\Documents\\GitHub\\newSushiTime\\WindowsFormsApp1\\Controlador\\AdministracionUsuarios\\CUsuarios.cs",
               "RelativeToolTip": "WindowsFormsApp1\\Controlador\\AdministracionUsuarios\\CUsuarios.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAfAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -527,11 +906,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 49,
               "Title": "ControladorPrimerUsuario.cs",
-              "DocumentMoniker": "C:\\Users\\Usuario\\Documents\\GitHub\\newSushiTime\\WindowsFormsApp1\\Controlador\\ControladorPrimerUso\\ControladorPrimerUsuario.cs",
+              "DocumentMoniker": "C:\\Users\\chivasd\\Documents\\GitHub\\newSushiTime\\WindowsFormsApp1\\Controlador\\ControladorPrimerUso\\ControladorPrimerUsuario.cs",
               "RelativeDocumentMoniker": "WindowsFormsApp1\\Controlador\\ControladorPrimerUso\\ControladorPrimerUsuario.cs",
-              "ToolTip": "C:\\Users\\Usuario\\Documents\\GitHub\\newSushiTime\\WindowsFormsApp1\\Controlador\\ControladorPrimerUso\\ControladorPrimerUsuario.cs",
+              "ToolTip": "C:\\Users\\chivasd\\Documents\\GitHub\\newSushiTime\\WindowsFormsApp1\\Controlador\\ControladorPrimerUso\\ControladorPrimerUsuario.cs",
               "RelativeToolTip": "WindowsFormsApp1\\Controlador\\ControladorPrimerUso\\ControladorPrimerUsuario.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -539,11 +918,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 47,
               "Title": "AdministracionUsuarios.cs",
-              "DocumentMoniker": "C:\\Users\\Usuario\\Documents\\GitHub\\newSushiTime\\WindowsFormsApp1\\Controlador\\AdministracionUsuarios\\AdministracionUsuarios.cs",
+              "DocumentMoniker": "C:\\Users\\chivasd\\Documents\\GitHub\\newSushiTime\\WindowsFormsApp1\\Controlador\\AdministracionUsuarios\\AdministracionUsuarios.cs",
               "RelativeDocumentMoniker": "WindowsFormsApp1\\Controlador\\AdministracionUsuarios\\AdministracionUsuarios.cs",
-              "ToolTip": "C:\\Users\\Usuario\\Documents\\GitHub\\newSushiTime\\WindowsFormsApp1\\Controlador\\AdministracionUsuarios\\AdministracionUsuarios.cs",
+              "ToolTip": "C:\\Users\\chivasd\\Documents\\GitHub\\newSushiTime\\WindowsFormsApp1\\Controlador\\AdministracionUsuarios\\AdministracionUsuarios.cs",
               "RelativeToolTip": "WindowsFormsApp1\\Controlador\\AdministracionUsuarios\\AdministracionUsuarios.cs",
               "ViewState": "AQIAAL4AAAAAAAAAAAAowMkAAAAHAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -551,21 +930,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 40,
               "Title": "editarUsuarios.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\Usuario\\Documents\\GitHub\\newSushiTime\\WindowsFormsApp1\\Vista\\Usuarios\\editarUsuarios.cs",
+              "DocumentMoniker": "C:\\Users\\chivasd\\Documents\\GitHub\\newSushiTime\\WindowsFormsApp1\\Vista\\Usuarios\\editarUsuarios.cs",
               "RelativeDocumentMoniker": "WindowsFormsApp1\\Vista\\Usuarios\\editarUsuarios.cs",
               "ToolTip": "C:\\Users\\Usuario\\Documents\\GitHub\\newSushiTime\\WindowsFormsApp1\\Vista\\Usuarios\\editarUsuarios.cs [Dise\u00F1o]",
-              "RelativeToolTip": "WindowsFormsApp1\\Vista\\Usuarios\\editarUsuarios.cs [Dise\u00F1o]",
+              "RelativeToolTip": "..\\..\\..\\..\\Usuario\\Documents\\GitHub\\newSushiTime\\WindowsFormsApp1\\Vista\\Usuarios\\editarUsuarios.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-23T20:54:17.661Z",
-              "EditorCaption": " [Dise\u00F1o]"
+              "WhenOpened": "2024-09-23T20:54:17.661Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 28,
+              "DocumentIndex": 52,
               "Title": "AgregarTarea.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\Usuario\\Documents\\GitHub\\newSushiTime\\WindowsFormsApp1\\Vista\\Calendario\\AgregarTarea.cs",
+              "DocumentMoniker": "C:\\Users\\chivasd\\Documents\\GitHub\\newSushiTime\\WindowsFormsApp1\\Vista\\Calendario\\AgregarTarea.cs",
               "RelativeDocumentMoniker": "WindowsFormsApp1\\Vista\\Calendario\\AgregarTarea.cs",
               "ToolTip": "C:\\Users\\ivino\\OneDrive\\Documentos\\GitHub\\newSushiTime\\WindowsFormsApp1\\Vista\\Calendario\\AgregarTarea.cs [Dise\u00F1o]",
               "RelativeToolTip": "..\\..\\..\\..\\ivino\\OneDrive\\Documentos\\GitHub\\newSushiTime\\WindowsFormsApp1\\Vista\\Calendario\\AgregarTarea.cs [Dise\u00F1o]",
@@ -574,33 +952,34 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 39,
+              "DocumentIndex": 58,
               "Title": "CrearPrimerUsuario.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\Usuario\\Documents\\GitHub\\newSushiTime\\WindowsFormsApp1\\Vista\\Primer Uso\\CrearPrimerUsuario.cs",
+              "DocumentMoniker": "C:\\Users\\chivasd\\Documents\\GitHub\\newSushiTime\\WindowsFormsApp1\\Vista\\Primer Uso\\CrearPrimerUsuario.cs",
               "RelativeDocumentMoniker": "WindowsFormsApp1\\Vista\\Primer Uso\\CrearPrimerUsuario.cs",
-              "ToolTip": "C:\\Users\\Usuario\\Documents\\GitHub\\newSushiTime\\WindowsFormsApp1\\Vista\\Primer Uso\\CrearPrimerUsuario.cs [Dise\u00F1o]",
+              "ToolTip": "C:\\Users\\chivasd\\Documents\\GitHub\\newSushiTime\\WindowsFormsApp1\\Vista\\Primer Uso\\CrearPrimerUsuario.cs [Dise\u00F1o]",
               "RelativeToolTip": "WindowsFormsApp1\\Vista\\Primer Uso\\CrearPrimerUsuario.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-23T20:48:57.432Z"
+              "WhenOpened": "2024-09-23T20:48:57.432Z",
+              "EditorCaption": " [Dise\u00F1o]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 38,
+              "DocumentIndex": 57,
               "Title": "AgregarUsuario.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\Usuario\\Documents\\GitHub\\newSushiTime\\WindowsFormsApp1\\Vista\\Planillas\\AgregarUsuario.cs",
+              "DocumentMoniker": "C:\\Users\\chivasd\\Documents\\GitHub\\newSushiTime\\WindowsFormsApp1\\Vista\\Planillas\\AgregarUsuario.cs",
               "RelativeDocumentMoniker": "WindowsFormsApp1\\Vista\\Planillas\\AgregarUsuario.cs",
               "ToolTip": "C:\\Users\\Usuario\\Documents\\GitHub\\newSushiTime\\WindowsFormsApp1\\Vista\\Planillas\\AgregarUsuario.cs [Dise\u00F1o]",
-              "RelativeToolTip": "WindowsFormsApp1\\Vista\\Planillas\\AgregarUsuario.cs [Dise\u00F1o]",
+              "RelativeToolTip": "..\\..\\..\\..\\Usuario\\Documents\\GitHub\\newSushiTime\\WindowsFormsApp1\\Vista\\Planillas\\AgregarUsuario.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-23T20:44:31.99Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 36,
+              "DocumentIndex": 56,
               "Title": "ControladorPrimerUso.cs",
-              "DocumentMoniker": "C:\\Users\\Usuario\\Documents\\GitHub\\newSushiTime\\WindowsFormsApp1\\Controlador\\ControladorPrimerUso\\ControladorPrimerUso.cs",
+              "DocumentMoniker": "C:\\Users\\chivasd\\Documents\\GitHub\\newSushiTime\\WindowsFormsApp1\\Controlador\\ControladorPrimerUso\\ControladorPrimerUso.cs",
               "RelativeDocumentMoniker": "WindowsFormsApp1\\Controlador\\ControladorPrimerUso\\ControladorPrimerUso.cs",
-              "ToolTip": "C:\\Users\\Usuario\\Documents\\GitHub\\newSushiTime\\WindowsFormsApp1\\Controlador\\ControladorPrimerUso\\ControladorPrimerUso.cs",
+              "ToolTip": "C:\\Users\\chivasd\\Documents\\GitHub\\newSushiTime\\WindowsFormsApp1\\Controlador\\ControladorPrimerUso\\ControladorPrimerUso.cs",
               "RelativeToolTip": "WindowsFormsApp1\\Controlador\\ControladorPrimerUso\\ControladorPrimerUso.cs",
               "ViewState": "AgIAAEIAAAAAAAAAAAAAwBsAAABmAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -608,11 +987,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 40,
+              "DocumentIndex": 59,
               "Title": "AgregarUsuario.Designer.cs",
-              "DocumentMoniker": "C:\\Users\\Usuario\\Documents\\GitHub\\newSushiTime\\WindowsFormsApp1\\Vista\\Planillas\\AgregarUsuario.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\chivasd\\Documents\\GitHub\\newSushiTime\\WindowsFormsApp1\\Vista\\Planillas\\AgregarUsuario.Designer.cs",
               "RelativeDocumentMoniker": "WindowsFormsApp1\\Vista\\Planillas\\AgregarUsuario.Designer.cs",
-              "ToolTip": "C:\\Users\\Usuario\\Documents\\GitHub\\newSushiTime\\WindowsFormsApp1\\Vista\\Planillas\\AgregarUsuario.Designer.cs",
+              "ToolTip": "C:\\Users\\chivasd\\Documents\\GitHub\\newSushiTime\\WindowsFormsApp1\\Vista\\Planillas\\AgregarUsuario.Designer.cs",
               "RelativeToolTip": "WindowsFormsApp1\\Vista\\Planillas\\AgregarUsuario.Designer.cs",
               "ViewState": "AgIAAFkFAAAAAAAAAAAgwAcAAABDAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -620,23 +999,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 37,
-              "Title": "Ca\u00F1andirUsuario.cs",
-              "DocumentMoniker": "C:\\Users\\Usuario\\Documents\\GitHub\\newSushiTime\\WindowsFormsApp1\\Controlador\\AdministracionUsuarios\\Ca\u00F1andirUsuario.cs",
-              "RelativeDocumentMoniker": "WindowsFormsApp1\\Controlador\\AdministracionUsuarios\\Ca\u00F1andirUsuario.cs",
-              "ToolTip": "C:\\Users\\Usuario\\Documents\\GitHub\\newSushiTime\\WindowsFormsApp1\\Controlador\\AdministracionUsuarios\\Ca\u00F1andirUsuario.cs",
-              "RelativeToolTip": "WindowsFormsApp1\\Controlador\\AdministracionUsuarios\\Ca\u00F1andirUsuario.cs",
-              "ViewState": "AgIAAEcAAAAAAAAAAAAewFUAAAANAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-23T20:43:15.642Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 41,
+              "DocumentIndex": 60,
               "Title": "ControladorInicial.cs",
-              "DocumentMoniker": "C:\\Users\\Usuario\\Documents\\GitHub\\newSushiTime\\WindowsFormsApp1\\Controlador\\ControladorInicial.cs",
+              "DocumentMoniker": "C:\\Users\\chivasd\\Documents\\GitHub\\newSushiTime\\WindowsFormsApp1\\Controlador\\ControladorInicial.cs",
               "RelativeDocumentMoniker": "WindowsFormsApp1\\Controlador\\ControladorInicial.cs",
-              "ToolTip": "C:\\Users\\Usuario\\Documents\\GitHub\\newSushiTime\\WindowsFormsApp1\\Controlador\\ControladorInicial.cs",
+              "ToolTip": "C:\\Users\\chivasd\\Documents\\GitHub\\newSushiTime\\WindowsFormsApp1\\Controlador\\ControladorInicial.cs",
               "RelativeToolTip": "WindowsFormsApp1\\Controlador\\ControladorInicial.cs",
               "ViewState": "AgIAABEAAAAAAAAAAIA9wCEAAAAQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -644,11 +1011,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 42,
+              "DocumentIndex": 61,
               "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\Usuario\\Documents\\GitHub\\newSushiTime\\WindowsFormsApp1\\Program.cs",
+              "DocumentMoniker": "C:\\Users\\chivasd\\Documents\\GitHub\\newSushiTime\\WindowsFormsApp1\\Program.cs",
               "RelativeDocumentMoniker": "WindowsFormsApp1\\Program.cs",
-              "ToolTip": "C:\\Users\\Usuario\\Documents\\GitHub\\newSushiTime\\WindowsFormsApp1\\Program.cs",
+              "ToolTip": "C:\\Users\\chivasd\\Documents\\GitHub\\newSushiTime\\WindowsFormsApp1\\Program.cs",
               "RelativeToolTip": "WindowsFormsApp1\\Program.cs",
               "ViewState": "AgIAAAkAAAAAAAAAAAAAABQAAAA4AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -656,32 +1023,31 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 41,
               "Title": "PrimerUso.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\Usuario\\Documents\\GitHub\\newSushiTime\\WindowsFormsApp1\\Vista\\Primer Uso\\PrimerUso.cs",
+              "DocumentMoniker": "C:\\Users\\chivasd\\Documents\\GitHub\\newSushiTime\\WindowsFormsApp1\\Vista\\Primer Uso\\PrimerUso.cs",
               "RelativeDocumentMoniker": "WindowsFormsApp1\\Vista\\Primer Uso\\PrimerUso.cs",
               "ToolTip": "C:\\Users\\Usuario\\Documents\\GitHub\\newSushiTime\\WindowsFormsApp1\\Vista\\Primer Uso\\PrimerUso.cs [Dise\u00F1o]",
-              "RelativeToolTip": "WindowsFormsApp1\\Vista\\Primer Uso\\PrimerUso.cs [Dise\u00F1o]",
+              "RelativeToolTip": "..\\..\\..\\..\\Usuario\\Documents\\GitHub\\newSushiTime\\WindowsFormsApp1\\Vista\\Primer Uso\\PrimerUso.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-23T09:09:56.809Z",
-              "EditorCaption": " [Dise\u00F1o]"
+              "WhenOpened": "2024-09-23T09:09:56.809Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 43,
+              "DocumentIndex": 62,
               "Title": "calendario1.cs",
-              "DocumentMoniker": "C:\\Users\\Usuario\\Documents\\GitHub\\newSushiTime\\WindowsFormsApp1\\Vista\\Calendario\\calendario1.cs",
+              "DocumentMoniker": "C:\\Users\\chivasd\\Documents\\GitHub\\newSushiTime\\WindowsFormsApp1\\Vista\\Calendario\\calendario1.cs",
               "RelativeDocumentMoniker": "WindowsFormsApp1\\Vista\\Calendario\\calendario1.cs",
-              "ToolTip": "C:\\Users\\Usuario\\Documents\\GitHub\\newSushiTime\\WindowsFormsApp1\\Vista\\Calendario\\calendario1.cs",
+              "ToolTip": "C:\\Users\\chivasd\\Documents\\GitHub\\newSushiTime\\WindowsFormsApp1\\Vista\\Calendario\\calendario1.cs",
               "RelativeToolTip": "WindowsFormsApp1\\Vista\\Calendario\\calendario1.cs",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-23T19:50:17.586Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 48,
               "Title": "calendario1.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\Usuario\\Documents\\GitHub\\newSushiTime\\WindowsFormsApp1\\Vista\\Calendario\\calendario1.cs",
+              "DocumentMoniker": "C:\\Users\\chivasd\\Documents\\GitHub\\newSushiTime\\WindowsFormsApp1\\Vista\\Calendario\\calendario1.cs",
               "RelativeDocumentMoniker": "WindowsFormsApp1\\Vista\\Calendario\\calendario1.cs",
               "ToolTip": "C:\\Users\\ivino\\OneDrive\\Documentos\\GitHub\\newSushiTime\\WindowsFormsApp1\\Vista\\Calendario\\calendario1.cs [Dise\u00F1o]",
               "RelativeToolTip": "..\\..\\..\\..\\ivino\\OneDrive\\Documentos\\GitHub\\newSushiTime\\WindowsFormsApp1\\Vista\\Calendario\\calendario1.cs [Dise\u00F1o]",
@@ -690,22 +1056,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "Dashboard.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\Usuario\\Documents\\GitHub\\newSushiTime\\WindowsFormsApp1\\Vista\\Dashboard.cs",
-              "RelativeDocumentMoniker": "WindowsFormsApp1\\Vista\\Dashboard.cs",
-              "ToolTip": "C:\\Users\\ivino\\OneDrive\\Documentos\\GitHub\\newSushiTime\\WindowsFormsApp1\\Vista\\Dashboard.cs [Dise\u00F1o]",
-              "RelativeToolTip": "..\\..\\..\\..\\ivino\\OneDrive\\Documentos\\GitHub\\newSushiTime\\WindowsFormsApp1\\Vista\\Dashboard.cs [Dise\u00F1o]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-23T07:07:20.608Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 46,
               "Title": "ControladorAU.cs",
-              "DocumentMoniker": "C:\\Users\\Usuario\\Documents\\GitHub\\newSushiTime\\WindowsFormsApp1\\Controlador\\AdministracionUsuarios\\ControladorAU.cs",
+              "DocumentMoniker": "C:\\Users\\chivasd\\Documents\\GitHub\\newSushiTime\\WindowsFormsApp1\\Controlador\\AdministracionUsuarios\\ControladorAU.cs",
               "RelativeDocumentMoniker": "WindowsFormsApp1\\Controlador\\AdministracionUsuarios\\ControladorAU.cs",
-              "ToolTip": "C:\\Users\\Usuario\\Documents\\GitHub\\newSushiTime\\WindowsFormsApp1\\Controlador\\AdministracionUsuarios\\ControladorAU.cs",
+              "ToolTip": "C:\\Users\\chivasd\\Documents\\GitHub\\newSushiTime\\WindowsFormsApp1\\Controlador\\AdministracionUsuarios\\ControladorAU.cs",
               "RelativeToolTip": "WindowsFormsApp1\\Controlador\\AdministracionUsuarios\\ControladorAU.cs",
               "ViewState": "AQIAADUAAAAAAAAAAAA3wAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",

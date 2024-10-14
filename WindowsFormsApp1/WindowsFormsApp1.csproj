@@ -116,8 +116,10 @@
     <Compile Include="Controlador\OlvidarContraseñas\OlvidarContraseñas.cs" />
     <Compile Include="Controlador\RecuperacionAdmin\RecuperacionAdministrador.cs" />
     <Compile Include="Modelo\DAO\DAOComprobarContraseñaAdmi.cs" />
+    <Compile Include="Modelo\DAO\DAOUsuario2.cs" />
     <Compile Include="Modelo\DAO\UsuarioDAO.cs" />
     <Compile Include="Modelo\DTO\DTORestablerSistema.cs" />
+    <Compile Include="Modelo\DTO\DTOUsuarios.cs" />
     <Compile Include="Modelo\DTO\UsuarioDTO.cs" />
     <Compile Include="RecuperarContraseñaService.cs" />
     <Compile Include="Modelo\DAO\DAOadminU.cs" />
@@ -191,6 +193,12 @@
     <Compile Include="Vista\Inicio de Sesión\Logincs.Designer.cs">
       <DependentUpon>Logincs.cs</DependentUpon>
     </Compile>
+    <Compile Include="Vista\Olvidar contraseña\cambiodecontraseña.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vista\Olvidar contraseña\cambiodecontraseña.Designer.cs">
+      <DependentUpon>cambiodecontraseña.cs</DependentUpon>
+    </Compile>
     <Compile Include="Vista\Olvidar contraseña\Formaccesoporadministrador.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -232,6 +240,12 @@
     </Compile>
     <Compile Include="Vista\Olvidar contraseña\RecuperacionDentrodelSistema.Designer.cs">
       <DependentUpon>RecuperacionDentrodelSistema.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vista\Olvidar contraseña\usuariocambiodecontraseña.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vista\Olvidar contraseña\usuariocambiodecontraseña.Designer.cs">
+      <DependentUpon>usuariocambiodecontraseña.cs</DependentUpon>
     </Compile>
     <Compile Include="Vista\Planillas\AgregarUsuario.cs">
       <SubType>Form</SubType>
@@ -309,6 +323,9 @@
     <EmbeddedResource Include="Vista\Inicio de Sesión\Logincs.resx">
       <DependentUpon>Logincs.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Vista\Olvidar contraseña\cambiodecontraseña.resx">
+      <DependentUpon>cambiodecontraseña.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Vista\Olvidar contraseña\Formaccesoporadministrador.resx">
       <DependentUpon>Formaccesoporadministrador.cs</DependentUpon>
     </EmbeddedResource>
@@ -329,6 +346,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Vista\Olvidar contraseña\RecuperacionDentrodelSistema.resx">
       <DependentUpon>RecuperacionDentrodelSistema.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vista\Olvidar contraseña\usuariocambiodecontraseña.resx">
+      <DependentUpon>usuariocambiodecontraseña.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Vista\Planillas\AgregarUsuario.resx">
       <DependentUpon>AgregarUsuario.cs</DependentUpon>
