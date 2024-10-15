@@ -23,25 +23,23 @@ namespace Sushi_Time_PTC_2024.Modelo.DAO
             try
             {
                 connection = dbContext.getConnection();
-                string hashedPassword = new Encriptado().ComputeSha256Hash(Password); // Encripta la contraseña directamente
+                string hashedPassword = new Encriptado().ComputeSha256Hash(Password);
 
                 cmd = new SqlCommand("Login", connection);
                 cmd.CommandType = CommandType.StoredProcedure;
 
                 cmd.Parameters.Add(new SqlParameter("@Username", SqlDbType.NVarChar, 50) { Value = Username });
-                cmd.Parameters.Add(new SqlParameter("@Password", SqlDbType.NVarChar, 65) { Value = hashedPassword }); // Usa la contraseña encriptada
+                cmd.Parameters.Add(new SqlParameter("@Password", SqlDbType.NVarChar, 65) { Value = hashedPassword });
 
                 rd = cmd.ExecuteReader();
 
                 if (rd.Read())
                 {
-                    // Lee el resultado y el mensaje
                     int resultado = Convert.ToInt32(rd["Result"]);
                     return resultado;
                 }
                 else
                 {
-                    // Si no hay filas considera como error
                     return -1;
                 }
             }
@@ -104,11 +102,46 @@ namespace Sushi_Time_PTC_2024.Modelo.DAO
             try
             {
                 connection = dbContext.getConnection();
-                // Inserta directamente el valor de 'Username' en la consulta
                 string query = $"SELECT COUNT(*) FROM Usuarios WHERE Usuario = '{Username}'";
                 SqlCommand cmd = new SqlCommand(query, connection);
-                int usuarioEncontrado = (int)cmd.ExecuteScalar();  // Devuelve 1 si encuentra el usuario, 0 si no lo encuentra
+                int usuarioEncontrado = (int)cmd.ExecuteScalar();
                 return usuarioEncontrado;
+            }
+            catch (SqlException sqlex)
+            {
+                MessageBox.Show($"SQL Error: {sqlex.Message}");
+                return -1;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Error: {ex.Message}");
+                return -1;
+            }
+            finally
+            {
+                if (connection != null && connection.State == ConnectionState.Open)
+                {
+                    connection.Close();
+                }
+            }
+        }
+        public int ObtenerIdUsuario()
+        {
+            SqlConnection connection = null;
+            try
+            {
+                connection = dbContext.getConnection();
+                string query = $"SELECT IdUsuario FROM Usuarios WHERE Usuario = @Username AND Contraseña = @Password"; // Asegúrate de que el nombre de la columna para la contraseña sea el correcto
+                SqlCommand cmd = new SqlCommand(query, connection);
+                cmd.Parameters.AddWithValue("@Username", Username);
+                cmd.Parameters.AddWithValue("@Password", Password);
+
+                var result = cmd.ExecuteScalar();
+                if (result != null)
+                {
+                    return Convert.ToInt32(result);
+                }
+                return 0;
             }
             catch (SqlException sqlex)
             {

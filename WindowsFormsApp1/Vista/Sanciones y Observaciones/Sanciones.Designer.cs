@@ -33,37 +33,37 @@
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties2 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties3 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties4 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties5 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties6 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties7 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties8 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties9 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties10 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties11 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties12 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
             Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges borderEdges1 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties5 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties6 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties7 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties8 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.label7 = new System.Windows.Forms.Label();
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
+            this.txtPara = new Bunifu.UI.WinForms.BunifuTextBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.flowLayoutPanel2 = new System.Windows.Forms.FlowLayoutPanel();
             this.flowLayoutPanel3 = new System.Windows.Forms.FlowLayoutPanel();
             this.flowLayoutPanel4 = new System.Windows.Forms.FlowLayoutPanel();
-            this.label1 = new System.Windows.Forms.Label();
-            this.txtPara = new Bunifu.UI.WinForms.BunifuTextBox();
             this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
+            this.txtObservacionS = new Bunifu.UI.WinForms.BunifuTextBox();
+            this.txtTipoSancion = new Bunifu.UI.WinForms.BunifuTextBox();
             this.tableLayoutPanel5 = new System.Windows.Forms.TableLayoutPanel();
             this.label2 = new System.Windows.Forms.Label();
             this.flowLayoutPanel5 = new System.Windows.Forms.FlowLayoutPanel();
             this.flowLayoutPanel6 = new System.Windows.Forms.FlowLayoutPanel();
-            this.txtTipoSancion = new Bunifu.UI.WinForms.BunifuTextBox();
             this.BtnEnviar = new Bunifu.UI.WinForms.BunifuButton.BunifuButton2();
             this.tableLayoutPanel6 = new System.Windows.Forms.TableLayoutPanel();
+            this.label3 = new System.Windows.Forms.Label();
             this.flowLayoutPanel7 = new System.Windows.Forms.FlowLayoutPanel();
             this.flowLayoutPanel8 = new System.Windows.Forms.FlowLayoutPanel();
-            this.label3 = new System.Windows.Forms.Label();
-            this.txtObservacionS = new Bunifu.UI.WinForms.BunifuTextBox();
             this.flowLayoutPanel9 = new System.Windows.Forms.FlowLayoutPanel();
             this.tableLayoutPanel1.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
@@ -88,7 +88,7 @@
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 17F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 63F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(1386, 788);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(1380, 788);
             this.tableLayoutPanel1.TabIndex = 0;
             // 
             // tableLayoutPanel2
@@ -102,7 +102,7 @@
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
             this.tableLayoutPanel2.RowCount = 1;
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel2.Size = new System.Drawing.Size(1380, 127);
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(1374, 127);
             this.tableLayoutPanel2.TabIndex = 42;
             // 
             // label7
@@ -111,7 +111,7 @@
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("MS Reference Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label7.Location = new System.Drawing.Point(580, 29);
+            this.label7.Location = new System.Drawing.Point(577, 29);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(219, 68);
             this.label7.TabIndex = 37;
@@ -135,47 +135,8 @@
             this.tableLayoutPanel3.RowCount = 2;
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel3.Size = new System.Drawing.Size(1380, 151);
+            this.tableLayoutPanel3.Size = new System.Drawing.Size(1374, 151);
             this.tableLayoutPanel3.TabIndex = 43;
-            // 
-            // flowLayoutPanel1
-            // 
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(3, 3);
-            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(200, 69);
-            this.flowLayoutPanel1.TabIndex = 0;
-            // 
-            // flowLayoutPanel2
-            // 
-            this.flowLayoutPanel2.Location = new System.Drawing.Point(3, 78);
-            this.flowLayoutPanel2.Name = "flowLayoutPanel2";
-            this.flowLayoutPanel2.Size = new System.Drawing.Size(200, 70);
-            this.flowLayoutPanel2.TabIndex = 1;
-            // 
-            // flowLayoutPanel3
-            // 
-            this.flowLayoutPanel3.Location = new System.Drawing.Point(923, 3);
-            this.flowLayoutPanel3.Name = "flowLayoutPanel3";
-            this.flowLayoutPanel3.Size = new System.Drawing.Size(200, 69);
-            this.flowLayoutPanel3.TabIndex = 2;
-            // 
-            // flowLayoutPanel4
-            // 
-            this.flowLayoutPanel4.Location = new System.Drawing.Point(923, 78);
-            this.flowLayoutPanel4.Name = "flowLayoutPanel4";
-            this.flowLayoutPanel4.Size = new System.Drawing.Size(188, 61);
-            this.flowLayoutPanel4.TabIndex = 3;
-            // 
-            // label1
-            // 
-            this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(463, 59);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(240, 16);
-            this.label1.TabIndex = 36;
-            this.label1.Text = "Correo Electronico del empleado:";
             // 
             // txtPara
             // 
@@ -206,7 +167,7 @@
             this.txtPara.IconRight = null;
             this.txtPara.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.txtPara.Lines = new string[0];
-            this.txtPara.Location = new System.Drawing.Point(463, 78);
+            this.txtPara.Location = new System.Drawing.Point(461, 78);
             this.txtPara.MaxLength = 32767;
             this.txtPara.MinimumSize = new System.Drawing.Size(1, 1);
             this.txtPara.Modified = false;
@@ -253,6 +214,45 @@
             this.txtPara.UseSystemPasswordChar = false;
             this.txtPara.WordWrap = true;
             // 
+            // label1
+            // 
+            this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(461, 59);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(240, 16);
+            this.label1.TabIndex = 36;
+            this.label1.Text = "Correo Electronico del empleado:";
+            // 
+            // flowLayoutPanel1
+            // 
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(3, 3);
+            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(200, 69);
+            this.flowLayoutPanel1.TabIndex = 0;
+            // 
+            // flowLayoutPanel2
+            // 
+            this.flowLayoutPanel2.Location = new System.Drawing.Point(3, 78);
+            this.flowLayoutPanel2.Name = "flowLayoutPanel2";
+            this.flowLayoutPanel2.Size = new System.Drawing.Size(200, 70);
+            this.flowLayoutPanel2.TabIndex = 1;
+            // 
+            // flowLayoutPanel3
+            // 
+            this.flowLayoutPanel3.Location = new System.Drawing.Point(919, 3);
+            this.flowLayoutPanel3.Name = "flowLayoutPanel3";
+            this.flowLayoutPanel3.Size = new System.Drawing.Size(200, 69);
+            this.flowLayoutPanel3.TabIndex = 2;
+            // 
+            // flowLayoutPanel4
+            // 
+            this.flowLayoutPanel4.Location = new System.Drawing.Point(919, 78);
+            this.flowLayoutPanel4.Name = "flowLayoutPanel4";
+            this.flowLayoutPanel4.Size = new System.Drawing.Size(188, 61);
+            this.flowLayoutPanel4.TabIndex = 3;
+            // 
             // tableLayoutPanel4
             // 
             this.tableLayoutPanel4.ColumnCount = 2;
@@ -271,50 +271,85 @@
             this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
             this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
             this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.tableLayoutPanel4.Size = new System.Drawing.Size(1380, 492);
+            this.tableLayoutPanel4.Size = new System.Drawing.Size(1374, 492);
             this.tableLayoutPanel4.TabIndex = 44;
             // 
-            // tableLayoutPanel5
+            // txtObservacionS
             // 
-            this.tableLayoutPanel5.ColumnCount = 3;
-            this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 30.33202F));
-            this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 36.33242F));
-            this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33556F));
-            this.tableLayoutPanel5.Controls.Add(this.label2, 1, 0);
-            this.tableLayoutPanel5.Controls.Add(this.flowLayoutPanel5, 0, 0);
-            this.tableLayoutPanel5.Controls.Add(this.flowLayoutPanel6, 2, 0);
-            this.tableLayoutPanel5.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel5.Location = new System.Drawing.Point(3, 3);
-            this.tableLayoutPanel5.Name = "tableLayoutPanel5";
-            this.tableLayoutPanel5.RowCount = 1;
-            this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel5.Size = new System.Drawing.Size(684, 158);
-            this.tableLayoutPanel5.TabIndex = 41;
-            // 
-            // label2
-            // 
-            this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(210, 142);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(125, 16);
-            this.label2.TabIndex = 39;
-            this.label2.Text = "Tipo de Sanción:";
-            // 
-            // flowLayoutPanel5
-            // 
-            this.flowLayoutPanel5.Location = new System.Drawing.Point(3, 3);
-            this.flowLayoutPanel5.Name = "flowLayoutPanel5";
-            this.flowLayoutPanel5.Size = new System.Drawing.Size(200, 100);
-            this.flowLayoutPanel5.TabIndex = 40;
-            // 
-            // flowLayoutPanel6
-            // 
-            this.flowLayoutPanel6.Location = new System.Drawing.Point(458, 3);
-            this.flowLayoutPanel6.Name = "flowLayoutPanel6";
-            this.flowLayoutPanel6.Size = new System.Drawing.Size(200, 100);
-            this.flowLayoutPanel6.TabIndex = 41;
+            this.txtObservacionS.AcceptsReturn = false;
+            this.txtObservacionS.AcceptsTab = false;
+            this.txtObservacionS.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.txtObservacionS.AnimationSpeed = 200;
+            this.txtObservacionS.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
+            this.txtObservacionS.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
+            this.txtObservacionS.AutoSizeHeight = true;
+            this.txtObservacionS.BackColor = System.Drawing.Color.Transparent;
+            this.txtObservacionS.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("txtObservacionS.BackgroundImage")));
+            this.txtObservacionS.BorderColorActive = System.Drawing.Color.Crimson;
+            this.txtObservacionS.BorderColorDisabled = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            this.txtObservacionS.BorderColorHover = System.Drawing.Color.Crimson;
+            this.txtObservacionS.BorderColorIdle = System.Drawing.Color.Black;
+            this.txtObservacionS.BorderRadius = 9;
+            this.txtObservacionS.BorderThickness = 1;
+            this.txtObservacionS.CharacterCase = Bunifu.UI.WinForms.BunifuTextBox.CharacterCases.Normal;
+            this.txtObservacionS.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
+            this.txtObservacionS.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtObservacionS.DefaultFont = new System.Drawing.Font("Segoe UI", 9.25F);
+            this.txtObservacionS.DefaultText = "";
+            this.txtObservacionS.FillColor = System.Drawing.Color.White;
+            this.txtObservacionS.HideSelection = true;
+            this.txtObservacionS.IconLeft = null;
+            this.txtObservacionS.IconLeftCursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtObservacionS.IconPadding = 10;
+            this.txtObservacionS.IconRight = null;
+            this.txtObservacionS.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtObservacionS.Lines = new string[0];
+            this.txtObservacionS.Location = new System.Drawing.Point(898, 167);
+            this.txtObservacionS.MaxLength = 32767;
+            this.txtObservacionS.MinimumSize = new System.Drawing.Size(1, 1);
+            this.txtObservacionS.Modified = false;
+            this.txtObservacionS.Multiline = false;
+            this.txtObservacionS.Name = "txtObservacionS";
+            stateProperties5.BorderColor = System.Drawing.Color.Crimson;
+            stateProperties5.FillColor = System.Drawing.Color.Empty;
+            stateProperties5.ForeColor = System.Drawing.Color.Empty;
+            stateProperties5.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.txtObservacionS.OnActiveState = stateProperties5;
+            stateProperties6.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            stateProperties6.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
+            stateProperties6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            stateProperties6.PlaceholderForeColor = System.Drawing.Color.DarkGray;
+            this.txtObservacionS.OnDisabledState = stateProperties6;
+            stateProperties7.BorderColor = System.Drawing.Color.Crimson;
+            stateProperties7.FillColor = System.Drawing.Color.Empty;
+            stateProperties7.ForeColor = System.Drawing.Color.Empty;
+            stateProperties7.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.txtObservacionS.OnHoverState = stateProperties7;
+            stateProperties8.BorderColor = System.Drawing.Color.Black;
+            stateProperties8.FillColor = System.Drawing.Color.White;
+            stateProperties8.ForeColor = System.Drawing.Color.Empty;
+            stateProperties8.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.txtObservacionS.OnIdleState = stateProperties8;
+            this.txtObservacionS.Padding = new System.Windows.Forms.Padding(3);
+            this.txtObservacionS.PasswordChar = '\0';
+            this.txtObservacionS.PlaceholderForeColor = System.Drawing.Color.Silver;
+            this.txtObservacionS.PlaceholderText = "";
+            this.txtObservacionS.ReadOnly = false;
+            this.txtObservacionS.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.txtObservacionS.SelectedText = "";
+            this.txtObservacionS.SelectionLength = 0;
+            this.txtObservacionS.SelectionStart = 0;
+            this.txtObservacionS.ShortcutsEnabled = true;
+            this.txtObservacionS.Size = new System.Drawing.Size(264, 153);
+            this.txtObservacionS.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu;
+            this.txtObservacionS.TabIndex = 45;
+            this.txtObservacionS.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.txtObservacionS.TextMarginBottom = 0;
+            this.txtObservacionS.TextMarginLeft = 3;
+            this.txtObservacionS.TextMarginTop = 0;
+            this.txtObservacionS.TextPlaceholder = "";
+            this.txtObservacionS.UseSystemPasswordChar = false;
+            this.txtObservacionS.WordWrap = true;
             // 
             // txtTipoSancion
             // 
@@ -346,7 +381,7 @@
             this.txtTipoSancion.IconRight = null;
             this.txtTipoSancion.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.txtTipoSancion.Lines = new string[0];
-            this.txtTipoSancion.Location = new System.Drawing.Point(214, 167);
+            this.txtTipoSancion.Location = new System.Drawing.Point(212, 167);
             this.txtTipoSancion.MaxLength = 32767;
             this.txtTipoSancion.MinimumSize = new System.Drawing.Size(1, 1);
             this.txtTipoSancion.Modified = false;
@@ -392,6 +427,48 @@
             this.txtTipoSancion.TextPlaceholder = "Example - Grave";
             this.txtTipoSancion.UseSystemPasswordChar = false;
             this.txtTipoSancion.WordWrap = true;
+            // 
+            // tableLayoutPanel5
+            // 
+            this.tableLayoutPanel5.ColumnCount = 3;
+            this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 30.33202F));
+            this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 36.33242F));
+            this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33556F));
+            this.tableLayoutPanel5.Controls.Add(this.label2, 1, 0);
+            this.tableLayoutPanel5.Controls.Add(this.flowLayoutPanel5, 0, 0);
+            this.tableLayoutPanel5.Controls.Add(this.flowLayoutPanel6, 2, 0);
+            this.tableLayoutPanel5.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel5.Location = new System.Drawing.Point(3, 3);
+            this.tableLayoutPanel5.Name = "tableLayoutPanel5";
+            this.tableLayoutPanel5.RowCount = 1;
+            this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel5.Size = new System.Drawing.Size(681, 158);
+            this.tableLayoutPanel5.TabIndex = 41;
+            // 
+            // label2
+            // 
+            this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(209, 142);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(125, 16);
+            this.label2.TabIndex = 39;
+            this.label2.Text = "Tipo de Sanción:";
+            // 
+            // flowLayoutPanel5
+            // 
+            this.flowLayoutPanel5.Location = new System.Drawing.Point(3, 3);
+            this.flowLayoutPanel5.Name = "flowLayoutPanel5";
+            this.flowLayoutPanel5.Size = new System.Drawing.Size(200, 100);
+            this.flowLayoutPanel5.TabIndex = 40;
+            // 
+            // flowLayoutPanel6
+            // 
+            this.flowLayoutPanel6.Location = new System.Drawing.Point(456, 3);
+            this.flowLayoutPanel6.Name = "flowLayoutPanel6";
+            this.flowLayoutPanel6.Size = new System.Drawing.Size(200, 100);
+            this.flowLayoutPanel6.TabIndex = 41;
             // 
             // BtnEnviar
             // 
@@ -441,7 +518,7 @@
             this.BtnEnviar.IdleIconLeftImage = null;
             this.BtnEnviar.IdleIconRightImage = null;
             this.BtnEnviar.IndicateFocus = false;
-            this.BtnEnviar.Location = new System.Drawing.Point(273, 391);
+            this.BtnEnviar.Location = new System.Drawing.Point(271, 391);
             this.BtnEnviar.Margin = new System.Windows.Forms.Padding(2);
             this.BtnEnviar.Name = "BtnEnviar";
             this.BtnEnviar.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
@@ -494,12 +571,23 @@
             this.tableLayoutPanel6.Controls.Add(this.flowLayoutPanel7, 0, 0);
             this.tableLayoutPanel6.Controls.Add(this.flowLayoutPanel8, 2, 0);
             this.tableLayoutPanel6.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel6.Location = new System.Drawing.Point(693, 3);
+            this.tableLayoutPanel6.Location = new System.Drawing.Point(690, 3);
             this.tableLayoutPanel6.Name = "tableLayoutPanel6";
             this.tableLayoutPanel6.RowCount = 1;
             this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel6.Size = new System.Drawing.Size(684, 158);
+            this.tableLayoutPanel6.Size = new System.Drawing.Size(681, 158);
             this.tableLayoutPanel6.TabIndex = 44;
+            // 
+            // label3
+            // 
+            this.label3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(209, 142);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(99, 16);
+            this.label3.TabIndex = 40;
+            this.label3.Text = "Observación:";
             // 
             // flowLayoutPanel7
             // 
@@ -510,102 +598,14 @@
             // 
             // flowLayoutPanel8
             // 
-            this.flowLayoutPanel8.Location = new System.Drawing.Point(458, 3);
+            this.flowLayoutPanel8.Location = new System.Drawing.Point(456, 3);
             this.flowLayoutPanel8.Name = "flowLayoutPanel8";
             this.flowLayoutPanel8.Size = new System.Drawing.Size(200, 100);
             this.flowLayoutPanel8.TabIndex = 1;
             // 
-            // label3
-            // 
-            this.label3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(210, 142);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(99, 16);
-            this.label3.TabIndex = 40;
-            this.label3.Text = "Observación:";
-            // 
-            // txtObservacionS
-            // 
-            this.txtObservacionS.AcceptsReturn = false;
-            this.txtObservacionS.AcceptsTab = false;
-            this.txtObservacionS.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.txtObservacionS.AnimationSpeed = 200;
-            this.txtObservacionS.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
-            this.txtObservacionS.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
-            this.txtObservacionS.AutoSizeHeight = true;
-            this.txtObservacionS.BackColor = System.Drawing.Color.Transparent;
-            this.txtObservacionS.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("txtObservacionS.BackgroundImage")));
-            this.txtObservacionS.BorderColorActive = System.Drawing.Color.Crimson;
-            this.txtObservacionS.BorderColorDisabled = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
-            this.txtObservacionS.BorderColorHover = System.Drawing.Color.Crimson;
-            this.txtObservacionS.BorderColorIdle = System.Drawing.Color.Black;
-            this.txtObservacionS.BorderRadius = 9;
-            this.txtObservacionS.BorderThickness = 1;
-            this.txtObservacionS.CharacterCase = Bunifu.UI.WinForms.BunifuTextBox.CharacterCases.Normal;
-            this.txtObservacionS.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
-            this.txtObservacionS.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtObservacionS.DefaultFont = new System.Drawing.Font("Segoe UI", 9.25F);
-            this.txtObservacionS.DefaultText = "";
-            this.txtObservacionS.FillColor = System.Drawing.Color.White;
-            this.txtObservacionS.HideSelection = true;
-            this.txtObservacionS.IconLeft = null;
-            this.txtObservacionS.IconLeftCursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtObservacionS.IconPadding = 10;
-            this.txtObservacionS.IconRight = null;
-            this.txtObservacionS.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtObservacionS.Lines = new string[0];
-            this.txtObservacionS.Location = new System.Drawing.Point(903, 167);
-            this.txtObservacionS.MaxLength = 32767;
-            this.txtObservacionS.MinimumSize = new System.Drawing.Size(1, 1);
-            this.txtObservacionS.Modified = false;
-            this.txtObservacionS.Multiline = false;
-            this.txtObservacionS.Name = "txtObservacionS";
-            stateProperties5.BorderColor = System.Drawing.Color.Crimson;
-            stateProperties5.FillColor = System.Drawing.Color.Empty;
-            stateProperties5.ForeColor = System.Drawing.Color.Empty;
-            stateProperties5.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.txtObservacionS.OnActiveState = stateProperties5;
-            stateProperties6.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
-            stateProperties6.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
-            stateProperties6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
-            stateProperties6.PlaceholderForeColor = System.Drawing.Color.DarkGray;
-            this.txtObservacionS.OnDisabledState = stateProperties6;
-            stateProperties7.BorderColor = System.Drawing.Color.Crimson;
-            stateProperties7.FillColor = System.Drawing.Color.Empty;
-            stateProperties7.ForeColor = System.Drawing.Color.Empty;
-            stateProperties7.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.txtObservacionS.OnHoverState = stateProperties7;
-            stateProperties8.BorderColor = System.Drawing.Color.Black;
-            stateProperties8.FillColor = System.Drawing.Color.White;
-            stateProperties8.ForeColor = System.Drawing.Color.Empty;
-            stateProperties8.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.txtObservacionS.OnIdleState = stateProperties8;
-            this.txtObservacionS.Padding = new System.Windows.Forms.Padding(3);
-            this.txtObservacionS.PasswordChar = '\0';
-            this.txtObservacionS.PlaceholderForeColor = System.Drawing.Color.Silver;
-            this.txtObservacionS.PlaceholderText = "";
-            this.txtObservacionS.ReadOnly = false;
-            this.txtObservacionS.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.txtObservacionS.SelectedText = "";
-            this.txtObservacionS.SelectionLength = 0;
-            this.txtObservacionS.SelectionStart = 0;
-            this.txtObservacionS.ShortcutsEnabled = true;
-            this.txtObservacionS.Size = new System.Drawing.Size(264, 153);
-            this.txtObservacionS.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu;
-            this.txtObservacionS.TabIndex = 45;
-            this.txtObservacionS.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.txtObservacionS.TextMarginBottom = 0;
-            this.txtObservacionS.TextMarginLeft = 3;
-            this.txtObservacionS.TextMarginTop = 0;
-            this.txtObservacionS.TextPlaceholder = "";
-            this.txtObservacionS.UseSystemPasswordChar = false;
-            this.txtObservacionS.WordWrap = true;
-            // 
             // flowLayoutPanel9
             // 
-            this.flowLayoutPanel9.Location = new System.Drawing.Point(693, 331);
+            this.flowLayoutPanel9.Location = new System.Drawing.Point(690, 331);
             this.flowLayoutPanel9.Name = "flowLayoutPanel9";
             this.flowLayoutPanel9.Size = new System.Drawing.Size(200, 100);
             this.flowLayoutPanel9.TabIndex = 46;
@@ -614,7 +614,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1386, 788);
+            this.ClientSize = new System.Drawing.Size(1380, 788);
             this.Controls.Add(this.tableLayoutPanel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.MaximizeBox = false;

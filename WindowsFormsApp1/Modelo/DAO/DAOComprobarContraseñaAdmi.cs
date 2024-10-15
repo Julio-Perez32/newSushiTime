@@ -22,7 +22,6 @@ namespace WindowsFormsApp1.Modelo.DAO
                 Command.Connection = getConnection();
                 string query = "SELECT Password FROM Users WHERE idRole = 1  AND Estado = @Estado AND Password = @ContraseñaAdmin";
                 SqlCommand cmd = new SqlCommand(query, Command.Connection);
-                //cmd.Parameters.AddWithValue("ContraseñaAdmin", Password1);
                 cmd.Parameters.AddWithValue("param1", Usuario1);
                 cmd.Parameters.AddWithValue("param2", Contraseña1);
                 cmd.Parameters.AddWithValue("param3", 1);
