@@ -67,7 +67,7 @@ namespace WindowsFormsApp1.Modelo.DAO
             {
                
                 Command.Connection = getConnection();
-                string query = "UPDATE Empleados SET " +
+                string query = "UPDATE Usuarios SET " +
                                 "Usuario = @param1, " +
                                 "Nombre = @param2, " +
                                 "Dui = @param3, " +
@@ -77,10 +77,8 @@ namespace WindowsFormsApp1.Modelo.DAO
                                 "idRol = @param7, " +
                                 "Direccion = @param8, " +
                                 "FechaCreacion = @param9, " +
-                                "UserStatus = @param10, " +
-                                "Contraseña = @param11, " +
-                                "Intentos = @param12, " +
-                                "WHERE idUsuario = @param13";
+                                "UserStatus = @param10, "  +
+                                "WHERE idUsuario = @param11";
 
                 SqlCommand cmd = new SqlCommand(query, Command.Connection);
                 cmd.Parameters.AddWithValue("param1", Usuario);
@@ -93,9 +91,7 @@ namespace WindowsFormsApp1.Modelo.DAO
                 cmd.Parameters.AddWithValue("param8", Direccion);
                 cmd.Parameters.AddWithValue("param9", FechaCreacion);
                 cmd.Parameters.AddWithValue("param10", UserStatus);
-                cmd.Parameters.AddWithValue("param11", Contraseña);
-                cmd.Parameters.AddWithValue("param12", Intentos);
-                cmd.Parameters.AddWithValue("param13", IdUsuario);
+                cmd.Parameters.AddWithValue("param11", IdUsuario);
 
                 int respuesta = cmd.ExecuteNonQuery();
 

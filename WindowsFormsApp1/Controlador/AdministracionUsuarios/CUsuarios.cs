@@ -141,10 +141,10 @@ namespace WindowsFormsApp1.Controlador.AdministracionUsuario
         private void DeleteUser(object sender, EventArgs e)
         {
             int pos = objAdminU.dgvusuario.CurrentRow.Index;
-            string userSelected = objAdminU.dgvusuario[1, pos].Value.ToString();
+            string userSelected = objAdminU.dgvusuario[4, pos].Value.ToString();
             if (!(userSelected.Equals(SessionVar.Username)))
             {
-                if (MessageBox.Show($"• Se eliminará la información de la persona.\n\n• ¿Esta seguro que desea elimar a: {objAdminU.dgvusuario[1, pos].Value.ToString()}, considere que dicha acción no se podrá revertir.", "Confirmar acción", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+                if (MessageBox.Show($"• Se eliminará la información de la persona.\n\n• ¿Esta seguro que desea elimar a: {objAdminU.dgvusuario[6, pos].Value.ToString()}, considere que dicha acción no se podrá revertir.", "Confirmar acción", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
                 {
                     DAOUsuarios daoDel = new DAOUsuarios();
                     daoDel.IdUsuario = int.Parse(objAdminU.dgvusuario[0, pos].Value.ToString());
@@ -152,7 +152,6 @@ namespace WindowsFormsApp1.Controlador.AdministracionUsuario
                     if (valorRetornado == 2)
                     {
                         MessageBox.Show("Registro eliminado", "Acción completada", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                        RefrescarData();
                     }
                 }
             }
@@ -160,6 +159,7 @@ namespace WindowsFormsApp1.Controlador.AdministracionUsuario
             {
                 MessageBox.Show("No puede eliminar al usuario ya que la sesión está activa, cierre sesión en todos los dispositivos y vuelva a intentarlo.", "Error de proceso", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+            RefrescarData();
         }
         void RestaurarContra(object sender, EventArgs e)
         {

@@ -58,5 +58,10 @@ namespace Sushi_Time_PTC_2024.Vista.Calendario
         {
 
         }
+
+        private void tableLayoutPanel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }
