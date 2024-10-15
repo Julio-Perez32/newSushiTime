@@ -22,7 +22,7 @@ namespace Sushi_Time_PTC_2024.Modelo.DAO
                 cmd.Parameters.AddWithValue("FechaTarea", Fechatarea);
                
                 int respuesta = cmd.ExecuteNonQuery();
-                return respuesta; // Aseguramos que siempre se devuelve un valor en caso de éxito
+                return respuesta;
             }
 
             finally

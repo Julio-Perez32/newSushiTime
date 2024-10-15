@@ -84,7 +84,6 @@
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 70F));
             this.tableLayoutPanel1.Size = new System.Drawing.Size(1380, 788);
             this.tableLayoutPanel1.TabIndex = 0;
-            this.tableLayoutPanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.tableLayoutPanel1_Paint);
             // 
             // flowLayoutPanel1
             // 
@@ -210,7 +209,6 @@
             this.label2.Size = new System.Drawing.Size(43, 20);
             this.label2.TabIndex = 13;
             this.label2.Text = "Dom";
-            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // tableLayoutPanel3
             // 
@@ -614,7 +612,6 @@
             this.Name = "calendario1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "calendario1";
-            this.Load += new System.EventHandler(this.calendario1_Load);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel2.ResumeLayout(false);
             this.tableLayoutPanel2.PerformLayout();

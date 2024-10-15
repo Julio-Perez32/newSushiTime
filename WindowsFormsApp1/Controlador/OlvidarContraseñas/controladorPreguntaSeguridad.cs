@@ -29,13 +29,9 @@ namespace Sushi_Time_PTC_2024.Controlador.ControladorPreguntadeseguridad
         private void AccederPregunta(object sender, EventArgs e)
         {
             string respuesta = objFormPregunta_de_seguridad.txtRespuesta.Text;
-
-            // Verifica si la respuesta de seguridad es correcta
             if (respuesta == "2018")
             {
                 objFormPregunta_de_seguridad.Hide();
-
-                // Muestra el formulario para ingresar el nombre de usuario
                 using (usuariocambiodecontraseña formIngresarUsuario = new usuariocambiodecontraseña())
                 {
                     if (formIngresarUsuario.ShowDialog() == DialogResult.OK)
@@ -47,13 +43,11 @@ namespace Sushi_Time_PTC_2024.Controlador.ControladorPreguntadeseguridad
 
                         if (usuarioValido == 1)
                         {
-                            // Usuario válido, muestra el formulario de cambio de contraseña
                             cambiodecontraseña formCambioDeContraseña = new cambiodecontraseña();
                             formCambioDeContraseña.Show();
                         }
                         else
                         {
-                            // Usuario no encontrado, muestra el mensaje de error y mantiene el formulario abierto
                             MessageBox.Show("Nombre de usuario no encontrado. Intente de nuevo.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                         }
                     }
