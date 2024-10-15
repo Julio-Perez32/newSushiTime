@@ -241,27 +241,5 @@ namespace Sushi_Time_PTC_2024.Modelo.DAO
                 getConnection().Close();
             }
         }
-
-
-
-
-
-        /* public bool RestablecerContrasena()
-         {
-             try
-             {
-                 Command.Connection = getConnection();
-                 string queryupdate = "UPDATE tbUser SET password = @valor1, pinRestartPassword = @valor2 WHERE username = @username";
-                 SqlCommand cmdupdate = new SqlCommand(queryupdate, Command.Connection);
-                 cmdupdate.Parameters.AddWithValue("valor1", Password);
-                 cmdupdate.Parameters.AddWithValue("valor2", string.Empty);
-                 cmdupdate.Parameters.AddWithValue("username", User);
-                 return cmdupdate.ExecuteNonQuery() > 0 ? true : false;
-             }
-             catch (SqlException)
-             {
-                 return false;
-             }
-         }*/
     }
 }

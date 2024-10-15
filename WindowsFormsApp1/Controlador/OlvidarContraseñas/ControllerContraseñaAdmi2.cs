@@ -68,7 +68,5 @@ namespace WindowsFormsApp1.Controlador.OlvidarContraseñas
                 MessageBox.Show(" Llene todos los campos para completar el proceso", "Proceso interrumpido", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
-
-
     }
 }

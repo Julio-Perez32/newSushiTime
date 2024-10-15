@@ -242,6 +242,7 @@
             this.Controls.Add(this.labelpregunta);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "olvidarcontraseñaprincipal1";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "olvidarcontraseñaprincipal1";
             ((System.ComponentModel.ISupportInitialize)(this.pbSalir)).EndInit();
             this.ResumeLayout(false);

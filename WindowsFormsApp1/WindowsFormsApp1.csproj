@@ -107,6 +107,7 @@
     <Compile Include="Controlador\Dashcarpet\ControlD.cs" />
     <Compile Include="Controlador\Helpers\CorreoElectronico.cs" />
     <Compile Include="Controlador\Helpers\Encriptado.cs" />
+    <Compile Include="Controlador\Helpers\SessionInfo.cs" />
     <Compile Include="Controlador\Helpers\SessionVar.cs" />
     <Compile Include="Controlador\Helpers\TemplateSushiTime.cs" />
     <Compile Include="Controlador\OlvidarContraseñas\controladorcambiodecontraseña.cs" />

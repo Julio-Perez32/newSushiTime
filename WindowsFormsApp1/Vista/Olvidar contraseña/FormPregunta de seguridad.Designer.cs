@@ -50,7 +50,7 @@
             this.label1.Location = new System.Drawing.Point(112, 93);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(285, 25);
+            this.label1.Size = new System.Drawing.Size(225, 20);
             this.label1.TabIndex = 0;
             this.label1.Text = "Año de fundacion de la empresa";
             // 
@@ -65,7 +65,7 @@
             this.bunifuLabel1.Location = new System.Drawing.Point(117, 32);
             this.bunifuLabel1.Name = "bunifuLabel1";
             this.bunifuLabel1.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.bunifuLabel1.Size = new System.Drawing.Size(271, 36);
+            this.bunifuLabel1.Size = new System.Drawing.Size(218, 30);
             this.bunifuLabel1.TabIndex = 18;
             this.bunifuLabel1.Text = "Pregunta de seguridad";
             this.bunifuLabel1.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
@@ -238,7 +238,7 @@
             this.txtRespuesta.SelectionLength = 0;
             this.txtRespuesta.SelectionStart = 0;
             this.txtRespuesta.ShortcutsEnabled = true;
-            this.txtRespuesta.Size = new System.Drawing.Size(406, 46);
+            this.txtRespuesta.Size = new System.Drawing.Size(406, 42);
             this.txtRespuesta.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu;
             this.txtRespuesta.TabIndex = 1;
             this.txtRespuesta.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -251,7 +251,7 @@
             // 
             // FormPregunta_de_seguridad
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 24F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(41)))), ((int)(((byte)(41)))));
             this.ClientSize = new System.Drawing.Size(538, 267);
@@ -264,6 +264,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "FormPregunta_de_seguridad";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FormPregunta_de_seguridad";
             ((System.ComponentModel.ISupportInitialize)(this.pbSalir)).EndInit();
             this.ResumeLayout(false);

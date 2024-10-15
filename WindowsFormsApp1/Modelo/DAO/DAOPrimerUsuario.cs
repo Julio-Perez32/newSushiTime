@@ -55,7 +55,7 @@ namespace WindowsFormsApp1.Modelo.DAO
                 cmd.Parameters.AddWithValue("@password", Contraseña);
                 cmd.Parameters.AddWithValue("@userStatus", UserStatus);
                 cmd.Parameters.AddWithValue("@userAttempts", Intentos);
-                cmd.Parameters.AddWithValue("@idRol", Rol); // Asegúrate de que este valor sea el id del rol
+                cmd.Parameters.AddWithValue("@idRol", Rol);
                 cmd.Parameters.AddWithValue("@nombre", Nombre);
                 cmd.Parameters.AddWithValue("@apellido", Apellido);
                 cmd.Parameters.AddWithValue("@dui", Dui);
@@ -65,23 +65,23 @@ namespace WindowsFormsApp1.Modelo.DAO
                 cmd.Parameters.AddWithValue("@fechaCreacion", FechaCreacion);
 
                 int respuesta = cmd.ExecuteNonQuery();
-                return respuesta > 0 ? 1 : 0; // Retorna 1 si se insertó correctamente
+                return respuesta > 0 ? 1 : 0;
             }
             catch (SqlException ex)
             {
                 MessageBox.Show($"Error SQL: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                return -1; // Indica un error
+                return -1;
             }
             catch (Exception ex)
             {
                 MessageBox.Show($"Error: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                return -1; // Indica un error
+                return -1;
             }
             finally
             {
                 if (Command.Connection != null && Command.Connection.State == ConnectionState.Open)
                 {
-                    Command.Connection.Close(); // Cerrar conexión
+                    Command.Connection.Close();
                 }
             }
         }

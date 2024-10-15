@@ -7,6 +7,7 @@ using WindowsFormsApp1.Modelo.DAO;
 using WindowsFormsApp1.Vista.Usuarios;
 using WindowsFormsApp1.Vista.Primer_Uso;
 using Sushi_Time_PTC_2024.Modelo.DAO;
+using WindowsFormsApp1.Controlador.Helpers;
 
 namespace WindowsFormsApp1.Controlador.AdministracionUsuario
 {
@@ -21,7 +22,6 @@ namespace WindowsFormsApp1.Controlador.AdministracionUsuario
             objAdminU.btnCrearUsuario.Click += new EventHandler(NewUser);
             objAdminU.btnEditar.Click += new EventHandler(UpdateUser);
             objAdminU.btnEliminar.Click += new EventHandler(DeleteUser);
-            // objAdminU.txtbuscarT.KeyUp += new KeyEventHandler(Search);
             objAdminU.btnBuscar.Click += new EventHandler(BuscarPeronasControllerEvent);
         }
 
@@ -142,16 +142,29 @@ namespace WindowsFormsApp1.Controlador.AdministracionUsuario
         {
             int pos = objAdminU.dgvusuario.CurrentRow.Index;
             string userSelected = objAdminU.dgvusuario[4, pos].Value.ToString();
-            if (!(userSelected.Equals(SessionVar.Username)))
+
+            // Verifica si el usuario seleccionado no es el usuario actual en sesión
+            if (!userSelected.Equals(SessionInfo.UsernameActual))
             {
-                if (MessageBox.Show($"• Se eliminará la información de la persona.\n\n• ¿Esta seguro que desea elimar a: {objAdminU.dgvusuario[6, pos].Value.ToString()}, considere que dicha acción no se podrá revertir.", "Confirmar acción", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+                if (MessageBox.Show($"• Se eliminará la información de la persona.\n\n• ¿Está seguro que desea eliminar a: {objAdminU.dgvusuario[6, pos].Value.ToString()}? Considere que dicha acción no se podrá revertir.", "Confirmar acción", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
                 {
                     DAOUsuarios daoDel = new DAOUsuarios();
                     daoDel.IdUsuario = int.Parse(objAdminU.dgvusuario[0, pos].Value.ToString());
-                    int valorRetornado = daoDel.EliminarUsuario();
-                    if (valorRetornado == 2)
+
+                    // Llama a EliminarUsuario con el IdUsuarioActual de la sesión
+                    int valorRetornado = daoDel.EliminarUsuario(SessionInfo.IdUsuarioActual);
+
+                    if (valorRetornado == 1)
                     {
                         MessageBox.Show("Registro eliminado", "Acción completada", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    }
+                    else if (valorRetornado == 0)
+                    {
+                        MessageBox.Show("No se pudo eliminar el usuario actual", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
+                    else
+                    {
+                        MessageBox.Show("Error al eliminar el usuario", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     }
                 }
             }
@@ -159,22 +172,15 @@ namespace WindowsFormsApp1.Controlador.AdministracionUsuario
             {
                 MessageBox.Show("No puede eliminar al usuario ya que la sesión está activa, cierre sesión en todos los dispositivos y vuelva a intentarlo.", "Error de proceso", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+
             RefrescarData();
         }
+
         void RestaurarContra(object sender, EventArgs e)
         {
-            /*int pos = ObjAdminUser.dgvpersonas.CurrentRow.Index;
-            VerPlanilla newPassword = new VerPlanilla();
-            newPassword.txtUsuarioAfectado.Text = ObjAdminUser.dgvpersonas[1, pos].Value.ToString();
-            newPassword.BringToFront();
-            newPassword.ShowDialog();
-            MessageBox.Show("La contraseña fue actualizada exitosamente", "Proceso Completado", MessageBoxButtons.OK, MessageBoxIcon.Information);*/
-
-
             DAOadminU daoRestartPassword = new DAOadminU();
             Encriptado commonClasses = new Encriptado();
             int pos = objAdminU.dgvusuario.CurrentRow.Index;
-            //Capturando nombres del usuario
             string firstName = objAdminU.dgvusuario[1, pos].Value.ToString();
             string lastName = objAdminU.dgvusuario[2, pos].Value.ToString();
             string nombrePersona = firstName + " " + lastName;
