@@ -25,6 +25,11 @@ namespace WindowsFormsApp1.Vista.Olvidar_contraseña
         {
 
         }
+
+        private void ReturnToLogin(object sender, EventArgs e)
+        {
+
+        }
     }
 
 }

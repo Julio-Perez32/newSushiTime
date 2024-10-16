@@ -1,10 +1,12 @@
 ﻿using Sushi_Time_PTC_2024.Controlador.Helpers;
 using Sushi_Time_PTC_2024.Vista;
+using Sushi_Time_PTC_2024.Vista.Olvidar_contraseña;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Web.UI.WebControls;
 using System.Windows.Forms;
 using WindowsFormsApp1.Modelo.DAO;
 using WindowsFormsApp1.Modelo.DTO;
@@ -26,6 +28,7 @@ namespace Sushi_Time_PTC_2024.Controlador
         private Encriptado encriptado;
         private DAOCambiarContraseña daoCambiarContraseña;
 
+
         public ControladorCambioDeContraseña(cambiodecontraseña vista)
         {
             objvista = vista;
@@ -33,6 +36,7 @@ namespace Sushi_Time_PTC_2024.Controlador
             objFormCambioDeContraseña = vista;
             daoCambiarContraseña = new DAOCambiarContraseña();
             objFormCambioDeContraseña.Btncambiarcontra.Click += new EventHandler(CambiarContraseña);
+            objFormCambioDeContraseña.pbSalir.Click += new EventHandler(ReturnToLogin);
         }
 
         private void CambiarContraseña(object sender, EventArgs e)
@@ -57,7 +61,15 @@ namespace Sushi_Time_PTC_2024.Controlador
             {
                 MessageBox.Show("Ocurrió un error inesperado. Intente nuevamente.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+
         }
+        private void ReturnToLogin(object sender, EventArgs e)
+        {
+            objvista.Hide();
+            Logincs loginForm = new Logincs(); 
+            loginForm.Show();
+        }
+
     }
 }
 
