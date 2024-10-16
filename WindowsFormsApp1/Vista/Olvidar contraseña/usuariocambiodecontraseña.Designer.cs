@@ -89,7 +89,7 @@
             this.txtUsername.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.txtUsername.Lines = new string[0];
             this.txtUsername.Location = new System.Drawing.Point(54, 78);
-            this.txtUsername.MaxLength = 32767;
+            this.txtUsername.MaxLength = 50;
             this.txtUsername.MinimumSize = new System.Drawing.Size(2, 1);
             this.txtUsername.Modified = false;
             this.txtUsername.Multiline = false;
