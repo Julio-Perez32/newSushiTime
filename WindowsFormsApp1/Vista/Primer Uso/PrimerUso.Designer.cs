@@ -259,7 +259,7 @@
             this.txtTelefonoEmpresa.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.txtTelefonoEmpresa.Lines = new string[0];
             this.txtTelefonoEmpresa.Location = new System.Drawing.Point(296, 244);
-            this.txtTelefonoEmpresa.MaxLength = 20;
+            this.txtTelefonoEmpresa.MaxLength = 8;
             this.txtTelefonoEmpresa.MinimumSize = new System.Drawing.Size(1, 1);
             this.txtTelefonoEmpresa.Modified = false;
             this.txtTelefonoEmpresa.Multiline = false;
@@ -287,7 +287,7 @@
             this.txtTelefonoEmpresa.Padding = new System.Windows.Forms.Padding(3);
             this.txtTelefonoEmpresa.PasswordChar = '\0';
             this.txtTelefonoEmpresa.PlaceholderForeColor = System.Drawing.Color.Gray;
-            this.txtTelefonoEmpresa.PlaceholderText = "Enter text";
+            this.txtTelefonoEmpresa.PlaceholderText = "";
             this.txtTelefonoEmpresa.ReadOnly = false;
             this.txtTelefonoEmpresa.ScrollBars = System.Windows.Forms.ScrollBars.None;
             this.txtTelefonoEmpresa.SelectedText = "";
@@ -301,7 +301,7 @@
             this.txtTelefonoEmpresa.TextMarginBottom = 0;
             this.txtTelefonoEmpresa.TextMarginLeft = 3;
             this.txtTelefonoEmpresa.TextMarginTop = 1;
-            this.txtTelefonoEmpresa.TextPlaceholder = "Enter text";
+            this.txtTelefonoEmpresa.TextPlaceholder = "";
             this.txtTelefonoEmpresa.UseSystemPasswordChar = false;
             this.txtTelefonoEmpresa.WordWrap = true;
             // 

@@ -37,9 +37,19 @@ namespace WindowsFormsApp1.Controlador.ControladorPrimerUso
         {
             DAOPrimerUsuario objAdmin = new DAOPrimerUsuario();
             DataSet ds = objAdmin.LlenarCombo();
-            ObjVista.comboRol.DataSource = ds.Tables["tbRol"];
-            ObjVista.comboRol.ValueMember = "idRol";
-            ObjVista.comboRol.DisplayMember = "nombreRol";
+            DataTable dt = ds.Tables["tbRol"];
+            DataRow[] rows = dt.Select("nombreRol = 'Administrador'");
+            if (rows.Length > 0)
+            {
+                DataTable dtFiltered = rows.CopyToDataTable();
+                ObjVista.comboRol.DataSource = dtFiltered;
+                ObjVista.comboRol.ValueMember = "idRol";
+                ObjVista.comboRol.DisplayMember = "nombreRol";
+            }
+            else
+            {
+                MessageBox.Show("No se encontró el rol de Administrador.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
 
         void RegistrarPrimerUsuario(object sender, EventArgs e)
