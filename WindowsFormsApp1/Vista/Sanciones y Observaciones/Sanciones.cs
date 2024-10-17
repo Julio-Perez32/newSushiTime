@@ -30,7 +30,7 @@ namespace WindowsFormsApp1.Vista.Sanciones_y_Observaciones
             txtObservacionS.TabIndex = 2;
             BtnEnviar.TabIndex = 3;
         }
-        private void BtnEnviar_Click(object sender, EventArgs e)
+        private void BtnEnviar_Click_1(object sender, EventArgs e)
         {
             var to = txtPara.Text.Trim();
             var subject = txtTipoSancion.Text.Trim();
