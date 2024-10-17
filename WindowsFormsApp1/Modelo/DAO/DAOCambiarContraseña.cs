@@ -16,6 +16,12 @@ namespace WindowsFormsApp1.Modelo.DAO
         SqlCommand Command = new SqlCommand();
         public int CambiarContraseña(string nuevaContraseña)
         {
+            if (string.IsNullOrWhiteSpace(nuevaContraseña))
+            {
+                MessageBox.Show("La contraseña no puede estar vacía.", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return 0;
+            }
+
             try
             {
                 Command.Connection = getConnection();
@@ -43,8 +49,6 @@ namespace WindowsFormsApp1.Modelo.DAO
                 }
             }
         }
-
-
     }
 }
 

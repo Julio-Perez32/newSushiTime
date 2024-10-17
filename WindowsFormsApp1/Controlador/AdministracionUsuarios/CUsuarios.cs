@@ -8,6 +8,8 @@ using WindowsFormsApp1.Vista.Usuarios;
 using WindowsFormsApp1.Vista.Primer_Uso;
 using Sushi_Time_PTC_2024.Modelo.DAO;
 using WindowsFormsApp1.Controlador.Helpers;
+using WindowsFormsApp1.Vista.Olvidar_contraseña;
+using Sushi_Time_PTC_2024.Modelo.DTO;
 
 namespace WindowsFormsApp1.Controlador.AdministracionUsuario
 {
@@ -23,6 +25,7 @@ namespace WindowsFormsApp1.Controlador.AdministracionUsuario
             objAdminU.btnEditar.Click += new EventHandler(UpdateUser);
             objAdminU.btnEliminar.Click += new EventHandler(DeleteUser);
             objAdminU.btnBuscar.Click += new EventHandler(BuscarPeronasControllerEvent);
+            objAdminU.btncontraseña.Click += new EventHandler(abrircontra);
         }
 
         public void Search(object sender, KeyEventArgs e)
@@ -188,5 +191,10 @@ namespace WindowsFormsApp1.Controlador.AdministracionUsuario
             daoRestartPassword.Usuario1 = objAdminU.dgvusuario[8, pos].Value.ToString();
         }
 
+       void abrircontra(object sender, EventArgs e)
+       {
+            CambioDeContraseña openForm = new CambioDeContraseña();
+            openForm.ShowDialog();
+       }
     }
 }
