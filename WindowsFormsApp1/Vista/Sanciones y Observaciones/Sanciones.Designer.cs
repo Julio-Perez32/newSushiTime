@@ -560,6 +560,7 @@
             this.BtnEnviar.TextMarginLeft = 0;
             this.BtnEnviar.TextPadding = new System.Windows.Forms.Padding(0);
             this.BtnEnviar.UseDefaultRadiusAndThickness = true;
+            this.BtnEnviar.Click += new System.EventHandler(this.BtnEnviar_Click_1);
             // 
             // tableLayoutPanel6
             // 
