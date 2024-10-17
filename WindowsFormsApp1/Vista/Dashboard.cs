@@ -29,7 +29,7 @@ namespace Sushi_Time_PTC_2024.Vista
             {
                 using (HttpClient httpClient = new HttpClient())
                 {
-                    string url = "https://drive.google.com/uc?id=1-a1yZz9cPVnHjLPl2qqBbdPG6nh4WxUz\r\n";
+                    string url = "https://drive.google.com/uc?id=13AIuxbOI2oq_ZNNnLhtKPLzawDUrUkzK\r\n";
 
                     // Usar un SaveFileDialog para elegir la ubicación y el nombre del archivo
                     using (SaveFileDialog saveFileDialog = new SaveFileDialog())
@@ -78,7 +78,7 @@ namespace Sushi_Time_PTC_2024.Vista
             {
                 using (HttpClient httpClient = new HttpClient())
                 {
-                    string url = "https://drive.google.com/uc?id=1C3dbcFuuLg8zm5pQ3u0wTVH9UeHGwAQC\r\n";
+                    string url = "https://drive.google.com/uc?id=1wr_yE_VSD3UIfFDcAHcQ2Mw3_hM0KWL0\r\n";
 
                     // Usar un SaveFileDialog para elegir la ubicación y el nombre del archivo
                     using (SaveFileDialog saveFileDialog = new SaveFileDialog())
