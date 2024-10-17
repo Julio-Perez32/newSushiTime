@@ -20,6 +20,7 @@ namespace WindowsFormsApp1.Controlador.AdministracionUsuarios
         private int accion;
         private string Rol;
         editarUsuarios objed;
+        CambioDeContraseña objcontraseña;
         public ControladorAU(editarUsuarios vista, int accion)
         {
             objed = vista;
@@ -233,6 +234,29 @@ namespace WindowsFormsApp1.Controlador.AdministracionUsuarios
                                 "Entrada no válida",
                                 MessageBoxButtons.OK,
                                 MessageBoxIcon.Warning);
+            }
+        }
+        private void cambiandocontra(object sender, EventArgs e)
+        {
+            CambioDeContraseña objcambio = new CambioDeContraseña();
+            DAOCambiarContraseña dao = new DAOCambiarContraseña();
+            string nuevaContraseña = objcambio.txtnuevacontraseña.Text;
+            Encriptado encriptado = new Encriptado();
+            string contraseñaEncriptada = encriptado.ComputeSha256Hash(nuevaContraseña);
+            int resultado = dao.CambiarContraseña(contraseñaEncriptada);
+
+            if (resultado == 1)
+            {
+                MessageBox.Show("Contraseña cambiada exitosamente.", "Éxito", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                objcambio.Hide();
+            }
+            else if (resultado == 0)
+            {
+                MessageBox.Show("No se pudo cambiar la contraseña. Intente nuevamente.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            else
+            {
+                MessageBox.Show("Ocurrió un error inesperado. Intente nuevamente.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
     }

@@ -7,8 +7,8 @@ using System.Threading.Tasks;
 
 namespace WindowsFormsApp1.Modelo.DTO
 {
-        internal class DTOUsuarios : dbContext
-        {
+    internal class DTOUsuarios : dbContext
+    {
         private string nombreUsuario;
 
         public string NombreUsuario
@@ -16,8 +16,12 @@ namespace WindowsFormsApp1.Modelo.DTO
             get => nombreUsuario;
             set => nombreUsuario = value;
         }
-    }
+        public static class SessionInfo
+        {
+            public static int IdUsuarioActual { get; set; }
+        }
 
+    }
 }
 
         

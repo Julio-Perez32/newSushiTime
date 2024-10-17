@@ -16,23 +16,19 @@ namespace WindowsFormsApp1.Modelo.DAO
         SqlCommand Command = new SqlCommand();
         public int CambiarContraseña(string nuevaContraseña)
         {
+            if (string.IsNullOrWhiteSpace(nuevaContraseña))
+            {
+                MessageBox.Show("La contraseña no puede estar vacía.", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return 0;
+            }
+
             try
             {
-                // Conectar con la base de datos
                 Command.Connection = getConnection();
-
-                // Definir la consulta para actualizar la contraseña
                 string query = "UPDATE Usuarios SET Contraseña = @nuevaContraseña ";
-
-                // Crear el comando SQL y agregar los parámetros
                 SqlCommand cmd = new SqlCommand(query, Command.Connection);
                 cmd.Parameters.AddWithValue("@nuevaContraseña", nuevaContraseña);
-                
-
-                // Ejecutar la consulta
                 int resultado = cmd.ExecuteNonQuery();
-
-                // Verificar el resultado
                 return resultado > 0 ? 1 : 0;
             }
             catch (SqlException ex)
@@ -53,8 +49,6 @@ namespace WindowsFormsApp1.Modelo.DAO
                 }
             }
         }
-
-
     }
 }
 

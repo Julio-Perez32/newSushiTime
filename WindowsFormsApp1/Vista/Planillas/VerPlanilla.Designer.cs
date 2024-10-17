@@ -193,15 +193,15 @@
             // tableLayoutPanel3
             // 
             this.tableLayoutPanel3.ColumnCount = 2;
-            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 30F));
+            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 70F));
             this.tableLayoutPanel3.Controls.Add(this.btnIngresar, 1, 0);
             this.tableLayoutPanel3.Controls.Add(this.btneliminar, 0, 0);
             this.tableLayoutPanel3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel3.Location = new System.Drawing.Point(239, 3);
             this.tableLayoutPanel3.Name = "tableLayoutPanel3";
             this.tableLayoutPanel3.RowCount = 1;
-            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanel3.Size = new System.Drawing.Size(230, 74);
             this.tableLayoutPanel3.TabIndex = 25;
             // 
@@ -210,7 +210,7 @@
             this.btnIngresar.AllowAnimations = true;
             this.btnIngresar.AllowMouseEffects = true;
             this.btnIngresar.AllowToggling = false;
-            this.btnIngresar.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnIngresar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.btnIngresar.AnimationSpeed = 200;
             this.btnIngresar.AutoGenerateColors = false;
             this.btnIngresar.AutoRoundBorders = false;
@@ -253,8 +253,8 @@
             this.btnIngresar.IdleIconLeftImage = null;
             this.btnIngresar.IdleIconRightImage = null;
             this.btnIngresar.IndicateFocus = false;
-            this.btnIngresar.Location = new System.Drawing.Point(117, 20);
-            this.btnIngresar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnIngresar.Location = new System.Drawing.Point(71, 20);
+            this.btnIngresar.Margin = new System.Windows.Forms.Padding(2);
             this.btnIngresar.Name = "btnIngresar";
             this.btnIngresar.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnIngresar.OnDisabledState.BorderRadius = 20;
@@ -288,7 +288,7 @@
             this.btnIngresar.OnPressedState.ForeColor = System.Drawing.Color.White;
             this.btnIngresar.OnPressedState.IconLeftImage = null;
             this.btnIngresar.OnPressedState.IconRightImage = null;
-            this.btnIngresar.Size = new System.Drawing.Size(111, 34);
+            this.btnIngresar.Size = new System.Drawing.Size(157, 34);
             this.btnIngresar.TabIndex = 26;
             this.btnIngresar.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btnIngresar.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
@@ -344,8 +344,8 @@
             this.btneliminar.IdleIconLeftImage = null;
             this.btneliminar.IdleIconRightImage = null;
             this.btneliminar.IndicateFocus = false;
-            this.btneliminar.Location = new System.Drawing.Point(13, 20);
-            this.btneliminar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btneliminar.Location = new System.Drawing.Point(2, 20);
+            this.btneliminar.Margin = new System.Windows.Forms.Padding(2);
             this.btneliminar.Name = "btneliminar";
             this.btneliminar.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btneliminar.OnDisabledState.BorderRadius = 20;
@@ -379,7 +379,7 @@
             this.btneliminar.OnPressedState.ForeColor = System.Drawing.Color.White;
             this.btneliminar.OnPressedState.IconLeftImage = null;
             this.btneliminar.OnPressedState.IconRightImage = null;
-            this.btneliminar.Size = new System.Drawing.Size(88, 34);
+            this.btneliminar.Size = new System.Drawing.Size(65, 34);
             this.btneliminar.TabIndex = 25;
             this.btneliminar.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btneliminar.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
@@ -451,7 +451,7 @@
             this.btnBuscar.IdleIconRightImage = null;
             this.btnBuscar.IndicateFocus = false;
             this.btnBuscar.Location = new System.Drawing.Point(346, 20);
-            this.btnBuscar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnBuscar.Margin = new System.Windows.Forms.Padding(2);
             this.btnBuscar.Name = "btnBuscar";
             this.btnBuscar.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnBuscar.OnDisabledState.BorderRadius = 20;
@@ -497,7 +497,7 @@
             // 
             this.txtbuscarT.AcceptsReturn = false;
             this.txtbuscarT.AcceptsTab = false;
-            this.txtbuscarT.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.txtbuscarT.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.txtbuscarT.AnimationSpeed = 200;
             this.txtbuscarT.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
             this.txtbuscarT.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
@@ -524,7 +524,7 @@
             this.txtbuscarT.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.txtbuscarT.Lines = new string[0];
             this.txtbuscarT.Location = new System.Drawing.Point(2, 19);
-            this.txtbuscarT.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtbuscarT.Margin = new System.Windows.Forms.Padding(2);
             this.txtbuscarT.MaxLength = 32767;
             this.txtbuscarT.MinimumSize = new System.Drawing.Size(1, 1);
             this.txtbuscarT.Modified = false;
@@ -550,7 +550,7 @@
             stateProperties4.ForeColor = System.Drawing.Color.Empty;
             stateProperties4.PlaceholderForeColor = System.Drawing.Color.Empty;
             this.txtbuscarT.OnIdleState = stateProperties4;
-            this.txtbuscarT.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtbuscarT.Padding = new System.Windows.Forms.Padding(2);
             this.txtbuscarT.PasswordChar = '\0';
             this.txtbuscarT.PlaceholderForeColor = System.Drawing.Color.Silver;
             this.txtbuscarT.PlaceholderText = "Buscar Usuario por nombre o DUI";
@@ -576,7 +576,7 @@
             this.btnEditar.AllowAnimations = true;
             this.btnEditar.AllowMouseEffects = true;
             this.btnEditar.AllowToggling = false;
-            this.btnEditar.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnEditar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.btnEditar.AnimationSpeed = 200;
             this.btnEditar.AutoGenerateColors = false;
             this.btnEditar.AutoRoundBorders = false;
@@ -619,8 +619,8 @@
             this.btnEditar.IdleIconLeftImage = null;
             this.btnEditar.IdleIconRightImage = null;
             this.btnEditar.IndicateFocus = false;
-            this.btnEditar.Location = new System.Drawing.Point(55, 23);
-            this.btnEditar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnEditar.Location = new System.Drawing.Point(2, 23);
+            this.btnEditar.Margin = new System.Windows.Forms.Padding(2);
             this.btnEditar.Name = "btnEditar";
             this.btnEditar.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnEditar.OnDisabledState.BorderRadius = 20;
@@ -654,7 +654,7 @@
             this.btnEditar.OnPressedState.ForeColor = System.Drawing.Color.White;
             this.btnEditar.OnPressedState.IconLeftImage = null;
             this.btnEditar.OnPressedState.IconRightImage = null;
-            this.btnEditar.Size = new System.Drawing.Size(125, 34);
+            this.btnEditar.Size = new System.Drawing.Size(232, 34);
             this.btnEditar.TabIndex = 24;
             this.btnEditar.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btnEditar.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
@@ -671,7 +671,7 @@
             this.Controls.Add(this.tableLayoutPanel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "VerPlanilla";
-            this.Padding = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.Padding = new System.Windows.Forms.Padding(5);
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "VerPlanilla";
             this.Load += new System.EventHandler(this.VerPlanilla_Load);

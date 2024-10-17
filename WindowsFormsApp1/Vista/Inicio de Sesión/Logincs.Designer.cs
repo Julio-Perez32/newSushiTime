@@ -207,7 +207,7 @@
             this.btnIngresar.OnPressedState.IconLeftImage = null;
             this.btnIngresar.OnPressedState.IconRightImage = null;
             this.btnIngresar.Size = new System.Drawing.Size(116, 34);
-            this.btnIngresar.TabIndex = 16;
+            this.btnIngresar.TabIndex = 4;
             this.btnIngresar.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btnIngresar.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
             this.btnIngresar.TextMarginLeft = 0;
@@ -253,7 +253,7 @@
             this.lblRecuC.Name = "lblRecuC";
             this.lblRecuC.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.lblRecuC.Size = new System.Drawing.Size(243, 25);
-            this.lblRecuC.TabIndex = 18;
+            this.lblRecuC.TabIndex = 3;
             this.lblRecuC.Text = "¿Olvidaste tu Contraseña?";
             this.lblRecuC.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
             this.lblRecuC.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
@@ -327,7 +327,7 @@
             this.txtIngresarContraseña.ShortcutsEnabled = true;
             this.txtIngresarContraseña.Size = new System.Drawing.Size(323, 31);
             this.txtIngresarContraseña.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Material;
-            this.txtIngresarContraseña.TabIndex = 15;
+            this.txtIngresarContraseña.TabIndex = 2;
             this.txtIngresarContraseña.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.txtIngresarContraseña.TextMarginBottom = 0;
             this.txtIngresarContraseña.TextMarginLeft = 3;
@@ -405,7 +405,7 @@
             this.txtUsuario.ShortcutsEnabled = true;
             this.txtUsuario.Size = new System.Drawing.Size(323, 31);
             this.txtUsuario.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Material;
-            this.txtUsuario.TabIndex = 10;
+            this.txtUsuario.TabIndex = 1;
             this.txtUsuario.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.txtUsuario.TextMarginBottom = 0;
             this.txtUsuario.TextMarginLeft = 3;
@@ -430,6 +430,7 @@
             this.Controls.Add(this.lblLogin);
             this.Controls.Add(this.bunifuPanel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Logincs";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

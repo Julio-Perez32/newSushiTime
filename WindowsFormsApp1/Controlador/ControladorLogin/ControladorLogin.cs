@@ -8,6 +8,7 @@ using Sushi_Time_PTC_2024.Modelo.DAO;
 using System.Windows.Forms;
 using Sushi_Time_PTC_2024.Vista;
 using Sushi_Time_PTC_2024.Vista.Olvidar_contraseña;
+using WindowsFormsApp1.Controlador.Helpers;
 
 namespace Sushi_Time_PTC_2024.Controlador.ControladorLogin
 {
@@ -26,15 +27,19 @@ namespace Sushi_Time_PTC_2024.Controlador.ControladorLogin
 
         private void DataAccess(object sender, EventArgs e)
         {
-            DAOLogin DAOData = new DAOLogin();
-
-            DAOData.Username = objvista.txtUsuario.Text;
-            DAOData.Password = objvista.txtIngresarContraseña.Text;
+            DAOLogin DAOData = new DAOLogin
+            {
+                Username = objvista.txtUsuario.Text,
+                Password = objvista.txtIngresarContraseña.Text
+            };
 
             int answer = DAOData.ValidarLogin();
             switch (answer)
             {
                 case 1:
+                    SessionInfo.IdUsuarioActual = DAOData.ObtenerIdUsuario();
+                    SessionInfo.UsernameActual = objvista.txtUsuario.Text;
+
                     objvista.Hide();
                     Dashboard dashboard = new Dashboard(objvista.txtUsuario.Text);
                     dashboard.Show();
@@ -48,7 +53,6 @@ namespace Sushi_Time_PTC_2024.Controlador.ControladorLogin
                     break;
             }
         }
-
         private void QuitApplication(object sender, EventArgs e)
         {
             Application.Exit();
