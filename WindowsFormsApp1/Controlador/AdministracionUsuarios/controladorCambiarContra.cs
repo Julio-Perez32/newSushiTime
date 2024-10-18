@@ -13,35 +13,41 @@ using WindowsFormsApp1.Vista.Usuarios;
 using WindowsFormsApp1.Vista.Primer_Uso;
 using Sushi_Time_PTC_2024.Modelo.DAO;
 using WindowsFormsApp1.Controlador.Helpers;
+using Sushi_Time_PTC_2024.Modelo.DTO;
 
 namespace WindowsFormsApp1.Controlador.AdministracionUsuarios
 {
     internal class controladorCambiarContra
     {
         CambioDeContraseña objcontraseña;
+        DAOCambiarContraseña daocambiarcontraseña;
         public controladorCambiarContra(CambioDeContraseña vista)
         {
             objcontraseña = vista;
+            daocambiarcontraseña = new DAOCambiarContraseña();
             objcontraseña.btnGuardarC.Click += new EventHandler(cambiandocontra);
+            objcontraseña.pbSalir.Click += new EventHandler(salir);
         }
 
         private void cambiandocontra(object sender, EventArgs e)
         {
-            CambioDeContraseña objcambio = new CambioDeContraseña();
-            DAOCambiarContraseña dao = new DAOCambiarContraseña();
-            string nuevaContraseña = objcambio.txtnuevacontraseña.Text;
-            Encriptado encriptado = new Encriptado();
-            string contraseñaEncriptada = encriptado.ComputeSha256Hash(nuevaContraseña);
-            int resultado = dao.CambiarContraseña(contraseñaEncriptada);
+            string nuevaContraseña = objcontraseña.txtnuevacontraseña.Text;
+
+            // Validar si el campo está vacío o contiene solo espacios en blanco
             if (string.IsNullOrWhiteSpace(nuevaContraseña))
             {
-                MessageBox.Show("La contraseña no puede estar vacía.", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                return;
+                MessageBox.Show("El campo de la contraseña no puede estar vacío.", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return; // Salir del método si la contraseña es inválida
             }
-            else if (resultado == 1)
+
+            Encriptado encriptado = new Encriptado();
+            string contraseñaEncriptada = encriptado.ComputeSha256Hash(nuevaContraseña);
+            int resultado = daocambiarcontraseña.CambiarContraseña(contraseñaEncriptada);
+
+            if (resultado == 1)
             {
                 MessageBox.Show("Contraseña cambiada exitosamente.", "Éxito", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                objcambio.Hide();
+                objcontraseña.Hide();
             }
             else if (resultado == 0)
             {
@@ -51,6 +57,11 @@ namespace WindowsFormsApp1.Controlador.AdministracionUsuarios
             {
                 MessageBox.Show("Ocurrió un error inesperado. Intente nuevamente.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+        }
+
+        private void salir(object sender, EventArgs e)
+        {
+            objcontraseña.Hide();
         }
     }
 }

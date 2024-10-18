@@ -25,7 +25,7 @@ namespace Sushi_Time_PTC_2024.Controlador.AdministracionUsuarios
             ObjAdminUser.btnIngresar.Click += new EventHandler(NewUser);
             ObjAdminUser.btnEditar.Click += new EventHandler(UpdateUser);
             ObjAdminUser.btneliminar.Click += new EventHandler(DeleteUser);
-            ObjAdminUser.txtbuscarT.KeyUp += new KeyEventHandler(Search);
+           // ObjAdminUser.txtbuscarT.KeyUp += new KeyEventHandler(Search);
             ObjAdminUser.btnBuscar.Click += new EventHandler(BuscarPeronasControllerEvent);
         }
 

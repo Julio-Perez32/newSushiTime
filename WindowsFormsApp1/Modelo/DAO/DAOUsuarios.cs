@@ -65,7 +65,6 @@ namespace WindowsFormsApp1.Modelo.DAO
         {
             try
             {
-               
                 Command.Connection = getConnection();
                 string query = "UPDATE Usuarios SET " +
                                 "Usuario = @param1, " +
@@ -77,7 +76,7 @@ namespace WindowsFormsApp1.Modelo.DAO
                                 "idRol = @param7, " +
                                 "Direccion = @param8, " +
                                 "FechaCreacion = @param9, " +
-                                "UserStatus = @param10, "  +
+                                "UserStatus = @param10 " + // Asegúrate de que esta línea sea correcta
                                 "WHERE idUsuario = @param11";
 
                 SqlCommand cmd = new SqlCommand(query, Command.Connection);
@@ -95,17 +94,30 @@ namespace WindowsFormsApp1.Modelo.DAO
 
                 int respuesta = cmd.ExecuteNonQuery();
 
-                return respuesta == 1 ? 2 : 1;
+                // Aquí eliminamos el MessageBox de depuración
+                return respuesta > 0 ? 1 : 0; // Asegúrate de que esto sea correcto
             }
-            catch (Exception)
+            catch (SqlException ex)
             {
-                return -1;
+                MessageBox.Show($"Error SQL: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return -1; // Indica que hubo un error
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Error: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return -1; // Indica que hubo un error
             }
             finally
             {
-                getConnection().Close();
+                if (Command.Connection != null && Command.Connection.State == ConnectionState.Open)
+                {
+                    Command.Connection.Close();
+                }
             }
         }
+
+
+
         public int EliminarUsuario(int IdUsuarioActual)
         {
             try
