@@ -42,6 +42,11 @@ namespace Sushi_Time_PTC_2024.Controlador
         private void CambiarContraseña(object sender, EventArgs e)
         {
             string nuevaContraseña = objFormCambioDeContraseña.txtnuevacontraseña.Text;
+            if (string.IsNullOrWhiteSpace(nuevaContraseña))
+            {
+                MessageBox.Show("El campo de la contraseña no puede estar vacío.", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return; // Salir del método si la contraseña es inválida
+            }
             Encriptado encriptado = new Encriptado();
             string contraseñaEncriptada = encriptado.ComputeSha256Hash(nuevaContraseña);
             int resultado = daoCambiarContraseña.CambiarContraseña(contraseñaEncriptada);
