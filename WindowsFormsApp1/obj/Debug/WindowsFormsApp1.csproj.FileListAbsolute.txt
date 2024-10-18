@@ -369,3 +369,5 @@ C:\Users\USER\Documents\GitHub\2.0\newSushiTime\WindowsFormsApp1\obj\Debug\Windo
 C:\Users\Usuario\Documents\GitHub\newSushiTime\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Vista.Olvidar_contraseña.cambiodecontraseña.resources
 C:\Users\Usuario\Documents\GitHub\newSushiTime\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Vista.Olvidar_contraseña.RecuperacionDentrodelSistema.resources
 C:\Users\Usuario\Documents\GitHub\newSushiTime\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Vista.Olvidar_contraseña.usuariocambiodecontraseña.resources
+C:\Users\USER\Documents\GitHub\2.0\newSushiTime\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Vista.Usuarios.CambioDeContraseña.resources
+C:\Users\Usuario\Documents\GitHub\newSushiTime\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Vista.Usuarios.CambioDeContraseña.resources

@@ -157,7 +157,7 @@
             // 
             this.txtTelefono.Location = new System.Drawing.Point(290, 254);
             this.txtTelefono.Margin = new System.Windows.Forms.Padding(5);
-            this.txtTelefono.MaxLength = 20;
+            this.txtTelefono.MaxLength = 8;
             this.txtTelefono.Name = "txtTelefono";
             this.txtTelefono.Size = new System.Drawing.Size(248, 20);
             this.txtTelefono.TabIndex = 6;
