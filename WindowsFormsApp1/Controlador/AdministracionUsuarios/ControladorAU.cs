@@ -10,6 +10,7 @@ using System.Windows.Forms;
 using WindowsFormsApp1.Modelo.DAO;
 using WindowsFormsApp1.Vista.Primer_Uso;
 using WindowsFormsApp1.Vista.Usuarios;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.ListView;
 using static TheArtOfDev.HtmlRenderer.Adapters.RGraphicsPath;
 
 namespace WindowsFormsApp1.Controlador.AdministracionUsuarios
@@ -53,32 +54,75 @@ namespace WindowsFormsApp1.Controlador.AdministracionUsuarios
 
         public void UpdateRegister(object sender, EventArgs e)
         {
+            // Validaciones de los campos de texto
+            if (string.IsNullOrWhiteSpace(objed.txtid.Text) ||
+                string.IsNullOrWhiteSpace(objed.txtUsuario.Text.Trim()) ||
+                string.IsNullOrWhiteSpace(objed.txtNombre.Text.Trim()) ||
+                string.IsNullOrWhiteSpace(objed.mskDocumento.Text.Trim()) ||
+                string.IsNullOrWhiteSpace(objed.txtEmail.Text.Trim()) ||
+                string.IsNullOrWhiteSpace(objed.txtTelefono.Text.Trim()) ||
+                string.IsNullOrWhiteSpace(objed.txtApellido.Text.Trim()) ||
+                string.IsNullOrWhiteSpace(objed.txtDireccion.Text.Trim()) ||
+                string.IsNullOrWhiteSpace(objed.txtUserStatus.Text.Trim()) ||
+                string.IsNullOrWhiteSpace(objed.dtFecha.Text.Trim()))
+            {
+                MessageBox.Show("Existen campos vacíos. Por favor complete todos los campos requeridos.",
+                                "Advertencia",
+                                MessageBoxButtons.OK,
+                                MessageBoxIcon.Warning);
+                return; // Salir del método si hay campos vacíos
+            }
+
+            // Validar el formato del correo electrónico
+            string email = objed.txtEmail.Text.Trim();
+            if (!ValidarCorreo(email)) // Supón que tienes un método ValidarCorreo
+            {
+                MessageBox.Show("El formato del correo electrónico es inválido.",
+                                "Advertencia",
+                                MessageBoxButtons.OK,
+                                MessageBoxIcon.Warning);
+                return; // Salir del método si el correo no es válido
+            }
+
+            // Validar la fecha de creación
+            DateTime fechaCreacion;
+            if (!DateTime.TryParse(objed.dtFecha.Text.Trim(), out fechaCreacion))
+            {
+                MessageBox.Show("La fecha de nacimiento no es válida. El usuario debe ser mayor de edad",
+                                "Advertencia",
+                                MessageBoxButtons.OK,
+                                MessageBoxIcon.Warning);
+                return; // Salir del método si la fecha no es válida
+            }
+
             DAOUsuarios daoUpdate = new DAOUsuarios();
             Encriptado encriptado = new Encriptado();
+
+            // Asigna los valores desde los campos de texto
             daoUpdate.IdUsuario = int.Parse(objed.txtid.Text.Trim());
             daoUpdate.Rol = int.Parse(objed.comboRol.SelectedValue.ToString());
             daoUpdate.Usuario = objed.txtUsuario.Text.Trim();
             daoUpdate.Nombre = objed.txtNombre.Text.Trim();
             daoUpdate.Dui = objed.mskDocumento.Text.Trim();
-            daoUpdate.Correo = objed.txtEmail.Text.Trim();
+            daoUpdate.Correo = email; // Utiliza el email validado
             daoUpdate.Telefono = objed.txtTelefono.Text.Trim();
             daoUpdate.Apellido = objed.txtApellido.Text.Trim();
             daoUpdate.Direccion = objed.txtDireccion.Text.Trim();
-            daoUpdate.FechaCreacion = DateTime.Parse(objed.dtFecha.Text.Trim());
+            daoUpdate.FechaCreacion = fechaCreacion; // Utiliza la fecha validada
             daoUpdate.UserStatus = objed.txtUserStatus.Text.Trim();
 
             int valorRetornado = daoUpdate.ActualizarUsuario();
 
-            if (valorRetornado == 2)
+            // Verifica el valor de retorno
+            if (valorRetornado == 1)
             {
-                MessageBox.Show("Los datos han sido actualizado exitosamente",
+                MessageBox.Show("Los datos han sido actualizados exitosamente",
                                 "Proceso completado",
                                 MessageBoxButtons.OK,
                                 MessageBoxIcon.Information);
-  
                 objed.Hide();
             }
-            else if (valorRetornado == 1)
+            else if (valorRetornado == 0)
             {
                 MessageBox.Show("Los datos no pudieron ser actualizados completamente",
                                 "Proceso interrumpido",
@@ -88,11 +132,14 @@ namespace WindowsFormsApp1.Controlador.AdministracionUsuarios
             else
             {
                 MessageBox.Show("Los datos no pudieron ser actualizados debido a un error inesperado",
-                         "Proceso interrumpido",
-                          MessageBoxButtons.OK,
-                          MessageBoxIcon.Error);
+                                "Proceso interrumpido",
+                                MessageBoxButtons.OK,
+                                MessageBoxIcon.Error);
             }
         }
+
+
+
 
 
         public void ChargeValues(int idUsuario, string correo, string usuario, string userStatus, DateTime fechaCreacion, string nombre, string apellido, string dui, string direccion, string telefono)
@@ -139,30 +186,49 @@ namespace WindowsFormsApp1.Controlador.AdministracionUsuarios
 
         void NewRegister(object sender, EventArgs e)
         {
+            // Validar campos vacíos
             if (!(string.IsNullOrEmpty(objed.txtNombre.Text.Trim()) ||
-                string.IsNullOrEmpty(objed.txtApellido.Text.Trim()) ||
-                string.IsNullOrEmpty(objed.mskDocumento.Text) ||
-                string.IsNullOrEmpty(objed.txtDireccion.Text.Trim()) ||
-                string.IsNullOrEmpty(objed.txtEmail.Text.Trim()) ||
-                string.IsNullOrEmpty(objed.txtTelefono.Text.Trim()) ||
-                string.IsNullOrEmpty(objed.txtUsuario.Text.Trim()) ||
-                string.IsNullOrEmpty(objed.txtUserStatus.Text.Trim())))
+                  string.IsNullOrEmpty(objed.txtApellido.Text.Trim()) ||
+                  string.IsNullOrEmpty(objed.mskDocumento.Text) ||
+                  string.IsNullOrEmpty(objed.txtDireccion.Text.Trim()) ||
+                  string.IsNullOrEmpty(objed.txtEmail.Text.Trim()) ||
+                  string.IsNullOrEmpty(objed.txtTelefono.Text.Trim()) ||
+                  string.IsNullOrEmpty(objed.txtUsuario.Text.Trim()) ||
+                  string.IsNullOrEmpty(objed.txtUserStatus.Text.Trim())))
             {
+                // Validar el correo electrónico
+                string email = objed.txtEmail.Text.Trim();
+                if (!ValidarCorreo(email))
+                {
+                    return; // Salir si el correo no es válido
+                }
+
+                // Validar la fecha de creación (mayor de edad)
+                DateTime fechaCreacion = objed.dtFecha.Value.Date;
+                if (fechaCreacion > DateTime.Now.AddYears(-18))
+                {
+                    MessageBox.Show("El usuario debe ser mayor de edad. Verifique la fecha de nacimiento.", "Proceso interrumpido", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    return; // Salir si no es mayor de edad
+                }
+
+                // Continuar con el registro del usuario
                 DAOUsuarios DAOInsert = new DAOUsuarios();
                 Encriptado encriptado = new Encriptado();
                 DAOInsert.Nombre = objed.txtNombre.Text.Trim();
                 DAOInsert.Apellido = objed.txtApellido.Text.Trim();
-                DAOInsert.FechaCreacion = objed.dtFecha.Value.Date;
+                DAOInsert.FechaCreacion = fechaCreacion; // Aquí ya está validada la fecha
                 DAOInsert.Dui = objed.mskDocumento.Text;
                 DAOInsert.Direccion = objed.txtDireccion.Text.Trim();
-                DAOInsert.Correo = objed.txtEmail.Text.Trim();
+                DAOInsert.Correo = email; // Aquí ya se validó el correo
                 DAOInsert.Telefono = objed.txtTelefono.Text.Trim();
                 DAOInsert.Usuario = objed.txtUsuario.Text.Trim();
                 DAOInsert.Contraseña = encriptado.ComputeSha256Hash(objed.txtUsuario.Text.Trim() + "SushiTime24");
                 DAOInsert.UserStatus = objed.txtUserStatus.Text.Trim();
                 DAOInsert.Intentos = 0;
                 DAOInsert.Rol = int.Parse(objed.comboRol.SelectedValue.ToString());
+
                 int valorRetornado = DAOInsert.RegistrarUsuario();
+
                 if (valorRetornado == 1)
                 {
                     MessageBox.Show("Los datos han sido registrados exitosamente",
@@ -186,11 +252,12 @@ namespace WindowsFormsApp1.Controlador.AdministracionUsuarios
             else
             {
                 MessageBox.Show("Existen campos vacíos, complete cada uno de los apartados y verifique que la fecha seleccionada corresponde a una persona mayor de edad.",
-                                    "Proceso interrumpido",
-                                    MessageBoxButtons.OK,
-                                    MessageBoxIcon.Warning);
+                                "Proceso interrumpido",
+                                MessageBoxButtons.OK,
+                                MessageBoxIcon.Warning);
             }
         }
+
         public void InitialCharge(object sender, EventArgs e)
         {
             //Objeto de la clase DAOAdminUsuarios
@@ -258,6 +325,30 @@ namespace WindowsFormsApp1.Controlador.AdministracionUsuarios
             {
                 MessageBox.Show("Ocurrió un error inesperado. Intente nuevamente.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+        }
+        private bool ValidarCorreo(string email)
+        {
+            if (string.IsNullOrWhiteSpace(email))
+            {
+                MessageBox.Show("El campo de correo electrónico no puede estar vacío.", "Formato incorrecto", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return false;
+            }
+
+            if (!email.Contains("@"))
+            {
+                MessageBox.Show("Formato de correo inválido, verifica que contiene '@'.", "Formato incorrecto", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return false;
+            }
+
+            string[] dominiosPermitidos = { "gmail.com", "ricaldone.edu.sv" };
+            string extension = email.Substring(email.LastIndexOf('@') + 1);
+            if (!dominiosPermitidos.Contains(extension))
+            {
+                MessageBox.Show("Dominio del correo es inválido. El sistema solo admite dominios 'gmail.com' y 'correo institucional'.", "Formato incorrecto", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return false;
+            }
+
+            return true;
         }
     }
 }

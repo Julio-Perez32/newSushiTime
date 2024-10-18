@@ -408,9 +408,9 @@
             this.label3.Location = new System.Drawing.Point(12, 73);
             this.label3.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(94, 13);
+            this.label3.Size = new System.Drawing.Size(96, 13);
             this.label3.TabIndex = 56;
-            this.label3.Text = "Fecha nacimiento:";
+            this.label3.Text = "Fecha Nacimiento:";
             // 
             // label2
             // 

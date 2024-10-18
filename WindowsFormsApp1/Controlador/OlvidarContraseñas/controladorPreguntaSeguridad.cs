@@ -29,26 +29,43 @@ namespace Sushi_Time_PTC_2024.Controlador.ControladorPreguntadeseguridad
         private void AccederPregunta(object sender, EventArgs e)
         {
             string respuesta = objFormPregunta_de_seguridad.txtRespuesta.Text;
+
             if (respuesta == "2018")
             {
-                objFormPregunta_de_seguridad.Hide();
+                objFormPregunta_de_seguridad.Hide(); // Solo ocultar la ventana de la pregunta de seguridad
+
                 using (usuariocambiodecontraseña formIngresarUsuario = new usuariocambiodecontraseña())
                 {
-                    if (formIngresarUsuario.ShowDialog() == DialogResult.OK)
+                    while (true) // Bucle para permitir que el usuario reintente si el nombre es incorrecto
                     {
-                        dtoLogin.Username = formIngresarUsuario.txtUsername.Text;
-                        daoLogin.Username = dtoLogin.Username;
-
-                        int usuarioValido = daoLogin.ValidarUsuario();
-
-                        if (usuarioValido == 1)
+                        if (formIngresarUsuario.ShowDialog() == DialogResult.OK)
                         {
-                            cambiodecontraseña formCambioDeContraseña = new cambiodecontraseña();
-                            formCambioDeContraseña.Show();
+                            dtoLogin.Username = formIngresarUsuario.txtUsername.Text;
+                            daoLogin.Username = dtoLogin.Username;
+
+                            int usuarioValido = daoLogin.ValidarUsuario();
+
+                            if (usuarioValido == 1)
+                            {
+                                // Usuario válido, abrir el formulario de cambio de contraseña
+                                cambiodecontraseña formCambioDeContraseña = new cambiodecontraseña();
+                                formCambioDeContraseña.Show();
+                                break; // Salir del bucle si el usuario es válido
+                            }
+                            else
+                            {
+                                // Usuario no válido, mostrar mensaje pero no cerrar la ventana de ingreso
+                                MessageBox.Show("Nombre de usuario no encontrado. Intente de nuevo.",
+                                                "Error",
+                                                MessageBoxButtons.OK,
+                                                MessageBoxIcon.Error);
+                                formIngresarUsuario.txtUsername.Clear(); // Limpiar el campo de usuario para reintentar
+                            }
                         }
                         else
                         {
-                            MessageBox.Show("Nombre de usuario no encontrado. Intente de nuevo.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                            // Si se cancela el formulario, salir del bucle
+                            break;
                         }
                     }
                 }
