@@ -1,9 +1,16 @@
 # newSushiTime
 Repositorio Arreglado
+
+
+
 Author: SushiTime Staff
+
 Año de creación: 2024
+
 Lenguaje de programación utilizado: C# 
+
 Gestor de base de datos: Sql Server 2022
+
 El proyecto contiene
 
 Implementación de patrón de arquitectura MVC
