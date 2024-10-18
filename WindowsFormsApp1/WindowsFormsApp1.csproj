@@ -12,6 +12,21 @@
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>C:\Users\USER\Downloads\InstallerSushiTIme\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -95,6 +110,7 @@
     <Compile Include="Controlador\AdministracionUsuarios\AdministracionUsuarios.cs" />
     <Compile Include="Controlador\AdministracionUsuarios\CañandirUsuario.cs" />
     <Compile Include="Controlador\AdministracionUsuarios\ControladorAU.cs" />
+    <Compile Include="Controlador\AdministracionUsuarios\controladorCambiarContra.cs" />
     <Compile Include="Controlador\AdministracionUsuarios\CUsuarios.cs" />
     <Compile Include="Controlador\ControladorInicial.cs" />
     <Compile Include="Controlador\ControladorLogin\ControladorLogin.cs" />
@@ -107,17 +123,23 @@
     <Compile Include="Controlador\Dashcarpet\ControlD.cs" />
     <Compile Include="Controlador\Helpers\CorreoElectronico.cs" />
     <Compile Include="Controlador\Helpers\Encriptado.cs" />
+    <Compile Include="Controlador\Helpers\SessionInfo.cs" />
     <Compile Include="Controlador\Helpers\SessionVar.cs" />
     <Compile Include="Controlador\Helpers\TemplateSushiTime.cs" />
+    <Compile Include="Controlador\OlvidarContraseñas\controladorcambiodecontraseña.cs" />
     <Compile Include="Controlador\OlvidarContraseñas\ControladorPindeAdmincs.cs" />
     <Compile Include="Controlador\OlvidarContraseñas\controladorPreguntaSeguridad.cs" />
     <Compile Include="Controlador\OlvidarContraseñas\ControllerContraseñaAdmi2.cs" />
     <Compile Include="Controlador\OlvidarContraseñas\ControllerRecuperarContraseña.cs" />
     <Compile Include="Controlador\OlvidarContraseñas\OlvidarContraseñas.cs" />
     <Compile Include="Controlador\RecuperacionAdmin\RecuperacionAdministrador.cs" />
+    <Compile Include="Modelo\DAO\DAOCambiarContraseña.cs" />
     <Compile Include="Modelo\DAO\DAOComprobarContraseñaAdmi.cs" />
+    <Compile Include="Modelo\DAO\DAOUsuario2.cs" />
     <Compile Include="Modelo\DAO\UsuarioDAO.cs" />
+    <Compile Include="Modelo\DTO\DTOCambiarContraseña.cs" />
     <Compile Include="Modelo\DTO\DTORestablerSistema.cs" />
+    <Compile Include="Modelo\DTO\DTOUsuarios.cs" />
     <Compile Include="Modelo\DTO\UsuarioDTO.cs" />
     <Compile Include="RecuperarContraseñaService.cs" />
     <Compile Include="Modelo\DAO\DAOadminU.cs" />
@@ -191,6 +213,12 @@
     <Compile Include="Vista\Inicio de Sesión\Logincs.Designer.cs">
       <DependentUpon>Logincs.cs</DependentUpon>
     </Compile>
+    <Compile Include="Vista\Olvidar contraseña\cambiodecontraseña.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vista\Olvidar contraseña\cambiodecontraseña.Designer.cs">
+      <DependentUpon>cambiodecontraseña.cs</DependentUpon>
+    </Compile>
     <Compile Include="Vista\Olvidar contraseña\Formaccesoporadministrador.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -233,6 +261,12 @@
     <Compile Include="Vista\Olvidar contraseña\RecuperacionDentrodelSistema.Designer.cs">
       <DependentUpon>RecuperacionDentrodelSistema.cs</DependentUpon>
     </Compile>
+    <Compile Include="Vista\Olvidar contraseña\usuariocambiodecontraseña.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vista\Olvidar contraseña\usuariocambiodecontraseña.Designer.cs">
+      <DependentUpon>usuariocambiodecontraseña.cs</DependentUpon>
+    </Compile>
     <Compile Include="Vista\Planillas\AgregarUsuario.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -262,6 +296,12 @@
     </Compile>
     <Compile Include="Vista\Sanciones y Observaciones\Sanciones.Designer.cs">
       <DependentUpon>Sanciones.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vista\Usuarios\CambioDeContraseña.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vista\Usuarios\CambioDeContraseña.Designer.cs">
+      <DependentUpon>CambioDeContraseña.cs</DependentUpon>
     </Compile>
     <Compile Include="Vista\Usuarios\dgvususarios.cs">
       <SubType>Form</SubType>
@@ -309,6 +349,9 @@
     <EmbeddedResource Include="Vista\Inicio de Sesión\Logincs.resx">
       <DependentUpon>Logincs.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Vista\Olvidar contraseña\cambiodecontraseña.resx">
+      <DependentUpon>cambiodecontraseña.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Vista\Olvidar contraseña\Formaccesoporadministrador.resx">
       <DependentUpon>Formaccesoporadministrador.cs</DependentUpon>
     </EmbeddedResource>
@@ -330,6 +373,9 @@
     <EmbeddedResource Include="Vista\Olvidar contraseña\RecuperacionDentrodelSistema.resx">
       <DependentUpon>RecuperacionDentrodelSistema.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Vista\Olvidar contraseña\usuariocambiodecontraseña.resx">
+      <DependentUpon>usuariocambiodecontraseña.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Vista\Planillas\AgregarUsuario.resx">
       <DependentUpon>AgregarUsuario.cs</DependentUpon>
     </EmbeddedResource>
@@ -344,6 +390,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Vista\Sanciones y Observaciones\Sanciones.resx">
       <DependentUpon>Sanciones.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vista\Usuarios\CambioDeContraseña.resx">
+      <DependentUpon>CambioDeContraseña.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Vista\Usuarios\dgvususarios.resx">
       <DependentUpon>dgvususarios.cs</DependentUpon>
@@ -391,6 +440,18 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\SushiROJO.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.8">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.8 %28x86 y x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -10,6 +10,7 @@ using Sushi_Time_PTC_2024.Controlador.AdministracionUsuarios;
 using System.Windows.Forms;
 using WindowsFormsApp1.Controlador.AdministracionUsuarios;
 using WindowsFormsApp1.Controlador.AdministracionUsuario;
+using Sushi_Time_PTC_2024.Controlador;
 
 namespace WindowsFormsApp1.Vista.Usuarios
 {

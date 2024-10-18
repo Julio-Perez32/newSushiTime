@@ -25,7 +25,7 @@ namespace Sushi_Time_PTC_2024.Controlador.OlvidarContraseñas
         private void EntrarporAdministracion(object sender, EventArgs e)
         {
             objbotones.Hide();
-            Formaccesoporadministrador olvidarContraA = new Formaccesoporadministrador();
+            olvidarcontraseñaprincipal1 olvidarContraA = new olvidarcontraseñaprincipal1();
             olvidarContraA.Show();
         }
         private void EntrarporPregunta(object sender, EventArgs e)
@@ -45,6 +45,8 @@ namespace Sushi_Time_PTC_2024.Controlador.OlvidarContraseñas
         private void QuitApplication(object sender, EventArgs e)
         {
             objbotones.Hide();
+            Logincs login = new Logincs();
+            login.Show();
         }
 
     }

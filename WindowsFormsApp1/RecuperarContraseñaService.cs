@@ -52,7 +52,7 @@ namespace WindowsFormsApp1
         {
             using (MailMessage mail = new MailMessage())
             {
-                mail.From = new MailAddress(correoElectronicoSoporte);
+                mail.From = new MailAddress(correoElectronicoSoporte, "SushiStaff");
                 mail.To.Add(correoElectronico);
                 mail.Subject = "Recuperación de contraseña";
                 mail.Body = $"Su contraseña ha sido cambiada. La nueva contraseña es: {nuevaContraseña}";

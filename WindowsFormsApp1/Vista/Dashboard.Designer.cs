@@ -29,8 +29,8 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Dashboard));
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges borderEdges3 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges borderEdges4 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges borderEdges1 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges borderEdges2 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.panel1 = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
@@ -42,13 +42,13 @@
             this.btnCalendario = new System.Windows.Forms.Button();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.btnSanciones = new System.Windows.Forms.Button();
-            this.pictureBox6 = new System.Windows.Forms.PictureBox();
-            this.btnCerrarSesion = new System.Windows.Forms.Button();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.btnManualU = new Bunifu.UI.WinForms.BunifuButton.BunifuButton2();
-            this.pnlVistas = new Bunifu.UI.WinForms.BunifuPanel();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.btnManualT = new Bunifu.UI.WinForms.BunifuButton.BunifuButton2();
+            this.pictureBox6 = new System.Windows.Forms.PictureBox();
+            this.btnCerrarSesion = new System.Windows.Forms.Button();
+            this.pnlVistas = new Bunifu.UI.WinForms.BunifuPanel();
             this.flowLayoutPanel1.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -56,9 +56,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             this.tableLayoutPanel1.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             this.SuspendLayout();
             // 
             // flowLayoutPanel1
@@ -203,32 +203,6 @@
             this.btnSanciones.Text = "Sanciones y observaciones";
             this.btnSanciones.UseVisualStyleBackColor = false;
             // 
-            // pictureBox6
-            // 
-            this.pictureBox6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.pictureBox6.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox6.Image")));
-            this.pictureBox6.Location = new System.Drawing.Point(3, 535);
-            this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(49, 45);
-            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox6.TabIndex = 11;
-            this.pictureBox6.TabStop = false;
-            // 
-            // btnCerrarSesion
-            // 
-            this.btnCerrarSesion.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-            this.btnCerrarSesion.FlatAppearance.BorderSize = 0;
-            this.btnCerrarSesion.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCerrarSesion.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCerrarSesion.ForeColor = System.Drawing.Color.White;
-            this.btnCerrarSesion.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnCerrarSesion.Location = new System.Drawing.Point(58, 535);
-            this.btnCerrarSesion.Name = "btnCerrarSesion";
-            this.btnCerrarSesion.Size = new System.Drawing.Size(88, 45);
-            this.btnCerrarSesion.TabIndex = 12;
-            this.btnCerrarSesion.Text = "Cerrar sesion";
-            this.btnCerrarSesion.UseVisualStyleBackColor = false;
-            // 
             // tableLayoutPanel1
             // 
             this.tableLayoutPanel1.ColumnCount = 1;
@@ -261,11 +235,11 @@
             this.btnManualU.ColorContrastOnClick = 45;
             this.btnManualU.ColorContrastOnHover = 45;
             this.btnManualU.Cursor = System.Windows.Forms.Cursors.Default;
-            borderEdges3.BottomLeft = true;
-            borderEdges3.BottomRight = true;
-            borderEdges3.TopLeft = true;
-            borderEdges3.TopRight = true;
-            this.btnManualU.CustomizableEdges = borderEdges3;
+            borderEdges1.BottomLeft = true;
+            borderEdges1.BottomRight = true;
+            borderEdges1.TopLeft = true;
+            borderEdges1.TopRight = true;
+            this.btnManualU.CustomizableEdges = borderEdges1;
             this.btnManualU.DialogResult = System.Windows.Forms.DialogResult.None;
             this.btnManualU.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnManualU.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
@@ -333,23 +307,6 @@
             this.btnManualU.UseDefaultRadiusAndThickness = true;
             this.btnManualU.Click += new System.EventHandler(this.btndescarga_Click);
             // 
-            // pnlVistas
-            // 
-            this.pnlVistas.BackgroundColor = System.Drawing.Color.Transparent;
-            this.pnlVistas.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pnlVistas.BackgroundImage")));
-            this.pnlVistas.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pnlVistas.BorderColor = System.Drawing.Color.Transparent;
-            this.pnlVistas.BorderRadius = 3;
-            this.pnlVistas.BorderThickness = 1;
-            this.pnlVistas.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pnlVistas.Location = new System.Drawing.Point(152, 0);
-            this.pnlVistas.MaximumSize = new System.Drawing.Size(1920, 1080);
-            this.pnlVistas.MinimumSize = new System.Drawing.Size(500, 500);
-            this.pnlVistas.Name = "pnlVistas";
-            this.pnlVistas.ShowBorders = true;
-            this.pnlVistas.Size = new System.Drawing.Size(856, 629);
-            this.pnlVistas.TabIndex = 1;
-            // 
             // tableLayoutPanel2
             // 
             this.tableLayoutPanel2.ColumnCount = 1;
@@ -382,11 +339,11 @@
             this.btnManualT.ColorContrastOnClick = 45;
             this.btnManualT.ColorContrastOnHover = 45;
             this.btnManualT.Cursor = System.Windows.Forms.Cursors.Default;
-            borderEdges4.BottomLeft = true;
-            borderEdges4.BottomRight = true;
-            borderEdges4.TopLeft = true;
-            borderEdges4.TopRight = true;
-            this.btnManualT.CustomizableEdges = borderEdges4;
+            borderEdges2.BottomLeft = true;
+            borderEdges2.BottomRight = true;
+            borderEdges2.TopLeft = true;
+            borderEdges2.TopRight = true;
+            this.btnManualT.CustomizableEdges = borderEdges2;
             this.btnManualT.DialogResult = System.Windows.Forms.DialogResult.None;
             this.btnManualT.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnManualT.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
@@ -454,6 +411,49 @@
             this.btnManualT.UseDefaultRadiusAndThickness = true;
             this.btnManualT.Click += new System.EventHandler(this.btnManualT_Click);
             // 
+            // pictureBox6
+            // 
+            this.pictureBox6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.pictureBox6.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox6.Image")));
+            this.pictureBox6.Location = new System.Drawing.Point(3, 535);
+            this.pictureBox6.Name = "pictureBox6";
+            this.pictureBox6.Size = new System.Drawing.Size(49, 45);
+            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox6.TabIndex = 11;
+            this.pictureBox6.TabStop = false;
+            // 
+            // btnCerrarSesion
+            // 
+            this.btnCerrarSesion.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.btnCerrarSesion.FlatAppearance.BorderSize = 0;
+            this.btnCerrarSesion.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCerrarSesion.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCerrarSesion.ForeColor = System.Drawing.Color.White;
+            this.btnCerrarSesion.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnCerrarSesion.Location = new System.Drawing.Point(58, 535);
+            this.btnCerrarSesion.Name = "btnCerrarSesion";
+            this.btnCerrarSesion.Size = new System.Drawing.Size(88, 45);
+            this.btnCerrarSesion.TabIndex = 12;
+            this.btnCerrarSesion.Text = "Cerrar sesion";
+            this.btnCerrarSesion.UseVisualStyleBackColor = false;
+            // 
+            // pnlVistas
+            // 
+            this.pnlVistas.BackgroundColor = System.Drawing.Color.Transparent;
+            this.pnlVistas.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pnlVistas.BackgroundImage")));
+            this.pnlVistas.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pnlVistas.BorderColor = System.Drawing.Color.Transparent;
+            this.pnlVistas.BorderRadius = 3;
+            this.pnlVistas.BorderThickness = 1;
+            this.pnlVistas.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pnlVistas.Location = new System.Drawing.Point(152, 0);
+            this.pnlVistas.MaximumSize = new System.Drawing.Size(1920, 1080);
+            this.pnlVistas.MinimumSize = new System.Drawing.Size(500, 500);
+            this.pnlVistas.Name = "pnlVistas";
+            this.pnlVistas.ShowBorders = true;
+            this.pnlVistas.Size = new System.Drawing.Size(856, 629);
+            this.pnlVistas.TabIndex = 1;
+            // 
             // Dashboard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -461,6 +461,7 @@
             this.ClientSize = new System.Drawing.Size(1008, 629);
             this.Controls.Add(this.pnlVistas);
             this.Controls.Add(this.flowLayoutPanel1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
             this.Name = "Dashboard";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -472,9 +473,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             this.ResumeLayout(false);
 
         }

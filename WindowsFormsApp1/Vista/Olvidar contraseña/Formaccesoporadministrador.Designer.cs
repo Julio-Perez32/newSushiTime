@@ -107,7 +107,7 @@
             stateProperties4.ForeColor = System.Drawing.Color.Empty;
             stateProperties4.PlaceholderForeColor = System.Drawing.Color.Empty;
             this.txtPinA.OnIdleState = stateProperties4;
-            this.txtPinA.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.txtPinA.Padding = new System.Windows.Forms.Padding(3);
             this.txtPinA.PasswordChar = '\0';
             this.txtPinA.PlaceholderForeColor = System.Drawing.Color.Silver;
             this.txtPinA.PlaceholderText = "Ingresa el pin";
@@ -177,7 +177,7 @@
             this.btningresar.IdleIconRightImage = null;
             this.btningresar.IndicateFocus = false;
             this.btningresar.Location = new System.Drawing.Point(312, 122);
-            this.btningresar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btningresar.Margin = new System.Windows.Forms.Padding(2);
             this.btningresar.Name = "btningresar";
             this.btningresar.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btningresar.OnDisabledState.BorderRadius = 20;
@@ -223,7 +223,7 @@
             // 
             this.pbSalir.Image = global::WindowsFormsApp1.Properties.Resources.sushi_salmon_removebg_preview;
             this.pbSalir.Location = new System.Drawing.Point(340, 3);
-            this.pbSalir.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pbSalir.Margin = new System.Windows.Forms.Padding(2);
             this.pbSalir.Name = "pbSalir";
             this.pbSalir.Size = new System.Drawing.Size(50, 46);
             this.pbSalir.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -242,6 +242,7 @@
             this.Controls.Add(this.labelpregunta);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Formaccesoporadministrador";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Formaccesoporadministrador";
             this.Load += new System.EventHandler(this.Formaccesoporadministrador_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pbSalir)).EndInit();

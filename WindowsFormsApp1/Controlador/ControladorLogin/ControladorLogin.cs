@@ -8,6 +8,7 @@ using Sushi_Time_PTC_2024.Modelo.DAO;
 using System.Windows.Forms;
 using Sushi_Time_PTC_2024.Vista;
 using Sushi_Time_PTC_2024.Vista.Olvidar_contraseña;
+using WindowsFormsApp1.Controlador.Helpers;
 
 namespace Sushi_Time_PTC_2024.Controlador.ControladorLogin
 {
@@ -26,31 +27,32 @@ namespace Sushi_Time_PTC_2024.Controlador.ControladorLogin
 
         private void DataAccess(object sender, EventArgs e)
         {
-            DAOLogin DAOData = new DAOLogin();
+            DAOLogin DAOData = new DAOLogin
+            {
+                Username = objvista.txtUsuario.Text,
+                Password = objvista.txtIngresarContraseña.Text
+            };
 
-            DAOData.Username = objvista.txtUsuario.Text;
-            DAOData.Password = objvista.txtIngresarContraseña.Text;
-
-            // Validar el login
             int answer = DAOData.ValidarLogin();
-            // Manejar el resultado del login
             switch (answer)
             {
-                case 1: // Usuario y contraseña correctos
+                case 1:
+                    SessionInfo.IdUsuarioActual = DAOData.ObtenerIdUsuario();
+                    SessionInfo.UsernameActual = objvista.txtUsuario.Text;
+
                     objvista.Hide();
                     Dashboard dashboard = new Dashboard(objvista.txtUsuario.Text);
                     dashboard.Show();
                     break;
-                case 0: // Usuario no existe o contraseña incorrecta
+                case 0:
                 default:
                     MessageBox.Show("Datos incorrectos", "Error al iniciar sesión", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     break;
-                case -1: // Error al conectar a la base de datos
+                case -1:
                     MessageBox.Show("Error al conectar a la base de datos", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     break;
             }
         }
-
         private void QuitApplication(object sender, EventArgs e)
         {
             Application.Exit();
@@ -60,7 +62,7 @@ namespace Sushi_Time_PTC_2024.Controlador.ControladorLogin
         {
             DAOLogin daorecu = new DAOLogin();
             daorecu.Username = objvista.txtUsuario.Text;
-            if (daorecu.ValidarUsuario() == 0)
+            if (daorecu.ValidarUsuario() == 1)
             {
                 olvidarcontraseña reinicio = new olvidarcontraseña();
                 objvista.Hide();
